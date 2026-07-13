@@ -15,7 +15,7 @@
 3. 打开 GitHub 仓库的 `Settings → Pages`。
 4. 在 `Build and deployment` 的 `Source` 中选择 `GitHub Actions`。
 5. 打开仓库的 `Actions` 页面，等待 `Deploy Roam Insider to GitHub Pages` 完成。
-6. 部署地址是 `https://amswf.github.io/RoamInsiders/`。
+6. 自定义域名启用后，部署地址是 `https://travelgoguide.com/`。
 
 如果仓库名是 `你的用户名.github.io`，网站会直接发布在根域名。
 
@@ -31,7 +31,7 @@
 
 ## 自定义域名
 
-在 `Settings → Pages → Custom domain` 填入域名，并按 GitHub 提示配置 DNS。GitHub Pages 会自动提供 HTTPS。
+当前工作流已经按 `travelgoguide.com` 的根路径构建。在 `Settings → Pages → Custom domain` 填入 `travelgoguide.com`，并按 GitHub 提示配置 DNS。DNS 验证通过后启用 `Enforce HTTPS`。
 
 ## 日常发布
 
