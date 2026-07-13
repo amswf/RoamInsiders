@@ -1,0 +1,115 @@
+backend:
+  name: github
+  repo: amswf/RoamInsiders
+  branch: main
+  auth_methods: [token]
+  commit_messages:
+    create: '内容后台：新增 {{collection}}「{{slug}}」'
+    update: '内容后台：更新 {{collection}}「{{slug}}」'
+    delete: '内容后台：删除 {{collection}}「{{slug}}」'
+
+locale: zh_Hans
+logo_url: /RoamInsiders/favicon.png
+publish_mode: simple
+media_folder: public/uploads
+public_folder: /RoamInsiders/uploads
+
+i18n:
+  structure: single_file
+  locales: [zh-CN, zh-TW, en, id, th, vi, ms, fil, km, lo, my]
+  default_locale: zh-CN
+
+collections:
+  - name: posts
+    label: 旅行内容
+    label_singular: 内容
+    folder: content/posts
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    identifier_field: slug
+    summary: '{{title}} · {{contentType}} · {{ctaPlatform}}'
+    sortable_fields: [updatedAt, title, contentType, status]
+    view_filters:
+      - label: 已发布
+        field: status
+        pattern: published
+      - label: 草稿
+        field: status
+        pattern: draft
+      - label: 优惠券
+        field: contentType
+        pattern: coupon
+    fields:
+      - { label: Slug, name: slug, widget: string, i18n: duplicate, hint: '英文小写和连字符，保存后不建议修改' }
+      - { label: 标题, name: title, widget: string, i18n: true }
+      - { label: 摘要, name: excerpt, widget: text, i18n: true }
+      - { label: 正文, name: content, widget: text, i18n: true, hint: '段落之间空一行；小标题可使用「Day 1｜标题」格式' }
+      - { label: 目的地, name: destination, widget: string, i18n: true, required: false }
+      - { label: 建议时间, name: duration, widget: string, i18n: true, required: false }
+      - { label: 预算参考, name: budget, widget: string, i18n: true, required: false }
+      - { label: 适合季节, name: season, widget: string, i18n: true, required: false }
+      - { label: 栏目, name: category, widget: string, i18n: true, required: false }
+      - label: 内容类型
+        name: contentType
+        widget: select
+        i18n: duplicate
+        options:
+          - { label: 路线, value: route }
+          - { label: 优惠, value: deal }
+          - { label: 优惠券, value: coupon }
+          - { label: 指南, value: guide }
+      - { label: 封面图片 URL, name: imageUrl, widget: string, i18n: duplicate, required: false }
+      - { label: 图片说明, name: imageAlt, widget: string, i18n: true, required: false }
+      - label: 发布状态
+        name: status
+        widget: select
+        i18n: duplicate
+        options:
+          - { label: 草稿, value: draft }
+          - { label: 已发布, value: published }
+      - { label: 首页精选, name: featured, widget: boolean, i18n: duplicate, default: false }
+      - label: 行动按钮平台
+        name: ctaPlatform
+        widget: select
+        i18n: duplicate
+        options:
+          - { label: Trip.com, value: trip }
+          - { label: Traveloka, value: traveloka }
+          - { label: 自定义, value: custom }
+      - { label: 行动按钮文案, name: ctaLabel, widget: string, i18n: true, required: false, hint: '留空时前台会使用对应语言的默认文案' }
+      - { label: 行动按钮链接, name: ctaUrl, widget: string, i18n: duplicate, required: false, hint: '留空时使用网站设置里的平台默认链接' }
+      - { label: 优惠码, name: couponCode, widget: string, i18n: true, required: false }
+      - { label: 价格或优惠标签, name: priceLabel, widget: string, i18n: true, required: false }
+      - { label: 更新日期, name: updatedAt, widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, i18n: duplicate }
+
+  - name: settings
+    label: 网站设置
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: 平台链接与公告
+        file: content/settings/site.json
+        format: json
+        fields:
+          - { label: Trip.com 默认链接, name: tripUrl, widget: string }
+          - { label: Traveloka 默认链接, name: travelokaUrl, widget: string }
+          - label: 多语言顶部公告
+            name: announcements
+            widget: object
+            fields:
+              - { label: 简体中文, name: zh-CN, widget: string }
+              - { label: 繁體中文, name: zh-TW, widget: string }
+              - { label: English, name: en, widget: string }
+              - { label: Bahasa Indonesia, name: id, widget: string }
+              - { label: ไทย, name: th, widget: string }
+              - { label: Tiếng Việt, name: vi, widget: string }
+              - { label: Bahasa Melayu, name: ms, widget: string }
+              - { label: Filipino, name: fil, widget: string }
+              - { label: ខ្មែរ, name: km, widget: string }
+              - { label: ລາວ, name: lo, widget: string }
+              - { label: မြန်မာ, name: my, widget: string }

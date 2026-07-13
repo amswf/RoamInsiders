@@ -1,13 +1,15 @@
-import { requireChatGPTUser, chatGPTSignOutPath } from "../chatgpt-auth";
-import { claimOrCheckAdmin } from "@/lib/admin";
-import { AdminDashboard } from "./AdminDashboard";
+import Script from "next/script";
 
-export const dynamic = "force-dynamic";
-export const metadata = { title: "运营后台" };
+export const metadata = {
+  title: "内容后台",
+  robots: { index: false, follow: false },
+};
 
-export default async function AdminPage() {
-  const user = await requireChatGPTUser("/admin");
-  const allowed = await claimOrCheckAdmin(user);
-  if (!allowed) return <main className="admin-denied"><h1>没有后台权限</h1><p>当前账号不在管理员列表中。</p></main>;
-  return <AdminDashboard userName={user.displayName} signOutUrl={chatGPTSignOutPath("/")} />;
+export default function ContentStudioPage() {
+  return (
+    <main className="cms-loading">
+      <div><span>ROAM / CONTENT STUDIO</span><h1>正在打开内容后台…</h1><p>后台通过 GitHub 读取和保存网站内容。</p></div>
+      <Script src="https://unpkg.com/@sveltia/cms@0.164.2/dist/sveltia-cms.js" strategy="afterInteractive" />
+    </main>
+  );
 }

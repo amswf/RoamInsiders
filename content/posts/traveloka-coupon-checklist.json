@@ -1,0 +1,30 @@
+{
+  "zh-CN": {
+    "slug": "traveloka-coupon-checklist", "title": "Traveloka 优惠券怎么选：付款前先检查这五件事", "excerpt": "地区、首单资格、产品范围、App 限制和有效期，往往比优惠数字本身更重要。",
+    "content": "01｜先确认地区\n同一个活动在不同国家和币种下可能有不同规则。先切换到实际付款地区。\n\n02｜分清新客与首单\n新账号不一定等于每个产品线都能使用首单优惠，按照活动页说明判断。\n\n03｜看清适用产品\n机票、酒店、接送和玩乐可能分别使用不同优惠。\n\n04｜确认 App 或网页限制\n有些活动只在 App 内显示，付款前再检查一次入口。\n\n05｜最后看有效期和支付方式\n把适用日期、最低消费和指定支付方式一起读完，再决定是否使用。",
+    "destination": "东南亚", "duration": "3分钟阅读", "budget": "以活动页为准", "season": "全年", "category": "省钱指南", "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "飞机机翼与云层", "status": "published", "featured": true,
+    "ctaPlatform": "traveloka", "ctaLabel": "查看 Traveloka 当前优惠", "ctaUrl": "", "couponCode": "按地区查看", "priceLabel": "活动规则可能变化", "updatedAt": "2026-07-12"
+  },
+  "zh-TW": {
+    "slug": "traveloka-coupon-checklist", "title": "Traveloka 優惠券怎麼選：付款前先檢查五件事", "excerpt": "地區、首單資格、產品範圍、App 限制與有效期，往往比折扣數字更重要。",
+    "content": "01｜先確認地區\n不同國家和幣別可能有不同規則。\n\n02｜分清新客與首單\n依活動頁說明判斷資格。\n\n03｜看清適用產品\n機票、飯店和玩樂可能分開使用。\n\n04｜確認 App 或網頁限制\n付款前再檢查入口。\n\n05｜最後看有效期和支付方式\n把最低消費與指定支付方式一起讀完。",
+    "destination": "東南亞", "duration": "3分鐘閱讀", "budget": "以活動頁為準", "season": "全年", "category": "省錢指南", "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "飛機機翼與雲層", "status": "published", "featured": true,
+    "ctaPlatform": "traveloka", "ctaLabel": "查看 Traveloka 目前優惠", "ctaUrl": "", "couponCode": "按地區查看", "priceLabel": "活動規則可能改變", "updatedAt": "2026-07-12"
+  },
+  "en": {
+    "slug": "traveloka-coupon-checklist", "title": "Choosing a Traveloka coupon: five checks before payment", "excerpt": "Market, first-booking eligibility, product scope, app restrictions and dates often matter more than the headline discount.",
+    "content": "01 | Confirm your market\nThe same campaign can have different rules across countries and currencies.\n\n02 | Separate new users from first bookings\nRead the campaign page to understand which product purchase qualifies.\n\n03 | Check the eligible product\nFlights, hotels, transfers and attractions may use separate promotions.\n\n04 | Confirm app or web restrictions\nSome offers only appear in the app.\n\n05 | Read the dates and payment rules\nCheck minimum spend and eligible payment methods together before using the offer.",
+    "destination": "Southeast Asia", "duration": "3 min read", "budget": "See campaign terms", "season": "Year-round", "category": "Saving guide", "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Aircraft wing above clouds", "status": "published", "featured": true,
+    "ctaPlatform": "traveloka", "ctaLabel": "See current Traveloka offers", "ctaUrl": "", "couponCode": "Check by market", "priceLabel": "Campaign rules may change", "updatedAt": "2026-07-12"
+  },
+  "id": {
+    "slug": "traveloka-coupon-checklist", "title": "Memilih kupon Traveloka: lima hal yang perlu dicek sebelum membayar", "excerpt": "Wilayah, kelayakan transaksi pertama, cakupan produk, batasan aplikasi, dan masa berlaku lebih penting daripada angka diskon.",
+    "content": "01 | Pastikan wilayah Anda\nAturan dapat berbeda menurut negara dan mata uang.\n\n02 | Bedakan pengguna baru dan transaksi pertama\nBaca halaman promo untuk memahami produk yang memenuhi syarat.\n\n03 | Cek produk yang berlaku\nPenerbangan, hotel, transfer, dan atraksi dapat memiliki promo terpisah.\n\n04 | Pastikan batasan aplikasi atau web\nBeberapa promo hanya tampil di aplikasi.\n\n05 | Baca tanggal dan metode pembayaran\nPeriksa minimum transaksi dan metode pembayaran sebelum menggunakan promo.",
+    "destination": "Asia Tenggara", "duration": "Baca 3 menit", "budget": "Lihat syarat promo", "season": "Sepanjang tahun", "category": "Panduan hemat", "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Sayap pesawat di atas awan", "status": "published", "featured": true,
+    "ctaPlatform": "traveloka", "ctaLabel": "Lihat promo Traveloka saat ini", "ctaUrl": "", "couponCode": "Cek menurut wilayah", "priceLabel": "Aturan promo dapat berubah", "updatedAt": "2026-07-12"
+  }
+}

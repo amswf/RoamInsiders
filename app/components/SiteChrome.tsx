@@ -1,25 +1,44 @@
-import Link from "next/link";
+"use client";
 
-export function SiteHeader({ tripUrl }: { tripUrl?: string }) {
+import Link from "next/link";
+import type { Locale } from "@/lib/content";
+import { copy, localeOptions, withLocale } from "@/lib/i18n";
+
+export function SiteHeader({ locale, onLocaleChange }: { locale: Locale; onLocaleChange: (locale: Locale) => void }) {
+  const t = copy[locale];
   return (
     <header className="site-header shell">
-      <Link className="brand" href="/" aria-label="Roam Insider 首页"><span>ROAM</span><span>INSIDER</span></Link>
-      <nav aria-label="主导航"><Link href="/guides">目的地</Link><Link href="/#plan">帮我选路线</Link><Link href="/about">关于我们</Link></nav>
-      <a className="trip-link" href={tripUrl || "https://www.trip.com/"} target="_blank" rel="noreferrer">前往 Trip <span>↗</span></a>
+      <Link className="brand" href={withLocale("/", locale)} aria-label="Roam Insider">
+        <span>ROAM</span><span>INSIDER</span>
+      </Link>
+      <nav aria-label="Primary navigation">
+        <Link href={withLocale("/", locale)}>{t.discover}</Link>
+        <Link href={withLocale("/?type=route", locale)}>{t.routes}</Link>
+        <Link href={withLocale("/?type=deal", locale)}>{t.deals}</Link>
+        <Link href={withLocale("/about", locale)}>{t.about}</Link>
+      </nav>
+      <div className="header-tools">
+        <label className="language-picker">
+          <span className="sr-only">{t.language}</span>
+          <select value={locale} onChange={(event) => onLocaleChange(event.target.value as Locale)} aria-label={t.language}>
+            {localeOptions.map((option) => <option key={option.code} value={option.code}>{option.label}</option>)}
+          </select>
+        </label>
+        <Link className="admin-link" href="/admin/">{t.admin}</Link>
+      </div>
     </header>
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ locale }: { locale: Locale }) {
+  const t = copy[locale];
   return (
     <footer className="site-footer">
-      <div className="shell footer-grid">
-        <div><div className="brand footer-brand"><span>ROAM</span><span>INSIDER</span></div><p>为下一次出发，提供少而准确的答案。</p></div>
-        <div><b>探索</b><Link href="/guides">全部路线</Link><Link href="/#plan">路线诊断</Link><Link href="/about">关于我们</Link></div>
-        <div><b>运营</b><Link href="/admin">内容后台</Link><a href="mailto:hello@roaminsider.com">联系我们</a></div>
-        <div className="footer-mark">去<br />远<br />一点<span>↗</span></div>
+      <div className="shell footer-top">
+        <div><div className="brand footer-brand"><span>ROAM</span><span>INSIDER</span></div><p>{t.footer}</p></div>
+        <div className="footer-index"><span>01</span><Link href={withLocale("/", locale)}>{t.discover}</Link><span>02</span><Link href={withLocale("/guides", locale)}>{t.exploreAll}</Link><span>03</span><Link href={withLocale("/about", locale)}>{t.about}</Link></div>
       </div>
-      <div className="shell copyright"><span>© 2026 ROAM INSIDER</span><span>Made for people who still look out of train windows.</span></div>
+      <div className="shell copyright"><span>© 2026 ROAM INSIDER</span><span>{t.editorial}</span></div>
     </footer>
   );
 }

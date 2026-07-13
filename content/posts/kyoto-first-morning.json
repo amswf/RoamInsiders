@@ -1,0 +1,30 @@
+{
+  "zh-CN": {
+    "slug": "kyoto-first-morning", "title": "第一次去京都：把最想看的地方放在清晨", "excerpt": "四天只选三个片区。早起看寺院，中午休息，傍晚再回到街上。",
+    "content": "Day 1｜只认识住处附近\n抵达后不横跨城市。找到便利店、咖啡店和一条愿意再走一次的小路。\n\nDay 2｜把最想看的寺院放在开门时\n清晨出发，中午回酒店。避开人流的最好方法，是减少同一天的目的地。\n\nDay 3｜只选一个方向\n沿着一个片区慢慢走，不把收藏夹全部兑现。\n\nDay 4｜回到最喜欢的地方\n最后半天不增加新景点，用熟悉感结束旅程。",
+    "destination": "京都", "duration": "4天3夜", "budget": "实时价", "season": "四季", "category": "城市初见", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "京都传统街道和木屋", "status": "published", "featured": true,
+    "ctaPlatform": "trip", "ctaLabel": "在 Trip.com 查看京都选择", "ctaUrl": "", "couponCode": "", "priceLabel": "机票与酒店实时选择", "updatedAt": "2026-07-11"
+  },
+  "zh-TW": {
+    "slug": "kyoto-first-morning", "title": "第一次去京都：把最想看的地方留給清晨", "excerpt": "四天只選三個區域。早起看寺院，中午休息，傍晚再回到街上。",
+    "content": "Day 1｜只認識住處附近\n抵達後不橫跨城市。\n\nDay 2｜把最想看的寺院放在開門時\n清晨出發，中午回飯店。\n\nDay 3｜只選一個方向\n沿著一個區域慢慢走。\n\nDay 4｜回到最喜歡的地方\n最後半天不增加新景點。",
+    "destination": "京都", "duration": "4天3夜", "budget": "即時價格", "season": "四季", "category": "城市初見", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "京都傳統街道和木屋", "status": "published", "featured": true,
+    "ctaPlatform": "trip", "ctaLabel": "在 Trip.com 查看京都選擇", "ctaUrl": "", "couponCode": "", "priceLabel": "機票與飯店即時選擇", "updatedAt": "2026-07-11"
+  },
+  "en": {
+    "slug": "kyoto-first-morning", "title": "First time in Kyoto: save the place you want most for early morning", "excerpt": "Four days, three neighbourhoods. Temples early, a midday reset, then the streets again at dusk.",
+    "content": "Day 1 | Learn the area around your stay\nDo not cross the city after arrival. Find coffee, a convenience store and one lane worth returning to.\n\nDay 2 | Visit your most wanted temple at opening\nStart early and return to the hotel at noon. The best crowd strategy is fewer destinations.\n\nDay 3 | Choose one direction\nWalk one neighbourhood slowly instead of clearing a saved list.\n\nDay 4 | Return to your favourite place\nAdd nothing new on the last half-day and leave with a little familiarity.",
+    "destination": "Kyoto", "duration": "4 days / 3 nights", "budget": "Live prices", "season": "Year-round", "category": "First city visit", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Traditional wooden street in Kyoto", "status": "published", "featured": true,
+    "ctaPlatform": "trip", "ctaLabel": "See Kyoto options on Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "Live flight and hotel options", "updatedAt": "2026-07-11"
+  },
+  "id": {
+    "slug": "kyoto-first-morning", "title": "Pertama kali ke Kyoto: simpan tempat terpenting untuk pagi hari", "excerpt": "Empat hari, tiga kawasan. Kuil saat pagi, istirahat siang, lalu kembali berjalan saat senja.",
+    "content": "Hari 1 | Kenali area penginapan\nJangan langsung melintasi kota setelah tiba.\n\nHari 2 | Datangi kuil utama saat buka\nMulai pagi dan kembali ke hotel saat siang.\n\nHari 3 | Pilih satu arah\nJelajahi satu kawasan dengan perlahan.\n\nHari 4 | Kembali ke tempat favorit\nJangan tambahkan tempat baru di setengah hari terakhir.",
+    "destination": "Kyoto", "duration": "4 hari / 3 malam", "budget": "Harga terkini", "season": "Sepanjang tahun", "category": "Kunjungan pertama", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Jalan kayu tradisional di Kyoto", "status": "published", "featured": true,
+    "ctaPlatform": "trip", "ctaLabel": "Lihat pilihan Kyoto di Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "Pilihan penerbangan dan hotel terkini", "updatedAt": "2026-07-11"
+  }
+}

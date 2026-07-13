@@ -1,0 +1,16 @@
+{
+  "zh-CN": {
+    "slug": "chiang-mai-slow-city", "title": "清迈四天：每天一个重点，剩下的交给咖啡和树影", "excerpt": "老城、手作、山里和空白下午，不用把每座寺庙都变成待办。",
+    "content": "Day 1｜住在老城边缘\n选择步行方便但不正对最热闹街道的位置。\n\nDay 2｜寺庙与一段长午休\n上午只看一座寺庙，最热的时候回去休息。\n\nDay 3｜做一件能带走的东西\n参加一次手作，或去一间真正喜欢的工作室。\n\nDay 4｜去山里换空气\n只选一个城外方向，减少沿途停靠点。",
+    "destination": "清迈", "duration": "4天3夜", "budget": "实时价", "season": "11月—2月", "category": "慢城市", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1800&q=85", "imageAlt": "清迈寺庙与山景", "status": "published", "featured": false,
+    "ctaPlatform": "traveloka", "ctaLabel": "在 Traveloka 查看清迈选择", "ctaUrl": "", "couponCode": "", "priceLabel": "查看机票与住宿", "updatedAt": "2026-07-09"
+  },
+  "en": {
+    "slug": "chiang-mai-slow-city", "title": "Four days in Chiang Mai: one focus a day, then coffee and shade", "excerpt": "Old city, craft, the hills and an empty afternoon—without turning every temple into a task.",
+    "content": "Day 1 | Stay at the old-city edge\nChoose somewhere walkable without facing the busiest street.\n\nDay 2 | One temple and a long midday break\nVisit in the morning and rest through the heat.\n\nDay 3 | Make something you can carry home\nJoin one craft session or visit a studio you genuinely like.\n\nDay 4 | Change the air in the hills\nChoose one direction outside town and reduce the stops.",
+    "destination": "Chiang Mai", "duration": "4 days / 3 nights", "budget": "Live prices", "season": "November—February", "category": "Slow city", "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Temple and hills in Chiang Mai", "status": "published", "featured": false,
+    "ctaPlatform": "traveloka", "ctaLabel": "See Chiang Mai options on Traveloka", "ctaUrl": "", "couponCode": "", "priceLabel": "See flights and stays", "updatedAt": "2026-07-09"
+  }
+}

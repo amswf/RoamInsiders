@@ -1,0 +1,16 @@
+{
+  "zh-CN": {
+    "slug": "booking-before-paying", "title": "在 Trip.com 或 Traveloka 付款前，最后核对这六项", "excerpt": "同一间房、同一班飞机，真正影响总价的往往藏在退改、行李、税费和支付币种里。",
+    "content": "01｜确认最终币种\n比较价格时统一币种，并留意银行卡的外币转换费用。\n\n02｜把税费算进总价\n不要只比较列表页的第一行数字。\n\n03｜看清行李额度\n廉价航空的托运行李可能需要单独购买。\n\n04｜逐字读取消政策\n同一家酒店的不同房型可能使用不同规则。\n\n05｜确认姓名格式\n机票姓名应与旅行证件一致。\n\n06｜保存订单与客服入口\n付款成功后，下载确认单并记住订单编号。",
+    "destination": "预订之前", "duration": "4分钟阅读", "budget": "避免隐藏成本", "season": "每次预订", "category": "预订指南", "contentType": "guide",
+    "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85", "imageAlt": "旅行者在机场查看出行信息", "status": "published", "featured": false,
+    "ctaPlatform": "custom", "ctaLabel": "回到内容流继续比较", "ctaUrl": "https://www.trip.com/", "couponCode": "", "priceLabel": "付款前检查清单", "updatedAt": "2026-07-08"
+  },
+  "en": {
+    "slug": "booking-before-paying", "title": "Six final checks before paying on Trip.com or Traveloka", "excerpt": "For the same room or flight, the real total often hides in changes, baggage, taxes and payment currency.",
+    "content": "01 | Confirm the final currency\nCompare in one currency and include your card's conversion fees.\n\n02 | Put taxes in the total\nDo not compare only the first number on a results page.\n\n03 | Read the baggage allowance\nChecked bags may be a separate purchase.\n\n04 | Read the cancellation rule word by word\nRoom types at one hotel can have different terms.\n\n05 | Confirm the passenger-name format\nFlight names should match the travel document.\n\n06 | Save the order and support path\nDownload the confirmation and keep the booking number.",
+    "destination": "Before booking", "duration": "4 min read", "budget": "Avoid hidden costs", "season": "Every booking", "category": "Booking guide", "contentType": "guide",
+    "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Traveller checking information at an airport", "status": "published", "featured": false,
+    "ctaPlatform": "custom", "ctaLabel": "Return to the feed and compare", "ctaUrl": "https://www.trip.com/", "couponCode": "", "priceLabel": "Pre-payment checklist", "updatedAt": "2026-07-08"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "zh-CN": {
+    "slug": "singapore-weekend-stays", "title": "新加坡周末住哪里：按预算选片区，而不是只看星级", "excerpt": "第一次去选市中心效率，想吃得方便看加东，预算紧张则先看交通而不是距离。",
+    "content": "市中心｜把时间花在步行上\n适合第一次到访、行程很短的人。价格通常更高，但可以减少换乘和往返。\n\n加东｜把早餐和夜宵放在附近\n适合喜欢社区感和本地餐饮的人，预订前确认到地铁站的步行距离。\n\n城市边缘｜先看线路再看公里数\n预算更敏感时，靠近一条直接地铁线往往比地图上的直线距离更重要。\n\n预订前的最后检查\n确认房型是否含窗、税费是否已计入，以及取消政策的截止时间。",
+    "destination": "新加坡", "duration": "周末", "budget": "三种预算", "season": "全年", "category": "住宿选择", "contentType": "deal",
+    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1800&q=85", "imageAlt": "新加坡滨海湾城市天际线", "status": "published", "featured": false,
+    "ctaPlatform": "trip", "ctaLabel": "在 Trip.com 比较新加坡酒店", "ctaUrl": "", "couponCode": "", "priceLabel": "查看实时房价", "updatedAt": "2026-07-10"
+  },
+  "en": {
+    "slug": "singapore-weekend-stays", "title": "Where to stay for a Singapore weekend: choose the district before the star rating", "excerpt": "Central for first-time efficiency, Katong for food, or a direct MRT line when the budget matters most.",
+    "content": "Central | Spend less time in transit\nUseful for a first, short visit. Rates are often higher, but walking can replace several rides.\n\nKatong | Keep breakfast and supper nearby\nGood for neighbourhood character and local food; verify the actual walk to the MRT.\n\nCity edge | Read the line before the distance\nA direct train often matters more than the map's straight-line distance.\n\nLast check before booking\nConfirm windows, taxes and the cancellation deadline for the exact room type.",
+    "destination": "Singapore", "duration": "A weekend", "budget": "Three budgets", "season": "Year-round", "category": "Stay guide", "contentType": "deal",
+    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Singapore Marina Bay skyline", "status": "published", "featured": false,
+    "ctaPlatform": "trip", "ctaLabel": "Compare Singapore stays on Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "See live room rates", "updatedAt": "2026-07-10"
+  },
+  "id": {
+    "slug": "singapore-weekend-stays", "title": "Menginap untuk akhir pekan di Singapura: pilih kawasan sebelum bintang hotel", "excerpt": "Pusat kota untuk kunjungan pertama, Katong untuk kuliner, atau jalur MRT langsung saat anggaran utama.",
+    "content": "Pusat kota | Kurangi waktu transit\nCocok untuk kunjungan pertama yang singkat.\n\nKatong | Sarapan dan makan malam dekat penginapan\nPeriksa jarak berjalan kaki sebenarnya ke MRT.\n\nPinggir kota | Lihat jalur sebelum jarak\nKereta langsung sering lebih penting daripada jarak di peta.\n\nPemeriksaan terakhir\nPastikan jendela, pajak, dan tenggat pembatalan untuk tipe kamar yang dipilih.",
+    "destination": "Singapura", "duration": "Akhir pekan", "budget": "Tiga anggaran", "season": "Sepanjang tahun", "category": "Panduan hotel", "contentType": "deal",
+    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Cakrawala Marina Bay Singapura", "status": "published", "featured": false,
+    "ctaPlatform": "trip", "ctaLabel": "Bandingkan hotel Singapura di Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "Lihat harga kamar terkini", "updatedAt": "2026-07-10"
+  }
+}
