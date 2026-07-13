@@ -35,7 +35,7 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
           <Link className="back-link" href={withLocale("/", locale)}>← {t.back}</Link>
           <div className="story-hero-grid">
             <div className="story-heading"><div className="story-kicker"><span>{contentTypeLabel(locale, localized.contentType)}</span><span>{localized.category}</span><span>{localized.updatedAt}</span></div><h1>{localized.title}</h1><p>{localized.excerpt}</p>{localized.resolvedLocale !== locale ? <div className="translation-note">{t.fallback}</div> : null}</div>
-            <div className="story-photo" role="img" aria-label={localized.imageAlt} style={localized.imageUrl ? { backgroundImage: `url("${localized.imageUrl}")` } : undefined}><span>{localized.destination}</span><b>ROAM / {localized.contentType.toUpperCase()}</b></div>
+            <div className="story-photo" role="img" aria-label={localized.imageAlt} style={localized.imageUrl ? { backgroundImage: `url("${localized.imageUrl}")` } : undefined}><span>{localized.destination}</span><b>TRAVELGO / {localized.contentType.toUpperCase()}</b></div>
           </div>
         </header>
         <section className="fact-strip shell">
@@ -45,7 +45,7 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
           <div><small>{t.bookingVia}</small><strong>{platform}</strong></div>
         </section>
         <div className="story-layout shell">
-          <aside className="story-index"><span>ROAM NOTE</span><b>{localized.destination}</b><p>{localized.priceLabel}</p></aside>
+          <aside className="story-index"><span>TRAVELGO NOTE</span><b>{localized.destination}</b><p>{localized.priceLabel}</p></aside>
           <div className="story-body">{paragraphs(localized.content)}{localized.contentType === "coupon" ? <div className="coupon-box"><span>{t.couponCode}</span><strong>{localized.couponCode || t.terms}</strong><a href={ctaUrl} target="_blank" rel="noopener noreferrer">{t.terms} ↗</a></div> : null}<p className="disclosure">{t.disclosure}</p></div>
         </div>
       </article>

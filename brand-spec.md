@@ -1,11 +1,11 @@
-# Roam Insider · Brand Spec
+# TravelGoGuide · Brand Spec
 
 > Updated: 2026-07-13
 > Direction: independent editorial travel publication
 
 ## Identity
 
-- Wordmark: typographic `ROAM / INSIDER`; no third-party logo is reproduced.
+- Wordmark: typographic `TRAVELGO / GUIDE`; no third-party logo is reproduced.
 - Voice: concise, practical, optimistic, locally aware.
 - Signature detail: a slim orange route line and numbered editorial issue marks.
 

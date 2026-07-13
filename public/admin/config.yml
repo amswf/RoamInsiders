@@ -9,7 +9,7 @@ backend:
     delete: '内容后台：删除 {{collection}}「{{slug}}」'
 
 locale: zh_Hans
-logo_url: /favicon.png
+logo_url: /favicon.svg
 publish_mode: simple
 media_folder: public/uploads
 public_folder: /uploads

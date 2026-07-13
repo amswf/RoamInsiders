@@ -22,10 +22,10 @@ function getServerFilterSnapshot(): Filter {
 
 function subscribeFilter(callback: () => void) {
   window.addEventListener("popstate", callback);
-  window.addEventListener("roam:filter", callback);
+  window.addEventListener("travelgoguide:filter", callback);
   return () => {
     window.removeEventListener("popstate", callback);
-    window.removeEventListener("roam:filter", callback);
+    window.removeEventListener("travelgoguide:filter", callback);
   };
 }
 
@@ -42,7 +42,7 @@ export function HomeExperience({ posts, settings }: { posts: GuidePost[]; settin
     const url = new URL(window.location.href);
     if (next === "all") url.searchParams.delete("type"); else url.searchParams.set("type", next);
     window.history.replaceState({}, "", url);
-    window.dispatchEvent(new Event("roam:filter"));
+    window.dispatchEvent(new Event("travelgoguide:filter"));
   }
 
   return (
@@ -51,7 +51,7 @@ export function HomeExperience({ posts, settings }: { posts: GuidePost[]; settin
       <SiteHeader locale={locale} onLocaleChange={changeLocale} />
       <section className="feed-intro shell">
         <div><span className="eyebrow">{t.feedEyebrow}</span><h1>{t.feedTitle}</h1></div>
-        <div className="feed-intro-note"><p>{t.feedIntro}</p><Link href={withLocale("/about", locale)}>ROAM INSIDER <span>↗</span></Link></div>
+        <div className="feed-intro-note"><p>{t.feedIntro}</p><Link href={withLocale("/about", locale)}>TRAVELGOGUIDE <span>↗</span></Link></div>
       </section>
       <section className="filter-rail shell" aria-label="Content filters">
         <span className="filter-label">INDEX / 01—05</span>

@@ -5,10 +5,10 @@ import { normalizeLocale, type Locale } from "@/lib/content";
 
 function subscribeLocale(callback: () => void) {
   window.addEventListener("popstate", callback);
-  window.addEventListener("roam:locale", callback);
+  window.addEventListener("travelgoguide:locale", callback);
   return () => {
     window.removeEventListener("popstate", callback);
-    window.removeEventListener("roam:locale", callback);
+    window.removeEventListener("travelgoguide:locale", callback);
   };
 }
 
@@ -32,7 +32,7 @@ export function useLocale() {
     url.searchParams.set("lang", next);
     window.history.replaceState({}, "", url);
     document.documentElement.lang = next;
-    window.dispatchEvent(new Event("roam:locale"));
+    window.dispatchEvent(new Event("travelgoguide:locale"));
   }, []);
 
   return [locale, changeLocale] as const;

@@ -14,7 +14,7 @@
 
 3. 打开 GitHub 仓库的 `Settings → Pages`。
 4. 在 `Build and deployment` 的 `Source` 中选择 `GitHub Actions`。
-5. 打开仓库的 `Actions` 页面，等待 `Deploy Roam Insider to GitHub Pages` 完成。
+5. 打开仓库的 `Actions` 页面，等待 `Deploy TravelGoGuide to GitHub Pages` 完成。
 6. 自定义域名启用后，部署地址是 `https://travelgoguide.com/`。
 
 如果仓库名是 `你的用户名.github.io`，网站会直接发布在根域名。

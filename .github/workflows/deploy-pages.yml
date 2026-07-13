@@ -1,4 +1,4 @@
-name: Deploy Roam Insider to GitHub Pages
+name: Deploy TravelGoGuide to GitHub Pages
 
 on:
   push:
