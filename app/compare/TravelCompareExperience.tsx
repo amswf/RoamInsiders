@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
 import { useLocale } from "@/app/components/useLocale";
 import type { Locale } from "@/lib/content";
@@ -152,6 +153,12 @@ function Icon({ name, size = 22 }: { name: string; size?: number }) {
   return <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{paths[name]}</svg>;
 }
 
+function TripResourceHints() {
+  prefetchDNS("https://www.trip.com");
+  preconnect("https://www.trip.com");
+  return null;
+}
+
 function FieldButton({ label, value, icon, onClick, trailing = "chevron", wide }: { label: string; value: string; icon: string; onClick: () => void; trailing?: "chevron" | "close" | "none"; wide?: boolean }) {
   return (
     <div className={`${styles.fieldGroup} ${wide ? styles.wideField : ""}`}>
@@ -259,7 +266,6 @@ export function TravelCompareExperience() {
   const [airports, setAirports] = useState<City[]>([]);
   const [airportLoading, setAirportLoading] = useState(true);
   const [locationStatus, setLocationStatus] = useState<LocationStatus>("idle");
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [subId, setSubId] = useState("");
   const explicitOrigin = useRef(false);
@@ -440,8 +446,7 @@ export function TravelCompareExperience() {
       return;
     }
     setError("");
-    setLoading(true);
-    window.setTimeout(() => window.location.assign(buildTripUrl()), 120);
+    window.location.assign(buildTripUrl());
   }
 
   const locationSheetOpen = sheet === "destination" || sheet === "origin" || sheet === "flightDestination";
@@ -454,6 +459,7 @@ export function TravelCompareExperience() {
 
   return (
     <main className={styles.page}>
+      <TripResourceHints />
       <header className={styles.header}>
         <Link className={styles.brand} href={withLocale("/", locale)} aria-label="TravelGoGuide home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -500,9 +506,9 @@ export function TravelCompareExperience() {
               <FieldButton label={product === "hotels" ? t.checkOut : t.returnDate} value={shortDate(endDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
               {product === "hotels" && <FieldButton wide label={t.guestsRooms} value={`${adults} ${adults === 1 ? t.adult : t.adults} · ${rooms} ${rooms === 1 ? t.room : t.rooms}`} icon="user" onClick={() => setSheet("guests")} />}
               {error && <p className={styles.formError} role="alert">{error}</p>}
-              <button className={styles.compareButton} type="submit" disabled={loading}>
-                {loading ? <span className={styles.spinner} /> : <Icon name="search" size={25} />}
-                <span>{loading ? t.findingDeals : t.comparePrices}</span>
+              <button className={styles.compareButton} type="submit">
+                <Icon name="search" size={25} />
+                <span>{t.comparePrices}</span>
               </button>
               <div className={styles.microTrust}>
                 <span><Icon name="check" size={17} />{t.noBookingFees}</span><i />

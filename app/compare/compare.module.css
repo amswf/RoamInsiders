@@ -103,9 +103,6 @@
 
 .compareButton { grid-column: 1 / -1; min-height: 68px; margin-top: 2px; border: 0; border-radius: 13px; background: var(--compare-blue); box-shadow: 0 13px 28px rgba(9, 105, 246, .24); color: #fff; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 18px; font-weight: 800; cursor: pointer; transition: transform .16s ease, background .16s ease; }
 .compareButton:hover { background: var(--compare-blue-dark); transform: translateY(-1px); }
-.compareButton:disabled { cursor: wait; opacity: .86; transform: none; }
-.spinner { width: 23px; height: 23px; border: 2px solid rgba(255,255,255,.38); border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
 
 .microTrust { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: 12px; color: #68768b; font-size: 10px; }
 .microTrust span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
@@ -282,8 +279,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sheet,
-  .spinner { animation: none; }
+  .sheet { animation: none; }
   .compareButton,
   .fieldButton { transition: none; }
 }
