@@ -86,6 +86,10 @@ function shortDate(date: Date, locale: Locale) {
   return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(date);
 }
 
+function compactDate(date: Date, locale: Locale) {
+  return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric" }).format(date);
+}
+
 function sameDay(a: Date | null, b: Date | null) {
   return Boolean(a && b && isoDate(a) === isoDate(b));
 }
@@ -207,9 +211,9 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
         <button className={styles.iconButton} type="button" onClick={onCancel} aria-label={t.cancel}><Icon name="close" /></button>
       </div>
       <div className={styles.dateSummary}>
-        <div className={draftStart && !draftEnd ? styles.activeSummary : ""}><span>{startLabel}</span><strong>{draftStart ? shortDate(draftStart, locale) : t.select}</strong></div>
+        <div className={draftStart && !draftEnd ? styles.activeSummary : ""}><span>{startLabel}</span><strong>{draftStart ? compactDate(draftStart, locale) : t.select}</strong></div>
         <Icon name="arrow" size={18} />
-        <div className={draftStart && !draftEnd ? styles.activeSummary : ""}><span>{endLabel}</span><strong>{draftEnd ? shortDate(draftEnd, locale) : t.select}</strong></div>
+        <div className={draftStart && !draftEnd ? styles.activeSummary : ""}><span>{endLabel}</span><strong>{draftEnd ? compactDate(draftEnd, locale) : t.select}</strong></div>
       </div>
       <div className={styles.calendarNav}>
         <button type="button" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))} disabled={monthIsCurrent} aria-label="Previous month">←</button>
