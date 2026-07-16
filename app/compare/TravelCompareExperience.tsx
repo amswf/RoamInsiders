@@ -4,12 +4,19 @@ import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
 import { useLocale } from "@/app/components/useLocale";
+import {
+  buildClickTrackingUrl,
+  DEFAULT_COMPARE_ATTRIBUTION,
+  parseCompareAttribution,
+  tripAttributionParams,
+  type CompareProduct,
+} from "@/lib/compare-attribution";
 import type { Locale } from "@/lib/content";
 import { compareCopy, compareLocaleLabels, compareLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
 import { localeOptions, withLocale } from "@/lib/i18n";
 import styles from "./compare.module.css";
 
-type Product = "hotels" | "flights";
+type Product = CompareProduct;
 type Sheet = "destination" | "origin" | "flightDestination" | "dates" | "guests" | "menu" | null;
 type LocationStatus = "idle" | "detecting" | "approximate" | "precise" | "failed";
 
@@ -40,7 +47,6 @@ const CITIES: City[] = [
   { name: "Kuala Lumpur", detail: "Kuala Lumpur, Malaysia", country: "Malaysia", iata: "KUL", tripCityId: 315 },
 ];
 
-const AFFILIATE = { allianceid: "6184613", SID: "246187838", trip_sub3: "D18651047" };
 let airportRequest: Promise<City[]> | null = null;
 
 function loadAirportCities() {
@@ -153,9 +159,11 @@ function Icon({ name, size = 22 }: { name: string; size?: number }) {
   return <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{paths[name]}</svg>;
 }
 
-function TripResourceHints() {
+function OutboundResourceHints() {
   prefetchDNS("https://www.trip.com");
   preconnect("https://www.trip.com");
+  prefetchDNS("https://insg.jiatoutrade.com");
+  preconnect("https://insg.jiatoutrade.com");
   return null;
 }
 
@@ -267,7 +275,7 @@ export function TravelCompareExperience() {
   const [airportLoading, setAirportLoading] = useState(true);
   const [locationStatus, setLocationStatus] = useState<LocationStatus>("idle");
   const [error, setError] = useState("");
-  const [subId, setSubId] = useState("");
+  const [attribution, setAttribution] = useState(DEFAULT_COMPARE_ATTRIBUTION);
   const explicitOrigin = useRef(false);
   const requestedOriginCode = useRef("");
   const attemptedApproximateLocation = useRef(false);
@@ -291,7 +299,7 @@ export function TravelCompareExperience() {
       if (toCity) setFlightDestination(toCity);
       else if (toValue && /^[a-z]{3}$/i.test(toValue)) setFlightDestination({ name: toValue.toUpperCase(), detail: toValue.toUpperCase(), country: "", iata: toValue.toUpperCase(), tripCityId: 0 });
       if ((params.get("type") || params.get("product")) === "flights") setProduct("flights");
-      setSubId(params.get("trip_sub1") || params.get("gclid") || params.get("utm_campaign") || "");
+      setAttribution(parseCompareAttribution(window.location.search));
     }, 0);
     return () => window.clearTimeout(initialize);
   }, []);
@@ -402,7 +410,7 @@ export function TravelCompareExperience() {
   }
 
   function buildTripUrl() {
-    const attribution = { ...AFFILIATE, ...(subId ? { trip_sub1: subId } : {}) };
+    const tripAttribution = tripAttributionParams(attribution);
     if (product === "hotels") {
       const params = new URLSearchParams({
         destName: destination.name,
@@ -414,7 +422,7 @@ export function TravelCompareExperience() {
         flexType: "1",
         searchType: "CT",
         old: "1",
-        ...attribution,
+        ...tripAttribution,
       });
       if (destination.tripCityId) {
         params.set("city", String(destination.tripCityId));
@@ -434,9 +442,19 @@ export function TravelCompareExperience() {
       ddate: isoDate(startDate),
       rdate: isoDate(endDate),
       curr: "USD",
-      ...attribution,
+      ...tripAttribution,
     });
     return `https://www.trip.com/flights/showfarefirst?${params.toString()}`;
+  }
+
+  function trackComparisonClick() {
+    void fetch(buildClickTrackingUrl(product, attribution), {
+      method: "GET",
+      mode: "no-cors",
+      credentials: "omit",
+      cache: "no-store",
+      keepalive: true,
+    }).catch(() => undefined);
   }
 
   function submitSearch(event: FormEvent) {
@@ -446,6 +464,7 @@ export function TravelCompareExperience() {
       return;
     }
     setError("");
+    trackComparisonClick();
     window.location.assign(buildTripUrl());
   }
 
@@ -459,7 +478,7 @@ export function TravelCompareExperience() {
 
   return (
     <main className={styles.page}>
-      <TripResourceHints />
+      <OutboundResourceHints />
       <header className={styles.header}>
         <Link className={styles.brand} href={withLocale("/", locale)} aria-label="TravelGoGuide home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
