@@ -100,6 +100,8 @@ const en: CompareCopy = {
   afterStart: "Check-out or return must be after your start date.",
 };
 
+export const compareEnCopy = en;
+
 export const compareCopy: Record<Locale, CompareCopy> = {
   en,
   "zh-CN": {
@@ -247,6 +249,8 @@ const enLocation: CompareLocationCopy = {
   globalDestination: "Global hotel destination",
   airportCoverage: "4,170 scheduled-service airports",
 };
+
+export const compareEnLocationCopy = enLocation;
 
 export const compareLocationCopy: Record<Locale, CompareLocationCopy> = {
   en: enLocation,

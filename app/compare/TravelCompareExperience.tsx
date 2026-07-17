@@ -11,7 +11,7 @@ import {
   type CompareProduct,
 } from "@/lib/compare-attribution";
 import type { Locale } from "@/lib/content";
-import { compareCopy, compareLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
+import { compareEnCopy, compareEnLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
 import styles from "./compare.module.css";
 
 type Product = CompareProduct;
@@ -45,24 +45,21 @@ const CITIES: City[] = [
   { name: "Kuala Lumpur", detail: "Kuala Lumpur, Malaysia", country: "Malaysia", iata: "KUL", tripCityId: 315 },
 ];
 
-const CURRENT_HERO_IMAGE = "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1600&q=88";
-
 const HERO_SLIDES = [
   {
     id: "hotels",
-    eyebrow: "HOTEL DEALS",
-    title: "Curated hotel offers",
-    offer: "Save up to 15%",
-    subtitle: "Discover handpicked stays for city breaks, beach escapes, and more.",
-    image: CURRENT_HERO_IMAGE,
+    label: "HOTELS",
+    title: "BRAND HOTEL OFFERS",
+    offer: "UP TO 15% OFF",
+    desktopImage: "/images/compare/hotel-desktop.webp",
+    mobileImage: "/images/compare/hotel-mobile.webp",
   },
   {
     id: "flights",
-    eyebrow: "FLIGHT OFFERS",
-    title: "Fly once. Enjoy twice.",
-    offer: "More value for every journey",
-    subtitle: "Search flexible flight options and plan your next trip with confidence.",
-    image: CURRENT_HERO_IMAGE,
+    label: "FLIGHTS",
+    title: "Don't miss out on the biggest price drops during the 30 days!",
+    desktopImage: "/images/compare/flight-desktop.webp",
+    mobileImage: "/images/compare/flight-mobile.webp",
   },
 ] as const;
 
@@ -309,8 +306,8 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
 
 export function TravelCompareExperience() {
   const locale: Locale = "en";
-  const t = compareCopy[locale];
-  const locationCopy = compareLocationCopy[locale];
+  const t = compareEnCopy;
+  const locationCopy = compareEnLocationCopy;
   const defaultStart = useMemo(() => addDays(new Date(), 14), []);
   const defaultEnd = useMemo(() => addDays(new Date(), 16), []);
   const [product, setProduct] = useState<Product>("hotels");
@@ -553,18 +550,21 @@ export function TravelCompareExperience() {
         <div className={styles.heroTint} />
         <div className={styles.heroInner}>
           <section className={styles.focusCarousel} aria-label="Featured hotel and flight offers" aria-roledescription="carousel">
-            <div className={styles.focusBackdrop} key={`image-${activeHero.id}`} style={{ backgroundImage: `url(${activeHero.image})` }} />
+            <picture className={styles.focusBackdrop} key={`image-${activeHero.id}`}>
+              <source media="(max-width: 900px)" srcSet={activeHero.mobileImage} />
+              {/* Pre-compressed campaign artwork is intentionally served without runtime optimization. */}
+              <img src={activeHero.desktopImage} alt="" width="900" height="1250" fetchPriority={activeHero.id === "hotels" ? "high" : "auto"} />
+            </picture>
             <div className={styles.focusShade} />
             <div className={styles.focusCopy} key={activeHero.id}>
-              <span>{activeHero.eyebrow}</span>
-              <h1>{activeHero.title}</h1>
-              <strong>{activeHero.offer}</strong>
-              <p>{activeHero.subtitle}</p>
+              <span>{activeHero.label}</span>
+              <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHero.title}</h1>
+              {"offer" in activeHero && <strong>{activeHero.offer}</strong>}
             </div>
             <div className={styles.carouselControls}>
               <div className={styles.carouselDots}>
                 {HERO_SLIDES.map((slide, index) => (
-                  <button key={slide.id} type="button" className={index === heroSlide ? styles.activeDot : ""} onClick={() => setHeroSlide(index)} aria-label={`Show ${slide.eyebrow.toLowerCase()}`} aria-current={index === heroSlide ? "true" : undefined} />
+                  <button key={slide.id} type="button" className={index === heroSlide ? styles.activeDot : ""} onClick={() => setHeroSlide(index)} aria-label={`Show ${slide.label.toLowerCase()} offer`} aria-current={index === heroSlide ? "true" : undefined} />
                 ))}
               </div>
               <button className={styles.carouselPause} type="button" onClick={() => setCarouselPaused((paused) => !paused)} aria-label={carouselPaused ? "Resume carousel" : "Pause carousel"}>
