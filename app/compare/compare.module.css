@@ -59,7 +59,7 @@
 }
 
 .focusCarousel { min-height: 500px; position: relative; overflow: hidden; border-radius: 28px; background: #11345e; box-shadow: 0 26px 64px rgba(8, 34, 77, .2); isolation: isolate; }
-.focusBackdrop { position: absolute; inset: 0; z-index: -2; display: block; animation: focusImageIn .65s ease both; }
+.focusBackdrop { position: absolute; inset: 0; z-index: -2; display: block; }
 .focusBackdrop img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
 .focusShade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3, 22, 50, .08) 5%, rgba(3, 19, 46, .38) 48%, rgba(3, 17, 42, .9) 100%); }
 .focusCopy { position: absolute; left: 0; right: 0; bottom: 67px; padding: 0 30px; color: #fff; animation: focusCopyIn .45s ease both; }
@@ -73,7 +73,6 @@
 .carouselDots .activeDot { width: 36px; background: #fff; }
 .carouselPause { width: 34px; height: 34px; padding: 0; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(3,20,47,.28); color: #fff; cursor: pointer; }
 .carouselPause:hover { background: rgba(3,20,47,.55); }
-@keyframes focusImageIn { from { opacity: .5; transform: scale(1.035); } to { opacity: 1; transform: scale(1); } }
 @keyframes focusCopyIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
 .searchCard {

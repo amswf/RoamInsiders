@@ -365,8 +365,15 @@ export function TravelCompareExperience() {
 
   useEffect(() => {
     if (carouselPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const interval = window.setInterval(() => setHeroSlide((current) => (current + 1) % HERO_SLIDES.length), 3000);
-    return () => window.clearInterval(interval);
+    let interval = 0;
+    const start = window.setTimeout(() => {
+      setHeroSlide((current) => (current + 1) % HERO_SLIDES.length);
+      interval = window.setInterval(() => setHeroSlide((current) => (current + 1) % HERO_SLIDES.length), 3000);
+    }, 6000);
+    return () => {
+      window.clearTimeout(start);
+      window.clearInterval(interval);
+    };
   }, [carouselPaused]);
 
   useEffect(() => {
@@ -396,17 +403,6 @@ export function TravelCompareExperience() {
   }, []);
 
   useEffect(() => {
-    let active = true;
-    loadAirportCities()
-      .then((loaded) => {
-        if (!active) return;
-        setAirports(loaded);
-      })
-      .catch(() => undefined);
-    return () => { active = false; };
-  }, []);
-
-  useEffect(() => {
     if (!sheet) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -419,6 +415,11 @@ export function TravelCompareExperience() {
   const destinationSuggestions = useMemo(() => locationSuggestions(destinationInput, locations, "hotels"), [destinationInput, locations]);
   const originSuggestions = useMemo(() => locationSuggestions(originInput, locations, "flights"), [originInput, locations]);
   const arrivalSuggestions = useMemo(() => locationSuggestions(flightDestinationInput, locations, "flights"), [flightDestinationInput, locations]);
+
+  function ensureAirportData() {
+    if (airports.length > 0) return;
+    loadAirportCities().then(setAirports).catch(() => undefined);
+  }
 
   function buildTripUrl() {
     const tripAttribution = tripAttributionParams(attribution);
@@ -535,11 +536,11 @@ export function TravelCompareExperience() {
 
             <div className={styles.formBody}>
               {product === "hotels" ? (
-                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onInitialFocus={() => { if (destinationIsDefault) { setDestinationInput(""); setDestinationIsDefault(false); setError(""); } }} onChange={(value) => { setDestinationInput(value); setDestinationIsDefault(false); setError(""); }} />
+                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onInitialFocus={() => { ensureAirportData(); if (destinationIsDefault) { setDestinationInput(""); setDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setDestinationInput(value); setDestinationIsDefault(false); setError(""); }} />
               ) : (
                 <>
-                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onInitialFocus={() => { if (originIsDefault) { setOriginInput(""); setOriginIsDefault(false); setError(""); } }} onChange={(value) => { setOriginInput(value); setOriginIsDefault(false); setError(""); }} />
-                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onInitialFocus={() => { if (flightDestinationIsDefault) { setFlightDestinationInput(""); setFlightDestinationIsDefault(false); setError(""); } }} onChange={(value) => { setFlightDestinationInput(value); setFlightDestinationIsDefault(false); setError(""); }} />
+                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onInitialFocus={() => { ensureAirportData(); if (originIsDefault) { setOriginInput(""); setOriginIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setOriginInput(value); setOriginIsDefault(false); setError(""); }} />
+                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onInitialFocus={() => { ensureAirportData(); if (flightDestinationIsDefault) { setFlightDestinationInput(""); setFlightDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setFlightDestinationInput(value); setFlightDestinationIsDefault(false); setError(""); }} />
                 </>
               )}
               <FieldButton label={product === "hotels" ? t.checkIn : t.departure} value={shortDate(startDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
