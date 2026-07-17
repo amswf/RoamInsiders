@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
 import {
@@ -11,12 +11,11 @@ import {
   type CompareProduct,
 } from "@/lib/compare-attribution";
 import type { Locale } from "@/lib/content";
-import { compareEnCopy, compareEnLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
+import { compareEnCopy, type CompareCopy } from "@/lib/compare-i18n";
 import styles from "./compare.module.css";
 
 type Product = CompareProduct;
-type Sheet = "destination" | "origin" | "flightDestination" | "dates" | "guests" | null;
-type LocationStatus = "idle" | "detecting" | "approximate" | "precise" | "failed";
+type Sheet = "dates" | "guests" | null;
 
 type City = {
   name: string;
@@ -24,9 +23,6 @@ type City = {
   country: string;
   iata: string;
   tripCityId: number;
-  latitude?: number;
-  longitude?: number;
-  freeText?: boolean;
 };
 
 type AirportPayload = {
@@ -103,14 +99,12 @@ function loadAirportCities() {
         if (!response.ok) throw new Error("Airport data unavailable");
         return response.json() as Promise<AirportPayload>;
       })
-      .then(({ airports }) => airports.map(([iata, municipality, airport, country, latitude, longitude]) => ({
+      .then(({ airports }) => airports.map(([iata, municipality, airport, country]) => ({
         name: municipality || airport,
         detail: `${airport}${country ? `, ${country}` : ""}`,
         country,
         iata,
         tripCityId: 0,
-        latitude,
-        longitude,
       })));
   }
   return airportRequest;
@@ -152,34 +146,57 @@ function cleanedDestination(value: string) {
   return value.replace(/\b(hotels?|flights?|cheap|deals?|best|prices?)\b/gi, " ").replace(/\s+/g, " ").trim();
 }
 
-function parseCity(value: string | null, cities: City[] = CITIES) {
-  if (!value) return null;
-  const normalized = cleanedDestination(value).toLowerCase();
-  return cities.find((city) => normalized === city.iata.toLowerCase())
-    || cities.find((city) => normalized.includes(city.name.toLowerCase()) || normalized.includes(city.iata.toLowerCase()))
+function extractIata(value: string) {
+  const trimmed = value.trim();
+  return trimmed.match(/^([a-z]{3})$/i)?.[1]?.toUpperCase()
+    || trimmed.match(/\(([a-z]{3})\)\s*$/i)?.[1]?.toUpperCase()
+    || "";
+}
+
+function normalizeLocation(value: string) {
+  return value.toLowerCase().replace(/[(),—–-]/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function resolveAirportInput(value: string, cities: City[]) {
+  const code = extractIata(value);
+  if (code) {
+    return cities.find((city) => city.iata.toUpperCase() === code)
+      || { name: code, detail: code, country: "", iata: code, tripCityId: 0 };
+  }
+  const normalized = normalizeLocation(value);
+  if (!normalized) return null;
+  return cities.find((city) => normalizeLocation(city.name) === normalized)
+    || cities.find((city) => normalizeLocation(`${city.name}, ${city.country}`) === normalized)
     || null;
 }
 
-function toRadians(value: number) {
-  return value * Math.PI / 180;
+function resolveHotelInput(value: string, cities: City[]) {
+  const normalized = normalizeLocation(value);
+  if (!normalized) return null;
+  return cities.find((city) => normalizeLocation(city.name) === normalized)
+    || cities.find((city) => normalizeLocation(`${city.name}, ${city.country}`) === normalized)
+    || null;
 }
 
-function nearestAirport(cities: City[], latitude: number, longitude: number) {
-  let closest: City | null = null;
-  let shortest = Number.POSITIVE_INFINITY;
-  for (const city of cities) {
-    if (city.latitude === undefined || city.longitude === undefined) continue;
-    const deltaLatitude = toRadians(city.latitude - latitude);
-    const deltaLongitude = toRadians(city.longitude - longitude);
-    const a = Math.sin(deltaLatitude / 2) ** 2
-      + Math.cos(toRadians(latitude)) * Math.cos(toRadians(city.latitude)) * Math.sin(deltaLongitude / 2) ** 2;
-    const distance = 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    if (distance < shortest) {
-      shortest = distance;
-      closest = city;
-    }
-  }
-  return closest;
+function locationSuggestions(value: string, cities: City[], product: Product) {
+  const normalized = normalizeLocation(value);
+  const terms = normalized.split(" ").filter(Boolean);
+  const source = normalized
+    ? cities.filter((city) => {
+      const haystack = normalizeLocation(`${city.name} ${city.detail} ${city.country} ${city.iata}`);
+      return terms.every((term) => haystack.includes(term));
+    })
+    : CITIES;
+  const seen = new Set<string>();
+  return source.filter((city) => {
+    const key = product === "flights" ? city.iata : `${city.name.toLowerCase()}|${city.country.toLowerCase()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 30).map((city) => ({
+    value: product === "flights" ? `${city.name} (${city.iata})` : city.country ? `${city.name}, ${city.country}` : city.name,
+    label: product === "flights" ? city.detail : city.country,
+  }));
 }
 
 function Icon({ name, size = 22 }: { name: string; size?: number }) {
@@ -225,6 +242,21 @@ function FieldButton({ label, value, icon, onClick, trailing = "chevron", wide }
         <span className={styles.fieldValue}>{value}</span>
         {trailing !== "none" && <span className={styles.fieldTrailing}><Icon name={trailing} size={20} /></span>}
       </button>
+    </div>
+  );
+}
+
+function TextField({ label, value, icon, placeholder, listId, suggestions, onChange, wide }: { label: string; value: string; icon: string; placeholder: string; listId: string; suggestions: Array<{ value: string; label: string }>; onChange: (value: string) => void; wide?: boolean }) {
+  return (
+    <div className={`${styles.fieldGroup} ${wide ? styles.wideField : ""}`}>
+      <label className={styles.fieldLabel} htmlFor={listId}>{label}</label>
+      <div className={styles.fieldInputShell}>
+        <span className={styles.fieldIcon}><Icon name={icon} /></span>
+        <input id={listId} list={`${listId}-options`} value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} autoComplete="off" required />
+      </div>
+      <datalist id={`${listId}-options`}>
+        {suggestions.map((suggestion) => <option value={suggestion.value} key={suggestion.value}>{suggestion.label}</option>)}
+      </datalist>
     </div>
   );
 }
@@ -307,29 +339,22 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
 export function TravelCompareExperience() {
   const locale: Locale = "en";
   const t = compareEnCopy;
-  const locationCopy = compareEnLocationCopy;
   const defaultStart = useMemo(() => addDays(new Date(), 14), []);
   const defaultEnd = useMemo(() => addDays(new Date(), 16), []);
   const [product, setProduct] = useState<Product>("hotels");
   const [sheet, setSheet] = useState<Sheet>(null);
-  const [destination, setDestination] = useState<City>(CITIES[0]);
-  const [origin, setOrigin] = useState<City>(CITIES[1]);
-  const [flightDestination, setFlightDestination] = useState<City>(CITIES[0]);
+  const [destinationInput, setDestinationInput] = useState("Tokyo, Japan");
+  const [originInput, setOriginInput] = useState("Hong Kong (HKG)");
+  const [flightDestinationInput, setFlightDestinationInput] = useState("Tokyo (TYO)");
   const [startDate, setStartDate] = useState(defaultStart);
   const [endDate, setEndDate] = useState(defaultEnd);
   const [adults, setAdults] = useState(2);
   const [rooms, setRooms] = useState(1);
-  const [cityQuery, setCityQuery] = useState("");
   const [airports, setAirports] = useState<City[]>([]);
-  const [airportLoading, setAirportLoading] = useState(true);
-  const [locationStatus, setLocationStatus] = useState<LocationStatus>("idle");
   const [error, setError] = useState("");
   const [attribution, setAttribution] = useState(DEFAULT_COMPARE_ATTRIBUTION);
   const [heroSlide, setHeroSlide] = useState(0);
   const [carouselPaused, setCarouselPaused] = useState(false);
-  const explicitOrigin = useRef(false);
-  const requestedOriginCode = useRef("");
-  const attemptedApproximateLocation = useRef(false);
 
   useEffect(() => {
     document.documentElement.lang = "en";
@@ -345,20 +370,17 @@ export function TravelCompareExperience() {
     const initialize = window.setTimeout(() => {
       const params = new URLSearchParams(window.location.search);
       const keyword = params.get("destination") || params.get("dest") || params.get("keyword");
-      const keywordCity = parseCity(keyword);
       const originValue = params.get("from") || params.get("origin") || params.get("acity");
-      const fromCity = parseCity(originValue);
       const toValue = params.get("to") || params.get("dcity") || params.get("keyword");
-      const toCity = parseCity(toValue);
-      if (keywordCity) setDestination(keywordCity);
-      else if (keyword && cleanedDestination(keyword)) setDestination({ name: cleanedDestination(keyword), detail: cleanedDestination(keyword), country: "", iata: "", tripCityId: 0, freeText: true });
+      if (keyword && cleanedDestination(keyword)) setDestinationInput(cleanedDestination(keyword));
       if (originValue) {
-        explicitOrigin.current = true;
-        requestedOriginCode.current = cleanedDestination(originValue).toUpperCase();
-        setOrigin(fromCity || { name: requestedOriginCode.current, detail: requestedOriginCode.current, country: "", iata: requestedOriginCode.current, tripCityId: 0 });
+        const fromCity = resolveAirportInput(originValue, CITIES);
+        setOriginInput(fromCity ? `${fromCity.name} (${fromCity.iata})` : originValue);
       }
-      if (toCity) setFlightDestination(toCity);
-      else if (toValue && /^[a-z]{3}$/i.test(toValue)) setFlightDestination({ name: toValue.toUpperCase(), detail: toValue.toUpperCase(), country: "", iata: toValue.toUpperCase(), tripCityId: 0 });
+      if (toValue) {
+        const toCity = resolveAirportInput(toValue, CITIES);
+        setFlightDestinationInput(toCity ? `${toCity.name} (${toCity.iata})` : toValue);
+      }
       if ((params.get("type") || params.get("product")) === "flights") setProduct("flights");
       setAttribution(parseCompareAttribution(window.location.search));
     }, 0);
@@ -371,35 +393,10 @@ export function TravelCompareExperience() {
       .then((loaded) => {
         if (!active) return;
         setAirports(loaded);
-        if (requestedOriginCode.current) {
-          const match = parseCity(requestedOriginCode.current, loaded);
-          if (match) setOrigin(match);
-        }
       })
-      .catch(() => undefined)
-      .finally(() => { if (active) setAirportLoading(false); });
+      .catch(() => undefined);
     return () => { active = false; };
   }, []);
-
-  useEffect(() => {
-    if (!airports.length || explicitOrigin.current || attemptedApproximateLocation.current) return;
-    attemptedApproximateLocation.current = true;
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 4500);
-    setLocationStatus("detecting");
-    fetch("https://ipwho.is/", { signal: controller.signal })
-      .then((response) => response.json() as Promise<{ success?: boolean; latitude?: number; longitude?: number }>)
-      .then((result) => {
-        if (result.success === false || typeof result.latitude !== "number" || typeof result.longitude !== "number") throw new Error("No location");
-        const nearby = nearestAirport(airports, result.latitude, result.longitude);
-        if (!nearby) throw new Error("No nearby airport");
-        setOrigin(nearby);
-        setLocationStatus("approximate");
-      })
-      .catch(() => { if (!controller.signal.aborted) setLocationStatus("failed"); })
-      .finally(() => window.clearTimeout(timeout));
-    return () => { controller.abort(); window.clearTimeout(timeout); };
-  }, [airports]);
 
   useEffect(() => {
     if (!sheet) return;
@@ -410,71 +407,17 @@ export function TravelCompareExperience() {
     return () => { document.body.style.overflow = previous; window.removeEventListener("keydown", handleKey); };
   }, [sheet]);
 
-  const cityResults = useMemo(() => {
-    const query = cityQuery.trim();
-    if (!query) return CITIES;
-    const normalized = query.toLowerCase();
-    const matches = [...CITIES, ...airports]
-      .filter((city) => `${city.name} ${city.detail} ${city.country} ${city.iata}`.toLowerCase().includes(normalized))
-      .sort((a, b) => {
-        const aExact = a.iata.toLowerCase() === normalized ? 0 : a.name.toLowerCase().startsWith(normalized) ? 1 : 2;
-        const bExact = b.iata.toLowerCase() === normalized ? 0 : b.name.toLowerCase().startsWith(normalized) ? 1 : 2;
-        return aExact - bExact || a.name.localeCompare(b.name);
-      });
-    if (sheet !== "destination") return matches.slice(0, 40);
-    const seen = new Set<string>();
-    const hotelCities = matches.filter((city) => {
-      const key = `${city.name.toLowerCase()}|${city.country.toLowerCase()}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    }).slice(0, 39);
-    return [{ name: query, detail: locationCopy.globalDestination, country: "", iata: "", tripCityId: 0, freeText: true }, ...hotelCities];
-  }, [airports, cityQuery, locationCopy.globalDestination, sheet]);
-
-  function openCitySheet(next: Sheet) {
-    setCityQuery("");
-    setSheet(next);
-  }
-
-  function chooseCity(city: City) {
-    if (sheet === "destination") setDestination(city);
-    if (sheet === "origin") {
-      explicitOrigin.current = true;
-      setLocationStatus("idle");
-      setOrigin(city);
-    }
-    if (sheet === "flightDestination") setFlightDestination(city);
-    setSheet(null);
-  }
-
-  function usePreciseLocation() {
-    if (!("geolocation" in navigator)) {
-      setLocationStatus("failed");
-      return;
-    }
-    setLocationStatus("detecting");
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const nearby = nearestAirport(airports, position.coords.latitude, position.coords.longitude);
-        if (!nearby) {
-          setLocationStatus("failed");
-          return;
-        }
-        explicitOrigin.current = true;
-        setOrigin(nearby);
-        setLocationStatus("precise");
-      },
-      () => setLocationStatus("failed"),
-      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 },
-    );
-  }
+  const locations = useMemo(() => [...CITIES, ...airports], [airports]);
+  const destinationSuggestions = useMemo(() => locationSuggestions(destinationInput, locations, "hotels"), [destinationInput, locations]);
+  const originSuggestions = useMemo(() => locationSuggestions(originInput, locations, "flights"), [originInput, locations]);
+  const arrivalSuggestions = useMemo(() => locationSuggestions(flightDestinationInput, locations, "flights"), [flightDestinationInput, locations]);
 
   function buildTripUrl() {
     const tripAttribution = tripAttributionParams(attribution);
     if (product === "hotels") {
+      const destination = resolveHotelInput(destinationInput, locations);
       const params = new URLSearchParams({
-        destName: destination.name,
+        destName: destinationInput.trim(),
         checkin: isoDate(startDate),
         checkout: isoDate(endDate),
         crn: String(rooms),
@@ -485,12 +428,14 @@ export function TravelCompareExperience() {
         old: "1",
         ...tripAttribution,
       });
-      if (destination.tripCityId) {
+      if (destination?.tripCityId) {
         params.set("city", String(destination.tripCityId));
         params.set("optionId", String(destination.tripCityId));
       }
       return `https://www.trip.com/hotels/list?${params.toString()}`;
     }
+    const origin = resolveAirportInput(originInput, locations);
+    const flightDestination = resolveAirportInput(flightDestinationInput, locations);
     const params = new URLSearchParams({
       triptype: "rt",
       class: "y",
@@ -498,8 +443,8 @@ export function TravelCompareExperience() {
       quantity: "1",
       searchboxarg: "t",
       nonstoponly: "off",
-      acity: origin.iata,
-      dcity: flightDestination.iata,
+      acity: origin?.iata || "",
+      dcity: flightDestination?.iata || "",
       ddate: isoDate(startDate),
       rdate: isoDate(endDate),
       curr: "USD",
@@ -520,6 +465,14 @@ export function TravelCompareExperience() {
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
+    if (product === "hotels" && !destinationInput.trim()) {
+      setError("Enter a hotel destination.");
+      return;
+    }
+    if (product === "flights" && (!resolveAirportInput(originInput, locations) || !resolveAirportInput(flightDestinationInput, locations))) {
+      setError("Enter a valid city, airport, or 3-letter airport code for both From and To.");
+      return;
+    }
     if (endDate <= startDate) {
       setError(t.afterStart);
       return;
@@ -529,13 +482,6 @@ export function TravelCompareExperience() {
     window.location.assign(buildTripUrl());
   }
 
-  const locationSheetOpen = sheet === "destination" || sheet === "origin" || sheet === "flightDestination";
-  const sheetTitle = sheet === "origin" ? t.whereFrom : sheet === "flightDestination" ? t.whereTo : t.whereStay;
-  const locationMessage = locationStatus === "detecting" ? locationCopy.detectingLocation
-    : locationStatus === "approximate" ? locationCopy.approximateLocation
-      : locationStatus === "precise" ? locationCopy.preciseLocation
-        : locationStatus === "failed" ? locationCopy.locationFailed : "";
-  const hotelDestinationValue = destination.country ? `${destination.name}, ${destination.country}` : destination.name;
   const activeHero = HERO_SLIDES[heroSlide];
   const bookingFlow = BOOKING_FLOWS[product];
 
@@ -581,11 +527,11 @@ export function TravelCompareExperience() {
 
             <div className={styles.formBody}>
               {product === "hotels" ? (
-                <FieldButton wide label={t.destination} value={hotelDestinationValue} icon="pin" onClick={() => openCitySheet("destination")} trailing="close" />
+                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onChange={(value) => { setDestinationInput(value); setError(""); }} />
               ) : (
                 <>
-                  <FieldButton label={t.from} value={`${origin.name} (${origin.iata})`} icon="plane" onClick={() => openCitySheet("origin")} />
-                  <FieldButton label={t.to} value={`${flightDestination.name} (${flightDestination.iata})`} icon="pin" onClick={() => openCitySheet("flightDestination")} />
+                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onChange={(value) => { setOriginInput(value); setError(""); }} />
+                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onChange={(value) => { setFlightDestinationInput(value); setError(""); }} />
                 </>
               )}
               <FieldButton label={product === "hotels" ? t.checkIn : t.departure} value={shortDate(startDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
@@ -634,16 +580,8 @@ export function TravelCompareExperience() {
       </footer>
 
       {sheet && <div className={styles.sheetLayer} role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSheet(null); }}>
-        <section className={`${styles.sheet} ${sheet === "dates" ? styles.calendarSheet : ""}`} role="dialog" aria-modal="true" aria-label={sheet === "dates" ? t.selectDates : sheetTitle}>
+        <section className={`${styles.sheet} ${sheet === "dates" ? styles.calendarSheet : ""}`} role="dialog" aria-modal="true" aria-label={sheet === "dates" ? t.selectDates : t.guestsRooms}>
           <div className={styles.sheetHandle} />
-          {locationSheetOpen && <>
-            <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>{t.searchDestinations}</span><h2>{sheetTitle}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
-            {sheet === "origin" && <button className={styles.locationAction} type="button" onClick={usePreciseLocation} disabled={airportLoading || locationStatus === "detecting"}><Icon name="locate" size={18} />{locationCopy.useMyLocation}</button>}
-            {sheet === "origin" && locationMessage && <p className={`${styles.locationStatus} ${locationStatus === "failed" ? styles.locationError : ""}`}>{locationMessage}</p>}
-            <label className={styles.sheetSearch}><Icon name="search" /><input autoFocus value={cityQuery} onChange={(event) => setCityQuery(event.target.value)} placeholder={t.cityAirport} /></label>
-            <p className={styles.coverageNote}>{airportLoading ? locationCopy.loadingAirports : locationCopy.airportCoverage}</p>
-            <div className={styles.cityList}>{cityResults.length ? cityResults.map((city, index) => <button type="button" className={city.freeText ? styles.tripSearchResult : ""} key={`${city.name}-${city.iata}-${index}`} onClick={() => chooseCity(city)}><span><Icon name={sheet === "origin" || sheet === "flightDestination" ? "plane" : "pin"} /></span><div><strong>{city.freeText ? `${locationCopy.searchTripFor} “${city.name}”` : city.name}</strong><small>{city.detail}</small></div><b>{city.iata}</b></button>) : <p>{t.noDestinations}</p>}</div>
-          </>}
           {sheet === "dates" && <CalendarSheet start={startDate} end={endDate} product={product} locale={locale} t={t} onCancel={() => setSheet(null)} onConfirm={(start, end) => { setStartDate(start); setEndDate(end); setSheet(null); }} />}
           {sheet === "guests" && <>
             <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>{t.guestsRooms}</span><h2>{t.whoTravels}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
