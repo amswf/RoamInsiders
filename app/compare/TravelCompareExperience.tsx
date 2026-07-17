@@ -498,11 +498,13 @@ export function TravelCompareExperience() {
         <div className={styles.heroTint} />
         <div className={styles.heroInner}>
           <section className={styles.focusCarousel} aria-label="Featured hotel and flight offers" aria-roledescription="carousel">
-            <picture className={styles.focusBackdrop} key={`image-${activeHero.id}`}>
-              <source media="(max-width: 900px)" srcSet={activeHero.mobileImage} />
-              {/* Pre-compressed campaign artwork is intentionally served without runtime optimization. */}
-              <img src={activeHero.desktopImage} alt="" width="900" height="1250" fetchPriority={activeHero.id === "hotels" ? "high" : "auto"} />
-            </picture>
+            {HERO_SLIDES.map((slide, index) => (
+              <picture className={`${styles.focusBackdrop} ${index === heroSlide ? styles.activeBackdrop : ""}`} key={slide.id}>
+                <source media="(max-width: 900px)" srcSet={slide.mobileImage} />
+                {/* Both small campaign images load up front so rotation never starts a late image request. */}
+                <img src={slide.desktopImage} alt="" width="720" height="1000" fetchPriority="high" />
+              </picture>
+            ))}
             <div className={styles.focusShade} />
             <div className={styles.focusCopy} key={activeHero.id}>
               <span>{activeHero.label}</span>
