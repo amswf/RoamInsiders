@@ -246,13 +246,13 @@ function FieldButton({ label, value, icon, onClick, trailing = "chevron", wide }
   );
 }
 
-function TextField({ label, value, icon, placeholder, listId, suggestions, onChange, wide }: { label: string; value: string; icon: string; placeholder: string; listId: string; suggestions: Array<{ value: string; label: string }>; onChange: (value: string) => void; wide?: boolean }) {
+function TextField({ label, value, icon, placeholder, listId, suggestions, onChange, onInitialFocus, wide }: { label: string; value: string; icon: string; placeholder: string; listId: string; suggestions: Array<{ value: string; label: string }>; onChange: (value: string) => void; onInitialFocus?: () => void; wide?: boolean }) {
   return (
     <div className={`${styles.fieldGroup} ${wide ? styles.wideField : ""}`}>
       <label className={styles.fieldLabel} htmlFor={listId}>{label}</label>
       <div className={styles.fieldInputShell}>
         <span className={styles.fieldIcon}><Icon name={icon} /></span>
-        <input id={listId} list={`${listId}-options`} value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} autoComplete="off" required />
+        <input id={listId} list={`${listId}-options`} value={value} onFocus={onInitialFocus} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} autoComplete="off" required />
       </div>
       <datalist id={`${listId}-options`}>
         {suggestions.map((suggestion) => <option value={suggestion.value} key={suggestion.value}>{suggestion.label}</option>)}
@@ -346,6 +346,9 @@ export function TravelCompareExperience() {
   const [destinationInput, setDestinationInput] = useState("Tokyo, Japan");
   const [originInput, setOriginInput] = useState("Hong Kong (HKG)");
   const [flightDestinationInput, setFlightDestinationInput] = useState("Tokyo (TYO)");
+  const [destinationIsDefault, setDestinationIsDefault] = useState(true);
+  const [originIsDefault, setOriginIsDefault] = useState(true);
+  const [flightDestinationIsDefault, setFlightDestinationIsDefault] = useState(true);
   const [startDate, setStartDate] = useState(defaultStart);
   const [endDate, setEndDate] = useState(defaultEnd);
   const [adults, setAdults] = useState(2);
@@ -372,14 +375,19 @@ export function TravelCompareExperience() {
       const keyword = params.get("destination") || params.get("dest") || params.get("keyword");
       const originValue = params.get("from") || params.get("origin") || params.get("acity");
       const toValue = params.get("to") || params.get("dcity") || params.get("keyword");
-      if (keyword && cleanedDestination(keyword)) setDestinationInput(cleanedDestination(keyword));
+      if (keyword && cleanedDestination(keyword)) {
+        setDestinationInput(cleanedDestination(keyword));
+        setDestinationIsDefault(false);
+      }
       if (originValue) {
         const fromCity = resolveAirportInput(originValue, CITIES);
         setOriginInput(fromCity ? `${fromCity.name} (${fromCity.iata})` : originValue);
+        setOriginIsDefault(false);
       }
       if (toValue) {
         const toCity = resolveAirportInput(toValue, CITIES);
         setFlightDestinationInput(toCity ? `${toCity.name} (${toCity.iata})` : toValue);
+        setFlightDestinationIsDefault(false);
       }
       if ((params.get("type") || params.get("product")) === "flights") setProduct("flights");
       setAttribution(parseCompareAttribution(window.location.search));
@@ -527,11 +535,11 @@ export function TravelCompareExperience() {
 
             <div className={styles.formBody}>
               {product === "hotels" ? (
-                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onChange={(value) => { setDestinationInput(value); setError(""); }} />
+                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onInitialFocus={() => { if (destinationIsDefault) { setDestinationInput(""); setDestinationIsDefault(false); setError(""); } }} onChange={(value) => { setDestinationInput(value); setDestinationIsDefault(false); setError(""); }} />
               ) : (
                 <>
-                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onChange={(value) => { setOriginInput(value); setError(""); }} />
-                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onChange={(value) => { setFlightDestinationInput(value); setError(""); }} />
+                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onInitialFocus={() => { if (originIsDefault) { setOriginInput(""); setOriginIsDefault(false); setError(""); } }} onChange={(value) => { setOriginInput(value); setOriginIsDefault(false); setError(""); }} />
+                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onInitialFocus={() => { if (flightDestinationIsDefault) { setFlightDestinationInput(""); setFlightDestinationIsDefault(false); setError(""); } }} onChange={(value) => { setFlightDestinationInput(value); setFlightDestinationIsDefault(false); setError(""); }} />
                 </>
               )}
               <FieldButton label={product === "hotels" ? t.checkIn : t.departure} value={shortDate(startDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
