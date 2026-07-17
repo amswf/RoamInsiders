@@ -365,15 +365,8 @@ export function TravelCompareExperience() {
 
   useEffect(() => {
     if (carouselPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let interval = 0;
-    const start = window.setTimeout(() => {
-      setHeroSlide((current) => (current + 1) % HERO_SLIDES.length);
-      interval = window.setInterval(() => setHeroSlide((current) => (current + 1) % HERO_SLIDES.length), 3000);
-    }, 6000);
-    return () => {
-      window.clearTimeout(start);
-      window.clearInterval(interval);
-    };
+    const interval = window.setInterval(() => setHeroSlide((current) => (current + 1) % HERO_SLIDES.length), 3000);
+    return () => window.clearInterval(interval);
   }, [carouselPaused]);
 
   useEffect(() => {
