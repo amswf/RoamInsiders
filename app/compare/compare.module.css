@@ -16,62 +16,64 @@
 .page input { font: inherit; }
 
 .header {
-  height: 92px;
+  min-height: 58px;
   padding: 0 max(24px, calc((100vw - 1180px) / 2));
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: rgba(255, 255, 255, .94);
   border-bottom: 1px solid rgba(7, 26, 63, .08);
   position: relative;
   z-index: 20;
 }
-
-.brand { display: inline-flex; align-items: center; gap: 12px; }
-.brand img { width: 42px; height: 42px; border-radius: 10px; }
-.brand span { display: flex; flex-direction: column; line-height: .9; letter-spacing: -.045em; }
-.brand b { font-size: 19px; }
-.brand em { margin: 7px 0 0 12px; color: var(--compare-blue); font-size: 12px; font-style: normal; letter-spacing: .08em; }
-.headerTools { display: flex; align-items: center; gap: 10px; }
-.languageButton,
-.menuButton,
+.header p { margin: 0; color: var(--compare-navy); font-size: 14px; font-weight: 800; letter-spacing: .015em; text-align: center; }
 .iconButton { min-width: 44px; min-height: 44px; border: 0; background: transparent; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
-.languageButton { gap: 7px; padding: 0 8px; font-weight: 700; }
-.languageButton select { max-width: 74px; border: 0; outline: 0; appearance: none; background: transparent; color: inherit; font-size: 13px; font-weight: 800; cursor: pointer; }
-.languageButton > svg:last-child { pointer-events: none; }
-.languageButton:hover,
-.menuButton:hover,
 .iconButton:hover { color: var(--compare-blue); }
 
 .hero {
-  min-height: 785px;
+  min-height: 730px;
   position: relative;
-  background: #dcecff url("https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=2200&q=88") center 54% / cover no-repeat;
+  background: #eaf3ff;
 }
 
 .heroTint {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(229, 243, 255, .96) 0%, rgba(230, 243, 255, .78) 47%, rgba(7, 35, 78, .18) 100%);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, .95), transparent 38%),
+    radial-gradient(circle at 87% 85%, rgba(80, 153, 255, .2), transparent 36%),
+    linear-gradient(135deg, #edf6ff 0%, #dcecff 100%);
 }
 
 .heroInner {
-  width: min(1180px, calc(100% - 48px));
-  min-height: 785px;
+  width: min(1080px, calc(100% - 48px));
+  min-height: 730px;
   margin: 0 auto;
-  padding: 68px 0 72px;
+  padding: 54px 0 58px;
   display: grid;
-  grid-template-columns: minmax(430px, .95fr) minmax(580px, 1.1fr);
+  grid-template-columns: minmax(300px, 360px) minmax(580px, 1fr);
   align-items: center;
-  gap: 52px;
+  gap: 56px;
   position: relative;
   z-index: 1;
 }
 
-.heroCopy { align-self: start; padding-top: 72px; }
-.heroEyebrow { color: var(--compare-blue-dark); font-size: 10px; font-weight: 800; letter-spacing: .17em; }
-.heroCopy h1 { max-width: 540px; margin: 22px 0 18px; font-size: clamp(56px, 5.1vw, 74px); line-height: .96; letter-spacing: -.058em; }
-.heroCopy p { max-width: 440px; margin: 0; color: #41516a; font-size: 20px; line-height: 1.6; }
+.focusCarousel { min-height: 500px; position: relative; overflow: hidden; border-radius: 28px; background: #11345e; box-shadow: 0 26px 64px rgba(8, 34, 77, .2); isolation: isolate; }
+.focusBackdrop { position: absolute; inset: 0; z-index: -2; background-position: 58% center; background-size: cover; animation: focusImageIn .65s ease both; }
+.focusShade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3, 22, 50, .08) 5%, rgba(3, 19, 46, .38) 48%, rgba(3, 17, 42, .9) 100%); }
+.focusCopy { position: absolute; left: 0; right: 0; bottom: 67px; padding: 0 30px; color: #fff; animation: focusCopyIn .45s ease both; }
+.focusCopy > span { display: inline-flex; align-items: center; min-height: 25px; padding: 0 10px; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; background: rgba(3, 20, 47, .23); font-size: 9px; font-weight: 850; letter-spacing: .14em; }
+.focusCopy h1 { max-width: 300px; margin: 17px 0 11px; font-size: clamp(38px, 4vw, 48px); line-height: .98; letter-spacing: -.055em; }
+.focusCopy strong { display: block; color: #d7ebff; font-size: 18px; }
+.focusCopy p { max-width: 295px; margin: 12px 0 0; color: rgba(255,255,255,.82); font-size: 12px; line-height: 1.55; }
+.carouselControls { position: absolute; left: 30px; right: 25px; bottom: 24px; display: flex; align-items: center; justify-content: space-between; }
+.carouselDots { display: flex; align-items: center; gap: 7px; }
+.carouselDots button { width: 18px; height: 4px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,.42); cursor: pointer; transition: width .2s ease, background .2s ease; }
+.carouselDots .activeDot { width: 36px; background: #fff; }
+.carouselPause { width: 34px; height: 34px; padding: 0; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(3,20,47,.28); color: #fff; cursor: pointer; }
+.carouselPause:hover { background: rgba(3,20,47,.55); }
+@keyframes focusImageIn { from { opacity: .5; transform: scale(1.035); } to { opacity: 1; transform: scale(1); } }
+@keyframes focusCopyIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
 .searchCard {
   align-self: center;
@@ -109,25 +111,23 @@
 .microTrust span svg { color: var(--compare-green); }
 .microTrust i { width: 3px; height: 3px; border-radius: 50%; background: #8b98aa; }
 
-.trustSection { padding: 70px max(24px, calc((100vw - 1120px) / 2)) 62px; background: #fff; }
-.trustGrid { display: grid; grid-template-columns: repeat(4, 1fr); }
-.trustGrid > div { min-height: 174px; padding: 4px 26px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; border-right: 1px solid #edf0f5; }
-.trustGrid > div:last-child { border-right: 0; }
-.trustGrid > div > span { width: 56px; height: 56px; margin-bottom: 17px; display: grid; place-items: center; color: var(--compare-blue); background: #edf5ff; border-radius: 15px; }
-.trustGrid strong { font-size: 14px; }
-.trustGrid p { max-width: 190px; margin: 9px 0 0; color: var(--compare-copy); font-size: 12px; line-height: 1.55; }
-.partners { margin-top: 48px; text-align: center; }
-.partners > p { margin: 0 0 25px; color: var(--compare-copy); font-size: 13px; }
-.partners > div { display: flex; align-items: center; justify-content: center; gap: clamp(34px, 6vw, 88px); }
-.partners > div > span { white-space: nowrap; }
-.tripLogo { color: #1166da; font-size: 24px; font-weight: 850; letter-spacing: -.06em; }
-.bookingLogo { color: #0755a5; font-size: 23px; font-weight: 800; letter-spacing: -.055em; }
-.bookingLogo::after { content: ".com"; color: #1bb1e7; }
-.travelokaLogo { color: #49505a; font-size: 23px; font-weight: 650; letter-spacing: -.055em; }
-.agodaLogo { color: #6f7782; font-size: 22px; line-height: .85; display: inline-flex; flex-direction: column; }
-.agodaLogo i { margin-top: 6px; display: flex; gap: 4px; }
-.agodaLogo b { width: 10px; height: 10px; border-radius: 50%; background: #ee334e; }
-.agodaLogo b:nth-child(2) { background: #f6ae19; }.agodaLogo b:nth-child(3) { background: #15b96f; }.agodaLogo b:nth-child(4) { background: #3479df; }.agodaLogo b:nth-child(5) { background: #8a47d7; }
+.bookingFlowSection { padding: 72px max(24px, calc((100vw - 1080px) / 2)) 64px; background: #fff; }
+.bookingFlowIntro { max-width: 680px; }
+.bookingFlowIntro > span { color: var(--compare-blue); font-size: 9px; font-weight: 850; letter-spacing: .16em; }
+.bookingFlowIntro h2 { margin: 12px 0 11px; font-size: clamp(30px, 4vw, 44px); line-height: 1.02; letter-spacing: -.048em; }
+.bookingFlowIntro p { max-width: 610px; margin: 0; color: var(--compare-copy); font-size: 14px; line-height: 1.7; }
+.bookingSteps { margin-top: 38px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.bookingSteps article { min-height: 230px; padding: 24px; border: 1px solid #e5ebf3; border-radius: 18px; background: #fbfdff; }
+.bookingSteps article > div { display: flex; align-items: center; justify-content: space-between; }
+.bookingSteps article > div > span { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: #eaf3ff; color: var(--compare-blue); }
+.bookingSteps small { color: #9aa8ba; font-size: 11px; font-weight: 800; letter-spacing: .1em; }
+.bookingSteps h3 { margin: 23px 0 9px; font-size: 17px; letter-spacing: -.025em; }
+.bookingSteps p { margin: 0; color: var(--compare-copy); font-size: 12px; line-height: 1.65; }
+.bookingDetails { min-height: 72px; margin-top: 16px; padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-radius: 16px; background: #f2f7fd; }
+.bookingDetails > strong { font-size: 12px; }
+.bookingDetails > div { display: flex; align-items: center; gap: 22px; }
+.bookingDetails span { display: inline-flex; align-items: center; gap: 6px; color: var(--compare-copy); font-size: 11px; white-space: nowrap; }
+.bookingDetails svg { color: var(--compare-green); }
 
 .privacyFooter { min-height: 78px; padding: 18px 24px; display: flex; align-items: center; justify-content: center; gap: 9px; background: #f6f8fc; color: var(--compare-copy); font-size: 12px; }
 .privacyFooter svg { color: var(--compare-green); }
@@ -189,31 +189,29 @@
 .counterControl { display: flex; align-items: center; gap: 14px; }
 .counterControl button { width: 44px; height: 44px; border: 1px solid var(--compare-line); border-radius: 50%; background: #fff; color: var(--compare-blue); cursor: pointer; font-size: 22px; }
 .counterControl button:disabled { color: #cbd1d8; cursor: default; }.counterControl b { min-width: 18px; text-align: center; }
-.menuSheet { width: min(480px, 100%); }
-.menuNav { margin-top: 26px; display: flex; flex-direction: column; }
-.menuNav a { min-height: 68px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e9edf3; font-size: 17px; font-weight: 750; }
-.menuNav a:hover { color: var(--compare-blue); }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 @media (max-width: 900px) {
   .heroInner { grid-template-columns: 1fr; gap: 36px; padding-top: 55px; }
-  .heroCopy { padding-top: 0; text-align: center; }
-  .heroCopy h1,
-  .heroCopy p { margin-left: auto; margin-right: auto; }
+  .focusCarousel { width: min(700px, 100%); min-height: 360px; margin: 0 auto; }
+  .focusCopy h1 { max-width: 430px; }
+  .focusCopy p { max-width: 430px; }
   .searchCard { width: min(700px, 100%); margin: 0 auto; }
-  .heroTint { background: linear-gradient(180deg, rgba(229,243,255,.93) 0%, rgba(229,243,255,.72) 55%, rgba(5,34,78,.16) 100%); }
 }
 
 @media (max-width: 620px) {
-  .header { height: 70px; padding: 0 16px; }
-  .brand { gap: 8px; }.brand img { width: 36px; height: 36px; }.brand b { font-size: 16px; }.brand em { margin-top: 6px; font-size: 9px; }
-  .languageButton { padding: 0 3px; }.languageButton > svg:first-child { display: none; }.languageButton select { max-width: 64px; }
-  .hero { min-height: 0; background-position: 61% 55%; }
-  .heroInner { width: 100%; min-height: 0; padding: 38px 16px 18px; gap: 22px; }
-  .heroCopy { padding: 0 12px; }
-  .heroEyebrow { display: none; }
-  .heroCopy h1 { margin: 0; font-size: clamp(40px, 11.5vw, 50px); line-height: 1; letter-spacing: -.055em; }
-  .heroCopy p { max-width: 330px; margin-top: 13px; font-size: 14px; line-height: 1.45; }
+  .header { min-height: 52px; padding: 0 16px; }
+  .header p { font-size: 12px; }
+  .hero { min-height: 0; }
+  .heroInner { width: 100%; min-height: 0; padding: 20px 14px 18px; gap: 16px; }
+  .focusCarousel { min-height: 238px; border-radius: 20px; }
+  .focusCopy { bottom: 49px; padding: 0 20px; }
+  .focusCopy > span { min-height: 21px; font-size: 8px; }
+  .focusCopy h1 { max-width: 270px; margin: 10px 0 6px; font-size: 31px; }
+  .focusCopy strong { font-size: 14px; }
+  .focusCopy p { max-width: 285px; margin-top: 7px; font-size: 10px; line-height: 1.45; }
+  .carouselControls { left: 20px; right: 17px; bottom: 12px; }
+  .carouselPause { width: 30px; height: 30px; }
   .searchCard { border-radius: 22px; box-shadow: 0 22px 56px rgba(8,34,77,.21); }
   .tabs { height: 62px; }.tabs button { gap: 8px; font-size: 15px; }
   .formBody { padding: 15px 14px 16px; gap: 9px 8px; }
@@ -223,14 +221,15 @@
   .compareButton { min-height: 56px; margin-top: 1px; font-size: 16px; }
   .microTrust { gap: 7px; font-size: 9px; }
   .microTrust span { gap: 3px; }.microTrust span svg { width: 15px; }.microTrust i { display: none; }
-  .trustSection { padding: 48px 18px 42px; }
-  .trustGrid { grid-template-columns: 1fr 1fr; row-gap: 28px; }
-  .trustGrid > div { min-height: 155px; padding: 0 12px 18px; }
-  .trustGrid > div:nth-child(2) { border-right: 0; }
-  .trustGrid > div > span { width: 52px; height: 52px; }
-  .partners { margin-top: 34px; }
-  .partners > div { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 16px; justify-items: center; }
-  .tripLogo { font-size: 21px; }.bookingLogo, .travelokaLogo { font-size: 19px; }.agodaLogo { font-size: 19px; }
+  .bookingFlowSection { padding: 48px 18px 42px; }
+  .bookingFlowIntro h2 { font-size: 31px; }
+  .bookingFlowIntro p { font-size: 12px; }
+  .bookingSteps { margin-top: 28px; grid-template-columns: 1fr; gap: 10px; }
+  .bookingSteps article { min-height: 0; padding: 18px; }
+  .bookingSteps article > div > span { width: 42px; height: 42px; }
+  .bookingSteps h3 { margin: 16px 0 6px; font-size: 16px; }
+  .bookingDetails { align-items: flex-start; flex-direction: column; }
+  .bookingDetails > div { width: 100%; align-items: flex-start; flex-direction: column; gap: 9px; }
   .privacyFooter { min-height: 92px; flex-wrap: wrap; text-align: center; }
   .privacyFooter a { width: 100%; margin-left: 0; border: 0; }
   .sheetLayer { padding: 0; }
@@ -263,8 +262,9 @@
 }
 
 @media (max-width: 620px) and (max-height: 680px) {
-  .heroInner { padding-top: 12px; gap: 10px; }
-  .heroCopy p { display: none; }
+  .heroInner { padding-top: 10px; gap: 10px; }
+  .focusCarousel { min-height: 190px; }
+  .focusCopy p { display: none; }
   .microTrust { display: none; }
   .calendarSheet .calendarGrid { grid-template-rows: 15px repeat(6, minmax(24px, 1fr)); }
   .calendarSheet .sheetActions > span { display: none; }
@@ -280,6 +280,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .sheet { animation: none; }
+  .focusBackdrop,
+  .focusCopy { animation: none; }
   .compareButton,
-  .fieldButton { transition: none; }
+  .fieldButton,
+  .carouselDots button { transition: none; }
 }

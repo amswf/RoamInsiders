@@ -243,7 +243,7 @@ const enLocation: CompareLocationCopy = {
   preciseLocation: "Nearby airport selected from your device location",
   locationFailed: "We could not detect your location. Search by city or airport code.",
   loadingAirports: "Loading global airport coverage…",
-  searchTripFor: "Search Trip.com for",
+  searchTripFor: "Search hotels for",
   globalDestination: "Global hotel destination",
   airportCoverage: "4,170 scheduled-service airports",
 };

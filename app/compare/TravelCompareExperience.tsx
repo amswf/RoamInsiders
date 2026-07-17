@@ -3,7 +3,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
-import { useLocale } from "@/app/components/useLocale";
 import {
   buildClickTrackingUrl,
   DEFAULT_COMPARE_ATTRIBUTION,
@@ -12,12 +11,11 @@ import {
   type CompareProduct,
 } from "@/lib/compare-attribution";
 import type { Locale } from "@/lib/content";
-import { compareCopy, compareLocaleLabels, compareLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
-import { localeOptions, withLocale } from "@/lib/i18n";
+import { compareCopy, compareLocationCopy, type CompareCopy } from "@/lib/compare-i18n";
 import styles from "./compare.module.css";
 
 type Product = CompareProduct;
-type Sheet = "destination" | "origin" | "flightDestination" | "dates" | "guests" | "menu" | null;
+type Sheet = "destination" | "origin" | "flightDestination" | "dates" | "guests" | null;
 type LocationStatus = "idle" | "detecting" | "approximate" | "precise" | "failed";
 
 type City = {
@@ -46,6 +44,58 @@ const CITIES: City[] = [
   { name: "Kyoto", detail: "Kyoto, Japan", country: "Japan", iata: "UKY", tripCityId: 734 },
   { name: "Kuala Lumpur", detail: "Kuala Lumpur, Malaysia", country: "Malaysia", iata: "KUL", tripCityId: 315 },
 ];
+
+const CURRENT_HERO_IMAGE = "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1600&q=88";
+
+const HERO_SLIDES = [
+  {
+    id: "hotels",
+    eyebrow: "HOTEL DEALS",
+    title: "Curated hotel offers",
+    offer: "Save up to 15%",
+    subtitle: "Discover handpicked stays for city breaks, beach escapes, and more.",
+    image: CURRENT_HERO_IMAGE,
+  },
+  {
+    id: "flights",
+    eyebrow: "FLIGHT OFFERS",
+    title: "Fly once. Enjoy twice.",
+    offer: "More value for every journey",
+    subtitle: "Search flexible flight options and plan your next trip with confidence.",
+    image: CURRENT_HERO_IMAGE,
+  },
+] as const;
+
+const BOOKING_FLOWS = {
+  hotels: {
+    eyebrow: "HOTEL BOOKING, SIMPLIFIED",
+    title: "From destination to check-in",
+    summary: "Carry your stay details into a complete hotel search, then review the information that matters before booking.",
+    steps: [
+      { icon: "pin", number: "01", title: "Set your stay", body: "Choose a destination, dates, guests, and rooms." },
+      { icon: "hotel", number: "02", title: "Review available rooms", body: "Compare room types, inclusions, and stay policies." },
+      { icon: "shield", number: "03", title: "Confirm with clarity", body: "Check the final price and booking terms before payment." },
+    ],
+    details: ["Room choices", "Cancellation policies", "Taxes and fees"],
+  },
+  flights: {
+    eyebrow: "FLIGHT BOOKING, SIMPLIFIED",
+    title: "From route search to take-off",
+    summary: "Carry your route and dates into a complete flight search, then review the fare details that shape your trip.",
+    steps: [
+      { icon: "plane", number: "01", title: "Set your route", body: "Choose departure, destination, and travel dates." },
+      { icon: "search", number: "02", title: "Review flight options", body: "Compare schedules, connections, and fare choices." },
+      { icon: "shield", number: "03", title: "Confirm with clarity", body: "Check baggage, fare rules, and the final price before payment." },
+    ],
+    details: ["Flight schedules", "Baggage and fare rules", "Full price breakdown"],
+  },
+} satisfies Record<Product, {
+  eyebrow: string;
+  title: string;
+  summary: string;
+  steps: Array<{ icon: string; number: string; title: string; body: string }>;
+  details: string[];
+}>;
 
 let airportRequest: Promise<City[]> | null = null;
 
@@ -155,6 +205,8 @@ function Icon({ name, size = 22 }: { name: string; size?: number }) {
     lock: <><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></>,
     arrow: <path d="M5 12h14m-5-5 5 5-5 5"/>,
     locate: <><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></>,
+    pause: <path d="M8 5v14m8-14v14"/>,
+    play: <path d="m8 5 11 7-11 7V5Z"/>,
   };
   return <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{paths[name]}</svg>;
 }
@@ -256,7 +308,7 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
 }
 
 export function TravelCompareExperience() {
-  const [locale, changeLocale] = useLocale();
+  const locale: Locale = "en";
   const t = compareCopy[locale];
   const locationCopy = compareLocationCopy[locale];
   const defaultStart = useMemo(() => addDays(new Date(), 14), []);
@@ -276,9 +328,21 @@ export function TravelCompareExperience() {
   const [locationStatus, setLocationStatus] = useState<LocationStatus>("idle");
   const [error, setError] = useState("");
   const [attribution, setAttribution] = useState(DEFAULT_COMPARE_ATTRIBUTION);
+  const [heroSlide, setHeroSlide] = useState(0);
+  const [carouselPaused, setCarouselPaused] = useState(false);
   const explicitOrigin = useRef(false);
   const requestedOriginCode = useRef("");
   const attemptedApproximateLocation = useRef(false);
+
+  useEffect(() => {
+    document.documentElement.lang = "en";
+  }, []);
+
+  useEffect(() => {
+    if (carouselPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const interval = window.setInterval(() => setHeroSlide((current) => (current + 1) % HERO_SLIDES.length), 3000);
+    return () => window.clearInterval(interval);
+  }, [carouselPaused]);
 
   useEffect(() => {
     const initialize = window.setTimeout(() => {
@@ -475,36 +539,39 @@ export function TravelCompareExperience() {
       : locationStatus === "precise" ? locationCopy.preciseLocation
         : locationStatus === "failed" ? locationCopy.locationFailed : "";
   const hotelDestinationValue = destination.country ? `${destination.name}, ${destination.country}` : destination.name;
+  const activeHero = HERO_SLIDES[heroSlide];
+  const bookingFlow = BOOKING_FLOWS[product];
 
   return (
-    <main className={styles.page}>
+    <main className={styles.page} lang="en">
       <OutboundResourceHints />
       <header className={styles.header}>
-        <Link className={styles.brand} href={withLocale("/", locale)} aria-label="TravelGoGuide home">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="../favicon.svg" alt="" width="40" height="40" />
-          <span><b>TRAVELGO</b><em>COMPARE</em></span>
-        </Link>
-        <div className={styles.headerTools}>
-          <label className={styles.languageButton} aria-label="Language">
-            <Icon name="globe" />
-            <select value={locale} onChange={(event) => changeLocale(event.target.value as Locale)}>
-              {localeOptions.map((option) => <option value={option.code} key={option.code}>{compareLocaleLabels[option.code]}</option>)}
-            </select>
-            <Icon name="chevron" size={16} />
-          </label>
-          <button className={styles.menuButton} type="button" onClick={() => setSheet("menu")} aria-label="Open menu"><Icon name="menu" size={28} /></button>
-        </div>
+        <p>Curated Global Hotel &amp; Flight Deals</p>
       </header>
 
       <section className={styles.hero}>
         <div className={styles.heroTint} />
         <div className={styles.heroInner}>
-          <div className={styles.heroCopy}>
-            <span className={styles.heroEyebrow}>{t.oneSearch}</span>
-            <h1>{t.titleTop}<br />{t.titleBottom}</h1>
-            <p>{t.subtitle}</p>
-          </div>
+          <section className={styles.focusCarousel} aria-label="Featured hotel and flight offers" aria-roledescription="carousel">
+            <div className={styles.focusBackdrop} key={`image-${activeHero.id}`} style={{ backgroundImage: `url(${activeHero.image})` }} />
+            <div className={styles.focusShade} />
+            <div className={styles.focusCopy} key={activeHero.id}>
+              <span>{activeHero.eyebrow}</span>
+              <h1>{activeHero.title}</h1>
+              <strong>{activeHero.offer}</strong>
+              <p>{activeHero.subtitle}</p>
+            </div>
+            <div className={styles.carouselControls}>
+              <div className={styles.carouselDots}>
+                {HERO_SLIDES.map((slide, index) => (
+                  <button key={slide.id} type="button" className={index === heroSlide ? styles.activeDot : ""} onClick={() => setHeroSlide(index)} aria-label={`Show ${slide.eyebrow.toLowerCase()}`} aria-current={index === heroSlide ? "true" : undefined} />
+                ))}
+              </div>
+              <button className={styles.carouselPause} type="button" onClick={() => setCarouselPaused((paused) => !paused)} aria-label={carouselPaused ? "Resume carousel" : "Pause carousel"}>
+                <Icon name={carouselPaused ? "play" : "pause"} size={15} />
+              </button>
+            </div>
+          </section>
 
           <form className={styles.searchCard} onSubmit={submitSearch}>
             <div className={styles.tabs} role="tablist" aria-label="Compare product">
@@ -539,28 +606,35 @@ export function TravelCompareExperience() {
         </div>
       </section>
 
-      <section className={styles.trustSection} aria-labelledby="why-compare">
-        <h2 id="why-compare" className={styles.srOnly}>{t.bestPrices}</h2>
-        <div className={styles.trustGrid}>
-          <div><span><Icon name="percent" /></span><strong>{t.bestPrices}</strong><p>{t.bestPricesBody}</p></div>
-          <div><span><Icon name="shield" /></span><strong>{t.trustedSecure}</strong><p>{t.trustedSecureBody}</p></div>
-          <div><span><Icon name="tag" /></span><strong>{t.noHiddenFees}</strong><p>{t.noHiddenFeesBody}</p></div>
-          <div><span><Icon name="bolt" /></span><strong>{t.instantResults}</strong><p>{t.instantResultsBody}</p></div>
+      <section className={styles.bookingFlowSection} aria-labelledby="booking-flow-title">
+        <div className={styles.bookingFlowIntro}>
+          <span>{bookingFlow.eyebrow}</span>
+          <h2 id="booking-flow-title">{bookingFlow.title}</h2>
+          <p>{bookingFlow.summary}</p>
         </div>
-        <div className={styles.partners}>
-          <p>{t.partners}</p>
-          <div><span className={styles.tripLogo}>Trip.com</span><span className={styles.bookingLogo}>Booking</span><span className={styles.travelokaLogo}>traveloka</span><span className={styles.agodaLogo}>agoda<i><b /><b /><b /><b /><b /></i></span></div>
+        <div className={styles.bookingSteps}>
+          {bookingFlow.steps.map((step) => (
+            <article key={step.number}>
+              <div><span><Icon name={step.icon} /></span><small>{step.number}</small></div>
+              <h3>{step.title}</h3>
+              <p>{step.body}</p>
+            </article>
+          ))}
+        </div>
+        <div className={styles.bookingDetails}>
+          <strong>Review before you book</strong>
+          <div>{bookingFlow.details.map((detail) => <span key={detail}><Icon name="check" size={16} />{detail}</span>)}</div>
         </div>
       </section>
 
       <footer className={styles.privacyFooter}>
         <Icon name="lock" size={18} /><span>{t.privacyNote}</span>
-        <Link href={withLocale("/privacy/", locale)}>{t.privacy}</Link>
-        <Link href={withLocale("/terms/", locale)}>{t.terms}</Link>
+        <Link href="/privacy/?lang=en">{t.privacy}</Link>
+        <Link href="/terms/?lang=en">{t.terms}</Link>
       </footer>
 
       {sheet && <div className={styles.sheetLayer} role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSheet(null); }}>
-        <section className={`${styles.sheet} ${sheet === "dates" ? styles.calendarSheet : ""} ${sheet === "menu" ? styles.menuSheet : ""}`} role="dialog" aria-modal="true" aria-label={sheet === "dates" ? t.selectDates : sheetTitle}>
+        <section className={`${styles.sheet} ${sheet === "dates" ? styles.calendarSheet : ""}`} role="dialog" aria-modal="true" aria-label={sheet === "dates" ? t.selectDates : sheetTitle}>
           <div className={styles.sheetHandle} />
           {locationSheetOpen && <>
             <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>{t.searchDestinations}</span><h2>{sheetTitle}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
@@ -575,16 +649,6 @@ export function TravelCompareExperience() {
             <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>{t.guestsRooms}</span><h2>{t.whoTravels}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
             <div className={styles.counterList}><Counter label={t.adults} hint={t.adultHint} value={adults} min={1} max={8} onChange={setAdults} /><Counter label={t.rooms} hint={t.roomHint} value={rooms} min={1} max={5} onChange={setRooms} /></div>
             <div className={styles.sheetActions}><span>{adults} {adults === 1 ? t.adult : t.adults} · {rooms} {rooms === 1 ? t.room : t.rooms}</span><button type="button" className={styles.primaryButton} onClick={() => setSheet(null)}>{t.confirm}</button></div>
-          </>}
-          {sheet === "menu" && <>
-            <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>TravelGoGuide</span><h2>{t.explore}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
-            <nav className={styles.menuNav}>
-              <Link href={withLocale("/", locale)}>{t.travelStories}<Icon name="arrow" /></Link>
-              <Link href={withLocale("/guides/", locale)}>{t.allGuides}<Icon name="arrow" /></Link>
-              <Link href={withLocale("/about/", locale)}>{t.aboutUs}<Icon name="arrow" /></Link>
-              <Link href={withLocale("/privacy/", locale)}>{t.privacy}<Icon name="arrow" /></Link>
-              <Link href={withLocale("/terms/", locale)}>{t.terms}<Icon name="arrow" /></Link>
-            </nav>
           </>}
         </section>
       </div>}
