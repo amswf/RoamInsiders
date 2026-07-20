@@ -506,6 +506,7 @@ export function TravelCompareExperience() {
               </picture>
             ))}
             <div className={styles.focusShade} />
+            <Link className={styles.focusLink} href="https://www.trip.com/" prefetch={false} aria-label="Visit the Trip.com homepage" />
             <div className={styles.focusCopy} key={activeHero.id}>
               <span>{activeHero.label}</span>
               <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHero.title}</h1>

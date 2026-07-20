@@ -63,12 +63,14 @@
 .activeBackdrop { z-index: -2; }
 .focusBackdrop img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
 .focusShade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3, 22, 50, .08) 5%, rgba(3, 19, 46, .38) 48%, rgba(3, 17, 42, .9) 100%); }
-.focusCopy { position: absolute; left: 0; right: 0; bottom: 67px; padding: 0 30px; color: #fff; animation: focusCopyIn .45s ease both; }
+.focusLink { position: absolute; inset: 0; z-index: 0; cursor: pointer; }
+.focusLink:focus-visible { outline: 3px solid #fff; outline-offset: -5px; }
+.focusCopy { position: absolute; left: 0; right: 0; bottom: 67px; z-index: 1; padding: 0 30px; color: #fff; pointer-events: none; animation: focusCopyIn .45s ease both; }
 .focusCopy > span { display: inline-flex; align-items: center; min-height: 25px; padding: 0 10px; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; background: rgba(3, 20, 47, .23); font-size: 9px; font-weight: 850; letter-spacing: .14em; }
 .focusCopy h1 { max-width: 300px; margin: 17px 0 11px; font-size: clamp(38px, 4vw, 48px); line-height: .98; letter-spacing: -.055em; }
 .focusCopy .longFocusTitle { font-size: clamp(30px, 3.25vw, 38px); line-height: 1.04; }
 .focusCopy strong { display: block; color: #d7ebff; font-size: 18px; }
-.carouselControls { position: absolute; left: 30px; right: 25px; bottom: 24px; display: flex; align-items: center; justify-content: space-between; }
+.carouselControls { position: absolute; left: 30px; right: 25px; bottom: 24px; z-index: 2; display: flex; align-items: center; justify-content: space-between; }
 .carouselDots { display: flex; align-items: center; gap: 7px; }
 .carouselDots button { width: 18px; height: 4px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,.42); cursor: pointer; transition: width .2s ease, background .2s ease; }
 .carouselDots .activeDot { width: 36px; background: #fff; }
