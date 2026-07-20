@@ -230,7 +230,7 @@
   .header p { font-size: 12px; }
   .hero { min-height: 0; }
   .heroInner { width: 100%; min-height: 0; padding: 20px 14px 18px; gap: 16px; }
-  .focusCarousel { width: min(66.667%, 320px); min-height: 0; aspect-ratio: 1.61; border-radius: 16px; }
+  .focusCarousel { width: 100%; min-height: 159px; aspect-ratio: auto; border-radius: 16px; }
   .focusCopy { bottom: 34px; padding: 0 14px; }
   .focusCopy > span { min-height: 18px; padding-inline: 7px; font-size: 7px; }
   .focusCopy h1 { max-width: 100%; margin: 6px 0 4px; font-size: clamp(18px, 5.4vw, 23px); line-height: 1; }
