@@ -230,14 +230,17 @@
   .header p { font-size: 12px; }
   .hero { min-height: 0; }
   .heroInner { width: 100%; min-height: 0; padding: 20px 14px 18px; gap: 16px; }
-  .focusCarousel { min-height: 238px; border-radius: 20px; }
-  .focusCopy { bottom: 49px; padding: 0 20px; }
-  .focusCopy > span { min-height: 21px; font-size: 8px; }
-  .focusCopy h1 { max-width: 270px; margin: 10px 0 6px; font-size: 31px; }
-  .focusCopy .longFocusTitle { max-width: 285px; font-size: 22px; line-height: 1.08; }
-  .focusCopy strong { font-size: 14px; }
-  .carouselControls { left: 20px; right: 17px; bottom: 12px; }
-  .carouselPause { width: 30px; height: 30px; }
+  .focusCarousel { width: min(66.667%, 320px); min-height: 0; aspect-ratio: 1.61; border-radius: 16px; }
+  .focusCopy { bottom: 34px; padding: 0 14px; }
+  .focusCopy > span { min-height: 18px; padding-inline: 7px; font-size: 7px; }
+  .focusCopy h1 { max-width: 100%; margin: 6px 0 4px; font-size: clamp(18px, 5.4vw, 23px); line-height: 1; }
+  .focusCopy .longFocusTitle { max-width: 100%; font-size: clamp(14px, 4.2vw, 18px); line-height: 1.06; }
+  .focusCopy strong { font-size: 11px; }
+  .carouselControls { left: 14px; right: 12px; bottom: 8px; }
+  .carouselDots { gap: 5px; }
+  .carouselDots button { width: 13px; height: 3px; }
+  .carouselDots .activeDot { width: 25px; }
+  .carouselPause { width: 24px; height: 24px; }
   .searchCard { border-radius: 22px; box-shadow: 0 22px 56px rgba(8,34,77,.21); }
   .tabs { height: 62px; }.tabs button { gap: 8px; font-size: 15px; }
   .formBody { padding: 15px 14px 16px; gap: 9px 8px; }
@@ -291,8 +294,6 @@
 
 @media (max-width: 620px) and (max-height: 680px) {
   .heroInner { padding-top: 10px; gap: 10px; }
-  .focusCarousel { min-height: 190px; }
-  .focusCopy .longFocusTitle { font-size: 20px; }
   .microTrust { display: none; }
   .calendarSheet .calendarGrid { grid-template-rows: 15px repeat(6, minmax(24px, 1fr)); }
   .calendarSheet .sheetActions > span { display: none; }
