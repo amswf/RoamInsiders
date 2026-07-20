@@ -455,8 +455,18 @@ export function TravelCompareExperience() {
     return `https://www.trip.com/flights/showfarefirst?${params.toString()}`;
   }
 
-  function trackComparisonClick() {
-    void fetch(buildClickTrackingUrl(product, attribution), {
+  function buildTripHomepageUrl() {
+    const params = new URLSearchParams({
+      Allianceid: attribution.allianceid,
+      SID: attribution.SID,
+    });
+    if (attribution.trip_sub1) params.set("trip_sub1", attribution.trip_sub1);
+    params.set("trip_sub3", attribution.trip_sub3);
+    return `https://www.trip.com/?${params.toString()}`;
+  }
+
+  function trackComparisonClick(trackedProduct: Product = product) {
+    void fetch(buildClickTrackingUrl(trackedProduct, attribution), {
       method: "GET",
       mode: "no-cors",
       credentials: "omit",
@@ -506,7 +516,7 @@ export function TravelCompareExperience() {
               </picture>
             ))}
             <div className={styles.focusShade} />
-            <Link className={styles.focusLink} href="https://www.trip.com/" prefetch={false} aria-label="Visit the Trip.com homepage" />
+            <Link className={styles.focusLink} href={buildTripHomepageUrl()} prefetch={false} aria-label="Visit the Trip.com homepage" onClick={() => trackComparisonClick(activeHero.id)} />
             <div className={styles.focusCopy} key={activeHero.id}>
               <span>{activeHero.label}</span>
               <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHero.title}</h1>
