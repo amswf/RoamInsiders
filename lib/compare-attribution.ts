@@ -23,7 +23,7 @@ export function parseCompareAttribution(search: string): CompareAttribution {
   const tripSub1 = cleanAttributionValue(params.get("trip_sub1"));
   const gclid = cleanAttributionValue(params.get("gclid"));
   return {
-    allianceid: cleanAttributionValue(params.get("allianceid")) || DEFAULT_COMPARE_ATTRIBUTION.allianceid,
+    allianceid: cleanAttributionValue(params.get("Allianceid") || params.get("allianceid")) || DEFAULT_COMPARE_ATTRIBUTION.allianceid,
     SID: cleanAttributionValue(params.get("SID") || params.get("sid")) || DEFAULT_COMPARE_ATTRIBUTION.SID,
     trip_sub3: cleanAttributionValue(params.get("trip_sub3")) || DEFAULT_COMPARE_ATTRIBUTION.trip_sub3,
     trip_sub1: tripSub1 || cleanAttributionValue(gclid ? `jtzjy-${gclid}` : null),
