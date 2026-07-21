@@ -133,6 +133,36 @@
         // --- 3. 页面写死的商品数据配置 ---
         const products = [
   {
+    "id": "Beauty",
+    "goods_id": "Beauty",
+    "title": "الجمال والصحة",
+    "price": "",
+    "originalPrice": "",
+    "sales": "1000+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/05/29/22/1748505060b852f6adac51d31ff5c1735cde58d09a_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/28/5fcmrn2lliyo"
+  },
+  {
+    "id": "WomenClothing",
+    "goods_id": "WomenClothing",
+    "title": "أزياء نسائية",
+    "price": "",
+    "originalPrice": "",
+    "sales": "1000+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/07/02/73/17829713863cef8cf2277016402ac0ebf4af8eae1a_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/32/5iw277ll5u0u"
+  },
+  {
+    "id": "Kidsbaby",
+    "goods_id": "Kidsbaby",
+    "title": "الرضع والأمومة",
+    "price": "",
+    "originalPrice": "",
+    "sales": "1000+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/02/05/50/17702722148a9c82d1c80d9f222b9b679fdaec8bde_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/28/5fcnqa24s7ds"
+  },
+  {
     "id": "433902724",
     "goods_id": "sz260320183868578935247",
     "title": "تي شيرت قصير الأكمام بلون أحاد...",
@@ -344,14 +374,21 @@
             return array;
         }
 
-        // 每次渲染前，随机打乱商品顺序
-        shuffleArray(products);
+        // 分离前三个固定商品和剩余需要随机打乱的商品
+        const fixedProducts = products.slice(0, 3);
+        const productsToShuffle = products.slice(3);
 
-        // 渲染商品列表
+        // 仅对剩余的商品进行洗牌
+        shuffleArray(productsToShuffle);
+
+        // 将前三个固定商品和打乱后的剩余商品重新合并
+        const finalProducts = fixedProducts.concat(productsToShuffle);
+
+        // 渲染最终的商品列表
         const gridContainer = document.getElementById('product-grid');
         let htmlContent = '';
 
-        products.forEach(function(product) {
+        finalProducts.forEach(function(product) {
             let productLink = product.link || "https://www.shein.com";
             const finalLink = appendUrlParams(productLink);
 
