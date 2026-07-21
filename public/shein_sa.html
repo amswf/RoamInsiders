@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>مختارات شي إن</title>
+    <!-- 引入 Tailwind CSS 框架用于快速还原样式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 移动端兼容性基础设置 */
+        html {
+            -webkit-text-size-adjust: 100%; /* 防止 iOS 旋转时自动调整字体大小 */
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7; /* 设置整体浅灰背景凸显白色卡片 */
+            -webkit-tap-highlight-color: transparent; /* 移除移动端点击高亮，提升原生感 */
+        }
+        /* 针对某些浏览器的细微滚动条优化 */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    </style>
+</head>
+<body class="flex justify-center">
+
+    <!-- 模拟移动端容器宽度 -->
+    <div class="w-full max-w-md bg-white min-h-screen pb-6">
+
+        <!-- 顶部导航栏 -->
+        <div class="px-4 pt-6 pb-2">
+            <!-- 使用 gap 替代 space-x 以完美支持 RTL 布局 -->
+            <div class="flex items-baseline gap-6 border-b border-gray-200">
+                <!-- 激活态 Tab (SHEIN精选) -->
+                <h1 class="text-xl font-extrabold text-black pb-2 border-b-2 border-black relative top-[1px]">مختارات شي إن</h1>
+                <!-- 未激活态 Tab (Just For You) -->
+                <span class="text-gray-400 text-[15px] pb-2 font-medium">خصيصاً لك</span>
+            </div>
+        </div>
+
+        <!-- 促销横幅 Banner: 增加了 onclick 触发 trackClick，href 会被 JS 自动拼上所有 URL 参数 -->
+        <a id="banner-link" href="https://onelink.shein.com/28/5fcnkazri82z" target="_blank" onclick="trackClick('')" class="mx-4 my-3 bg-gradient-to-r from-[#ffebe4] to-[#ffdbce] rounded-md px-3 py-2 flex justify-between items-center shadow-sm cursor-pointer hover:opacity-95 transition-opacity block">
+            <!-- 右侧内容 (由于RTL，排版自然反转) -->
+            <div class="flex items-center gap-2">
+                <!-- 新客专享小标 -->
+                <div class="flex items-center text-[#e94e39] bg-white/60 px-1.5 py-0.5 rounded text-[10px] font-medium border border-[#f3b5a8]">
+                    <!-- 图标 margin 调整为 ml-0.5 -->
+                    <svg class="w-3 h-3 ml-0.5 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    حصري للعملاء الجدد
+                </div>
+                <!-- 折扣文字 -->
+                <div class="font-bold text-gray-800 flex items-baseline">
+                    <span class="text-sm">خصم على طلبك الأول</span>
+                    <span class="text-[#e94e39] text-2xl mx-1 tracking-tighter">15%</span>
+                </div>
+            </div>
+            <!-- 左侧优惠码 (RTL下在左侧) -->
+            <div class="bg-[#e94e39] text-white text-[11px] px-1.5 py-1 rounded flex items-center whitespace-nowrap">
+                كود الخصم:
+                <!-- margin 调整为 mr-1 -->
+                <span class="font-bold mr-1 bg-white text-[#e94e39] px-1.5 py-0.5 rounded-sm tracking-wider">NEW15</span>
+            </div>
+        </a>
+
+        <!-- 商品瀑布流/网格 (两列) -->
+        <div id="product-grid" class="grid grid-cols-2 gap-3 px-3 mt-4">
+            <!-- 卡片由下方 JS 渲染 -->
+        </div>
+    </div>
+
+    <!-- JavaScript 配置及渲染逻辑 -->
+    <script>
+        // --- 1. 兼容性更好的 URL 参数解析与拼接逻辑 ---
+        function getQueryParams() {
+            var params = {};
+            var search = window.location.search.substring(1);
+            if (!search) return params;
+            var pairs = search.split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split('=');
+                if (pair[0]) {
+                    params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+                }
+            }
+            return params;
+        }
+
+        // 定义需要提取并透传的参数列表
+        const targetParams = ['url_from', 'source_id', 'sub_id', 'campaign_id', 'placement_id', 'network', 'keyword', 'click_id'];
+        const currentUrlParams = getQueryParams();
+        let queryParts = [];
+
+        // 将当前页面 URL 里的对应参数提取出来，准备拼接到所有跳转链接后面
+        targetParams.forEach(function(param) {
+            if (currentUrlParams.hasOwnProperty(param)) {
+                queryParts.push(encodeURIComponent(param) + '=' + encodeURIComponent(currentUrlParams[param]));
+            }
+        });
+
+        const queryString = queryParts.join('&');
+
+        // 辅助函数：将参数安全地拼接到目标 URL 后面
+        function appendUrlParams(baseUrl) {
+            if (!queryString) return baseUrl;
+            const separator = baseUrl.indexOf('?') !== -1 ? '&' : '?';
+            return baseUrl + separator + queryString;
+        }
+
+        // 初始化 Banner 链接 (追加当前页面携带的 URL 宏参数)
+        const bannerLinkElement = document.getElementById('banner-link');
+        if (bannerLinkElement) {
+            bannerLinkElement.href = appendUrlParams(bannerLinkElement.href);
+        }
+
+        // --- 2. 统一点击监测逻辑 ---
+        function trackClick(goodsId) {
+            // 最新的监测链接格式
+            var trackUrl = "https://insg.jiatoutrade.com/lzd_pb?_jtp_=clk&jtadv=shein&jtpub=jtzjy&devid=__network__&cid=__click_id__&crid=__goods_id__&adgid=__source_id__&camid=__sub_id__";
+
+            // 替换宏
+            trackUrl = trackUrl.replace('__network__', encodeURIComponent(currentUrlParams['network'] || ''));
+            trackUrl = trackUrl.replace('__click_id__', encodeURIComponent(currentUrlParams['click_id'] || ''));
+            trackUrl = trackUrl.replace('__goods_id__', encodeURIComponent(goodsId || ''));
+            trackUrl = trackUrl.replace('__source_id__', encodeURIComponent(currentUrlParams['source_id'] || ''));
+            trackUrl = trackUrl.replace('__sub_id__', encodeURIComponent(currentUrlParams['sub_id'] || ''));
+
+            // 使用 Image 对象发送 GET 请求（Image Ping），兼容老旧浏览器且不阻塞页面跳转
+            var ping = new Image();
+            ping.src = trackUrl;
+        }
+
+        // --- 3. 页面写死的商品数据配置 ---
+        const products = [
+  {
+    "id": "433902724",
+    "goods_id": "sz260320183868578935247",
+    "title": "تي شيرت قصير الأكمام بلون أحاد...",
+    "price": "$23.00",
+    "originalPrice": "$25.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/03/31/2d/177495283744aaaa3c5e812ebdf4eefe074d42309d_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=433902724"
+  },
+  {
+    "id": "18767470",
+    "goods_id": "sb2306229299277777",
+    "title": "12 لون مكياج اخفاء العيوب & اح...",
+    "price": "$13.00",
+    "originalPrice": "$15.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/01/13/ab/17682747340abc4c6b8b5b2aa5005ddcdf82d53b13_square_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=18767470"
+  },
+  {
+    "id": "69194258",
+    "goods_id": "sb25042198496167691",
+    "title": "مصل الشعر المرطب والمبلل للشعر...",
+    "price": "$9.85",
+    "originalPrice": "$10.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/04/21/e0/17452193627290b20554feec7203ed19bedf029cc8_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=69194258"
+  },
+  {
+    "id": "18767727",
+    "goods_id": "sb2306282288836226",
+    "title": "قلم كحل أسود متين ضد للماء ضد ...",
+    "price": "$4.00",
+    "originalPrice": "$4.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/images3_spmp/2023/06/28/1687934595c90066589c14b25b470354b67e452dd6_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=18767727"
+  },
+  {
+    "id": "41312621",
+    "goods_id": "st2408229701282151",
+    "title": "1 قطعة طائر نسر طائر ورقي كبير...",
+    "price": "$8.00",
+    "originalPrice": "$9.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/images3_spmp/2024/08/22/e6/172431412024b6d1f5f193b021a961b59dc2ecb447_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=41312621"
+  },
+  {
+    "id": "451452308",
+    "goods_id": "sk260227193470790488886",
+    "title": "3 قطع/مجموعة ملابس علوية قصيرة...",
+    "price": "$37.72",
+    "originalPrice": "$41.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/04/21/b2/1776743789446fc1a0f513c12419cdae68dfc8c9c0_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=451452308"
+  },
+  {
+    "id": "435939928",
+    "goods_id": "sj25092032044754291",
+    "title": "زوج من الأقراط ذات تصميم الفيو...",
+    "price": "$5.00",
+    "originalPrice": "$6.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/04/01/fe/17750298452533b44bfda59b55d748b1c834387c8d_square_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=435939928"
+  },
+  {
+    "id": "325671136",
+    "goods_id": "sb251211104755334270298",
+    "title": "مجموعة العناية بالشفاه بالعسل ...",
+    "price": "$11.40",
+    "originalPrice": "$13.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/12/11/69/1765421244f7f1031ee9ee9e1670b23ac649073478_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=325671136"
+  },
+  {
+    "id": "41143175",
+    "goods_id": "sb2408152260800450",
+    "title": "75 جرام عصا شمع تصفيف، مناسبة ...",
+    "price": "$9.50",
+    "originalPrice": "$11.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/images3_spmp/2024/08/15/94/172368645014928483bff0e470041ae7162eea4c03_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=41143175"
+  },
+  {
+    "id": "20643357",
+    "goods_id": "sb2307287354305515",
+    "title": "ماسكارا يطيل يدوم طويلا ضد للم...",
+    "price": "$6.65",
+    "originalPrice": "$7.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/images3_spmp/2025/01/04/18/1735969246bd34872bc4a0dbc0055bfdb8543910ef_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=20643357"
+  },
+  {
+    "id": "37841698",
+    "goods_id": "sj2406251339355614",
+    "title": "مجموعة مجوهرات تشمل قلادة وسوا...",
+    "price": "$37.00",
+    "originalPrice": "$42.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/12/04/21/176481487240d9f77932627fbf8654491454f381ac_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=37841698"
+  },
+  {
+    "id": "520488862",
+    "goods_id": "sa260702184811968850646",
+    "title": "SHEIN مجموعة ملابس للفتيات الص...",
+    "price": "$3.73",
+    "originalPrice": "$4.20",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/07/06/56/17833288919c7495f977c5fe33b32b5e49ef0586b0_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=520488862"
+  },
+  {
+    "id": "464430920",
+    "goods_id": "sz260326134419003667528",
+    "title": "Resyla فستان نسائي، فستان مخطط...",
+    "price": "$7.19",
+    "originalPrice": "$8.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/05/09/2e/17782972350bcd47eb35ae47f979d02f3568ad029d_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=464430920"
+  },
+  {
+    "id": "327765164",
+    "goods_id": "sh251215023759472780734",
+    "title": "صندوق تخزين من الكتان، سعة كبي...",
+    "price": "$4.30",
+    "originalPrice": "$6.30",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/12/15/44/17657380816aea4558a33eccd89416c48adc6b8554_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=327765164"
+  },
+  {
+    "id": "324254650",
+    "goods_id": "sh251201827832887937",
+    "title": "جهاز إزالة الكالوس الكهربائي ا...",
+    "price": "$3.46",
+    "originalPrice": "$4.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/p/spmp/2025/12/01/20/1764576498e5de14974c774c119236c74a50d166d5_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=324254650"
+  },
+  {
+    "id": "437192463",
+    "goods_id": "sb260403152745874435893",
+    "title": "XEIJAYI لاك أظافر جل بتأثير عي...",
+    "price": "$2.93",
+    "originalPrice": "$3.10",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/04/03/7c/1775201811186883e508ee411e4ea4b07923afd838_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=437192463"
+  },
+  {
+    "id": "290446284",
+    "goods_id": "sa251117475324704497",
+    "title": "Playful Pals مجموعة ملابس طفل ...",
+    "price": "$4.79",
+    "originalPrice": "$3.70",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2025/11/18/3a/17634513499da1c9e5badf05df844d987bfdba9361_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=290446284"
+  },
+  {
+    "id": "438931848",
+    "goods_id": "sz260308164657743722155",
+    "title": "قميص نسائي أمامي بأزرار مع تصم...",
+    "price": "$10.65",
+    "originalPrice": "$12.00",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/05/16/0a/1778900534ec2cea3264145234aa6b68e27db0e482_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=438931848"
+  },
+  {
+    "id": "450180849",
+    "goods_id": "sz260402131742033846282",
+    "title": "Elenzga بنطلون عسكري أخضر فاتح...",
+    "price": "$13.31",
+    "originalPrice": "$15.20",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/pi/2026/04/22/73/17768558793048a4886cec63b5c06486e39e43f26b_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=450180849"
+  },
+  {
+    "id": "99811237",
+    "goods_id": "sz25061350052094745",
+    "title": "بلوزة كروشيه شفافة مزينة بترتر...",
+    "price": "$12.78",
+    "originalPrice": "$14.50",
+    "sales": "100+",
+    "image": "https://img.ltwebstatic.com/v4/j/spmp/2025/11/20/63/1763628625130e206dc4e42cda4a134b60185b4ecf_thumbnail_450x552.jpg",
+    "link": "https://onelink.shein.com/0/goods-p-ar?goods_id=99811237"
+  }
+];
+
+        // 随机打乱商品数组顺序的函数 (Fisher-Yates 洗牌算法)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                // 交换元素
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // 每次渲染前，随机打乱商品顺序
+        shuffleArray(products);
+
+        // 渲染商品列表
+        const gridContainer = document.getElementById('product-grid');
+        let htmlContent = '';
+
+        products.forEach(function(product) {
+            let productLink = product.link || "https://www.shein.com";
+            const finalLink = appendUrlParams(productLink);
+
+            htmlContent += `
+                <a href="${finalLink}" target="_blank" onclick="trackClick('${product.goods_id}')" class="bg-white rounded-lg overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex flex-col cursor-pointer transition transform hover:scale-[1.01] active:scale-[0.98] block">
+
+                    <div class="relative w-full pt-[100%] bg-gray-100 overflow-hidden">
+                        <img src="${product.image}" alt="商品图片" class="absolute top-0 left-0 w-full h-full object-cover block">
+
+                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+
+                        <!-- 适配RTL：价格移动到右侧 (right-2) -->
+                        <div class="absolute bottom-2 right-2 flex items-end gap-1">
+                            <div class="bg-[#f04f36] text-white text-sm font-bold px-1.5 py-0.5 rounded shadow-sm leading-none tracking-tight" dir="ltr">${product.price}</div>
+                            <div class="text-[#f5f5f5] text-[11px] line-through mb-0.5" dir="ltr">${product.originalPrice}</div>
+                        </div>
+                        <!-- 适配RTL：销量移动到左侧 (left-2)，并更新阿语文案 -->
+                        <div class="absolute bottom-2 left-2 bg-black/40 text-white text-[10px] px-1.5 py-0.5 rounded backdrop-blur-sm">
+                            تم بيع ${product.sales}
+                        </div>
+                    </div>
+
+                    <div class="p-2.5">
+                        <p class="text-[13px] text-gray-800 line-clamp-2 leading-relaxed" dir="auto">${product.title}</p>
+                    </div>
+                </a>
+            `;
+        });
+
+        gridContainer.innerHTML = htmlContent;
+    </script>
+</body>
+</html>
