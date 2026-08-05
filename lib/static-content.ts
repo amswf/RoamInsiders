@@ -4,6 +4,7 @@ import {
   defaultSettings,
   locales,
   type GuidePost,
+  type ContentSource,
   type Locale,
   type PostLocale,
   type SiteSettings,
@@ -13,6 +14,19 @@ const contentRoot = join(process.cwd(), "content");
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function normalizeSources(value: unknown): ContentSource[] {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((source) => {
+    if (!isRecord(source) || !source.title || !source.url) return [];
+    return [{
+      title: String(source.title),
+      publisher: String(source.publisher || ""),
+      url: String(source.url),
+      accessedAt: String(source.accessedAt || ""),
+    }];
+  });
 }
 
 function normalizePostLocale(value: unknown, slug: string): PostLocale | null {
@@ -42,6 +56,8 @@ function normalizePostLocale(value: unknown, slug: string): PostLocale | null {
     couponCode: String(value.couponCode || ""),
     priceLabel: String(value.priceLabel || ""),
     updatedAt: String(value.updatedAt || "2026-07-13"),
+    verifiedAt: String(value.verifiedAt || ""),
+    sources: normalizeSources(value.sources),
   };
 }
 

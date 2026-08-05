@@ -16,6 +16,13 @@ export type Locale = (typeof locales)[number];
 export type ContentType = "route" | "deal" | "coupon" | "guide";
 export type CtaPlatform = "trip" | "traveloka" | "custom";
 
+export type ContentSource = {
+  title: string;
+  publisher: string;
+  url: string;
+  accessedAt: string;
+};
+
 export type PostLocale = {
   slug: string;
   title: string;
@@ -37,6 +44,8 @@ export type PostLocale = {
   couponCode: string;
   priceLabel: string;
   updatedAt: string;
+  verifiedAt: string;
+  sources: ContentSource[];
 };
 
 export type GuidePost = {

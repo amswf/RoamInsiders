@@ -18,6 +18,10 @@ function paragraphs(content: string) {
   });
 }
 
+function sourceDate(value: string, fallback: string) {
+  return value ? value.slice(0, 10) : fallback;
+}
+
 export function GuideDetailExperience({ post, settings }: { post: GuidePost; settings: SiteSettings }) {
   const [locale, changeLocale] = useLocale();
   const localized = localizePost(post, locale);
@@ -46,7 +50,7 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
         </section>
         <div className="story-layout shell">
           <aside className="story-index"><span>TRAVELGO NOTE</span><b>{localized.destination}</b><p>{localized.priceLabel}</p></aside>
-          <div className="story-body">{paragraphs(localized.content)}{localized.contentType === "coupon" ? <div className="coupon-box"><span>{t.couponCode}</span><strong>{localized.couponCode || t.terms}</strong><a href={ctaUrl} target="_blank" rel="noopener noreferrer">{t.terms} ↗</a></div> : null}<p className="disclosure">{t.disclosure}</p></div>
+          <div className="story-body">{paragraphs(localized.content)}{localized.contentType === "coupon" ? <div className="coupon-box"><span>{t.couponCode}</span><strong>{localized.couponCode || t.terms}</strong><a href={ctaUrl} target="_blank" rel="noopener noreferrer">{t.terms} ↗</a></div> : null}{localized.sources.length ? <section className="story-sources"><h2>{t.sources}</h2>{localized.verifiedAt ? <p>{t.verifiedOn}: {sourceDate(localized.verifiedAt, localized.updatedAt)}</p> : null}<ol>{localized.sources.map((source) => <li key={source.url}><a href={safeExternalUrl(source.url)} target="_blank" rel="noopener noreferrer">{source.title}</a><span>{source.publisher}{source.accessedAt ? ` · ${source.accessedAt}` : ""}</span></li>)}</ol></section> : null}<p className="disclosure">{t.disclosure}</p></div>
         </div>
       </article>
       <SiteFooter locale={locale} />

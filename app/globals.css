@@ -122,6 +122,13 @@ p { text-wrap: pretty; }
 .coupon-box strong { grid-row: 2; font-family: var(--serif); font-size: 28px; font-weight: 500; }
 .coupon-box a { grid-row: 1 / 3; align-self: center; border-bottom: 1px solid var(--ink); font-size: 11px; font-weight: 800; }
 .story-body .disclosure { margin-top: 70px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-family: var(--sans); font-size: 10px; line-height: 1.7; }
+.story-sources { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-family: var(--sans); }
+.story-sources h2 { margin: 0 0 8px; color: var(--ink); font-family: var(--serif); font-size: 24px; }
+.story-sources > p { margin: 0 0 18px; color: var(--muted); font-size: 12px; }
+.story-sources ol { margin: 0; padding-left: 20px; }
+.story-sources li { margin: 0 0 14px; padding-left: 4px; font-size: 13px; line-height: 1.45; }
+.story-sources a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.story-sources span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
 .sticky-action { position: fixed; z-index: 80; left: 50%; bottom: 18px; transform: translateX(-50%); width: min(760px, calc(100% - 36px)); min-height: 76px; padding: 10px 10px 10px 22px; display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 18px; background: var(--surface); border: 1px solid var(--ink); box-shadow: 0 18px 60px rgba(29,43,39,.22); }
 .sticky-action > div { display: flex; flex-direction: column; gap: 4px; }
 .sticky-action small { color: var(--muted); font-size: 8px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }

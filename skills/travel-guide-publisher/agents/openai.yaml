@@ -1,0 +1,4 @@
+interface:
+  display_name: "旅游达人"
+  short_description: "每日调研热门目的地、核验事实、生成可靠攻略并发布到TravelGoGuide"
+  default_prompt: "使用 $travel-guide-publisher 调研今日热门目的地，生成经过来源核验的旅游内容并发布到 TravelGoGuide。"

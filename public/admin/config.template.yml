@@ -84,6 +84,17 @@ collections:
       - { label: 优惠码, name: couponCode, widget: string, i18n: true, required: false }
       - { label: 价格或优惠标签, name: priceLabel, widget: string, i18n: true, required: false }
       - { label: 更新日期, name: updatedAt, widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, i18n: duplicate }
+      - { label: 信息核验时间, name: verifiedAt, widget: string, i18n: duplicate, required: false, hint: 'ISO 8601，例如 2026-08-05T01:30:00Z' }
+      - label: 资料来源
+        name: sources
+        widget: list
+        i18n: duplicate
+        required: false
+        fields:
+          - { label: 标题, name: title, widget: string }
+          - { label: 发布者, name: publisher, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: 查阅日期, name: accessedAt, widget: string, hint: 'YYYY-MM-DD' }
 
   - name: settings
     label: 网站设置
