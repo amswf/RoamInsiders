@@ -121,5 +121,7 @@ Volatility: `critical`, `high`, `medium`, `low`. Entry and safety claims must be
 
 - Install post JSON to `content/posts` and evidence JSON to `content/research`.
 - `npm run lint` and `npm run build` must pass.
-- The repository's GitHub Pages workflow deploys pushes to `main`.
+- Pushes to `main` preserve the reviewed source state but are not the production release when the custom domain uses the self-hosted Nginx server.
+- Build locally, upload `out/` to a new `/data/travelgoguide/releases/<unique-release>/` directory, validate it, then atomically switch `/data/travelgoguide/current`.
+- Keep the prior release intact for rollback and keep the private SSH origin out of the public repository.
 - The expected live URL is `https://travelgoguide.com/guides/<slug>/`.

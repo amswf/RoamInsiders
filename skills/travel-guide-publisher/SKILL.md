@@ -83,9 +83,12 @@ Only perform these steps in `publish` mode:
 2. Inspect `git status` and preserve unrelated user changes.
 3. Stage only the new or intentionally updated post, its research file, and any directly required schema/UI changes.
 4. Commit with `内容：发布 <destination> <angle>`.
-5. Push the current commit to the configured deployment branch. For this repository, `main` triggers GitHub Pages.
-6. Wait for the deployment to finish when tooling allows it.
-7. Open `https://travelgoguide.com/guides/<slug>/` and verify HTTP success, title, updated date, sources, image, CTA, and absence of obvious rendering errors.
+5. Push the current commit to `main` for version control. Do not treat the GitHub Pages workflow as the production deployment when TravelGoGuide is configured to use its self-hosted server.
+6. Read `deploy/travelgoguide.com.nginx.conf` and confirm the production root. Obtain the SSH target from the local automation configuration or user-provided private environment; never commit the origin host or credentials to the public repository.
+7. Upload the built `out/` directory to a new, uniquely named directory below `/data/travelgoguide/releases/`. Never overwrite the active release.
+8. On the server, verify the new `index.html`, the new guide's `index.html`, representative locale titles, and the sources heading before activation.
+9. Atomically replace `/data/travelgoguide/current` with a symlink to the verified release. Keep the previous release for rollback; do not reload Nginx for a content-only release.
+10. Open `https://travelgoguide.com/guides/<slug>/` with a cache-busting query and verify HTTP success, all 11 locale titles, updated date, sources, image, CTA, and absence of obvious rendering errors.
 
 Never stage, commit, overwrite, or revert unrelated changes. Never store GitHub tokens, CMS tokens, or other credentials in the skill, repository, or evidence bundle.
 
