@@ -22,6 +22,11 @@ CATEGORIES = {
 VOLATILITY_DAYS = {"critical": 3, "high": 7, "medium": 30, "low": 365}
 PLACEHOLDERS = re.compile(r"\b(?:todo|tbd|lorem ipsum)\b|待核实|待补充|示例链接", re.I)
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+HYPE = re.compile(
+    r"\b(?:ultimate|unmissable|must[- ]visit|hidden gem|best ever)\b|"
+    r"必去|不容错过|终极攻略|隐藏宝藏|此生必去",
+    re.I,
+)
 
 
 class Report:
@@ -248,9 +253,34 @@ def validate_post(post: object, research_slug: str, research_sources: dict[str, 
             report.error(f"{where}.slug must match research.slug ({research_slug})")
         for field in ("title", "excerpt", "content", "destination", "category", "imageAlt", "updatedAt"):
             require_text(localized, field, where, report)
+        title = str(localized.get("title", "")).strip()
+        excerpt = str(localized.get("excerpt", "")).strip()
         content = str(localized.get("content", ""))
         if PLACEHOLDERS.search(content) or PLACEHOLDERS.search(str(localized.get("title", ""))):
             report.error(f"{where} contains placeholder text")
+        if "\n" in title or len(title) > 120:
+            report.error(f"{where}.title must be one clear line no longer than 120 characters")
+        if title and excerpt and title.casefold() == excerpt.casefold():
+            report.error(f"{where}.excerpt must add useful information instead of repeating the title")
+        if HYPE.search(title):
+            report.warn(f"{where}.title may contain vague or unsupported hype; rewrite or verify it")
+        sections = [block.strip() for block in re.split(r"\n\s*\n", content) if block.strip()]
+        if len(sections) < 5:
+            report.error(f"{where}.content must contain at least 5 readable sections")
+        headings: list[str] = []
+        for section_index, section in enumerate(sections):
+            lines = [line.strip() for line in section.splitlines() if line.strip()]
+            if len(lines) < 2 or "｜" not in lines[0]:
+                report.error(
+                    f"{where}.content section {section_index + 1} must start with a descriptive heading containing ｜"
+                )
+                continue
+            headings.append(lines[0].casefold())
+            body_length = len(re.sub(r"\s+", "", " ".join(lines[1:])))
+            if body_length > 1400:
+                report.warn(f"{where}.content section {section_index + 1} is dense; split or simplify it")
+        if len(headings) != len(set(headings)):
+            report.error(f"{where}.content contains repeated section headings")
         status = localized.get("status")
         if status not in {"draft", "published"}:
             report.error(f"{where}.status must be draft or published")

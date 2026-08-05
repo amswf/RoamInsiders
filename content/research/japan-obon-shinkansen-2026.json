@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "slug": "japan-obon-shinkansen-2026",
+  "destination": "Japan",
+  "researchedAt": "2026-08-05T09:48:55Z",
+  "audience": "Independent travelers using Japan's intercity rail network during the 2026 Obon period",
+  "topicDecision": {
+    "angle": "Help travelers decide how to reserve or reroute Shinkansen journeys from 7 to 16 August 2026, when Nozomi trains operate with reserved seats only.",
+    "reason": "The operating rule starts in two days, current reservations are above last year's level on JR East, and official seat-availability pages are already active. The topic solves an immediate booking problem without claiming that all of Japan is uniformly crowded.",
+    "trendSignals": [
+      {
+        "description": "JR East reported 1.55 million reserved seats across Shinkansen and conventional limited express services for 7–16 August as of 22 July, 106% of the prior-year level.",
+        "checkedAt": "2026-08-05T09:48:55Z",
+        "sourceIds": [
+          "s2"
+        ]
+      },
+      {
+        "description": "JTB's 2026 summer forecast estimates 69 million domestic overnight travelers and notes increased interest in limiting daytime movement, indoor stops, and early-morning or evening sightseeing because of the heat.",
+        "checkedAt": "2026-08-05T09:48:55Z",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "2026 Summer Vacation Travel Trends",
+      "publisher": "JTB Tourism Research & Consulting",
+      "url": "https://www.tourism.jp/research-reports/travel-trends-outlook-2026-summer/",
+      "sourceType": "reputable-secondary",
+      "publishedAt": "2026-07-02",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s2",
+      "title": "Obon Period Reserved-seat Booking Status",
+      "publisher": "East Japan Railway Company",
+      "url": "https://prtimes.jp/main/html/rd/p/000001482.000017557.html",
+      "sourceType": "primary",
+      "publishedAt": "2026-07-24",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s3",
+      "title": "Nozomi All-reserved Seating During Peak Periods",
+      "publisher": "Central Japan Railway Company and West Japan Railway Company",
+      "url": "https://railway.jr-central.co.jp/nozomi/",
+      "sourceType": "official",
+      "publishedAt": "2026-08-05",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s4",
+      "title": "Train Seat Availability During the 2026 Obon Period",
+      "publisher": "West Japan Railway Company",
+      "url": "https://www.jr-odekake.net/railroad/kuuseki/2026obon/",
+      "sourceType": "official",
+      "publishedAt": "2026-08-05",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s5",
+      "title": "Reservations Up to One Year in Advance",
+      "publisher": "Express Reservation",
+      "url": "https://expy.jp/reservation/pre_time/",
+      "sourceType": "primary",
+      "publishedAt": "2026-08-05",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s6",
+      "title": "Visitor Arrivals to Japan, June 2026 Estimate",
+      "publisher": "Japan National Tourism Organization",
+      "url": "https://www.jnto.go.jp/news/press/20260715_monthly.html",
+      "sourceType": "official",
+      "publishedAt": "2026-07-15",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    },
+    {
+      "id": "s7",
+      "title": "A Shinkansen High-speed Train Sits at a Station",
+      "publisher": "Unsplash",
+      "url": "https://unsplash.com/photos/a-shinkansen-high-speed-train-sits-at-a-station-CdZ5oRV5NII",
+      "sourceType": "primary",
+      "publishedAt": "2025-07-04",
+      "accessedAt": "2026-08-05T09:48:55Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "All Nozomi trains between Tokyo and Hakata operate with reserved seats only from 7 through 16 August 2026.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s3",
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Hikari, Kodama, Mizuho, Sakura and Tsubame continue to have their usual non-reserved cars during the period.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Standard reserved-seat tickets go on sale at 10:00 one month before travel; eligible SmartEX and Express Reservation products accept applications up to one year ahead, subject to restrictions.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s3",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "JR West's Obon availability page covers major western Japan Shinkansen and limited express services and updates once each day.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "JR East reported 1.55 million reserved seats for 7–16 August across Shinkansen and conventional lines, 106% of the prior-year level, based on data through 22 July.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "JR East forecasts 8 August as the outbound congestion peak from the Tokyo metropolitan area toward Tohoku, Joetsu and Hokuriku destinations.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "A passenger who misses a reserved Nozomi may use the ordinary-car deck of another Nozomi with that ticket, or a non-reserved Hikari or Kodama later the same day; a new ticket is required to sit in another Nozomi reserved seat.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "JTB forecasts 69 million domestic overnight travelers for 15 July–31 August 2026 and identifies interest in indoor, low-movement, early-morning and evening sightseeing during hot weather.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Japan received an estimated 3,148,600 international visitors in June 2026; fifteen source markets set June records even though the total was down year over year.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-05T09:48:55Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://unsplash.com/photos/a-shinkansen-high-speed-train-sits-at-a-station-CdZ5oRV5NII",
+    "creator": "Johan Mouchet",
+    "usageBasis": "Unsplash License"
+  },
+  "editorNotes": "Three candidates were reviewed: Japan Obon rail travel, Thailand's August event calendar, and Da Nang summer demand. Japan ranked first because it had two current demand signals, imminent operational changes, and multiple operator sources. The article avoids exact fares because they vary by route, product and season. Availability must be rechecked immediately before booking. Each locale was written as a standalone guide using the same six-part decision structure rather than sentence-by-sentence translation."
+}

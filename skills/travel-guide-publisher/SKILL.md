@@ -47,13 +47,20 @@ Produce useful travel content from evidence, not memory. Treat every travel fact
 
 - Create `post.json` only after the evidence bundle is complete.
 - Publish all 11 supported locales: `zh-CN`, `zh-TW`, `en`, `id`, `th`, `vi`, `ms`, `fil`, `km`, `lo`, and `my`. A scheduled daily run must not rely on locale fallback. Translate meaning, units, and traveler context; do not mechanically mirror awkward phrasing.
-- Make the title specific and defensible. Avoid unsupported superlatives such as “best,” “cheapest,” “safest,” or “must visit.”
+- Write for a human reader, not a search engine. Prefer familiar words, concrete verbs, short sentences, and direct instructions. Explain unavoidable local terms on first use. Remove bureaucratic wording, filler, repetition, keyword stuffing, and literal translations that sound unnatural in the target language.
+- Make the title specific and defensible. It should normally tell the reader the destination, relevant date or duration, and the practical problem solved. Keep one clear idea in the title; avoid vague teasers, stacked keywords, excessive punctuation, and unsupported superlatives such as “best,” “cheapest,” “safest,” or “must visit.”
+- Make the excerpt a plain-language promise of what the reader will be able to decide or do. Do not repeat the title or open with generic praise of the destination.
+- Organize every article in this reading order: why this matters now; the decision or plan at a glance; the main steps in chronological or decision order; fallback options and failure modes; a final pre-departure checklist. Use at least five descriptive section headings. A reader scanning only the headings should still understand the logic.
+- Put one main idea in each paragraph. Lead with the decision, then give the supporting fact and consequence. Break up dense paragraphs; do not bury the useful instruction behind background information.
+- Localize the editorial voice independently for every locale. Preserve facts and structure, but allow natural word order, idiom, pronouns, and sentence boundaries. After translation, read each locale as a standalone article and rewrite anything that feels translated.
 - Separate verified facts from recommendations and editorial judgment.
 - Give exact dates for time-sensitive claims and label prices as checked-on reference prices, with currency and inclusions.
 - Mention uncertainty and practical failure modes: closure days, last departures, reservation requirements, weather exposure, mobility barriers, cash/card limits, and holiday effects when relevant.
 - Include only sources actually used. Add the article's `verifiedAt` and public `sources` fields.
 - Use a lawful image source and accurate alt text. Do not claim that a generic stock image depicts an exact hotel, dish, trail, or current condition.
 - Do not copy source wording. Paraphrase facts and keep quotations exceptional and short.
+
+Before validation, perform an editorial pass for every locale and confirm: the title is understandable without the excerpt; headings are descriptive and non-repetitive; the first paragraph states why the guide matters now; each section answers one reader question; dates and actions are easy to find; and the final section tells the reader what to check next. Treat this as a publication requirement, not optional polish.
 
 ### 5. Validate and install
 
@@ -71,6 +78,7 @@ python3 scripts/install_bundle.py \
 ```
 
 - Fix every validation error. Treat warnings as editorial review items, not noise.
+- Review the validator's readability warnings manually. Automated checks can catch missing structure and obvious density, but they cannot prove that a translation sounds human.
 - The install script refuses to overwrite an existing post or evidence file unless `--replace` is passed. Use `--replace` only when the user asked to update that post.
 - Run `npm run lint` and `npm run build` after installation.
 - Inspect the rendered page or local build when layout, links, or structured fields changed.

@@ -54,6 +54,15 @@ Allowed values:
 
 Keep the same slug, operational facts, timestamps, URLs, publication status, and source set across all 11 translations.
 
+## Editorial structure
+
+- Title: one concrete idea, normally destination + time/duration + reader problem. It must work without the excerpt.
+- Excerpt: one plain-language outcome, not a restatement of the title.
+- Content: at least five blank-line-separated sections. Start each section with a short descriptive heading on its own line; use the full-width separator `｜` so the current renderer displays it as a heading in every locale.
+- Recommended order: `why now` → `plan at a glance` → `steps` → `fallbacks and risks` → `final checklist`.
+- Paragraphs: one main idea each, with the decision or action before supporting detail.
+- Translation: facts and section order stay aligned, but sentence structure and idiom must be rewritten naturally for each locale. Never use locale fallback for a published daily post.
+
 ## Evidence bundle
 
 Path: `content/research/<slug>.json`. This file is an editorial audit trail and is not rendered publicly.
