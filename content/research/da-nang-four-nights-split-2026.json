@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "slug": "da-nang-four-nights-split-2026",
+  "destination": "Da Nang and Hoi An, Vietnam",
+  "researchedAt": "2026-08-06T01:05:23Z",
+  "audience": "Independent Asia-based travelers planning a four-night first trip to Da Nang and Hoi An in August 2026",
+  "topicDecision": {
+    "angle": "Help a first-time visitor decide whether to sleep all four nights in Da Nang or split three nights in Da Nang and one in Hoi An, then build a plan around current airport, attraction, heat and weather constraints.",
+    "reason": "Da Nang qualified through two independent, dated signals: H.I.S. summer reservations from Japan rose 25.6% year on year, while Da Nang's official tourism portal reported nearly 9.8 million guests at accommodation establishments in the first half of 2026, up 22.5%. The four-night split is a practical decision that avoids repeating the site's recent Singapore event-weekend and Japan peak-rail topics.",
+    "trendSignals": [
+      {
+        "description": "H.I.S. reservation data for 17 July–31 August 2026 showed Da Nang bookings from Japan up 25.6% year on year; this is a bounded booking-demand signal, not a claim about every origin market.",
+        "checkedAt": "2026-08-06T01:05:23Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "Da Nang's tourism authority estimated that accommodation establishments served nearly 9.8 million guests in January–June 2026, 22.5% more than in the same period of 2025.",
+        "checkedAt": "2026-08-06T01:05:23Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "HIS Releases 2026 Summer Vacation and Silver Week Travel Trends",
+      "publisher": "TRAICY Global",
+      "url": "https://en.traicy.com/posts/2026070737546/",
+      "sourceType": "reputable-secondary",
+      "publishedAt": "2026-07-07",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s2",
+      "title": "Da Nang Welcomed Nearly 9.8 Million Visitors in the First Half of 2026",
+      "publisher": "Da Nang City Tourism Information Portal",
+      "url": "https://danangfantasticity.com/en/da-nang-welcomed-nearly-9-8-million-visitors-in-the-first-half-of-2026",
+      "sourceType": "official",
+      "publishedAt": "2026-07-02",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s3",
+      "title": "Guide for Visitors Arriving at and Departing from Da Nang International Airport",
+      "publisher": "Da Nang City Tourism Information Portal",
+      "url": "https://danangfantasticity.com/en/travel-information/guide-for-visitors-arriving-at-and-departing-from-da-nang-international-airport",
+      "sourceType": "official",
+      "publishedAt": "2026-06-15",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s4",
+      "title": "Plan Your Da Nang Journey 2026 – Updated Admission Prices for Attractions and Tourist Sites",
+      "publisher": "Da Nang City Tourism Information Portal",
+      "url": "https://danangfantasticity.com/cn/news/plan-your-da-nang-journey-2026-updated-admission-prices-for-attractions-and-tourist-sites",
+      "sourceType": "official",
+      "publishedAt": "2026-01-22",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s5",
+      "title": "Vietnam National Electronic Visa System",
+      "publisher": "Vietnam Immigration Department, Ministry of Public Security",
+      "url": "https://evisa.gov.vn/",
+      "sourceType": "official",
+      "publishedAt": "2026-08-06",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s6",
+      "title": "Vietnam Travel Advice",
+      "publisher": "UK Foreign, Commonwealth & Development Office",
+      "url": "https://www.gov.uk/foreign-travel-advice/vietnam",
+      "sourceType": "official",
+      "publishedAt": "2026-06-26",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s7",
+      "title": "Da Nang Weather Forecast",
+      "publisher": "Vietnam National Center for Hydro-Meteorological Forecasting",
+      "url": "https://nchmf.gov.vn/kttvsiteE/vi-VN/1/da-nang-w55.html",
+      "sourceType": "official",
+      "publishedAt": "2026-08-06",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    },
+    {
+      "id": "s8",
+      "title": "A Person on a Beach with a Surfboard",
+      "publisher": "Unsplash",
+      "url": "https://unsplash.com/photos/a-person-on-a-beach-with-a-surfboard-JufTpun4ZfA",
+      "sourceType": "primary",
+      "publishedAt": "2024-04-25",
+      "accessedAt": "2026-08-06T01:05:23Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "H.I.S. summer 2026 reservations from Japan to Da Nang were 25.6% above the prior-year level for travel from 17 July through 31 August.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Da Nang accommodation establishments served nearly 9.8 million guests in the first half of 2026, up 22.5% year on year; international visitors numbered nearly 5.2 million, up 28.7%.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Da Nang International Airport is about 3 km from the city center; T1 serves domestic flights, T2 serves international flights, and a covered walkway connects the terminals.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Licensed taxis operate from outside both airport arrival halls 24 hours a day; the official airport guide says an entrance fee of VND 10,000–30,000 may be added and only some companies accept Mastercard or Visa.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Danabus routes 12 and 06 operate daily from 05:30 to 19:00, while the direct Hai Van Bus between the airport and Hoi An operates from 07:30 to 16:00 according to the airport guide checked on 6 August 2026.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "The airport guide recommends arriving at least two hours before domestic departures and three hours before international departures.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "Reference prices checked on 6 August 2026 list Marble Mountains' Thuy Son peak at VND 40,000 for adults and Am Phu Cave at VND 20,000, both open 07:00–17:00; optional lift fees and other services are separate.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "The same official 2026 reference lists Hoi An Ancient Town's heritage-site ticket hours as 08:00–17:00 and ticket prices of VND 80,000 for Vietnamese visitors and VND 120,000 for international visitors.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The Vietnam Immigration Department's e-visa portal states that an e-visa can be valid for up to 90 days for single or multiple entry and lists fees of USD 25 and USD 50 respectively; individual eligibility still depends on nationality and itinerary.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "UK FCDO advice was current on 6 August 2026 and warned that connecting flights may be disrupted by wider airspace events, advised checking the airline and transit-country advice, and noted that heat and humidity can be severe.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "The National Center for Hydro-Meteorological Forecasting publishes a current Da Nang forecast that travelers can check before beach, mountain, boat, or road plans.",
+      "category": "weather",
+      "volatility": "high",
+      "checkedAt": "2026-08-06T01:05:23Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://unsplash.com/photos/a-person-on-a-beach-with-a-surfboard-JufTpun4ZfA",
+    "creator": "Khoi Tran",
+    "usageBasis": "Unsplash License"
+  },
+  "editorNotes": "Candidate ranking on 2026-08-06: (1) Da Nang four-night split, 9.1/10, selected for independent booking and official arrival growth plus strong operational sources; (2) Hong Kong weather-proof three-day plan, 8.0/10, supported by first-half arrivals but with a less distinct angle after the recent Singapore city-event guide; (3) Kuching Food Festival short break, 7.2/10, rejected because the live official event did not have a sufficiently independent current demand signal. Default editorial recommendation is three nights in Da Nang and one in Hoi An only when the Hoi An night does not sit immediately before an early flight. Travelers arriving late, using mobility aids, or prioritizing weather flexibility should keep all four nights in Da Nang. Attraction prices, bus hours, entry rules, weather warnings, and flight conditions need rechecking immediately before use. No fixed taxi fare or Da Nang–Hoi An travel time is quoted because current official sources did not provide a single dependable figure. Each locale must present the same facts and decision structure in natural local prose."
+}
