@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "slug": "busan-coast-three-days-2026",
+  "destination": "Busan, South Korea",
+  "researchedAt": "2026-08-08T01:16:07Z",
+  "audience": "Independent Asia-based travelers planning a three-day first trip to Busan in August or September 2026",
+  "topicDecision": {
+    "angle": "Help first-time visitors choose between Haeundae Beach Train and Sky Capsule, then fit that choice into a three-day coastal plan without overbooking timed activities.",
+    "reason": "Busan qualified through two independent, dated signals: Agoda accommodation searches by Malaysian travelers for summer 2026 stays rose 104% year on year, while Busan Metropolitan City reported foreign visitor arrivals up 40% year on year in January-May 2026. The current Beach Train versus Sky Capsule decision is useful during the official beach season and does not repeat the site's recent Japan Obon, Da Nang stay-split or Nha Trang island-ticket topics.",
+    "trendSignals": [
+      {
+        "description": "Agoda accommodation searches made by Malaysian travelers between 1 January and 31 May 2026 for stays between 20 June and 31 August 2026 showed Busan searches up 104% year on year; this is a bounded search-interest signal, not completed bookings.",
+        "checkedAt": "2026-08-08T01:16:07Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "Busan Metropolitan City reported 1,936,572 foreign visitors in January-May 2026, 40% more than the same period in 2025.",
+        "checkedAt": "2026-08-08T01:16:07Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "From Busan to Lombok, Malaysians Look Beyond the Usual Regional Escapes This Summer: Agoda",
+      "publisher": "Australian Associated Press / Agoda",
+      "url": "https://aapnews.aap.com.au/aapreleases/cision20260716AE06103",
+      "sourceType": "commercial",
+      "publishedAt": "2026-07-16",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s2",
+      "title": "Foreign Tourist Arrivals in Busan Near 2 Million... Tourism Spending Ranks Second Nationwide After Seoul",
+      "publisher": "Busan Metropolitan City",
+      "url": "https://www.busan.go.kr/eng/ai-translated-press-releases/1738893",
+      "sourceType": "official",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s3",
+      "title": "Only Been to Haeundae? Here Are Three Busan Beaches to Visit This Summer",
+      "publisher": "Visit Busan / Busan Metropolitan City",
+      "url": "https://www.visitbusan.net/en/index.do?lang_cd=en&menuCd=DOM_000000302002001000&uc_seq=2787",
+      "sourceType": "official",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s4",
+      "title": "Notice on Revision of Fare System and Adjustment of First Operation Time (Effective May 1, 2026)",
+      "publisher": "Haeundae Blueline Park",
+      "url": "https://www.bluelinepark.com/eng/noticeView.do?idx=1617",
+      "sourceType": "primary",
+      "publishedAt": "2026-04-14",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s5",
+      "title": "Haeundae Blueline Park Fares",
+      "publisher": "Haeundae Blueline Park",
+      "url": "https://main.bluelinepark.com/eng/fare.do",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s6",
+      "title": "Haeundae Beach Train Operating Hours",
+      "publisher": "Haeundae Blueline Park",
+      "url": "https://www.bluelinepark.com/eng/beachTramTime.do",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s7",
+      "title": "Haeundae Sky Capsule Operating Hours",
+      "publisher": "Haeundae Blueline Park",
+      "url": "https://www.bluelinepark.com/eng/skyCapsuleTime.do",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s8",
+      "title": "Haeundae Blueline Park FAQ",
+      "publisher": "Haeundae Blueline Park",
+      "url": "https://main.bluelinepark.com/eng/faqList.do",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s9",
+      "title": "Notice on Extension of K-ETA Temporary Exemption",
+      "publisher": "Korea Electronic Travel Authorization Center, Ministry of Justice",
+      "url": "https://k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299706&esntlPnotiMtYn=Y",
+      "sourceType": "official",
+      "publishedAt": "2025-12-23",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s10",
+      "title": "Korea Visa Portal",
+      "publisher": "Korea Immigration Service, Ministry of Justice",
+      "url": "https://www.visa.go.kr/openPage.do?LLANG=EN&MENU_ID=10204",
+      "sourceType": "official",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s11",
+      "title": "South Korea travel advice",
+      "publisher": "UK Foreign, Commonwealth & Development Office",
+      "url": "https://www.gov.uk/foreign-travel-advice/south-korea",
+      "sourceType": "official",
+      "publishedAt": "2026-05-14",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    },
+    {
+      "id": "s12",
+      "title": "Haeundae Busan South Korea 01.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Haeundae_Busan_South_Korea_01.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2024-02-09",
+      "accessedAt": "2026-08-08T01:16:07Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Agoda accommodation searches by Malaysian travelers for Busan stays from 20 June through 31 August 2026 increased 104% year on year.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Busan recorded 1,936,572 foreign visitors in January-May 2026, up 40% year on year; May alone recorded 460,683 foreign visitors, up 42.9%.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Visit Busan lists the 2026 swimming season as 26 June-15 September for Haeundae, 26 June-31 August for Songjeong, and 1 July-31 August for Gwangalli, Songdo, Dadaepo, Ilgwang and Imnang.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The fare revision effective 1 May 2026 moved the Beach Train first departure at Mipo and Songjeong to 09:00 and the Sky Capsule first entry at Mipo and Cheongsapo to the 08:30-09:00 window.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "The official fare page checked on 8 August 2026 lists Beach Train tickets at KRW 10,000 for a one-way trip from Mipo or Songjeong, KRW 14,000 for two rides, and KRW 16,000 for an all-stops day pass.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "The official fare page checked on 8 August 2026 lists one-way Sky Capsule fares per capsule at KRW 50,000 for two people, KRW 55,000 for three, and KRW 60,000 for four.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "For July and August, the operator lists Beach Train hours as 09:00-21:30 and Sky Capsule hours as 08:30-20:30, while stating that hours can change for safety, peak demand or holidays and service may stop during heavy rain or typhoons.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s6",
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "The operator says timed boarding cannot be moved earlier, late passengers may need to cancel and repurchase, on-site Beach Train tickets depend on remaining seats, manual wheelchairs must be folded in Sky Capsules, and powered wheelchairs are not accepted on either product.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Korea extended the existing K-ETA temporary exemption for eligible nationalities through 31 December 2026; eligibility remains passport-specific and travelers can check it in the official application flow.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s9",
+        "s10"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "FCDO South Korea advice was still current on 4 August 2026 and warned that wider Middle East airspace disruption could delay or cancel connecting flights; it recommends checking airlines, transit-country advice and insurance.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-08T01:16:07Z",
+      "sourceIds": [
+        "s11"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "Older guides and snippets show pre-May 2026 Haeundae Blueline fares or later first departures.",
+      "resolution": "The article uses the operator's current fare page plus its dated 14 April 2026 notice effective 1 May. It labels every price as checked on 8 August and tells readers to reopen the official booking page for their exact date."
+    },
+    {
+      "issue": "Busan rail pages use seasonal schedules but state that safety, holidays and peak demand can change boarding times.",
+      "resolution": "The article treats published hours as reference windows only, avoids promising a last departure, and requires same-day rechecking."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Haeundae_Busan_South_Korea_01.jpg",
+    "creator": "Hankook12",
+    "usageBasis": "CC0 1.0 public-domain dedication; the image is described as a 2024 daylight view of Haeundae, not current beach or weather conditions"
+  },
+  "editorNotes": "Ranked shortlist saved beside this bundle. Selected signal types are platform search interest and official visitor counts from independent domains. Prices and operations were checked on 8 August 2026. The itinerary is an editorial recommendation for a three-day first trip, not a claim that every traveler should stay in Haeundae. Recheck K-ETA/visa eligibility, FCDO advice, official beach dates, Blueline fares, operations, accessibility and severe-weather notices on any later publication date."
+}
