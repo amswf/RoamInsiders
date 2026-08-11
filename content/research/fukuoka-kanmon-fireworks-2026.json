@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "slug": "fukuoka-kanmon-fireworks-2026",
+  "destination": "Fukuoka and Mojiko, Japan",
+  "researchedAt": "2026-08-11T02:17:42Z",
+  "audience": "Independent Asia-based travelers deciding whether to make a 13 August 2026 Kanmon Straits fireworks day trip from Fukuoka",
+  "topicDecision": {
+    "angle": "Help Fukuoka-based travelers make a ticket-first go/no-go decision for the 13 August Kanmon Straits fireworks, protect the return journey, and keep a workable city fallback.",
+    "reason": "Fukuoka qualified through two independent dated signals: Agoda accommodation searches by Malaysian travelers for summer 2026 stays rose 91% year on year, while Fukuoka's convention bureau reported foreign entries through the airport and port up 10.3% year on year in March 2026. The event is two days away, has no free Moji waterfront viewing area, and can be cancelled for severe weather, making a decision guide more useful than another generic destination overview.",
+    "trendSignals": [
+      {
+        "description": "Agoda accommodation searches made by Malaysian travelers from 1 January through 31 May 2026 for Fukuoka stays from 20 June through 31 August 2026 increased 91% year on year; this is a bounded search-interest signal, not completed bookings.",
+        "checkedAt": "2026-08-11T02:17:42Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "Fukuoka Convention & Visitors Bureau reported 346,259 foreign entries through Fukuoka Airport and Hakata Port in March 2026, up 10.3% year on year; foreign guest nights were up 7.5%.",
+        "checkedAt": "2026-08-11T02:17:42Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "From Busan to Lombok, Malaysians Look Beyond the Usual Regional Escapes This Summer: Agoda",
+      "publisher": "PR Newswire / Agoda",
+      "url": "https://www.prnewswire.com/apac/news-releases/from-busan-to-lombok-malaysians-look-beyond-the-usual-regional-escapes-this-summer-agoda-302827323.html",
+      "sourceType": "commercial",
+      "publishedAt": "2026-07-16",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s2",
+      "title": "FCVB Tourism Data Release: March 2026 Results",
+      "publisher": "Fukuoka Convention & Visitors Bureau",
+      "url": "https://www.welcome-fukuoka.or.jp/blog/archives/11856",
+      "sourceType": "official",
+      "publishedAt": "2026-06-15",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s3",
+      "title": "39th Kanmon Straits Fireworks Display, Moji — Fiscal 2026",
+      "publisher": "City of Kitakyushu",
+      "url": "https://www.city.kitakyushu.lg.jp/moji/w1100625.html",
+      "sourceType": "official",
+      "publishedAt": "2026-07-06",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s4",
+      "title": "2026 Kanmon Straits Fireworks Display — Moji Official Site",
+      "publisher": "Kanmon Straits Fireworks Executive Committee, Moji",
+      "url": "https://www.kanmon-hanabi.love/",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s5",
+      "title": "2026 Kanmon Straits Fireworks Complete Guide",
+      "publisher": "Visit Fukuoka / Fukuoka Prefecture Tourism Association",
+      "url": "https://www.crossroadfukuoka.jp/feature/kanmonhanabi",
+      "sourceType": "official",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s6",
+      "title": "Exemption of Visa (Short-Term Stay)",
+      "publisher": "Ministry of Foreign Affairs of Japan",
+      "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+      "sourceType": "official",
+      "publishedAt": "2025-09-01",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s7",
+      "title": "Japan travel advice",
+      "publisher": "UK Foreign, Commonwealth & Development Office",
+      "url": "https://www.gov.uk/foreign-travel-advice/japan",
+      "sourceType": "official",
+      "publishedAt": "2026-07-09",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    },
+    {
+      "id": "s8",
+      "title": "Fireworks 13AUG2012 KanmonStraits Japan.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Fireworks_13AUG2012_KanmonStraits_Japan.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2012-08-13",
+      "accessedAt": "2026-08-11T02:17:42Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Agoda accommodation searches by Malaysian travelers for Fukuoka stays from 20 June through 31 August 2026 increased 91% year on year.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Fukuoka recorded 346,259 foreign entries through Fukuoka Airport and Hakata Port in March 2026, up 10.3% year on year; foreign guest nights were up 7.5%.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "The Moji side of the 39th Kanmon Straits Fireworks Display is scheduled for Thursday 13 August 2026, with opening proceedings at 19:35 and fireworks from 20:00 to about 20:30; severe weather cancels the event.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s3",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The organizers plan to make the final go/no-go decision at about 15:00 on 13 August 2026; rain alone does not cancel the event, but strong wind or severe conditions can.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "There is no free viewing area on the Moji waterfront in 2026; entry is limited to people contributing the required paid sponsorship admission, and the official page must be checked for current availability and conditions.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s3",
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "Kitakyushu City says trains between Kokura and Mojiko are planned about every five minutes from 17:00 to around 23:00 on the event day, with a normal ride of about 15 minutes; the route from Mojiko Station to the venue is normally about 5 to 10 minutes on foot but will be heavily crowded.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s3",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "Road restrictions around the Moji waterfront and Mojiko Retro area are planned from 17:00, with some sections beginning at 13:00, until around midnight; there is no event parking and visitors are told to use public transport.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s3",
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "The event organizer prohibits pets in the paid area and warns that recent summer heat, yukata and alcohol have contributed to heat-illness rescues; visitors should hydrate and avoid arriving too early in peak heat.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Japan's short-stay visa exemption rules are passport-specific and include passport-type and stay-length conditions; travelers must check the Ministry of Foreign Affairs list for the passport they will actually use.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "FCDO Japan advice checked on 11 August 2026 includes extreme-heat information and warns that wider airspace disruption can delay or cancel connecting flights, so travelers should check airlines, transit-country advice and insurance.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-11T02:17:42Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The event organizer uses a paid sponsorship-admission model and says last-minute contribution amounts can rise, while availability can change before the event.",
+      "resolution": "The article does not quote a seat price or promise availability. It says there is no free Moji waterfront area and requires readers to confirm a valid official admission before leaving Fukuoka."
+    },
+    {
+      "issue": "The official pages describe extra Kokura-Mojiko trains but do not guarantee each traveler's onward connection to Fukuoka after the event.",
+      "resolution": "The article quotes only the city-published Kokura-Mojiko frequency window and requires travelers to verify their exact full return itinerary and last connection before going."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Fireworks_13AUG2012_KanmonStraits_Japan.jpg",
+    "creator": "Ka23 13",
+    "usageBasis": "CC BY-SA 4.0; the image is accurately described as fireworks launched over the Kanmon Straits on 13 August 2012, not the 2026 event or current conditions"
+  },
+  "editorNotes": "Selected signal types are platform search interest and official realized visitor volume from independent domains. All event, transport, entry and safety facts were rechecked on 11 August 2026. The itinerary is an editorial decision framework, not a promise of ticket availability, weather, a particular train, or an unobstructed view. Recheck official event status at about 15:00 on 13 August, admission availability, exact outbound and return trains, heat/weather warnings, passport-specific visa rules, flight connections, and image availability/license before any later republication."
+}
