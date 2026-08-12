@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "slug": "taipei-drill-fireworks-2026",
+  "destination": "Taipei, Taiwan",
+  "researchedAt": "2026-08-12T01:06:46Z",
+  "audience": "Independent Asia-based travelers planning a short Taipei stay from 12 through 15 August 2026",
+  "topicDecision": {
+    "angle": "A four-day Taipei decision plan that keeps travelers compliant during the 13 August urban-resilience drill, away from rough northern coastal waters, and ready to attend or skip the 15 August Dadaocheng finale based on official updates.",
+    "reason": "Taiwan qualified through two independent dated signals: Agoda accommodation-search interest from the Philippines rose 53% year on year in H1 2026, while Taiwan's Tourism Administration recorded more than 210,000 Philippine arrivals in Q1, up 43%. A current northern-coast sea warning, the 13 August drill and the 15 August festival finale make a dated risk-managed plan more useful than a generic Taipei overview.",
+    "trendSignals": [
+      {
+        "description": "Agoda accommodation-search interest from the Philippines to Taiwan increased 53% year on year in the first half of 2026; this is a bounded platform search signal, not completed bookings.",
+        "checkedAt": "2026-08-12T01:06:46Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "Taiwan's Tourism Administration recorded more than 210,000 Philippine visitors in January–March 2026, up 43% year on year, and reported that 66.2% traveled independently.",
+        "checkedAt": "2026-08-12T01:06:46Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Agoda Unveils Taiwan H1 Travel Insights: Philippines Leads Inbound Travel Interest Growth",
+      "publisher": "Agoda",
+      "url": "https://www.agoda.com/press/agoda-unveils-taiwan-h1-travel-insights-bangkok-exits-top-five-philippines-leads-inbound-travel-interest-growth/",
+      "sourceType": "commercial",
+      "publishedAt": "2026-07-14",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s2",
+      "title": "Philippine arrivals exceed 210,000 in Q1 2026",
+      "publisher": "Tourism Administration, Ministry of Transportation and Communications",
+      "url": "https://www.taiwan.net.tw/m1.aspx?sNo=0044455",
+      "sourceType": "official",
+      "publishedAt": "2026-06-18",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s3",
+      "title": "2026 Dadaocheng Summer Festival traffic controls",
+      "publisher": "Taipei City Government Department of Transportation",
+      "url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=5E6EB419E9EFF9AE",
+      "sourceType": "official",
+      "publishedAt": "2026-07-21",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s4",
+      "title": "2026 Urban Resilience (Air Defense) Exercise in Taipei on August 13",
+      "publisher": "Taipei City Police Department",
+      "url": "https://english.police.gov.taipei/News_Content.aspx?n=7530E85A87340C57&s=FA6A397ED18C97B6&sms=BB747421902FE807",
+      "sourceType": "official",
+      "publishedAt": "2026-08-10",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s5",
+      "title": "Visa-Exempt Entry",
+      "publisher": "Bureau of Consular Affairs, Ministry of Foreign Affairs",
+      "url": "https://www.boca.gov.tw/fp-149-4486-7785a-2.html",
+      "sourceType": "official",
+      "publishedAt": "2026-07-17",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s6",
+      "title": "Mandatory Online Taiwan Arrival Card from October 1, 2025",
+      "publisher": "National Immigration Agency",
+      "url": "https://www.immigration.gov.tw/5475/5478/141457/142068/398041/cp_news",
+      "sourceType": "official",
+      "publishedAt": "2025-09-21",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s7",
+      "title": "Taiwan travel advice: Typhoon Dolphin and August 2026 exercises",
+      "publisher": "UK Foreign, Commonwealth & Development Office",
+      "url": "https://www.gov.uk/foreign-travel-advice/taiwan",
+      "sourceType": "official",
+      "publishedAt": "2026-08-07",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    },
+    {
+      "id": "s8",
+      "title": "20250820 Dadaocheng Summer Festival fireworks finale.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:20250820_%E5%A4%A7%E7%A8%BB%E5%9F%95%E5%A4%8F%E6%97%A5%E7%AF%80%E7%85%99%E7%81%AB%E7%A7%80%E7%B5%90%E5%B0%BE.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2025-08-20",
+      "accessedAt": "2026-08-12T01:06:46Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Agoda accommodation-search interest from the Philippines to Taiwan increased 53% year on year in H1 2026.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "More than 210,000 Philippine visitors arrived in Taiwan in Q1 2026, up 43% year on year, and 66.2% traveled independently.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Taipei's urban-resilience air-defense exercise is scheduled for 13 August 2026 from 14:30 to 15:00, with alarms, evacuation and sheltering, traffic control, disaster-relief drills and a simulated network disruption.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s4",
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "During the 13 August exercise, public transport is expected to continue, but travelers may have to remain at their point of disembarkation; some 4G and 5G mobile data may be disrupted.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s4",
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Current Taiwan advice checked on 12 August says a northern-coast sea warning remains associated with Typhoon Dolphin, with rough seas and possible effects on northbound flights and ferries; travelers should avoid swimming and water sports and confirm transport.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "The Dadaocheng Summer Festival finale is scheduled for 15 August 2026 from 19:00 to 21:00, with a 20-minute fireworks-and-drone show beginning at 20:00.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "For the 15 August finale, road controls are planned from 19:00 to 23:00 and floodgates 1 through 6 are closed to vehicles from 15:30 to 23:00; Taipei City recommends MRT plus walking.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "Taiwan visa-exempt eligibility, allowed stay and document conditions depend on nationality and passport; the official list checked on 12 August includes Philippine ordinary-passport holders for up to 14 days through 31 July 2027, subject to stated conditions.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The Taiwan Arrival Card is free, mandatory for covered foreign travelers, and may be submitted online through the official site within three days before arrival.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-12T01:06:46Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The 15 August fireworks are scheduled, while the current northern-coast sea warning and changeable typhoon conditions can still affect transport or official event decisions.",
+      "resolution": "The article does not promise the finale will proceed. It requires a same-day check of Taipei City, weather and transport notices and provides an indoor fallback without coastal activity."
+    },
+    {
+      "issue": "Visa-exempt periods vary by passport, and the Philippine market is the trend signal rather than the only intended audience.",
+      "resolution": "The article gives the dated Philippine example only as an example, tells every traveler to use the passport they will carry, and links the full official BOCA checker."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:20250820_%E5%A4%A7%E7%A8%BB%E5%9F%95%E5%A4%8F%E6%97%A5%E7%AF%80%E7%85%99%E7%81%AB%E7%A7%80%E7%B5%90%E5%B0%BE.jpg",
+    "creator": "Junyu-K",
+    "usageBasis": "CC BY-SA 4.0; the image shows the 20 August 2025 Dadaocheng Summer Festival finale viewed from Zhongxiao Wharf and is not represented as the 2026 show or current conditions"
+  },
+  "editorNotes": "Signal types are commercial accommodation-search interest and official realized visitor arrivals from independent domains. All drill, storm, event, transport and entry facts were rechecked on 12 August 2026. The plan deliberately omits fixed attraction prices and opening hours. Recheck the northern-coast sea warning, flight/ferry operations, 13 August exercise instructions, 15 August event status and traffic controls, passport-specific entry rules, TWAC site and image availability/license before any later republication."
+}
