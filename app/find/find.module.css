@@ -398,9 +398,9 @@
   .placeCard:hover img { transform: none; }
   .placeShade { display: none; }
   .placeName {
-    left: 5px;
-    right: 5px;
-    bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     min-height: 58px;
     padding: 8px 14px;
     flex-direction: row;
