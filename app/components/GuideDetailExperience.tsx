@@ -34,11 +34,18 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
 
   useEffect(() => {
     document.documentElement.lang = localized.resolvedLocale;
-  }, [localized.resolvedLocale]);
+    const expectedTitle = `${localized.title}｜TravelGoGuide`;
+    const syncTitle = () => {
+      if (document.title !== expectedTitle) document.title = expectedTitle;
+    };
+    syncTitle();
+    const observer = new MutationObserver(syncTitle);
+    observer.observe(document.head, { childList: true, subtree: true, characterData: true });
+    return () => observer.disconnect();
+  }, [localized.resolvedLocale, localized.title]);
 
   return (
     <>
-      <title>{localized.title}｜TravelGoGuide</title>
       <meta name="description" content={localized.excerpt} />
       <main className="detail-page">
       <SiteHeader locale={locale} onLocaleChange={changeLocale} />
