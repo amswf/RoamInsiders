@@ -118,6 +118,43 @@
 .microTrust span svg { color: var(--compare-green); }
 .microTrust i { width: 3px; height: 3px; border-radius: 50%; background: #8b98aa; }
 
+.destinationSection {
+  padding: 0 max(24px, calc((100vw - 1080px) / 2)) 54px;
+  background: #eaf3ff;
+}
+
+.destinationHeading {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.destinationHeading h2 { margin: 0; font-size: 17px; letter-spacing: -.025em; }
+.destinationHeading span { color: #6c7c93; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.destinationGrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+
+.destinationCard {
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #b8c8da;
+  box-shadow: 0 8px 22px rgba(8, 34, 77, .1);
+  isolation: isolate;
+}
+
+.destinationCard img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .28s ease; }
+.destinationCard:hover img { transform: scale(1.045); }
+.destinationCard:focus-visible { outline: 3px solid var(--compare-blue); outline-offset: 3px; }
+.destinationShade { position: absolute; z-index: 1; inset: 32% 0 0; background: linear-gradient(180deg, transparent, rgba(2, 16, 39, .82)); pointer-events: none; }
+.destinationName { position: absolute; z-index: 2; left: 12px; right: 34px; bottom: 11px; display: flex; flex-direction: column; gap: 1px; color: #fff; }
+.destinationName strong { font-size: 15px; line-height: 1.15; letter-spacing: .01em; }
+.destinationName small { color: rgba(255,255,255,.78); font-size: 8px; font-weight: 700; letter-spacing: .075em; text-transform: uppercase; }
+.destinationArrow { position: absolute; z-index: 2; right: 11px; bottom: 13px; color: #fff; font-size: 13px; }
+
 .bookingFlowSection { padding: 72px max(24px, calc((100vw - 1080px) / 2)) 64px; background: #fff; }
 .bookingFlowIntro { max-width: 680px; }
 .bookingFlowIntro > span { color: var(--compare-blue); font-size: 9px; font-weight: 850; letter-spacing: .16em; }
@@ -204,6 +241,7 @@
   .focusCopy h1 { max-width: 430px; }
   .focusCopy p { max-width: 430px; }
   .searchCard { width: min(700px, 100%); margin: 0 auto; }
+  .destinationGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (min-width: 621px) and (max-height: 780px) {
@@ -254,6 +292,15 @@
   .compareButton { min-height: 56px; margin-top: 1px; font-size: 16px; }
   .microTrust { gap: 7px; font-size: 9px; }
   .microTrust span { gap: 3px; }.microTrust span svg { width: 15px; }.microTrust i { display: none; }
+  .destinationSection { padding: 22px 14px 38px; }
+  .destinationHeading { margin-bottom: 12px; align-items: flex-start; flex-direction: column; gap: 3px; }
+  .destinationHeading h2 { font-size: 16px; }
+  .destinationHeading span { font-size: 8px; }
+  .destinationGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .destinationCard { border-radius: 12px; }
+  .destinationName { left: 11px; bottom: 9px; }
+  .destinationName strong { font-size: 14px; }
+  .destinationName small { font-size: 7px; }
   .bookingFlowSection { padding: 48px 18px 42px; }
   .bookingFlowIntro h2 { font-size: 31px; }
   .bookingFlowIntro p { font-size: 12px; }
@@ -318,4 +365,5 @@
   .fieldButton,
   .fieldInputShell,
   .carouselDots button { transition: none; }
+  .destinationCard img { transition: none; }
 }

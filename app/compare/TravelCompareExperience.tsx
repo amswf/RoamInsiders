@@ -3,6 +3,7 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import {
   buildClickTrackingUrl,
   buildHeroClickTrackingUrl,
@@ -58,6 +59,15 @@ const HERO_SLIDES = [
     desktopImage: "/images/compare/flight-desktop.webp",
     mobileImage: "/images/compare/flight-mobile.webp",
   },
+] as const;
+
+const FEATURED_HOTEL_DESTINATIONS = [
+  { cityId: 228, nameZh: "东京", nameEn: "Tokyo", image: "https://ak-d.tripcdn.com/images/01058120005r0hvyk9F44_R_300_225_R5.jpg" },
+  { cityId: 359, nameZh: "曼谷", nameEn: "Bangkok", image: "https://ak-d.tripcdn.com/images/0104c120005ww2m2yF324_R_300_225_R5.jpg" },
+  { cityId: 274, nameZh: "首尔", nameEn: "Seoul", image: "https://ak-d.tripcdn.com/images/0101c12000adm19trE691_R_300_225_R5.jpg" },
+  { cityId: 315, nameZh: "吉隆坡", nameEn: "Kuala Lumpur", image: "https://ak-d.tripcdn.com/images/0106n120008c2wtksBBD8_R_300_225_R5.jpg" },
+  { cityId: 73, nameZh: "新加坡", nameEn: "Singapore", image: "https://ak-d.tripcdn.com/images/100m1c000001dggjf1658_R_300_225_R5.jpg" },
+  { cityId: 641, nameZh: "札幌", nameEn: "Sapporo", image: "https://ak-d.tripcdn.com/images/fd/tg/g1/M08/80/ED/CghzfVWxEqeAZbShADib-WrS4YM862_R_300_225_R5.jpg" },
 ] as const;
 
 const BOOKING_FLOWS = {
@@ -229,6 +239,8 @@ function Icon({ name, size = 22 }: { name: string; size?: number }) {
 function OutboundResourceHints() {
   prefetchDNS("https://www.trip.com");
   preconnect("https://www.trip.com");
+  prefetchDNS("https://ak-d.tripcdn.com");
+  preconnect("https://ak-d.tripcdn.com");
   prefetchDNS("https://insg.jiatoutrade.com");
   preconnect("https://insg.jiatoutrade.com");
   return null;
@@ -466,6 +478,14 @@ export function TravelCompareExperience() {
     return `https://www.trip.com/?${params.toString()}`;
   }
 
+  function buildFeaturedHotelUrl(cityId: number) {
+    const params = new URLSearchParams({
+      city: String(cityId),
+      ...tripAttributionParams(attribution),
+    });
+    return `https://www.trip.com/hotels/list?${params.toString()}`;
+  }
+
   function trackComparisonClick(trackedProduct: Product = product) {
     void fetch(buildClickTrackingUrl(trackedProduct, attribution), {
       method: "GET",
@@ -582,6 +602,32 @@ export function TravelCompareExperience() {
           </form>
         </div>
       </section>
+
+      {product === "hotels" && (
+        <section className={styles.destinationSection} aria-labelledby="featured-destinations-title">
+          <div className={styles.destinationHeading}>
+            <h2 id="featured-destinations-title">热门酒店目的地</h2>
+            <span>Popular hotel destinations</span>
+          </div>
+          <div className={styles.destinationGrid}>
+            {FEATURED_HOTEL_DESTINATIONS.map((destination) => (
+              <Link
+                className={styles.destinationCard}
+                href={buildFeaturedHotelUrl(destination.cityId)}
+                prefetch={false}
+                key={destination.cityId}
+                aria-label={`${destination.nameZh} ${destination.nameEn} 酒店`}
+                onClick={() => { reportGoogleAdsConversion(); trackComparisonClick("hotels"); }}
+              >
+                <Image src={destination.image} alt="" width={300} height={225} />
+                <span className={styles.destinationShade} />
+                <span className={styles.destinationName}><strong>{destination.nameZh}</strong><small>{destination.nameEn}</small></span>
+                <span className={styles.destinationArrow} aria-hidden="true">↗</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className={styles.bookingFlowSection} aria-labelledby="booking-flow-title">
         <div className={styles.bookingFlowIntro}>
