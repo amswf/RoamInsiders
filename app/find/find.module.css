@@ -388,7 +388,7 @@
   .sectionHeading h2 .mobilePopularTitle { display: inline; color: var(--find-ink); font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
   .sectionHeading h2 { font-size: 15px; }
   .checklistIntro h2 { font-size: 31px; }
-  .placeGrid { grid-template-columns: 1fr; gap: 5px; margin-top: 12px; }
+  .placeGrid { width: min(100% - 28px, 620px); margin: 12px auto 0; grid-template-columns: 1fr; gap: 5px; }
   .placeCard { aspect-ratio: 2 / 1; border-radius: 0; box-shadow: none; }
   .placeCard:hover img { transform: none; }
   .placeShade { display: none; }
