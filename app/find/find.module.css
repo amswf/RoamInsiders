@@ -121,9 +121,9 @@
 
 .heroCopy h1 {
   max-width: 720px;
-  margin: 5px 0;
+  margin: 18px 0 12px;
   font-size: clamp(42px, 5.1vw, 66px);
-  font-weight: 200;
+  font-weight: 750;
   letter-spacing: -.055em;
   line-height: 1.03;
 }
@@ -355,7 +355,7 @@
   .hero { padding: 21px 0 50px; grid-template-columns: 1fr; grid-template-areas: "copy" "search"; gap: 20px; }
   .heroCopy { max-width: none; }
   .eyebrow { min-height: 24px; padding-inline: 9px; font-size: 8px; }
-  .heroCopy h1 { margin: 5px 0; font-size: clamp(34px, 10.8vw, 43px); line-height: 1.02; }
+  .heroCopy h1 { margin: 5px 0; font-size: 15px; line-height: 1.02; }
   .heroCopy > p { max-width: 350px; font-size: 11px; line-height: 1.55; }
   .photoPanel { display: none; }
 
