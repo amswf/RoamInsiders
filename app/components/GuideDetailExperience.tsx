@@ -34,13 +34,13 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
 
   useEffect(() => {
     document.documentElement.lang = localized.resolvedLocale;
-    document.title = `${localized.title}｜TravelGoGuide`;
-    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (description) description.content = localized.excerpt;
-  }, [localized.excerpt, localized.resolvedLocale, localized.title]);
+  }, [localized.resolvedLocale]);
 
   return (
-    <main className="detail-page">
+    <>
+      <title>{localized.title}｜TravelGoGuide</title>
+      <meta name="description" content={localized.excerpt} />
+      <main className="detail-page">
       <SiteHeader locale={locale} onLocaleChange={changeLocale} />
       <article>
         <header className="story-hero shell">
@@ -66,6 +66,7 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
         <div><small>{t.bookingVia}</small><strong>{platform}</strong></div>
         <a href={ctaUrl} target="_blank" rel="noopener noreferrer"><span>{ctaLabel}</span><b>↗</b></a>
       </aside>
-    </main>
+      </main>
+    </>
   );
 }
