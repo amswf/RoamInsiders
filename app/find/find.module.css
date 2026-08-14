@@ -62,32 +62,6 @@
 .header nav a { min-height: 44px; display: grid; place-items: center; }
 .header nav a:hover { color: var(--find-primary); }
 
-.homeLink {
-  min-height: 38px;
-  padding: 0 3px 0 14px;
-  justify-self: end;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid var(--find-line);
-  border-radius: 999px;
-  background: var(--find-surface);
-  font-size: 10px;
-  font-weight: 750;
-}
-
-.homeLink b {
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--find-primary-soft);
-  color: var(--find-primary);
-  font-size: 14px;
-}
-
-.mobileGuideLabel,
 .mobileTitle,
 .mobileIntro { display: none; }
 
@@ -316,7 +290,7 @@
 
 .footer { min-height: 150px; padding: 38px 0 30px; display: grid; grid-template-columns: 1fr minmax(300px, .7fr) auto; align-items: start; gap: 60px; border-top: 1px solid var(--find-line); }
 .footer > div:first-child p { margin: 14px 0 0; color: var(--find-muted); font-size: 10px; }
-.disclosure { margin: 0; color: var(--find-muted); font-size: 9px; line-height: 1.7; }
+.disclosure { margin: 0; color: var(--find-muted); font-size: 12px; line-height: 1.55; }
 .legal { display: flex; gap: 20px; color: var(--find-muted); font-size: 9px; font-weight: 700; }
 .legal a:hover { color: var(--find-primary); }
 
@@ -343,12 +317,8 @@
   .footer { width: min(100% - 28px, 620px); }
   .header { height: 56px; }
   .brand { font-size: 15px; }
-  .homeLink { min-height: 34px; padding-left: 11px; gap: 8px; border: 0; background: transparent; }
-  .homeLink b { width: 28px; height: 28px; }
-  .desktopGuideLabel,
   .desktopTitle,
   .desktopIntro { display: none; }
-  .mobileGuideLabel,
   .mobileTitle,
   .mobileIntro { display: inline; }
 
@@ -416,6 +386,7 @@
   .checkItems h3 { margin: 0; }
   .checkItems p { grid-column: 2; }
   .footer { padding: 34px 0; grid-template-columns: 1fr; gap: 24px; }
+  .disclosure { font-size: 11px; }
 }
 
 @media (max-width: 380px) {

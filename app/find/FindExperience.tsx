@@ -308,11 +308,6 @@ export function FindExperience() {
           <a href="#popular">Popular places</a>
           <a href="#before-booking">Before you book</a>
         </nav>
-        <Link className={styles.homeLink} href="/guides/">
-          <span className={styles.desktopGuideLabel}>Travel guides</span>
-          <span className={styles.mobileGuideLabel}>Guides</span>
-          <b>↗</b>
-        </Link>
       </header>
 
       <section className={styles.hero}>
@@ -433,7 +428,7 @@ export function FindExperience() {
 
       <footer className={styles.footer}>
         <div><div className={styles.brand}><span>TRAVELGO</span><span>GUIDE</span></div><p>Useful travel decisions, before the payment screen.</p></div>
-        <p className={styles.disclosure}>TravelGoGuide may earn a commission if you book through this page. This does not affect the price shown to you.</p>
+        <p className={styles.disclosure}>We are an independent travel guide and Trip.com partner. If you book through our Trip.com links, we may earn a commission.</p>
         <div className={styles.legal}><Link href="/privacy/?lang=en">Privacy</Link><Link href="/terms/?lang=en">Terms</Link></div>
       </footer>
 
