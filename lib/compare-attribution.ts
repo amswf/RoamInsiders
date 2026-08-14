@@ -32,7 +32,7 @@ export function parseCompareAttribution(search: string): CompareAttribution {
 
 export function tripAttributionParams(attribution: CompareAttribution) {
   return {
-    allianceid: attribution.allianceid,
+    Allianceid: attribution.allianceid,
     SID: attribution.SID,
     trip_sub3: attribution.trip_sub3,
     ...(attribution.trip_sub1 ? { trip_sub1: attribution.trip_sub1 } : {}),

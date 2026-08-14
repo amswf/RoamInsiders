@@ -135,7 +135,7 @@ function providerTags(attribution: CompareAttribution) {
   const subOne = ["tr", "ip_sub1"].join("");
   const subThree = ["tr", "ip_sub3"].join("");
   return {
-    allianceid: attribution.allianceid,
+    Allianceid: attribution.allianceid,
     SID: attribution.SID,
     [subThree]: raw[subThree] || "",
     ...(raw[subOne] ? { [subOne]: raw[subOne] } : {}),
