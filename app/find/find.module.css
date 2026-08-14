@@ -386,9 +386,9 @@
   .desktopPopularTitle { display: none; }
   .sectionHeading h2 { margin: 0; }
   .sectionHeading h2 .mobilePopularTitle { display: inline; color: var(--find-ink); font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
-  .sectionHeading h2,
+  .sectionHeading h2 { font-size: 15px; }
   .checklistIntro h2 { font-size: 31px; }
-  .placeGrid { grid-template-columns: 1fr; gap: 0; margin-top: 12px; }
+  .placeGrid { grid-template-columns: 1fr; gap: 5px; margin-top: 12px; }
   .placeCard { aspect-ratio: 2 / 1; border-radius: 0; box-shadow: none; }
   .placeCard:hover img { transform: none; }
   .placeShade { display: none; }
@@ -406,7 +406,7 @@
     text-align: center;
   }
   .placeName strong,
-  .placeName small { color: #fff; font-size: clamp(22px, 7vw, 29px); font-weight: 800; line-height: 1; letter-spacing: -.025em; text-transform: none; }
+  .placeName small { color: #fff; font-size: 12px; font-weight: 800; line-height: 1; letter-spacing: -.025em; text-transform: none; }
   .placeName strong::after { content: "/"; }
   .placeArrow { display: none; }
 
@@ -421,7 +421,7 @@
 
 @media (max-width: 380px) {
   .placeName strong,
-  .placeName small { font-size: 22px; }
+  .placeName small { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
