@@ -395,7 +395,13 @@ export function FindExperience() {
 
       <section className={styles.popular} id="popular">
         <div className={styles.sectionHeading}>
-          <div><span>POPULAR DESTINATIONS</span><h2>Not sure where to start?</h2></div>
+          <div>
+            <span>POPULAR DESTINATIONS</span>
+            <h2>
+              <span className={styles.desktopPopularTitle}>Not sure where to start?</span>
+              <span className={styles.mobilePopularTitle}>Hot Spots</span>
+            </h2>
+          </div>
           <p>Open a city to review current hotel options, then check the final dates and terms before booking.</p>
         </div>
         <div className={styles.placeGrid}>

@@ -282,6 +282,9 @@
 
 .sectionHeading h2,
 .checklistIntro h2 { margin: 10px 0 0; font-size: clamp(30px, 3.5vw, 46px); font-weight: 750; letter-spacing: -.04em; line-height: 1.08; }
+.sectionHeading h2 .desktopPopularTitle,
+.sectionHeading h2 .mobilePopularTitle { color: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
+.mobilePopularTitle { display: none; }
 .sectionHeading p { margin: 0; color: var(--find-muted); font-size: 11px; line-height: 1.75; }
 
 .placeGrid { margin-top: 34px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
@@ -375,16 +378,42 @@
   .searchButton { min-width: 0; min-height: 54px; padding-inline: 17px; border-radius: 10px; }
   .formNote { display: none; }
 
-  .popular { padding: 58px 0 66px; }
-  .sectionHeading { grid-template-columns: 1fr; gap: 15px; }
+  .popular { width: 100%; padding: 50px 0 66px; }
+  .sectionHeading {
+    width: min(100% - 28px, 620px);
+    margin-inline: auto;
+    padding-bottom: 14px;
+    display: block;
+    border-bottom: 3px solid var(--find-ink);
+  }
+  .sectionHeading > div > span,
+  .sectionHeading > p,
+  .desktopPopularTitle { display: none; }
+  .sectionHeading h2 { margin: 0; }
+  .sectionHeading h2 .mobilePopularTitle { display: inline; color: var(--find-ink); font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
   .sectionHeading h2,
   .checklistIntro h2 { font-size: 31px; }
-  .sectionHeading p { max-width: 360px; }
-  .placeGrid { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 26px; }
-  .placeCard { border-radius: 12px; }
-  .placeName { left: 11px; bottom: 9px; }
-  .placeName strong { font-size: 14px; }
-  .placeName small { font-size: 7px; }
+  .placeGrid { grid-template-columns: 1fr; gap: 0; margin-top: 12px; }
+  .placeCard { aspect-ratio: 2 / 1; border-radius: 0; box-shadow: none; }
+  .placeCard:hover img { transform: none; }
+  .placeShade { display: none; }
+  .placeName {
+    left: 5px;
+    right: 5px;
+    bottom: 10px;
+    min-height: 58px;
+    padding: 8px 14px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: rgba(7, 17, 43, .66);
+    text-align: center;
+  }
+  .placeName strong,
+  .placeName small { color: #fff; font-size: clamp(22px, 7vw, 29px); font-weight: 800; line-height: 1; letter-spacing: -.025em; text-transform: none; }
+  .placeName strong::after { content: "/"; }
+  .placeArrow { display: none; }
 
   .checklist { padding: 58px 0 66px; gap: 28px; }
   .checkItems { grid-template-columns: 1fr; gap: 8px; }
@@ -396,7 +425,8 @@
 }
 
 @media (max-width: 380px) {
-  .placeName strong { font-size: 13px; }
+  .placeName strong,
+  .placeName small { font-size: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
