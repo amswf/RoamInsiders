@@ -326,7 +326,6 @@ export function FindExperience() {
             <span className={styles.desktopIntro}>Enter your destination and dates to compare current options in one simple search.</span>
             <span className={styles.mobileIntro}>Choose a place and dates to compare current options.</span>
           </p>
-          <div className={styles.heroCue}><span><Icon name="check" size={14} /></span><b>Live options · No account required</b></div>
         </div>
 
         <div className={styles.photoPanel} aria-label="Quiet hotel room overlooking green hills">
