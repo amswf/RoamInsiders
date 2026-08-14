@@ -5,6 +5,7 @@ import { preconnect, prefetchDNS } from "react-dom";
 import Link from "next/link";
 import {
   buildClickTrackingUrl,
+  buildHeroClickTrackingUrl,
   DEFAULT_COMPARE_ATTRIBUTION,
   parseCompareAttribution,
   tripAttributionParams,
@@ -475,6 +476,20 @@ export function TravelCompareExperience() {
     }).catch(() => undefined);
   }
 
+  function trackHeroClick() {
+    void fetch(buildHeroClickTrackingUrl(attribution), {
+      method: "GET",
+      mode: "no-cors",
+      credentials: "omit",
+      cache: "no-store",
+      keepalive: true,
+    }).catch(() => undefined);
+  }
+
+  function reportGoogleAdsConversion() {
+    (window as Window & { gtag_report_conversion?: () => boolean }).gtag_report_conversion?.();
+  }
+
   function submitSearch(event: FormEvent) {
     event.preventDefault();
     if (product === "hotels" && !destinationInput.trim()) {
@@ -490,6 +505,7 @@ export function TravelCompareExperience() {
       return;
     }
     setError("");
+    reportGoogleAdsConversion();
     trackComparisonClick();
     window.location.assign(buildTripUrl());
   }
@@ -516,7 +532,7 @@ export function TravelCompareExperience() {
               </picture>
             ))}
             <div className={styles.focusShade} />
-            <Link className={styles.focusLink} href={buildTripHomepageUrl()} prefetch={false} aria-label="Visit the Trip.com homepage" onClick={() => trackComparisonClick(activeHero.id)} />
+            <Link className={styles.focusLink} href={buildTripHomepageUrl()} prefetch={false} aria-label="Visit the Trip.com homepage" onClick={() => { reportGoogleAdsConversion(); trackHeroClick(); }} />
             <div className={styles.focusCopy} key={activeHero.id}>
               <span>{activeHero.label}</span>
               <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHero.title}</h1>
@@ -605,6 +621,34 @@ export function TravelCompareExperience() {
           </>}
         </section>
       </div>}
+
+      <script dangerouslySetInnerHTML={{ __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-607279762');
+
+        window.addEventListener('load', function () {
+          var googleAdsTag = document.createElement('script');
+          googleAdsTag.async = true;
+          googleAdsTag.src = 'https://www.googletagmanager.com/gtag/js?id=AW-607279762';
+          document.body.appendChild(googleAdsTag);
+        });
+
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) !== 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-607279762/rbikCNj0jNUcEJK1yaEC',
+            'event_callback': callback
+          });
+          return false;
+        }
+        window.gtag_report_conversion = gtag_report_conversion;
+      ` }} />
     </main>
   );
 }

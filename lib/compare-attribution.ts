@@ -52,3 +52,9 @@ export function buildClickTrackingUrl(product: CompareProduct, attribution: Comp
   });
   return `https://insg.jiatoutrade.com/lzd_pb?${params.toString()}`;
 }
+
+/** Measurement endpoint used exclusively by the featured Trip.com campaign carousel. */
+export function buildHeroClickTrackingUrl(attribution: CompareAttribution) {
+  const encode = (value: string) => encodeURIComponent(value);
+  return `https://insg.jiatoutrade.com/lzd_pb?*jtp*=clk&jtadv=trip_j&jtpub=gg${encode(attribution.SID)}&devid=cid=${encode(attribution.trip_sub1)}&crid=${encode(attribution.trip_sub3)}&adgid=${encode(attribution.allianceid)}&camid=${encode(attribution.trip_sub3)}`;
+}
