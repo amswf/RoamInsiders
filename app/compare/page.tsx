@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { TravelCompareExperience } from "./TravelCompareExperience";
+import { FindExperience } from "../find/FindExperience";
 
 export const metadata: Metadata = {
-  title: "Curated Global Hotel & Flight Deals",
-  description: "Search hotel stays and flight options worldwide, then review the details that matter before you book.",
+  title: "Compare Stays & Flights",
+  description: "Set your destination, dates, and travellers, then continue to live availability and current prices.",
 };
 
 export default function ComparePage() {
-  return <TravelCompareExperience />;
+  return <FindExperience />;
 }
