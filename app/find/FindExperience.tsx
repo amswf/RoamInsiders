@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { preconnect, prefetchDNS } from "react-dom";
 import {
@@ -37,6 +38,15 @@ const PLACES: Place[] = [
   { name: "Osaka", country: "Japan", code: "OSA", cityId: 219, note: "Food-first stays" },
   { name: "Seoul", country: "South Korea", code: "SEL", cityId: 274, note: "Design & nightlife" },
 ];
+
+const FEATURED_HOTEL_DESTINATIONS = [
+  { cityId: 228, nameZh: "东京", nameEn: "Tokyo", image: "https://ak-d.tripcdn.com/images/01058120005r0hvyk9F44_R_300_225_R5.jpg" },
+  { cityId: 359, nameZh: "曼谷", nameEn: "Bangkok", image: "https://ak-d.tripcdn.com/images/0104c120005ww2m2yF324_R_300_225_R5.jpg" },
+  { cityId: 274, nameZh: "首尔", nameEn: "Seoul", image: "https://ak-d.tripcdn.com/images/0101c12000adm19trE691_R_300_225_R5.jpg" },
+  { cityId: 315, nameZh: "吉隆坡", nameEn: "Kuala Lumpur", image: "https://ak-d.tripcdn.com/images/0106n120008c2wtksBBD8_R_300_225_R5.jpg" },
+  { cityId: 73, nameZh: "新加坡", nameEn: "Singapore", image: "https://ak-d.tripcdn.com/images/100m1c000001dggjf1658_R_300_225_R5.jpg" },
+  { cityId: 641, nameZh: "札幌", nameEn: "Sapporo", image: "https://ak-d.tripcdn.com/images/fd/tg/g1/M08/80/ED/CghzfVWxEqeAZbShADib-WrS4YM862_R_300_225_R5.jpg" },
+] as const;
 
 let airportRequest: Promise<Place[]> | null = null;
 
@@ -139,6 +149,8 @@ function providerOrigin() {
 function OutboundResourceHints() {
   prefetchDNS(providerOrigin());
   preconnect(providerOrigin());
+  prefetchDNS("https://ak-d.tripcdn.com");
+  preconnect("https://ak-d.tripcdn.com");
   prefetchDNS("https://insg.jiatoutrade.com");
   preconnect("https://insg.jiatoutrade.com");
   return null;
@@ -245,6 +257,25 @@ export function FindExperience() {
     return `${providerOrigin()}/flights/showfarefirst?${params.toString()}`;
   }
 
+  function buildFeaturedHotelUrl(cityId: number) {
+    const params = new URLSearchParams({
+      city: String(cityId),
+      ...providerTags(attribution),
+    });
+    return `${providerOrigin()}/hotels/list?${params.toString()}`;
+  }
+
+  function trackFeaturedHotelClick() {
+    reportConversion();
+    void fetch(buildClickTrackingUrl("hotels", attribution), {
+      method: "GET",
+      mode: "no-cors",
+      credentials: "omit",
+      cache: "no-store",
+      keepalive: true,
+    }).catch(() => undefined);
+  }
+
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (mode === "stays" && !destination.trim()) {
@@ -263,20 +294,6 @@ export function FindExperience() {
     reportConversion();
     trackClick();
     window.location.assign(buildDestinationUrl());
-  }
-
-  function choosePlace(place: Place) {
-    setMode("stays");
-    setDestination(`${place.name}, ${place.country}`);
-    setError("");
-    const panel = document.getElementById("search-panel");
-    panel?.focus({ preventScroll: true });
-    if (panel) {
-      window.scrollTo({
-        top: window.scrollY + panel.getBoundingClientRect().top - 72,
-        behavior: "smooth",
-      });
-    }
   }
 
   return (
@@ -379,15 +396,23 @@ export function FindExperience() {
       <section className={styles.popular} id="popular">
         <div className={styles.sectionHeading}>
           <div><span>POPULAR DESTINATIONS</span><h2>Not sure where to start?</h2></div>
-          <p>Pick a popular city to fill the search, then adjust the dates and travellers above.</p>
+          <p>Open a city to review current hotel options, then check the final dates and terms before booking.</p>
         </div>
         <div className={styles.placeGrid}>
-          {PLACES.map((place, index) => (
-            <button key={place.code} type="button" onClick={() => choosePlace(place)}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <div><strong>{place.name}</strong><small>{place.country} · {place.note}</small></div>
-              <b>→</b>
-            </button>
+          {FEATURED_HOTEL_DESTINATIONS.map((place) => (
+            <Link
+              className={styles.placeCard}
+              href={buildFeaturedHotelUrl(place.cityId)}
+              prefetch={false}
+              key={place.cityId}
+              aria-label={`${place.nameZh} ${place.nameEn} 酒店`}
+              onClick={trackFeaturedHotelClick}
+            >
+              <Image src={place.image} alt="" width={300} height={225} />
+              <span className={styles.placeShade} />
+              <span className={styles.placeName}><strong>{place.nameZh}</strong><small>{place.nameEn}</small></span>
+              <span className={styles.placeArrow} aria-hidden="true">↗</span>
+            </Link>
           ))}
         </div>
       </section>

@@ -284,29 +284,27 @@
 .checklistIntro h2 { margin: 10px 0 0; font-size: clamp(30px, 3.5vw, 46px); font-weight: 750; letter-spacing: -.04em; line-height: 1.08; }
 .sectionHeading p { margin: 0; color: var(--find-muted); font-size: 11px; line-height: 1.75; }
 
-.placeGrid { margin-top: 34px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.placeGrid { margin-top: 34px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
 
-.placeGrid button {
-  min-height: 92px;
-  padding: 17px;
-  display: grid;
-  grid-template-columns: 30px 1fr auto;
-  align-items: center;
-  gap: 11px;
-  border: 1px solid var(--find-line);
+.placeCard {
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  overflow: hidden;
   border-radius: 14px;
-  background: var(--find-surface);
-  text-align: left;
-  cursor: pointer;
-  transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+  background: #b8c8da;
+  box-shadow: 0 8px 22px rgba(31, 49, 79, .1);
+  isolation: isolate;
 }
 
-.placeGrid button:hover { border-color: #a9bddd; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(31, 49, 79, .08); }
-.placeGrid button > span { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; background: var(--find-primary-soft); color: var(--find-primary-dark); font-size: 9px; font-weight: 800; }
-.placeGrid button div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-.placeGrid strong { font-size: 14px; font-weight: 800; letter-spacing: -.015em; }
-.placeGrid small { overflow: hidden; color: var(--find-muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
-.placeGrid b { color: var(--find-primary); font-size: 18px; }
+.placeCard img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .28s ease; }
+.placeCard:hover img { transform: scale(1.045); }
+.placeCard:focus-visible { outline: 3px solid var(--find-primary); outline-offset: 3px; }
+.placeShade { position: absolute; z-index: 1; inset: 32% 0 0; background: linear-gradient(180deg, transparent, rgba(2, 16, 39, .82)); pointer-events: none; }
+.placeName { position: absolute; z-index: 2; left: 12px; right: 34px; bottom: 11px; display: flex; flex-direction: column; gap: 1px; color: #fff; }
+.placeName strong { font-size: 15px; line-height: 1.15; letter-spacing: .01em; }
+.placeName small { color: rgba(255,255,255,.78); font-size: 8px; font-weight: 700; letter-spacing: .075em; text-transform: uppercase; }
+.placeArrow { position: absolute; z-index: 2; right: 11px; bottom: 13px; color: #fff; font-size: 13px; }
 
 .checklist { padding: 78px 0 88px; display: grid; grid-template-columns: minmax(260px, .62fr) 1fr; gap: 72px; border-top: 1px solid var(--find-line); }
 .checkItems { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -383,10 +381,10 @@
   .checklistIntro h2 { font-size: 31px; }
   .sectionHeading p { max-width: 360px; }
   .placeGrid { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 26px; }
-  .placeGrid button { min-height: 84px; padding: 13px; grid-template-columns: 1fr auto; gap: 7px; }
-  .placeGrid button > span { display: none; }
-  .placeGrid strong { font-size: 13px; }
-  .placeGrid small { max-width: 125px; }
+  .placeCard { border-radius: 12px; }
+  .placeName { left: 11px; bottom: 9px; }
+  .placeName strong { font-size: 14px; }
+  .placeName small { font-size: 7px; }
 
   .checklist { padding: 58px 0 66px; gap: 28px; }
   .checkItems { grid-template-columns: 1fr; gap: 8px; }
@@ -398,13 +396,12 @@
 }
 
 @media (max-width: 380px) {
-  .placeGrid { grid-template-columns: 1fr; }
-  .placeGrid button { min-height: 72px; }
-  .placeGrid small { max-width: 230px; }
+  .placeName strong { font-size: 13px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .page *,
   .page *::before,
   .page *::after { scroll-behavior: auto !important; transition: none !important; }
+  .placeCard img { transition: none; }
 }

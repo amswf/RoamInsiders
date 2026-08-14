@@ -14,6 +14,8 @@
 - Source: original image generated for this page with the built-in image tool.
 - Use: one editorial arrival image only; no decorative stock-photo grid.
 - Prompt intent: a quiet timber hotel room, low-rise rooftops and green hills after rain; restrained travel-magazine photography with no people, brands, text, or resort clichés.
+- Destination cards: six user-supplied 300 × 225 city images served from the booking provider CDN.
+- Use: content-bearing hotel destination links only; Chinese and English place names are overlaid at the lower edge.
 
 ## Colour
 - Canvas: `#F4F7FB`
