@@ -16,27 +16,26 @@
 - Prompt intent: a quiet timber hotel room, low-rise rooftops and green hills after rain; restrained travel-magazine photography with no people, brands, text, or resort clichés.
 
 ## Colour
-- Paper: `#F6F3EA`
-- Surface: `#FFFDF8`
-- Ink: `#1D2B27`
-- Muted: `#66736E`
-- Orange: `#F45B35`
-- Orange dark: `#CF3E1D`
-- Lime: `#D7E85E`
-- Line: `rgba(29, 43, 39, 0.16)`
+- Canvas: `#F4F7FB`
+- Surface: `#FFFFFF`
+- Ink: `#172033`
+- Muted: `#657086`
+- Primary blue: `#1769E0`
+- Primary dark: `#0B4EAF`
+- Soft blue: `#EAF2FF`
+- Line: `#DDE3EC`
 
 ## Typography
-- Display: Newsreader, existing site serif stack.
-- Interface and body: Noto Sans SC, existing site sans stack.
+- Display, interface, and body: Noto Sans SC, using weight and spacing for hierarchy.
 
 ## Signature detail
-- A strong editorial headline sits beside a compact, familiar search form.
-- The lime availability marker is the only secondary accent.
+- A compact connected search surface is the visual centre of the page.
+- Blue is the single action colour; all secondary information stays neutral.
 
 ## Avoid
-- Blue booking-site styling.
+- Oversized editorial headlines and retro magazine styling.
 - Fake discount counts, review totals, or lowest-price claims.
-- Multiple gradients, floating glass cards, and decorative icon rows.
+- Multiple gradients, glass effects, decorative icon rows, and heavy shadows.
 
 ## Tone
-- Direct, calm, useful, editorial.
+- Direct, modern, dependable, and quick to scan.

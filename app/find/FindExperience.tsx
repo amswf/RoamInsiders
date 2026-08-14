@@ -282,7 +282,7 @@ export function FindExperience() {
   return (
     <main className={styles.page}>
       <OutboundResourceHints />
-      <div className={styles.notice}>One search for live stays and flights <i /> Review the final terms before booking</div>
+      <div className={styles.notice}>Compare live options <i /> Review final details before booking</div>
       <header className={styles.header}>
         <Link className={styles.brand} href="/" aria-label="TravelGoGuide home">
           <span>TRAVELGO</span><span>GUIDE</span>
@@ -300,23 +300,23 @@ export function FindExperience() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <span className={styles.eyebrow}>SEARCH · COMPARE · GO</span>
+          <span className={styles.eyebrow}>STAYS &amp; FLIGHTS</span>
           <h1>
-            <span className={styles.desktopTitle}>Find a place<br />worth staying in.</span>
-            <span className={styles.mobileTitle}>Find your next stay.</span>
+            <span className={styles.desktopTitle}>Where do you want to go next?</span>
+            <span className={styles.mobileTitle}>Where to next?</span>
           </h1>
           <p>
-            <span className={styles.desktopIntro}>Set the details once, then review current options, room rules, and the full price on the booking site.</span>
-            <span className={styles.mobileIntro}>Choose a place and dates to see current options.</span>
+            <span className={styles.desktopIntro}>Enter your destination and dates to compare current options in one simple search.</span>
+            <span className={styles.mobileIntro}>Choose a place and dates to compare current options.</span>
           </p>
-          <div className={styles.heroCue}><span>01</span><b>Start with where and when</b></div>
+          <div className={styles.heroCue}><span><Icon name="check" size={14} /></span><b>Live options · No account required</b></div>
         </div>
 
         <div className={styles.photoPanel} aria-label="Quiet hotel room overlooking green hills">
           <picture>
             <img src="/images/find/arrival-room.webp" alt="Quiet timber hotel room overlooking rooftops and green hills after rain" width="1536" height="1024" />
           </picture>
-          <span className={styles.photoLabel}>ARRIVE / EXHALE / EXPLORE</span>
+          <span className={styles.photoLabel}>TOKYO · JAPAN</span>
         </div>
 
         <form id="search-panel" className={styles.searchPanel} onSubmit={submit} tabIndex={-1}>
@@ -378,8 +378,8 @@ export function FindExperience() {
 
       <section className={styles.popular} id="popular">
         <div className={styles.sectionHeading}>
-          <div><span>02 / POPULAR PLACES</span><h2>Start with a city.</h2></div>
-          <p>Quick-fill a destination, then adjust the dates above. No invented deal prices, no unnecessary steps.</p>
+          <div><span>POPULAR DESTINATIONS</span><h2>Not sure where to start?</h2></div>
+          <p>Pick a popular city to fill the search, then adjust the dates and travellers above.</p>
         </div>
         <div className={styles.placeGrid}>
           {PLACES.map((place, index) => (
@@ -393,7 +393,7 @@ export function FindExperience() {
       </section>
 
       <section className={styles.checklist} id="before-booking">
-        <div className={styles.checklistIntro}><span>03 / BEFORE YOU BOOK</span><h2>Three details worth checking.</h2></div>
+        <div className={styles.checklistIntro}><span>BEFORE YOU BOOK</span><h2>A quick final check.</h2></div>
         <div className={styles.checkItems}>
           <article><span>01</span><h3>Total price</h3><p>Review taxes and fees in the final breakdown.</p></article>
           <article><span>02</span><h3>Change rules</h3><p>Check cancellation or fare conditions for your exact option.</p></article>
