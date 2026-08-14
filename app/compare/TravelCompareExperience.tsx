@@ -616,12 +616,12 @@ export function TravelCompareExperience() {
                 href={buildFeaturedHotelUrl(destination.cityId)}
                 prefetch={false}
                 key={destination.cityId}
-                aria-label={`${destination.nameZh} ${destination.nameEn} 酒店`}
+                aria-label={`${destination.nameEn} hotels`}
                 onClick={() => { reportGoogleAdsConversion(); trackComparisonClick("hotels"); }}
               >
                 <Image src={destination.image} alt="" width={300} height={225} />
                 <span className={styles.destinationShade} />
-                <span className={styles.destinationName}><strong>{destination.nameZh}</strong><small>{destination.nameEn}</small></span>
+                <span className={styles.destinationName}><strong>{destination.nameEn}</strong></span>
                 <span className={styles.destinationArrow} aria-hidden="true">↗</span>
               </Link>
             ))}

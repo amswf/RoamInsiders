@@ -407,7 +407,6 @@
   }
   .placeName strong,
   .placeName small { color: #fff; font-size: 12px; font-weight: 800; line-height: 1; letter-spacing: -.025em; text-transform: none; }
-  .placeName strong::after { content: "/"; }
   .placeArrow { display: none; }
 
   .checklist { padding: 58px 0 66px; gap: 28px; }

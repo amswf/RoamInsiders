@@ -410,12 +410,12 @@ export function FindExperience() {
               href={buildFeaturedHotelUrl(place.cityId)}
               prefetch={false}
               key={place.cityId}
-              aria-label={`${place.nameZh} ${place.nameEn} 酒店`}
+              aria-label={`${place.nameEn} hotels`}
               onClick={trackFeaturedHotelClick}
             >
               <Image src={place.image} alt="" width={300} height={225} />
               <span className={styles.placeShade} />
-              <span className={styles.placeName}><strong>{place.nameZh}</strong><small>{place.nameEn}</small></span>
+              <span className={styles.placeName}><strong>{place.nameEn}</strong></span>
               <span className={styles.placeArrow} aria-hidden="true">↗</span>
             </Link>
           ))}
