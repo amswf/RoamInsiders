@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "slug": "singapore-national-day-weekend-2026",
   "destination": "Singapore",
-  "researchedAt": "2026-08-05T08:25:00Z",
-  "audience": "Independent international travelers visiting Singapore around 8–10 August 2026",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
   "topicDecision": {
-    "angle": "A three-day Singapore plan that treats National Day transport and public-holiday changes as the organizing constraint",
-    "reason": "Singapore has a current summer-demand signal and an imminent national event with official visitor information updated on 4 August 2026, making logistics more useful than another generic city list.",
+    "angle": "A reusable three-day route for National Stadium event weekends, using NDP 2026 as a clearly expired case study",
+    "reason": "The original page was time-expired and lacked a concrete route; official event, transit and district sources support an evergreen replacement.",
     "trendSignals": [
       {
-        "description": "H.I.S. reservation data reported on 7 July 2026 showed Singapore summer-vacation reservations from Japan up 22.8% year on year.",
-        "checkedAt": "2026-08-05T08:05:00Z",
+        "description": "NDP 2026 published detailed station walking routes and event-day closures, demonstrating a recurring stadium-weekend planning problem.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
-          "s1"
+          "s1",
+          "s2"
         ]
       },
       {
-        "description": "Singapore's 2026 National Day Parade is an imminent, actively updated city event at the National Stadium, with the official site and directions updated on 4 August 2026.",
-        "checkedAt": "2026-08-05T08:08:00Z",
+        "description": "LTA and Singapore Sports Hub maintain current journey-planning and venue-access resources for future events.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
-          "s2",
-          "s3"
+          "s3",
+          "s5"
         ]
       }
     ]
@@ -28,93 +29,60 @@
   "sources": [
     {
       "id": "s1",
-      "title": "HIS Releases 2026 Summer Vacation and Silver Week Travel Trends",
-      "publisher": "TRAICY Global",
-      "url": "https://en.traicy.com/posts/2026070737546/",
-      "sourceType": "reputable-secondary",
-      "publishedAt": "2026-07-07",
-      "accessedAt": "2026-08-05T08:05:00Z"
-    },
-    {
-      "id": "s2",
       "title": "National Day Parade 2026",
       "publisher": "Government of Singapore",
       "url": "https://www.ndp.gov.sg/",
       "sourceType": "official",
-      "publishedAt": "2026-08-04",
-      "accessedAt": "2026-08-05T08:08:00Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
-      "id": "s3",
+      "id": "s2",
       "title": "NDP 2026 Directions",
       "publisher": "Government of Singapore",
       "url": "https://www.ndp.gov.sg/resources/directions/",
       "sourceType": "official",
-      "publishedAt": "2026-08-04",
-      "accessedAt": "2026-08-05T08:10:00Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s3",
+      "title": "Plan Your Journey",
+      "publisher": "Land Transport Authority Singapore",
+      "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/plan_your_journey.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s4",
-      "title": "NDP 2026 Advisories",
-      "publisher": "Government of Singapore",
-      "url": "https://www.ndp.gov.sg/resources/advisories/",
+      "title": "Civic District",
+      "publisher": "Singapore Tourism Board",
+      "url": "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/",
       "sourceType": "official",
-      "publishedAt": "2026-08-04",
-      "accessedAt": "2026-08-05T08:11:00Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s5",
-      "title": "Singapore Public Holidays",
-      "publisher": "Ministry of Manpower Singapore",
-      "url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+      "title": "Getting Here Guide",
+      "publisher": "Singapore Sports Hub",
+      "url": "https://www.sportshub.com.sg/directions-and-map/getting-here-guide",
       "sourceType": "official",
-      "publishedAt": "2026-08-05",
-      "accessedAt": "2026-08-05T08:12:00Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s6",
-      "title": "Entering Singapore",
-      "publisher": "Immigration & Checkpoints Authority Singapore",
-      "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
-      "sourceType": "official",
-      "publishedAt": "2026-07-01",
-      "accessedAt": "2026-08-05T08:14:00Z"
-    },
-    {
-      "id": "s7",
-      "title": "Singapore National Day 2026",
-      "publisher": "Singapore Tourism Board",
-      "url": "https://www.visitsingapore.com/whats-happening/all-happenings/festivals/singapore-national-day/",
-      "sourceType": "official",
-      "publishedAt": "2026-07-01",
-      "accessedAt": "2026-08-05T08:16:00Z"
-    },
-    {
-      "id": "s8",
-      "title": "Establishment of Temporary Restricted Areas for NDP-Related Aerial Activities (2026)",
-      "publisher": "Civil Aviation Authority of Singapore",
-      "url": "https://www.caas.gov.sg/resources/media-and-publication/newsroom/establishment-of-temporary-restricted-areas-for-ndp-related-aerial-activities-2026/",
-      "sourceType": "official",
-      "publishedAt": "2026-06-16",
-      "accessedAt": "2026-08-05T08:18:00Z"
-    },
-    {
-      "id": "s9",
-      "title": "Singapore skyline with ferris wheel and marina bayfront buildings",
-      "publisher": "Unsplash",
-      "url": "https://unsplash.com/photos/singapore-skyline-with-ferris-wheel-and-marina-bayfront-buildings-8t1ypwGNGoY",
-      "sourceType": "primary",
-      "publishedAt": "2025-10-13",
-      "accessedAt": "2026-08-05T08:20:00Z"
+      "title": "Singapore Hotels",
+      "publisher": "Trip.com",
+      "url": "https://www.trip.com/hotels/singapore-hotels-list-73/",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
     }
   ],
   "claims": [
     {
       "id": "c1",
-      "text": "H.I.S. summer-vacation reservation data reported Singapore bookings from Japan up 22.8% year on year.",
-      "category": "other",
-      "volatility": "medium",
-      "checkedAt": "2026-08-05T08:05:00Z",
+      "text": "NDP 2026 took place at the National Stadium on 9 August 2026.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s1"
       ],
@@ -122,10 +90,10 @@
     },
     {
       "id": "c2",
-      "text": "The 2026 National Day Parade is at the National Stadium and gates open at 4:30 p.m. on show days.",
-      "category": "event",
+      "text": "NDP directions estimated 13 minutes walking from Kallang MRT and 11 minutes from Tanjong Rhu MRT, with affected bus and taxi stops.",
+      "category": "transport",
       "volatility": "high",
-      "checkedAt": "2026-08-05T08:08:00Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s2"
       ],
@@ -133,10 +101,10 @@
     },
     {
       "id": "c3",
-      "text": "The official estimated walks to National Stadium are 13 minutes from Kallang MRT and 11 minutes from Tanjong Rhu MRT; several nearby bus stops and taxi stands are affected on the actual event day.",
+      "text": "LTA provides a journey planner for current routes, fares and travel times.",
       "category": "transport",
       "volatility": "high",
-      "checkedAt": "2026-08-05T08:10:00Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s3"
       ],
@@ -144,60 +112,32 @@
     },
     {
       "id": "c4",
-      "text": "Official NDP advisories include National Stadium entry conditions, prohibited items, road traffic information, and aerial-activity restrictions.",
-      "category": "event",
-      "volatility": "high",
-      "checkedAt": "2026-08-05T08:11:00Z",
+      "text": "City Hall, Esplanade and Marina Bay serve the Civic District route described in the post.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s4",
-        "s8"
+        "s4"
       ],
       "usedInPost": true
     },
     {
       "id": "c5",
-      "text": "Singapore National Day falls on Sunday 9 August 2026; Monday 10 August is a public holiday when the employee's rest day falls on 9 August.",
-      "category": "event",
+      "text": "Singapore Sports Hub maintains an official access guide for future venue visits.",
+      "category": "transport",
       "volatility": "high",
-      "checkedAt": "2026-08-05T08:12:00Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s5"
       ],
       "usedInPost": true
-    },
-    {
-      "id": "c6",
-      "text": "Non-Singapore passport holders generally need at least six months' passport validity, and most travelers must submit the free SG Arrival Card within three days including the day of arrival; visa requirements depend on the passport or travel document.",
-      "category": "entry",
-      "volatility": "critical",
-      "checkedAt": "2026-08-05T08:14:00Z",
-      "sourceIds": [
-        "s6"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c7",
-      "text": "Singapore Tourism Board lists National Day on 9 August and advises visitors to account for celebration activity and arrive early at popular public areas.",
-      "category": "event",
-      "volatility": "high",
-      "checkedAt": "2026-08-05T08:16:00Z",
-      "sourceIds": [
-        "s7"
-      ],
-      "usedInPost": true
     }
   ],
-  "conflicts": [
-    {
-      "issue": "Some commercial travel pages still describe the 2026 parade as being at the Padang or imply ticketless entry.",
-      "resolution": "Use the official NDP 2026 site, which places the parade at the National Stadium; do not promise access or a specific fireworks view to travelers without tickets."
-    }
-  ],
+  "conflicts": [],
   "image": {
-    "landingPageUrl": "https://unsplash.com/photos/singapore-skyline-with-ferris-wheel-and-marina-bayfront-buildings-8t1ypwGNGoY",
-    "creator": "Florian Delée",
-    "usageBasis": "Free to use under the Unsplash License"
+    "landingPageUrl": "https://images.unsplash.com/photo-1760377964812-1aea6616365a",
+    "creator": "Unsplash contributor",
+    "usageBasis": "Unsplash License; existing site asset"
   },
-  "editorNotes": "This article is organized around verified event-day friction rather than promising parade access. Recheck the NDP directions and advisories on publication day and again before 9 August because operational details can change."
+  "editorNotes": "NDP 2026 is explicitly labelled as completed. Future event details must come from the current organiser."
 }

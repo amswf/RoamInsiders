@@ -1,51 +1,607 @@
 {
   "zh-CN": {
     "slug": "bali-slow-five-days",
-    "title": "巴厘岛五天：把海边、稻田和一整天留白排进同一条路线",
-    "excerpt": "不每天换酒店，也不横穿全岛。以乌布和海边为两个落点，留出真正能休息的时间。",
-    "content": "第一天｜在乌布慢下来\n抵达后只安排入住和一顿晚餐。把交通后的疲惫留给泳池、树影和早睡。\n\n第二天｜只走一片稻田\n清晨去稻田散步，避开最热的时段。午后不新增景点，找一家能久坐的咖啡馆。\n\n第三天｜从山里到海边\n中午前退房，慢慢移动到海边。傍晚只做一件事：看日落。\n\n第四天｜完整的空白日\n不要预订一整日包车。睡到自然醒，再根据天气决定海滩、按摩或什么也不做。\n\n第五天｜留足离开的时间\n最后一天不塞景点，把堵车和机场排队算进计划，让旅行在平静里结束。",
-    "destination": "巴厘岛",
+    "title": "巴厘岛五天四夜慢旅行：乌布两晚＋沙努尔两晚，不每天换酒店",
+    "excerpt": "用两个住宿点完成稻田、城镇和海边：前两晚住乌布，后两晚住沙努尔，中间只搬一次行李。",
+    "content": "为什么这样分｜五天只住乌布和沙努尔\n巴厘岛的短行程最容易被搬酒店和跨岛车程吃掉。这个版本只设两个落点：乌布负责稻田、步行和文化氛围，沙努尔负责海边、日出和离岛前的轻松节奏。它适合第一次去、希望每天留出午休的人；若你的核心目标是冲浪、夜生活或潜水，应换成更匹配的海岸区域。\n\n预订顺序｜先订两晚乌布，再订两晚沙努尔\n第1至2晚选乌布中心步行范围，方便去乌布市场、王宫周边和Campuhan Ridge Walk；第3至4晚选沙努尔海滨步道附近。确认两家住宿的入住时间、行李寄存和接送规则，再购买不能取消的活动。外国游客还应通过Love Bali官方系统核对旅游税；2026年8月14日页面显示每人150,000印尼盾，符合豁免条件者按官方说明办理。\n\n第1至2天｜乌布只排一条步行线和一个远点\n第1天抵达后只办理入住，在乌布中心熟悉提款、餐饮和返回酒店的路线。第2天清晨走Campuhan Ridge Walk，回城吃午餐并休息；下午在乌布市场、王宫周边或一家美术馆中选一个。若更想看Tegallalang稻田，把它作为当天唯一需要车辆的远点，不再叠加瀑布、秋千和多座寺庙。\n\n第3天｜上午留在乌布，午后搬到沙努尔\n早餐后补走前一天因下雨或体力取消的一个项目，中午前后退房。乌布到沙努尔的实际车程受交通影响，不用固定分钟数倒推晚餐预约。到达后只做入住、海滨步道散步和晚餐。这样即使转移比预期更久，也不会损失已付款的日落活动。\n\n第4天｜沙努尔日出加一个完整空白下午\n沙努尔位于巴厘岛东岸，官方旅游页把清晨5:30至7:00列为观赏日出的参考时段，并介绍沿岸步道适合步行或骑行。日出后回住宿吃早餐；上午沿海走一段即可。下午按天气和体力决定按摩、咖啡馆、泳池或继续休息，不把离岛船、潜水和南部海滩塞进同一天。\n\n第5天与失败预案｜按航班倒推，不加跨区景点\n退房前确认机场接送、堵车缓冲和航站楼。早班机直接离开；晚班机只在沙努尔或住宿附近活动。雨天时保留乌布咖啡馆、美术馆和沙努尔室内休息作为替代；步道湿滑或天气闷热就缩短距离。付款前最后检查：两家酒店日期、一次换房交通、Love Bali凭证、活动取消条款、回程接送。",
+    "destination": "印度尼西亚巴厘岛",
     "duration": "5天4夜",
-    "budget": "实时价",
-    "season": "4月—10月",
-    "category": "慢旅行",
+    "budget": "住宿实时价；外国游客税按2026-08-14核验为150,000印尼盾/人",
+    "season": "全年可排；步行和海边活动按当日降雨调整",
+    "category": "双住宿点慢旅行",
+    "imageAlt": "巴厘岛绿色稻田与棕榈树",
+    "ctaLabel": "比较乌布住宿，再按同样日期查看沙努尔",
+    "priceLabel": "只搬一次酒店；接送和活动价格付款前确认",
     "contentType": "route",
     "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
-    "imageAlt": "巴厘岛绿色稻田与棕榈树",
     "status": "published",
-    "featured": true,
+    "featured": false,
     "ctaPlatform": "traveloka",
-    "ctaLabel": "在 Traveloka 查看巴厘岛选择",
-    "ctaUrl": "",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
     "couponCode": "",
-    "priceLabel": "机票与住宿实时选择",
-    "updatedAt": "2026-07-13"
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "zh-TW": {
     "slug": "bali-slow-five-days",
-    "title": "峇里島五天：把海邊、梯田和一整天留白排進同一條路線",
-    "excerpt": "不每天換飯店，也不橫穿全島。以烏布和海邊為兩個落點，留出真正休息的時間。",
-    "content": "第一天｜在烏布慢下來\n抵達後只安排入住和一頓晚餐。\n\n第二天｜只走一片梯田\n清晨散步，午後留給咖啡和休息。\n\n第三天｜從山裡到海邊\n慢慢移動到海邊，傍晚只看日落。\n\n第四天｜完整的空白日\n依天氣決定海灘、按摩，或什麼也不做。\n\n第五天｜留足離開的時間\n把塞車和機場排隊算進計畫。",
-    "destination": "峇里島", "duration": "5天4夜", "budget": "即時價格", "season": "4月—10月", "category": "慢旅行", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85", "imageAlt": "峇里島綠色梯田與棕櫚樹", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "在 Traveloka 查看峇里島選擇", "ctaUrl": "", "couponCode": "", "priceLabel": "機票與住宿即時選擇", "updatedAt": "2026-07-13"
+    "title": "峇裡島五天四夜慢旅行：烏布兩晚＋沙努爾兩晚，不每天換飯店",
+    "excerpt": "用兩個住宿點完成稻田、城鎮和海邊：前兩晚住烏布，後兩晚住沙努爾，中間只搬一次行李。",
+    "content": "為什麼這樣分｜五天只住烏布和沙努爾\n峇裡島的短行程最容易被搬飯店和跨島車程吃掉。這個版本只設兩個落點：烏布負責稻田、步行和文化氛圍，沙努爾負責海邊、日出和離島前的輕鬆節奏。它適合第一次去、希望每天留出午休的人；若你的核心目標是衝浪、夜生活或潛水，應換成更匹配的海岸區域。\n\n預約順序｜先訂兩晚烏布，再訂兩晚沙努爾\n第1至2晚選烏布中心步行範圍，方便去烏布市場、王宮週邊及Campuhan Ridge Walk；第3至4晚選沙努爾海濱步道附近。確認兩家住宿的入住時間、行李寄放和接送規則，再購買不能取消的活動。外國遊客也應透過Love Bali官方系統核對旅遊稅；2026年8月14日頁顯示每人150,000印尼盾，符合免稅條件者依官方說明辦理。\n\n第1至2天｜烏布只排一條步行線和一個遠點\n第1天抵達後只辦理入住，在烏布中心熟悉提款、餐飲和返回飯店的路線。第2天清晨走Campuhan Ridge Walk，回城吃午餐並休息；下午在烏布市場、王宮週邊或一家美術館中選一個。若更想看Tegallalang稻田，把它當作當天唯一需要車輛的遠點，不再疊加瀑布、鞦韆和多座寺廟。\n\n第3天｜上午留在烏布，午後搬到沙努爾\n早餐後補走前一天因下雨或體力取消的一個項目，中午前後退房。烏佈到沙努爾的實際車程受交通影響，不用固定分鐘數倒推晚餐預約。到達後只做入住、海濱步道散步和晚餐。這樣即使轉移比預期更久，也不會損失已付款的日落活動。\n\n第4天｜沙努爾日出加一個完整空白下午\n沙努爾位於峇裡島東岸，官方旅遊頁把清晨5:30至7:00列為觀賞日出的參考時段，並介紹沿岸步道適合步行或騎乘。日出後回住宿吃早餐；上午沿海走一段即可。下午按天氣和體力決定按摩、咖啡館、泳池或繼續休息，不把離島船、潛水和南部海灘塞進同一天。\n\n第5天與失敗預案｜按航班倒推，不加跨區景點\n退房前確認機場接送、塞車緩衝和航廈。早班機直接離開；晚班機只在沙努爾或住宿附近活動。下雨天時保留烏布咖啡館、美術館和沙努爾室內休息作為替代；步道濕滑或天氣悶熱就縮短距離。付款前最後檢查：兩家飯店日期、一次換房交通、Love Bali憑證、活動取消條款、回程接送。",
+    "destination": "印尼峇裡島",
+    "duration": "5天4夜",
+    "budget": "住宿實時價；外國遊客稅以2026-08-14核驗為150,000印尼盾/人",
+    "season": "全年可排；步行及海邊活動依當日降雨調整",
+    "category": "雙住宿點慢旅行",
+    "imageAlt": "峇裡島綠色稻田與棕櫚樹",
+    "ctaLabel": "比較烏布住宿，再按相同日期查看沙努爾",
+    "priceLabel": "只搬一次飯店；接送活動價格付款前確認",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "en": {
     "slug": "bali-slow-five-days",
-    "title": "Five slow days in Bali: rice fields, the coast and one completely empty day",
-    "excerpt": "Two bases instead of a daily hotel change: Ubud first, then the coast, with enough room to actually rest.",
-    "content": "Day 1 | Arrive slowly in Ubud\nPlan only check-in and dinner. Let the pool, trees and an early night absorb the travel day.\n\nDay 2 | Walk one rice-field route\nGo early, then keep the hot afternoon free for coffee and shade.\n\nDay 3 | Move from the hills to the coast\nCheck out before lunch and take the transfer slowly. Make sunset the only fixed plan.\n\nDay 4 | Protect an empty day\nDo not book a full-day car. Choose the beach, a massage or nothing at all after seeing the weather.\n\nDay 5 | Leave with margin\nTreat traffic and airport queues as part of the itinerary, not a surprise ending.",
-    "destination": "Bali", "duration": "5 days / 4 nights", "budget": "Live prices", "season": "April—October", "category": "Slow travel", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Green rice terraces and palm trees in Bali", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "See Bali options on Traveloka", "ctaUrl": "", "couponCode": "", "priceLabel": "Live flight and stay options", "updatedAt": "2026-07-13"
+    "title": "A relaxed five-day Bali trip: two nights in Ubud, two in Sanur and only one hotel move",
+    "excerpt": "Use two bases for rice fields, town walks and the coast: Ubud first, Sanur second, and move your luggage only once.",
+    "content": "Why this split works｜Use only Ubud and Sanur for five days\nShort Bali trips are easily consumed by hotel changes and cross-island drives. This plan uses two bases: Ubud for rice fields, walking and culture, and Sanur for the coast, sunrise and a gentler final stretch. It suits a first visit with a real lunch break each day. Travellers focused on surfing, nightlife or diving should choose a coast that fits that purpose instead.\n\nBook in this order｜Reserve two Ubud nights, then two Sanur nights\nFor nights one and two, stay within walking reach of central Ubud for the market, palace area and Campuhan Ridge Walk. For nights three and four, compare stays near Sanur's waterfront path. Check luggage storage, check-in and transfer rules before buying non-refundable activities. Foreign visitors should also use the official Love Bali system for the tourist levy; on 14 August 2026 it listed IDR150,000 per person, subject to the official exemptions.\n\nDays 1 and 2｜One Ubud walk and only one outlying stop\nAfter arrival, check in and learn the route to food, cash and your hotel. On day two, walk Campuhan Ridge early, return to town for lunch and rest, then choose one of the Ubud Market and palace area or a single museum. If Tegallalang is your priority, make it the day's only stop requiring a vehicle rather than adding waterfalls, swings and several temples.\n\nDay 3｜Keep the morning in Ubud and move to Sanur after lunch\nUse breakfast time for one item that rain or fatigue removed from day two, then check out around midday. Traffic makes the Ubud–Sanur drive variable, so do not build a fixed dinner reservation around an optimistic transfer time. After arrival, limit the plan to check-in, a waterfront walk and dinner. A slow transfer will then cost no prepaid sunset activity.\n\nDay 4｜Sanur sunrise and a genuinely open afternoon\nSanur lies on Bali's east coast. Indonesia's official tourism page suggests roughly 5:30–7:00 a.m. for sunrise and describes the waterfront path for walking or cycling. Return for breakfast after sunrise and cover only one section of the coast. Use the afternoon for a massage, café, pool or more rest according to weather and energy; do not combine an island boat, diving and a southern beach on the same day.\n\nDay 5 and fallbacks｜Work back from the flight and stay local\nConfirm the airport transfer, traffic buffer and terminal before checkout. Leave directly for an early flight; for a late flight, stay in Sanur or near the hotel. In rain, replace long walks with an Ubud café or museum and an indoor rest in Sanur. Your final payment check covers both hotel dates, the one transfer, Love Bali receipt, activity cancellation terms and the ride to the airport.",
+    "destination": "Bali, Indonesia",
+    "duration": "5 days / 4 nights",
+    "budget": "Live stay prices; foreign tourist levy checked at IDR150,000 per person on 14 Aug 2026",
+    "season": "Year-round with daily rain adjustments for walks and coast time",
+    "category": "Two-base slow route",
+    "imageAlt": "Green rice fields and palm trees in Bali",
+    "ctaLabel": "Compare Ubud stays, then check Sanur for the same dates",
+    "priceLabel": "Only one hotel move; confirm transfers and activities before paying",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "id": {
     "slug": "bali-slow-five-days",
-    "title": "Lima hari santai di Bali: sawah, pantai, dan satu hari tanpa agenda",
-    "excerpt": "Dua tempat menginap tanpa pindah hotel setiap hari: Ubud lalu pesisir, dengan waktu istirahat yang nyata.",
-    "content": "Hari 1 | Tiba perlahan di Ubud\nCukup check-in dan makan malam.\n\nHari 2 | Pilih satu jalur sawah\nBerjalan pagi, lalu simpan siang untuk kopi dan berteduh.\n\nHari 3 | Dari bukit ke pantai\nPindah dengan santai dan jadikan matahari terbenam satu-satunya rencana.\n\nHari 4 | Jaga satu hari kosong\nPilih pantai, pijat, atau tidak melakukan apa pun.\n\nHari 5 | Berangkat tanpa terburu-buru\nMasukkan macet dan antrean bandara ke dalam rencana.",
-    "destination": "Bali", "duration": "5 hari / 4 malam", "budget": "Harga terkini", "season": "April—Oktober", "category": "Perjalanan santai", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Terasering hijau dan pohon palem di Bali", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "Lihat pilihan Bali di Traveloka", "ctaUrl": "", "couponCode": "", "priceLabel": "Pilihan penerbangan dan penginapan terkini", "updatedAt": "2026-07-13"
+    "title": "Lima hari santai di Bali: dua malam di Ubud, dua malam di Sanur, dan hanya sekali pindah hotel",
+    "excerpt": "Gunakan dua pangkalan untuk persawahan, jalan-jalan di kota, dan pantai: Ubud pertama, Sanur kedua, dan pindahkan barang bawaan Anda hanya sekali.",
+    "content": "Mengapa pemisahan ini berhasil｜Gunakan hanya Ubud dan Sanur selama lima hari\nPerjalanan singkat ke Bali mudah dilakukan dengan pergantian hotel dan perjalanan lintas pulau. Rencana ini menggunakan dua basis: Ubud untuk persawahan, jalan kaki dan budaya, dan Sanur untuk pantai, matahari terbit, dan bentangan akhir yang lebih landai. Ini cocok untuk kunjungan pertama dengan istirahat makan siang yang sebenarnya setiap hari. Wisatawan yang fokus pada selancar, kehidupan malam, atau menyelam sebaiknya memilih pantai yang sesuai dengan tujuan tersebut.\n\nPesan dalam urutan ini｜Pesan dua malam di Ubud, lalu dua malam di Sanur\nUntuk malam pertama dan kedua, menginaplah dalam jarak berjalan kaki dari pusat Ubud menuju pasar, area istana, dan Campuhan Ridge Walk. Untuk malam ketiga dan keempat, bandingkan menginap di dekat jalur tepi laut Sanur. Periksa peraturan penyimpanan bagasi, check-in, dan transfer sebelum membeli aktivitas yang tidak dapat dikembalikan. Pengunjung asing juga harus menggunakan sistem resmi Love Bali untuk retribusi wisata; pada tanggal 14 Agustus 2026 tercatat Rp150.000 per orang, tergantung pada pengecualian resmi.\n\nHari 1 dan 2｜Satu kali jalan kaki ke Ubud dan hanya satu kali perhentian\nSetelah tiba, check in dan pelajari rute menuju makanan, uang tunai, dan hotel Anda. Pada hari kedua, berjalanlah di Punggung Bukit Campuhan lebih awal, kembali ke kota untuk makan siang dan istirahat, lalu pilih salah satu kawasan Pasar dan Istana Ubud atau satu museum. Jika Tegallalang adalah prioritas Anda, jadikanlah itu satu-satunya perhentian hari itu yang membutuhkan kendaraan daripada menambahkan air terjun, ayunan, dan beberapa pura.\n\nHari ke 3｜Jaga pagi hari di Ubud dan pindah ke Sanur setelah makan siang\nGunakan waktu sarapan untuk satu hal yang menghilangkan kehujanan atau kepenatan di hari kedua, lalu check out sekitar tengah hari. Kemacetan membuat perjalanan Ubud–Sanur berubah-ubah, jadi jangan membuat reservasi makan malam tetap di sekitar waktu transfer yang optimis. Setelah tiba, batasi rencana untuk check-in, jalan-jalan di tepi pantai, dan makan malam. Transfer yang lambat tidak akan dikenakan biaya aktivitas matahari terbenam prabayar.\n\nHari ke 4｜Sanur terbit dan sore hari yang benar-benar terbuka\nSanur terletak di pantai timur Bali. Halaman resmi pariwisata Indonesia menunjukkan sekitar pukul 05.30–07.00 saat matahari terbit dan menjelaskan jalur tepi laut untuk berjalan kaki atau bersepeda. Kembalilah untuk sarapan setelah matahari terbit dan hanya mencakup satu bagian pantai. Gunakan sore hari untuk pijat, kafe, kolam renang atau istirahat lebih lanjut sesuai cuaca dan energi; jangan menggabungkan perahu pulau, menyelam, dan pantai selatan pada hari yang sama.\n\nHari ke-5 dan fallback｜Bekerja kembali dari penerbangan dan tetap berada di lokasi lokal\nKonfirmasikan transfer bandara, penyangga lalu lintas, dan terminal sebelum checkout. Langsung berangkat untuk penerbangan awal; untuk penerbangan larut malam, menginaplah di Sanur atau dekat hotel. Saat hujan, gantikan jalan-jalan dengan kafe atau museum Ubud dan istirahat dalam ruangan di Sanur. Cek pembayaran akhir Anda mencakup tanggal hotel, transfer, kwitansi Love Bali, syarat pembatalan aktivitas, dan perjalanan ke bandara.",
+    "destination": "Bali, Indonesia",
+    "duration": "5 hari / 4 malam",
+    "budget": "Harga menginap langsung; retribusi turis asing diperiksa sebesar Rp150.000 per orang pada 14 Agustus 2026",
+    "season": "Sepanjang tahun dengan penyesuaian curah hujan harian untuk waktu jalan-jalan dan pantai",
+    "category": "Rute lambat dua pangkalan",
+    "imageAlt": "Sawah hijau dan pohon palem di Bali",
+    "ctaLabel": "Bandingkan penginapan di Ubud, lalu periksa Sanur untuk tanggal yang sama",
+    "priceLabel": "Hanya satu hotel yang pindah; konfirmasi transfer dan aktivitas sebelum membayar",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "th": {
+    "slug": "bali-slow-five-days",
+    "title": "ทริปบาหลีห้าวันที่ผ่อนคลาย: สองคืนในอูบุด สองคืนในซานูร์ และย้ายโรงแรมเพียงแห่งเดียว",
+    "excerpt": "ใช้ฐานสองแห่งสำหรับนาข้าว เดินชมเมือง และชายฝั่ง: อูบุดก่อน ซานูร์รอง และย้ายกระเป๋าเดินทางของคุณเพียงครั้งเดียว",
+    "content": "ทำไมการแยกนี้ถึงได้ผล ｜ ใช้เฉพาะอูบุดและซานูร์เป็นเวลาห้าวัน\nการเดินทางระยะสั้นในบาหลีเป็นเรื่องง่ายโดยการเปลี่ยนโรงแรมและการขับรถข้ามเกาะ แผนนี้ใช้สองฐาน: อูบุดสำหรับนาข้าว การเดินและวัฒนธรรม และซานูร์สำหรับชายฝั่ง พระอาทิตย์ขึ้น และเส้นทางสุดท้ายที่นุ่มนวลกว่า เหมาะกับการมาเยือนครั้งแรกพร้อมการพักรับประทานอาหารกลางวันจริงๆ ในแต่ละวัน นักท่องเที่ยวที่เน้นการเล่นเซิร์ฟ ท่องราตรี หรือดำน้ำ ควรเลือกชายฝั่งที่เหมาะกับจุดประสงค์นั้นแทน\n\nจองตามลำดับนี้｜จองอูบุดสองคืน จากนั้นซานูร์สองคืน\nสำหรับคืนที่ 1 และ 2 ให้อยู่ในระยะที่สามารถเดินถึงใจกลางเมืองอูบุดเพื่อชมตลาด บริเวณพระราชวัง และทางเดิน Campuhan Ridge Walk สำหรับคืนที่สามและสี่ ให้เปรียบเทียบการเข้าพักใกล้กับเส้นทางริมน้ำของซานูร์ ตรวจสอบกฎการรับฝากสัมภาระ การเช็คอิน และการเปลี่ยนเครื่อง ก่อนซื้อกิจกรรมที่ไม่สามารถขอคืนเงินได้ นักท่องเที่ยวชาวต่างชาติควรใช้ระบบ Love Bali อย่างเป็นทางการสำหรับการจัดเก็บภาษีนักท่องเที่ยว ในวันที่ 14 สิงหาคม พ.ศ. 2569 มีการระบุ IDR150,000 ต่อคน โดยอยู่ภายใต้การยกเว้นอย่างเป็นทางการ\n\nวันที่ 1 และ 2 ｜เดินอูบุด 1 ครั้งและจุดแวะพักรอบนอกเพียงจุดเดียว\nหลังจากมาถึง ให้เช็คอินและเรียนรู้เส้นทางไปอาหาร เงินสด และโรงแรมของคุณ ในวันที่สอง เดินไปตามสันเขากัมปูฮานแต่เช้า กลับเข้าเมืองเพื่อรับประทานอาหารกลางวันและพักผ่อน จากนั้นเลือกตลาดอูบุดและบริเวณพระราชวังหรือพิพิธภัณฑ์แห่งเดียว หากคุณให้ความสำคัญกับเตกัลลาลัง ให้เป็นจุดแวะพักเพียงแห่งเดียวที่ต้องใช้ยานพาหนะ แทนที่จะเพิ่มน้ำตก ชิงช้า และวัดวาอารามหลายแห่ง\n\nวันที่ 3｜เก็บช่วงเช้าไว้ที่อูบุด และย้ายไปซานูร์หลังอาหารกลางวัน\nใช้เวลาอาหารเช้าสำหรับรายการหนึ่งที่ช่วยขจัดฝนหรือความเหนื่อยล้าจากวันที่สอง จากนั้นตรวจสอบประมาณเที่ยงวัน การจราจรทำให้เส้นทางอูบุด-ซานูร์มีความผันผวน ดังนั้นอย่ากำหนดการจองอาหารค่ำแบบตายตัวในช่วงเวลาเปลี่ยนเครื่องในแง่ดี มาถึงแล้วจำกัดแพลนเช็คอินเดินเล่นริมน้ำและทานอาหารเย็น การโอนช้าจะไม่เสียค่าใช้จ่ายในกิจกรรมพระอาทิตย์ตกแบบชำระเงินล่วงหน้า\n\nวันที่ 4 ｜พระอาทิตย์ขึ้นที่ซานูร์และช่วงบ่ายที่เปิดกว้างอย่างแท้จริง\nซานูร์ตั้งอยู่บนชายฝั่งตะวันออกของบาหลี หน้าการท่องเที่ยวอย่างเป็นทางการของอินโดนีเซียแนะนำเวลาพระอาทิตย์ขึ้นประมาณ 05.30-07.00 น. และอธิบายเส้นทางริมน้ำสำหรับเดินหรือปั่นจักรยาน กลับมารับประทานอาหารเช้าหลังพระอาทิตย์ขึ้นและครอบคลุมชายฝั่งเพียงส่วนเดียว ใช้เวลาช่วงบ่ายไปนวด คาเฟ่ สระว่ายน้ำ หรือพักผ่อนอื่นๆ ตามสภาพอากาศและพลังงาน ไม่รวมเรือเกาะ ดำน้ำ และชายหาดทางใต้ในวันเดียวกัน\n\nวันที่ 5 และทางเลือกอื่น ｜ ทำงานกลับจากเที่ยวบินและอยู่ในพื้นที่\nยืนยันการรับส่งสนามบิน บัฟเฟอร์การจราจร และอาคารผู้โดยสารก่อนชำระเงิน ออกเดินทางโดยตรงเพื่อเที่ยวบินแรกๆ สำหรับเที่ยวบินล่าช้า ให้พักที่ซานูร์หรือใกล้กับโรงแรม ท่ามกลางสายฝน แทนที่การเดินเล่นระยะไกลด้วยคาเฟ่หรือพิพิธภัณฑ์ในอูบุด และพักผ่อนในร่มในซานูร์ เช็คการชำระเงินงวดสุดท้ายของคุณครอบคลุมทั้งวันที่โรงแรม บริการรับส่ง 1 ครั้ง ใบเสร็จรับเงิน Love Bali เงื่อนไขการยกเลิกกิจกรรม และการนั่งรถไปสนามบิน",
+    "destination": "บาหลี, อินโดนีเซีย",
+    "duration": "5 วัน / 4 คืน",
+    "budget": "ราคาเข้าพักสด; เรียกเก็บภาษีนักท่องเที่ยวต่างชาติ 150,000 IDR ต่อคน เมื่อวันที่ 14 ส.ค. 2569",
+    "season": "ตลอดทั้งปีโดยมีการปรับปริมาณฝนทุกวันสำหรับการเดินและเวลาชายฝั่ง",
+    "category": "เส้นทางช้าสองฐาน",
+    "imageAlt": "นาข้าวเขียวขจีและต้นปาล์มในบาหลี",
+    "ctaLabel": "เปรียบเทียบการเข้าพักในอูบุด แล้วตรวจสอบซานูร์ในวันเดียวกัน",
+    "priceLabel": "ย้ายโรงแรมเพียงแห่งเดียว ยืนยันการโอนและกิจกรรมก่อนชำระเงิน",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "vi": {
+    "slug": "bali-slow-five-days",
+    "title": "Chuyến đi Bali năm ngày thoải mái: hai đêm ở Ubud, hai đêm ở Sanur và chỉ một lần chuyển khách sạn",
+    "excerpt": "Sử dụng hai căn cứ để đi ruộng lúa, đi dạo trong thị trấn và bờ biển: Ubud thứ nhất, Sanur thứ hai và chỉ di chuyển hành lý của bạn một lần.",
+    "content": "Tại sao sự phân chia này có hiệu quả｜Chỉ sử dụng Ubud và Sanur trong năm ngày\nCác chuyến đi Bali ngắn ngày có thể dễ dàng được thực hiện bằng cách thay đổi khách sạn và lái xe xuyên đảo. Kế hoạch này sử dụng hai cơ sở: Ubud cho cánh đồng lúa, đi bộ và văn hóa, và Sanur cho bờ biển, bình minh và đoạn cuối nhẹ nhàng hơn. Nó phù hợp với chuyến thăm đầu tiên với giờ nghỉ trưa thực sự mỗi ngày. Du khách tập trung vào lướt sóng, cuộc sống về đêm hoặc lặn biển nên chọn bờ biển phù hợp với mục đích đó.\n\nĐặt theo thứ tự này｜Đặt hai đêm ở Ubud, sau đó là hai đêm ở Sanur\nĐối với đêm một và đêm thứ hai, hãy ở trong khoảng cách đi bộ từ trung tâm Ubud để tới chợ, khu vực cung điện và Đường đi bộ Campuhan Ridge. Đối với đêm thứ ba và thứ tư, hãy so sánh các kỳ nghỉ gần con đường ven sông của Sanur. Kiểm tra quy định giữ hành lý, nhận phòng và chuyển tuyến trước khi mua hoạt động không hoàn tiền. Du khách nước ngoài cũng nên sử dụng hệ thống Love Bali chính thức để tính thuế du lịch; vào ngày 14 tháng 8 năm 2026, nó liệt kê 150.000 IDR mỗi người, được miễn trừ chính thức.\n\nNgày 1 và 2｜Một chuyến đi bộ ở Ubud và chỉ một điểm dừng ở xa\nSau khi đến nơi, hãy nhận phòng và tìm hiểu đường đi đến đồ ăn, tiền mặt và khách sạn của bạn. Vào ngày thứ hai, đi bộ Campuhan Ridge sớm, trở về thị trấn để ăn trưa và nghỉ ngơi, sau đó chọn một trong các khu chợ và cung điện Ubud hoặc một bảo tàng duy nhất. Nếu Tegallalang là ưu tiên của bạn, hãy biến nó thành điểm dừng duy nhất trong ngày cần có phương tiện thay vì thêm thác nước, xích đu và một số ngôi đền.\n\nNgày 3｜Dừng buổi sáng ở Ubud và di chuyển đến Sanur sau bữa trưa\nDùng thời gian ăn sáng cho một món mà mưa hay mệt mỏi đã tan biến từ ngày thứ hai, sau đó trả phòng vào khoảng giữa trưa. Giao thông khiến cho tuyến đường Ubud–Sanur có thể thay đổi, vì vậy đừng đặt chỗ ăn tối cố định vào khoảng thời gian chuyển tuyến lạc quan. Sau khi đến nơi, hạn chế kế hoạch nhận phòng, đi dạo bờ sông và ăn tối. Khi đó, việc chuyển khoản chậm sẽ không mất phí hoạt động hoàng hôn trả trước.\n\nNgày 4｜Bình minh Sanur và một buổi chiều cởi mở thực sự\nSanur nằm trên bờ biển phía đông của Bali. Trang du lịch chính thức của Indonesia gợi ý khoảng 5:30–7:00 sáng để mặt trời mọc và mô tả con đường ven sông để đi bộ hoặc đạp xe. Trở lại ăn sáng sau khi mặt trời mọc và chỉ đi qua một phần bờ biển. Sử dụng buổi chiều để mát-xa, uống cà phê, đi bơi hoặc nghỉ ngơi nhiều hơn tùy theo thời tiết và năng lượng; không kết hợp đi thuyền đảo, lặn biển và bãi biển phía Nam trong cùng một ngày.\n\nNgày 5 và những dự phòng｜Trở về sau chuyến bay và ở lại địa phương\nXác nhận việc chuyển sân bay, đệm giao thông và nhà ga trước khi thanh toán. Khởi hành trực tiếp cho chuyến bay sớm; đối với chuyến bay muộn, hãy ở Sanur hoặc gần khách sạn. Khi trời mưa, hãy thay thế những chuyến đi bộ dài bằng quán cà phê hoặc bảo tàng Ubud và nghỉ ngơi trong nhà ở Sanur. Séc thanh toán cuối cùng của bạn bao gồm cả ngày ở khách sạn, một lần chuyển, biên nhận Love Bali, điều khoản hủy hoạt động và chuyến đi đến sân bay.",
+    "destination": "Bali, Indonesia",
+    "duration": "5 ngày 4 đêm",
+    "budget": "Giá lưu trú trực tiếp; thuế du lịch nước ngoài được kiểm tra ở mức 150.000 IDR mỗi người vào ngày 14 tháng 8 năm 2026",
+    "season": "Quanh năm với sự điều chỉnh lượng mưa hàng ngày cho thời gian đi dạo và bờ biển",
+    "category": "Tuyến đường chậm hai cơ sở",
+    "imageAlt": "Cánh đồng lúa xanh và cây cọ ở Bali",
+    "ctaLabel": "So sánh thời gian lưu trú tại Ubud, sau đó kiểm tra Sanur để biết những ngày tương tự",
+    "priceLabel": "Chỉ có một khách sạn di chuyển; xác nhận chuyển khoản và hoạt động trước khi thanh toán",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "ms": {
+    "slug": "bali-slow-five-days",
+    "title": "Perjalanan lima hari Bali yang santai: dua malam di Ubud, dua di Sanur dan hanya satu pemindahan hotel",
+    "excerpt": "Gunakan dua pangkalan untuk sawah, berjalan di bandar dan pantai: Ubud pertama, Sanur kedua, dan alihkan bagasi anda sekali sahaja.",
+    "content": "Mengapa perpecahan ini berfungsi｜Gunakan Ubud dan Sanur sahaja selama lima hari\nPerjalanan singkat ke Bali mudah digunakan oleh pertukaran hotel dan perjalanan merentas pulau. Pelan ini menggunakan dua pangkalan: Ubud untuk sawah, berjalan kaki dan budaya, dan Sanur untuk pantai, matahari terbit dan hamparan akhir yang lebih lembut. Ia sesuai dengan lawatan pertama dengan rehat makan tengah hari yang sebenar setiap hari. Pengembara yang menumpukan pada meluncur, kehidupan malam atau menyelam harus memilih pantai yang sesuai dengan tujuan itu.\n\nTempah mengikut urutan ini｜Tempah dua malam Ubud, kemudian dua malam Sanur\nUntuk malam satu dan dua, kekal dalam jarak berjalan kaki dari pusat Ubud untuk pasar, kawasan istana dan Campuhan Ridge Walk. Untuk malam ketiga dan empat, bandingkan penginapan berhampiran laluan tepi pantai Sanur. Semak peraturan penyimpanan bagasi, daftar masuk dan pemindahan sebelum membeli aktiviti yang tidak boleh dikembalikan. Pelawat asing juga harus menggunakan sistem Love Bali rasmi untuk levi pelancong; pada 14 Ogos 2026 ia menyenaraikan IDR150,000 setiap orang, tertakluk kepada pengecualian rasmi.\n\nHari 1 dan 2｜Satu berjalan kaki Ubud dan hanya satu perhentian terpencil\nSelepas ketibaan, daftar masuk dan pelajari laluan ke makanan, wang tunai dan hotel anda. Pada hari kedua, berjalan kaki Campuhan Ridge awal, kembali ke bandar untuk makan tengah hari dan berehat, kemudian pilih salah satu Pasar Ubud dan kawasan istana atau muzium tunggal. Jika Tegallalang menjadi keutamaan anda, jadikan hari ini hanya berhenti memerlukan kenderaan daripada menambah air terjun, buaian dan beberapa kuil.\n\nHari 3｜Kekalkan waktu pagi di Ubud dan bergerak ke Sanur selepas makan tengah hari\nGunakan masa sarapan untuk satu item yang dikeluarkan oleh hujan atau keletihan dari hari kedua, kemudian daftar keluar sekitar tengah hari. Trafik menjadikan pemanduan Ubud–Sanur berubah-ubah, jadi jangan buat tempahan makan malam tetap sekitar waktu pemindahan yang optimistik. Selepas ketibaan, hadkan rancangan untuk mendaftar masuk, berjalan kaki di tepi pantai dan makan malam. Pemindahan yang perlahan kemudiannya tidak akan dikenakan bayaran untuk aktiviti matahari terbenam prabayar.\n\nHari 4｜Sanur matahari terbit dan petang yang benar-benar terbuka\nSanur terletak di pantai timur Bali. Halaman pelancongan rasmi Indonesia mencadangkan kira-kira 5:30–7:00 a.m. untuk matahari terbit dan menerangkan laluan tepi laut untuk berjalan atau berbasikal. Kembali untuk sarapan pagi selepas matahari terbit dan tutup hanya satu bahagian pantai. Gunakan waktu tengah hari untuk urutan, kafe, kolam renang atau lebih banyak rehat mengikut cuaca dan tenaga; jangan gabungkan bot pulau, menyelam dan pantai selatan pada hari yang sama.\n\nHari 5 dan sandaran｜Kerja balik dari penerbangan dan kekal di tempat\nSahkan pemindahan lapangan terbang, penampan trafik dan terminal sebelum daftar keluar. Bertolak terus untuk penerbangan awal; untuk penerbangan lewat, tinggal di Sanur atau berhampiran hotel. Semasa hujan, gantikan berjalan kaki yang jauh dengan kafe atau muzium Ubud dan rehat dalaman di Sanur. Cek pembayaran terakhir anda meliputi kedua-dua tarikh hotel, satu pemindahan, resit Love Bali, syarat pembatalan aktiviti dan perjalanan ke lapangan terbang.",
+    "destination": "Bali, Indonesia",
+    "duration": "5 hari / 4 malam",
+    "budget": "Harga penginapan secara langsung; levi pelancong asing diperiksa pada harga IDR150,000 setiap orang pada 14 Ogos 2026",
+    "season": "Sepanjang tahun dengan pelarasan hujan harian untuk berjalan-jalan dan waktu pantai",
+    "category": "Laluan perlahan dua asas",
+    "imageAlt": "Sawah padi hijau dan pokok palma di Bali",
+    "ctaLabel": "Bandingkan penginapan di Ubud, kemudian periksa Sanur untuk tarikh yang sama",
+    "priceLabel": "Hanya satu pergerakan hotel; mengesahkan pemindahan dan aktiviti sebelum membayar",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "fil": {
+    "slug": "bali-slow-five-days",
+    "title": "Limang araw sa Bali: dalawang gabi sa Ubud, dalawa sa Sanur, at isang lipat lang ng hotel",
+    "excerpt": "Gumamit ng dalawang base para sa palayan, paglalakad sa bayan at baybayin: Ubud muna, Sanur pangalawa, at ilipat ang iyong bagahe nang isang beses lang.",
+    "content": "Bakit gumagana ang split na ito｜Gumamit lamang ng Ubud at Sanur sa loob ng limang araw\nAng mga maiikling biyahe sa Bali ay madaling gamitin ng mga pagbabago sa hotel at cross-island drive. Gumagamit ang planong ito ng dalawang base: Ubud para sa palayan, paglalakad at kultura, at Sanur para sa baybayin, pagsikat ng araw at isang mas banayad na huling kahabaan. Nababagay ito sa unang pagbisita na may totoong lunch break bawat araw. Ang mga manlalakbay na nakatuon sa surfing, nightlife o diving ay dapat pumili ng baybayin na akma sa layuning iyon sa halip.\n\nMag-book sa ganitong pagkakasunud-sunod｜Magpareserba ng dalawang gabi sa Ubud, pagkatapos ay dalawang gabi ng Sanur\nPara sa isa at dalawa ng gabi, manatili sa malapit na maabot ng gitnang Ubud para sa palengke, lugar ng palasyo at Campuhan Ridge Walk. Para sa tatlo at apat na gabi, ihambing ang mga pananatili malapit sa waterfront path ng Sanur. Suriin ang mga panuntunan sa pag-iimbak ng bagahe, pag-check-in at paglilipat bago bumili ng mga aktibidad na hindi maibabalik. Dapat ding gamitin ng mga dayuhang bisita ang opisyal na Love Bali system para sa buwis ng turista; noong Agosto 14, 2026 naglista ito ng IDR150,000 bawat tao, napapailalim sa mga opisyal na exemption.\n\nDays 1 and 2｜Isang Ubud walk at isang outlying stop lang\nPagkatapos ng pagdating, mag-check in at alamin ang ruta patungo sa pagkain, pera at iyong hotel. Sa ikalawang araw, maglakad nang maaga sa Campuhan Ridge, bumalik sa bayan para sa tanghalian at magpahinga, pagkatapos ay pumili ng isa sa Ubud Market at lugar ng palasyo o isang museo. Kung Tegallalang ang iyong priyoridad, gawin itong huminto lamang sa araw na nangangailangan ng sasakyan sa halip na magdagdag ng mga talon, swing at ilang templo.\n\nIkatlong Araw｜Panatilihin ang umaga sa Ubud at lumipat sa Sanur pagkatapos ng tanghalian\nGumamit ng oras ng almusal para sa isang item na inalis ng ulan o pagkapagod mula sa ikalawang araw, pagkatapos ay mag-check out bandang tanghali. Ginagawa ng trapiko ang Ubud–Sanur drive variable, kaya huwag bumuo ng isang nakapirming reserbasyon sa hapunan sa paligid ng isang optimistikong oras ng paglipat. Pagkatapos ng pagdating, limitahan ang plano sa pag-check-in, paglalakad sa waterfront at hapunan. Ang isang mabagal na paglipat ay walang babayarang prepaid na aktibidad ng paglubog ng araw.\n\nAraw 4｜Sanur sunrise at isang tunay na bukas na hapon\nAng Sanur ay nasa silangang baybayin ng Bali. Ang opisyal na pahina ng turismo ng Indonesia ay nagmumungkahi ng humigit-kumulang 5:30–7:00 a.m. para sa pagsikat ng araw at inilalarawan ang waterfront path para sa paglalakad o pagbibisikleta. Bumalik para sa almusal pagkatapos ng pagsikat ng araw at takpan lamang ang isang bahagi ng baybayin. Gamitin ang hapon para sa masahe, café, pool o higit pang pahinga ayon sa panahon at enerhiya; huwag pagsamahin ang isang island boat, diving at isang southern beach sa parehong araw.\n\nDay 5 at fallbacks｜Magtrabaho pabalik mula sa flight at manatiling lokal\nKumpirmahin ang paglilipat ng paliparan, buffer ng trapiko at terminal bago mag-checkout. Direktang umalis para sa isang maagang paglipad; para sa isang late flight, manatili sa Sanur o malapit sa hotel. Sa ulan, palitan ang mahabang paglalakad ng Ubud café o museo at panloob na pahinga sa Sanur. Sinasaklaw ng iyong huling tseke sa pagbabayad ang parehong petsa ng hotel, ang isang paglipat, resibo ng Love Bali, mga tuntunin sa pagkansela ng aktibidad, at ang biyahe papunta sa airport.",
+    "destination": "Bali, Indonesia",
+    "duration": "5 araw / 4 na gabi",
+    "budget": "Mga presyo ng live na pananatili; ang buwis ng mga dayuhang turista ay nasuri sa IDR150,000 bawat tao noong Agosto 14, 2026",
+    "season": "Buong taon na may mga pang-araw-araw na pagsasaayos ng ulan para sa mga paglalakad at oras sa baybayin",
+    "category": "Dalawang-base na mabagal na ruta",
+    "imageAlt": "Mga luntiang palayan at mga puno ng palma sa Bali",
+    "ctaLabel": "Ihambing ang mga pananatili sa Ubud, pagkatapos ay tingnan ang Sanur para sa parehong mga petsa",
+    "priceLabel": "Isang hotel lang ang lipat; kumpirmahin ang mga paglilipat at aktibidad bago magbayad",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "km": {
+    "slug": "bali-slow-five-days",
+    "title": "ដំណើរកម្សាន្តនៅកោះបាលីរយៈពេលប្រាំថ្ងៃ៖ ពីរយប់នៅ Ubud ពីរនៅ Sanur និងការផ្លាស់ទីលំនៅសណ្ឋាគារតែមួយ",
+    "excerpt": "ប្រើមូលដ្ឋានពីរសម្រាប់វាលស្រែ ការដើរទីក្រុង និងឆ្នេរសមុទ្រ៖ Ubud ទីមួយ Sanur ទីពីរ ហើយផ្លាស់ទីអីវ៉ាន់របស់អ្នកតែម្តងប៉ុណ្ណោះ។",
+    "content": "ហេតុអ្វីបានជាការបំបែកនេះដំណើរការ｜ប្រើតែ Ubud និង Sanur រយៈពេលប្រាំថ្ងៃ\nដំណើរកម្សាន្តកោះបាលីរយៈពេលខ្លីត្រូវបានប្រើប្រាស់យ៉ាងងាយស្រួលដោយការផ្លាស់ប្តូរសណ្ឋាគារ និងការបើកបរឆ្លងកោះ។ ផែនការនេះប្រើមូលដ្ឋានពីរ៖ Ubud សម្រាប់វាលស្រែ ការដើរ និងវប្បធម៌ និង Sanur សម្រាប់ឆ្នេរសមុទ្រ ថ្ងៃរះ និងផ្លូវចុងក្រោយដ៏ទន់ភ្លន់។ វាសាកសមនឹងការមកលេងលើកដំបូងជាមួយនឹងការសម្រាកអាហារថ្ងៃត្រង់ពិតប្រាកដរៀងរាល់ថ្ងៃ។ អ្នកធ្វើដំណើរដែលផ្តោតលើការជិះទូកលេងកម្សាន្តពេលរាត្រី ឬការមុជទឹកគួរតែជ្រើសរើសឆ្នេរសមុទ្រដែលសមនឹងគោលបំណងនោះជំនួសវិញ។\n\nកក់ក្នុងលំដាប់នេះ｜កក់ Ubud ពីរយប់ បន្ទាប់មក Sanur ពីរយប់\nសម្រាប់យប់មួយ និងពីរ ស្នាក់នៅក្នុងផ្លូវដើរនៃកណ្តាល Ubud សម្រាប់ផ្សារ តំបន់វាំង និង Campuhan Ridge Walk។ សម្រាប់យប់ទី 3 និងទី 4 សូមប្រៀបធៀបការស្នាក់នៅក្បែរផ្លូវមាត់ទឹករបស់ Sanur ។ ពិនិត្យកន្លែងដាក់អីវ៉ាន់ ពិនិត្យចូល និងច្បាប់ផ្ទេរប្រាក់ មុនពេលទិញសកម្មភាពដែលមិនអាចដកវិញបាន។ ភ្ញៀវបរទេសក៏គួរតែប្រើប្រព័ន្ធ Love Bali ផ្លូវការសម្រាប់ការបង់ថ្លៃទេសចរណ៍ផងដែរ។ នៅថ្ងៃទី 14 ខែសីហា ឆ្នាំ 2026 វាបានចុះបញ្ជី IDR150,000 ក្នុងមនុស្សម្នាក់ ដែលស្ថិតក្រោមការលើកលែងជាផ្លូវការ។\n\nថ្ងៃទី 1 និងទី 2｜ ដើរ Ubud មួយ ហើយឈប់ដើរលេងតែមួយគត់\nបន្ទាប់​ពី​បាន​មក​ដល់ សូម​ឆែក​មើល​ផ្លូវ​ទៅ​កាន់​អាហារ សាច់​ប្រាក់ និង​សណ្ឋាគារ​របស់​អ្នក។ នៅថ្ងៃទីពីរ ដើរ Campuhan Ridge ពីព្រលឹម ត្រឡប់ទៅទីក្រុងវិញសម្រាប់អាហារថ្ងៃត្រង់ និងសម្រាក បន្ទាប់មកជ្រើសរើសទីផ្សារ Ubud និងតំបន់វិមាន ឬសារមន្ទីរតែមួយ។ ប្រសិនបើ Tegallalang គឺជាអាទិភាពរបស់អ្នក សូមធ្វើឱ្យវាឈប់មួយថ្ងៃដែលតម្រូវឱ្យមានយានជំនិះ ជាជាងការបន្ថែមទឹកជ្រោះ ខ្យល់អាកាស និងប្រាសាទជាច្រើន។\n\nថ្ងៃទី 3｜រក្សាពេលព្រឹកនៅ Ubud ហើយផ្លាស់ទីទៅ Sanur បន្ទាប់ពីអាហារថ្ងៃត្រង់\nប្រើពេលអាហារពេលព្រឹកសម្រាប់វត្ថុមួយដែលភ្លៀង ឬអស់កម្លាំងបានដកចេញពីថ្ងៃទី 2 បន្ទាប់មកពិនិត្យមើលពេលថ្ងៃត្រង់។ ចរាចរណ៍ធ្វើឱ្យដ្រាយ Ubud-Sanur ប្រែប្រួល ដូច្នេះកុំបង្កើតការកក់អាហារពេលល្ងាចថេរជុំវិញពេលវេលាផ្ទេរសុទិដ្ឋិនិយម។ បន្ទាប់​ពី​មក​ដល់ សូម​កំណត់​គម្រោង​ចូល​ទៅ​ក្នុង​ការ​ដើរ​មាត់​ទឹក និង​អាហារ​ពេល​ល្ងាច។ បន្ទាប់មកការផ្ទេរយឺតនឹងចំណាយលើសកម្មភាពថ្ងៃលិចដែលបង់ប្រាក់ជាមុន។\n\nថ្ងៃទី 4 ｜ Sanur ថ្ងៃរះនិងពេលរសៀលបើកចំហពិតប្រាកដ\nSanur ស្ថិតនៅលើឆ្នេរខាងកើតរបស់កោះបាលី។ ទំព័រទេសចរណ៍ផ្លូវការរបស់ប្រទេសឥណ្ឌូនេស៊ីណែនាំប្រហែលម៉ោង 5:30-7:00 ព្រឹកសម្រាប់ថ្ងៃរះ ហើយពិពណ៌នាអំពីផ្លូវមាត់ទឹកសម្រាប់ការដើរ ឬជិះកង់។ ត្រឡប់​មក​ទទួល​ទាន​អាហារ​ពេល​ព្រឹក​បន្ទាប់​ពី​ថ្ងៃ​រះ ហើយ​គ្រប​ដណ្តប់​តែ​ផ្នែក​មួយ​នៃ​ឆ្នេរ។ ប្រើពេលរសៀលសម្រាប់ការម៉ាស្សា ហាងកាហ្វេ អាងហែលទឹក ឬសម្រាកច្រើនតាមអាកាសធាតុ និងថាមពល។ កុំផ្សំទូកកោះ ការមុជទឹក និងឆ្នេរភាគខាងត្បូងនៅថ្ងៃតែមួយ។\n\nថ្ងៃទី 5 និងការធ្លាក់យន្តហោះ ｜ធ្វើការត្រលប់ពីជើងហោះហើរ ហើយស្នាក់នៅក្នុងស្រុក\nបញ្ជាក់ការផ្ទេរអាកាសយានដ្ឋាន សតិបណ្ដោះអាសន្នចរាចរណ៍ និងស្ថានីយមុនពេលបង់ប្រាក់ចេញ។ ចាកចេញដោយផ្ទាល់សម្រាប់ការហោះហើរដំបូង; សម្រាប់ជើងហោះហើរយឺត សូមស្នាក់នៅ Sanur ឬនៅជិតសណ្ឋាគារ។ នៅពេលភ្លៀង ជំនួសការដើរដ៏វែងជាមួយហាងកាហ្វេ ឬសារមន្ទីរ Ubud និងការសម្រាកក្នុងផ្ទះនៅ Sanur ។ មូលប្បទានប័ត្រទូទាត់ចុងក្រោយរបស់អ្នកគ្របដណ្តប់ទាំងកាលបរិច្ឆេទសណ្ឋាគារ ការផ្ទេរប្រាក់តែមួយ បង្កាន់ដៃ Love Bali លក្ខខណ្ឌនៃការលុបចោលសកម្មភាព និងការជិះទៅកាន់អាកាសយានដ្ឋាន។",
+    "destination": "កោះបាលី ប្រទេសឥណ្ឌូនេស៊ី",
+    "duration": "៥ថ្ងៃ/៤យប់",
+    "budget": "តម្លៃស្នាក់នៅ; ពន្ធគយសម្រាប់ភ្ញៀវទេសចរបរទេសបានត្រួតពិនិត្យចំនួន IDR150,000 ក្នុងមនុស្សម្នាក់នៅថ្ងៃទី 14 ខែសីហា ឆ្នាំ 2026",
+    "season": "ពេញមួយឆ្នាំជាមួយនឹងការកែតម្រូវទឹកភ្លៀងប្រចាំថ្ងៃសម្រាប់ការដើរ និងពេលវេលាឆ្នេរសមុទ្រ",
+    "category": "ផ្លូវយឺតពីរមូលដ្ឋាន",
+    "imageAlt": "វាលស្រែបៃតង និងដើមត្នោតនៅកោះបាលី",
+    "ctaLabel": "ប្រៀបធៀបការស្នាក់នៅ Ubud បន្ទាប់មកពិនិត្យមើល Sanur សម្រាប់កាលបរិច្ឆេទដូចគ្នា។",
+    "priceLabel": "ផ្លាស់ទីសណ្ឋាគារតែមួយគត់; បញ្ជាក់ការផ្ទេរ និងសកម្មភាពមុនពេលបង់ប្រាក់",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "lo": {
+    "slug": "bali-slow-five-days",
+    "title": "ການເດີນທາງທີ່ຜ່ອນຄາຍໃນບາຫລີຫ້າມື້: ສອງຄືນໃນ Ubud, ສອງຄືນໃນ Sanur ແລະພຽງແຕ່ຫນຶ່ງຍ້າຍໂຮງແຮມ",
+    "excerpt": "ໃຊ້ສອງຖານສໍາລັບທົ່ງນາ, ການຍ່າງທາງໃນຕົວເມືອງແລະຊາຍຝັ່ງ: Ubud ທໍາອິດ, Sanur ທີສອງ, ແລະຍ້າຍກະເປົາຂອງທ່ານພຽງແຕ່ຄັ້ງດຽວ.",
+    "content": "ເປັນຫຍັງການແບ່ງປັນນີ້ເຮັດວຽກ｜ໃຊ້ພຽງແຕ່ Ubud ແລະ Sanur ສໍາລັບຫ້າມື້\nການເດີນທາງສັ້ນໆຂອງ Bali ແມ່ນບໍລິໂພກໄດ້ງ່າຍໂດຍການປ່ຽນໂຮງແຮມແລະການຂັບລົດຂ້າມເກາະ. ແຜນການນີ້ໃຊ້ສອງຖານ: Ubud ສໍາລັບທົ່ງນາ, ການຍ່າງແລະວັດທະນະທໍາ, ແລະ Sanur ສໍາລັບ coast, sunrise ແລະ stretch ສຸດສຸດທ້າຍ gentler. ມັນເຫມາະສົມກັບການຢ້ຽມຢາມຄັ້ງທໍາອິດດ້ວຍການພັກຜ່ອນອາຫານທ່ຽງທີ່ແທ້ຈິງໃນແຕ່ລະມື້. ນັກທ່ອງທ່ຽວທີ່ສຸມໃສ່ການ surfing, nightlife ຫຼື diving ຄວນເລືອກ coast ທີ່ເຫມາະກັບຈຸດປະສົງນັ້ນແທນ.\n\nຈອງໃນຄໍາສັ່ງນີ້｜ຈອງສອງຄືນ Ubud, ຫຼັງຈາກນັ້ນສອງຄືນ Sanur\nສໍາລັບຄືນຫນຶ່ງແລະສອງ, ຢູ່ໃນຂອບເຂດຍ່າງຂອງສູນກາງ Ubud ສໍາລັບຕະຫຼາດ, ເຂດວັງແລະ Campuhan Ridge Walk. ສໍາລັບຄືນສາມແລະສີ່, ປຽບທຽບການພັກຢູ່ໃກ້ກັບເສັ້ນທາງຫນ້ານ້ໍາຂອງ Sanur. ກວດເບິ່ງການເກັບຮັກສາກະເປົ໋າ, ເຊັກອິນແລະກົດລະບຽບການໂອນກ່ອນທີ່ຈະຊື້ກິດຈະກໍາທີ່ບໍ່ສາມາດຄືນເງິນໄດ້. ນັກ​ທ່ອງ​ທ່ຽວ​ຕ່າງປະ​ເທດ​ຄວນ​ນຳ​ໃຊ້​ລະບົບ Love Bali ຢ່າງ​ເປັນ​ທາງ​ການ​ໃນ​ການ​ເກັບ​ພາສີ​ນັກ​ທ່ອງ​ທ່ຽວ; ໃນວັນທີ 14 ສິງຫາ 2026 ມັນໄດ້ລະບຸໄວ້ IDR150,000 ຕໍ່ຄົນ, ພາຍໃຕ້ການຍົກເວັ້ນຢ່າງເປັນທາງການ.\n\nມື້ທີ 1 ແລະ 2｜ຍ່າງ Ubud 1 ຄັ້ງ ແລະ ຢຸດພຽງບ່ອນດຽວ\nຫຼັງຈາກມາຮອດ, ເຊັກອິນແລະຮຽນຮູ້ເສັ້ນທາງໄປຫາອາຫານ, ເງິນສົດແລະໂຮງແຮມຂອງເຈົ້າ. ໃນມື້ທີສອງ, ຍ່າງ Campuhan Ridge ກ່ອນໄວ, ກັບຄືນສູ່ຕົວເມືອງສໍາລັບອາຫານທ່ຽງແລະພັກຜ່ອນ, ຫຼັງຈາກນັ້ນເລືອກຫນຶ່ງຂອງຕະຫຼາດ Ubud ແລະບໍລິເວນວັງຫຼືພິພິທະພັນດຽວ. ຖ້າ Tegallalang ເປັນບູລິມະສິດຂອງເຈົ້າ, ເຮັດໃຫ້ມັນເປັນມື້ທີ່ຕ້ອງໃຊ້ຍານພາຫະນະແທນທີ່ຈະເພີ່ມນ້ໍາຕົກ, swings ແລະວັດຫຼາຍ.\n\nວັນທີ 3｜ຮັກສາຕອນເຊົ້າໃນ Ubud ແລະຍ້າຍໄປ Sanur ຫຼັງຈາກອາຫານທ່ຽງ\nໃຊ້ເວລາອາຫານເຊົ້າສໍາລັບລາຍການຫນຶ່ງທີ່ຝົນຕົກຫຼືຄວາມເຫນື່ອຍລ້າອອກຈາກມື້ສອງ, ຫຼັງຈາກນັ້ນກວດເບິ່ງປະມານກາງເວັນ. ການຈະລາຈອນເຮັດໃຫ້ການຂັບລົດ Ubud-Sanur ປ່ຽນແປງໄດ້, ດັ່ງນັ້ນຢ່າສ້າງການຈອງອາຫານຄ່ໍາທີ່ຄົງທີ່ປະມານເວລາການໂອນໃນແງ່ດີ. ຫຼັງຈາກມາຮອດ, ຈໍາກັດແຜນການເຊັກອິນ, ຍ່າງແຄມນ້ໍາແລະຄ່ໍາ. ຫຼັງຈາກນັ້ນ, ການໂອນເງິນຊ້າຈະບໍ່ມີຄ່າໃຊ້ຈ່າຍໃນກິດຈະກໍາ sunset ລ່ວງຫນ້າ.\n\nມື້ 4｜ Sanur ຕາເວັນຂຶ້ນແລະຕອນບ່າຍເປີດຢ່າງແທ້ຈິງ\nSanur ຕັ້ງຢູ່ເທິງຊາຍຝັ່ງຕາເວັນອອກຂອງ Bali. ໜ້າທ່ອງທ່ຽວທີ່ເປັນທາງການຂອງອິນໂດເນເຊຍແນະນຳປະມານ 5:30-7:00 ໂມງເຊົ້າ ສຳລັບຕາເວັນຂຶ້ນ ແລະອະທິບາຍເສັ້ນທາງແຄມນ້ຳສຳລັບການຍ່າງ ຫຼືຂີ່ລົດຖີບ. ກັບຄືນສໍາລັບອາຫານເຊົ້າຫຼັງຈາກຕາເວັນຂຶ້ນແລະກວມເອົາພຽງແຕ່ສ່ວນຫນຶ່ງຂອງ coast ໄດ້. ໃຊ້ໃນຕອນບ່າຍສໍາລັບການນວດ, ຄາເຟ່, ສະລອຍນ້ໍາຫຼືພັກຜ່ອນຫຼາຍຂື້ນຕາມສະພາບອາກາດແລະພະລັງງານ; ບໍ່ລວມເຮືອເກາະ, ການດໍານ້ໍາແລະຫາດຊາຍພາກໃຕ້ໃນມື້ດຽວກັນ.\n\nວັນທີ 5 ແລະການກັບຄືນ｜ເຮັດວຽກກັບຄືນຈາກຖ້ຽວບິນແລະຢູ່ໃນທ້ອງຖິ່ນ\nຢືນ​ຢັນ​ການ​ໂອນ​ສະ​ຫນາມ​ບິນ​, buffer ການ​ຈະ​ລາ​ຈອນ​ແລະ​ສະ​ຖານ​ທີ່​ກ່ອນ​ທີ່​ຈະ​ຊໍາ​ລະ​ເງິນ​. ອອກເດີນທາງໂດຍກົງສໍາລັບການບິນໄວ; ສໍາລັບຖ້ຽວບິນຊ້າ, ພັກຢູ່ໃນ Sanur ຫຼືຢູ່ໃກ້ກັບໂຮງແຮມ. ໃນລະດູຝົນ, ປ່ຽນການຍ່າງຍາວດ້ວຍຄາເຟ່ ຫຼືພິພິທະພັນ Ubud ແລະບ່ອນພັກຜ່ອນໃນເຮືອນໃນ Sanur. ເຊັກການຈ່າຍເງິນຄັ້ງສຸດທ້າຍຂອງທ່ານກວມເອົາທັງວັນທີໂຮງແຮມ, ການໂອນເງິນຄັ້ງດຽວ, ໃບຮັບເງິນຂອງຄວາມຮັກ Bali, ເງື່ອນໄຂການຍົກເລີກກິດຈະກໍາ ແລະການເດີນທາງໄປສະໜາມບິນ.",
+    "destination": "ບາຫລີ, ອິນໂດເນເຊຍ",
+    "duration": "5 ມື້ / 4 ຄືນ",
+    "budget": "ລາຄາພັກອາໄສຢູ່; ການເກັບພາສີນັກທ່ອງທ່ຽວຕ່າງປະເທດ 150,000 IDR ຕໍ່ຄົນໃນວັນທີ 14 ສິງຫາ 2026",
+    "season": "ຕະຫຼອດປີດ້ວຍການປັບຝົນຕົກປະຈໍາວັນສໍາລັບການຍ່າງແລະເວລາ coast",
+    "category": "ເສັ້ນທາງຊ້າສອງຖານ",
+    "imageAlt": "ທົ່ງນາສີຂຽວ ແລະ ຕົ້ນປາມໃນເກາະບາຫຼີ",
+    "ctaLabel": "ປຽບທຽບການຢູ່ Ubud, ຈາກນັ້ນກວດເບິ່ງ Sanur ສໍາລັບວັນທີດຽວກັນ",
+    "priceLabel": "ພຽງແຕ່ຫນຶ່ງຍ້າຍໂຮງແຮມ; ຢືນຢັນການໂອນເງິນແລະກິດຈະກໍາກ່ອນທີ່ຈະຈ່າຍເງິນ",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "my": {
+    "slug": "bali-slow-five-days",
+    "title": "စိတ်အေးလက်အေး ငါးရက်ကြာ ဘာလီခရီးစဉ်- Ubud တွင် နှစ်ညအိပ်၊ Sanur တွင် နှစ်ခုနှင့် ဟိုတယ်တစ်ခုသာ ပြောင်းရွှေ့ခြင်း။",
+    "excerpt": "လယ်ကွင်းများ၊ မြို့လမ်းလျှောက်ခြင်းနှင့် ကမ်းရိုးတန်းအတွက် အခြေခံနှစ်ခုကို အသုံးပြုပါ- Ubud ပထမ၊ Sanur ဒုတိယ၊ သင်၏ ခရီးဆောင်အိတ်ကို တစ်ကြိမ်သာ ရွှေ့ပါ။",
+    "content": "ဘာကြောင့် ဒီခွဲထွက်အလုပ်လုပ်ရတာလဲ｜ Ubud နဲ့ Sanur ကိုပဲ ငါးရက်လောက်သုံးပါ။\nတိုတောင်းသော ဘာလီ ခရီးစဉ်များကို ဟိုတယ် အပြောင်းအလဲများနှင့် ကျွန်းဖြတ်ကားမောင်းများဖြင့် အလွယ်တကူ စားသုံးနိုင်ပါသည်။ ဤအစီအစဉ်တွင် စပါးခင်းများအတွက် Ubud အခြေစိုက်စခန်းနှစ်ခုကို အသုံးပြုသည်- လမ်းလျှောက်ခြင်းနှင့် ယဉ်ကျေးမှု၊ ကမ်းခြေအတွက် Sanur၊ နေထွက်ချိန်နှင့် နူးညံ့သိမ်မွေ့သော နောက်ဆုံးလမ်းကြောင်း။ နေ့လယ်စာ အနားယူချိန်နဲ့ ပထမဆုံးလာရောက်လည်ပတ်ခြင်းနဲ့ ကိုက်ညီပါတယ်။ လှိုင်းစီးခြင်း၊ ညဘက် သို့မဟုတ် ရေငုပ်ခြင်းတို့ကို အာရုံစိုက်သည့် ခရီးသွားများသည် ထိုရည်ရွယ်ချက်နှင့် ကိုက်ညီမည့် ကမ်းခြေကို ရွေးချယ်သင့်သည်။\n\nဤအမှာစာတွင် ကြိုတင်စာရင်းသွင်းပါ｜ Ubud နှစ်ည၊ ထို့နောက် Sanur နှစ်ညကြိုတင်မှာယူပါ။\nတစ်ညနှင့်နှစ်ညအတွက်၊ စျေး၊ နန်းတော်ဧရိယာနှင့် Campuhan Ridge လမ်းလျှောက်ရန်အတွက် အလယ်ပိုင်း Ubud လမ်းလျှောက်အလှမ်းအဝေးတွင်နေပါ။ သုံးညနှင့် လေးညအတွက် Sanur ၏ကမ်းနားလမ်းအနီးတွင် တည်းခိုနေထိုင်မှုများကို နှိုင်းယှဉ်ပါ။ ပြန်မအမ်းနိုင်သော လုပ်ဆောင်ချက်များကို မဝယ်ယူမီ ခရီးဆောင်အိတ် သိုလှောင်မှု၊ စစ်ဆေးမှုနှင့် လွှဲပြောင်းမှု စည်းမျဉ်းများကို စစ်ဆေးပါ။ နိုင်ငံခြားဧည့်သည်များသည် ခရီးသွားများအတွက် တရားဝင် Love Bali စနစ်ကိုလည်း အသုံးပြုသင့်သည်။ 2026 ခုနှစ် သြဂုတ်လ 14 ရက်နေ့တွင် တရားဝင် ကင်းလွတ်ခွင့်များ အရ လူတစ်ဦးလျှင် IDR 150,000 စာရင်းသွင်းခဲ့ပါသည်။\n\nရက်များ 1 နှင့် 2 ｜ Ubud တစ်ကြိမ် လမ်းလျှောက်ပြီး အစွန်အဖျားတစ်ခုသာ ရပ်ပါ။\nဆိုက်ရောက်ပြီးနောက် check in လုပ်ပြီး အစားအသောက်၊ ငွေသားနှင့် သင့်ဟိုတယ်သို့ သွားမည့်လမ်းကြောင်းကို လေ့လာပါ။ နှစ်ရက်မြောက်နေ့မှာ Campuhan Ridge ကို စောစောလမ်းလျှောက်ပြီး နေ့လယ်စာစားပြီး အနားယူဖို့ မြို့ကိုပြန်လာပြီးတော့ Ubud Market နဲ့ နန်းတော်ဧရိယာ ဒါမှမဟုတ် ပြတိုက်တစ်ခုတည်းကို ရွေးပါ။ Tegallalang သည် သင့်ဦးစားပေးဖြစ်ပါက ရေတံခွန်များ၊ လွှဲလွှဲများနှင့် ဘုရားကျောင်းများစွာကို ပေါင်းထည့်မည့်အစား မော်တော်ကားလိုအပ်နေသည့် တစ်နေ့တာအတွက်သာ ရပ်တန့်လိုက်ပါ။\n\nDay 3｜မနက်စာကို Ubud မှာထားပြီး နေ့လည်စာစားပြီး Sanur ကိုပြောင်းပါ။\nဒုတိယရက်မှ မိုးရွာခြင်း သို့မဟုတ် ပင်ပန်းနွမ်းနယ်မှုများကို ဖယ်ရှားပေးသည့် အရာတစ်ခုအတွက် နံနက်စာအချိန်ကို အသုံးပြုပါ၊ ထို့နောက် နေ့လယ်ပိုင်းလောက်တွင် ထွက်ကြည့်ပါ။ Traffic သည် Ubud-Sanur မောင်းနှင်မှုကို ပြောင်းလဲနိုင်စေသည်၊ ထို့ကြောင့် အကောင်းမြင်သောအပြောင်းအရွှေ့အချိန်တစ်ခုတွင် ပုံသေညစာကြိုတင်မှာယူမှုကို မတည်ဆောက်ပါနှင့်။ ဆိုက်ရောက်ပြီးနောက် check-in အစီအစဉ်၊ ကမ်းနားလမ်းလျှောက်ခြင်းနှင့် ညစာစားရန် အစီအစဉ်ကို ကန့်သတ်ပါ။ ထို့နောက် နှေးကွေးသော လွှဲပြောင်းမှုတစ်ခုသည် ကြိုတင်ငွေပေးထားသည့် နေဝင်ချိန် လုပ်ဆောင်ချက်ကို ကုန်ကျမည်မဟုတ်ပါ။\n\nDay 4｜Sanur နေထွက်ချိန်နှင့် အမှန်တကယ်ပွင့်လင်းသောနေ့လည်ခင်း\nSanur သည် ဘာလီ၏ အရှေ့ဘက်ကမ်းရိုးတန်းတွင် တည်ရှိသည်။ အင်ဒိုနီးရှား၏တရားဝင်ခရီးသွားလုပ်ငန်းစာမျက်နှာသည် နေထွက်ချိန် နံနက် ၅း၃၀ မှ ၇း၀၀ ခန့်တွင် အကြံပြုထားပြီး လမ်းလျှောက်ရန် သို့မဟုတ် စက်ဘီးစီးရန် ကမ်းနားလမ်းကို ဖော်ပြသည်။ နေထွက်ပြီးနောက် မနက်စာစားပြီး ကမ်းခြေရဲ့ အပိုင်းတစ်ပိုင်းကိုသာ ဖုံးအုပ်လိုက်ပါ။ ရာသီဥတုနှင့် စွမ်းအင်အရ အနှိပ်ခန်း၊ ကော်ဖီဆိုင်၊ ရေကူးကန် သို့မဟုတ် ထို့ထက်ပို၍ အနားယူရန် နေ့ခင်းဘက်တွင် အသုံးပြုပါ။ ကျွန်းလှေ၊ ရေငုပ်ခြင်းနှင့် တောင်ပိုင်းကမ်းခြေကို တစ်နေ့တည်းတွင် မပေါင်းစပ်ပါနှင့်။\n\nDay 5 နှင့် နောက်ပြန်ဆုတ်ခြင်းများ｜ လေယာဉ်မှ ပြန်လည်ထွက်ခွာပြီး ပြည်တွင်းတွင်နေပါ။\nငွေရှင်းခြင်းမပြုမီ လေဆိပ်အပြောင်းအရွှေ့၊ ယာဉ်အသွားအလာကြားခံနှင့် ဂိတ်တို့ကို အတည်ပြုပါ။ စောစောစီးစီး လေယာဉ်စီးရန် တိုက်ရိုက်ထွက်ခွာပါ။ နောက်ကျလေယာဉ်အတွက်၊ Sanur သို့မဟုတ် ဟိုတယ်အနီးတွင်နေပါ။ မိုးရွာသောအခါတွင် Ubud ကော်ဖီဆိုင် သို့မဟုတ် ပြတိုက်နှင့် Sanur တွင် အိမ်တွင်းအနားယူအပန်းဖြေခြင်းတို့ဖြင့် ကြာရှည်စွာ လမ်းလျှောက်ခြင်းကို အစားထိုးပါ။ သင်၏နောက်ဆုံးငွေပေးချေမှုချက်လက်မှတ်သည် ဟိုတယ်ရက်စွဲ၊ တစ်ကြိမ်လွှဲပြောင်းမှု၊ Love Bali ပြေစာ၊ လုပ်ဆောင်ချက် ပယ်ဖျက်ခြင်းဆိုင်ရာ စည်းကမ်းချက်များ နှင့် လေဆိပ်သို့ စီးနင်းမှု နှစ်ခုစလုံး ပါဝင်ပါသည်။",
+    "destination": "ဘာလီ၊ အင်ဒိုနီးရှား",
+    "duration": "၅ရက်/၄ည",
+    "budget": "တိုက်ရိုက်နေထိုင်စျေးနှုန်းများ; နိုင်ငံခြားခရီးသွားဧည့်သည်တစ်ဦးလျှင် IDR 150,000 ကို 2026 ခုနှစ် သြဂုတ်လ 14 ရက်နေ့တွင် စစ်ဆေးခဲ့သည်။",
+    "season": "လမ်းလျှောက်ခြင်းနှင့် ကမ်းရိုးတန်းအချိန်များအတွက် နေ့စဥ် မိုးရွာသွန်းမှုအလိုက် တစ်နှစ်ပတ်လုံး မိုးရေချိန်ညှိခြင်း။",
+    "category": "အခြေနှေးသောလမ်းကြောင်းနှစ်ခု",
+    "imageAlt": "ဘာလီရှိ စိမ်းလန်းသောစပါးခင်းများနှင့် ထန်းပင်များ",
+    "ctaLabel": "Ubud တည်ရှိနေမှုကို နှိုင်းယှဉ်ပြီး တူညီသောရက်စွဲများအတွက် Sanur ကိုစစ်ဆေးပါ။",
+    "priceLabel": "တစ်ခုတည်းသောဟိုတယ်ပြောင်းရွှေ့; ငွေပေးချေခြင်းမပြုမီ လွှဲပြောင်းမှုများနှင့် လုပ်ဆောင်ချက်များကို အတည်ပြုပါ။",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771?funnel_source=travelgoguide",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Love Bali Tourist Levy FAQ",
+        "publisher": "Bali Provincial Government",
+        "url": "https://lovebali.baliprov.go.id/faq",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Find Serenity in Ubud, Bali",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Beach",
+        "publisher": "Ministry of Tourism, Republic of Indonesia",
+        "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Ubud Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Sanur Hotels",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   }
 }

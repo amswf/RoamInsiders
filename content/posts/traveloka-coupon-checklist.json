@@ -1,30 +1,541 @@
 {
   "zh-CN": {
-    "slug": "traveloka-coupon-checklist", "title": "Traveloka 优惠券怎么选：付款前先检查这五件事", "excerpt": "地区、首单资格、产品范围、App 限制和有效期，往往比优惠数字本身更重要。",
-    "content": "01｜先确认地区\n同一个活动在不同国家和币种下可能有不同规则。先切换到实际付款地区。\n\n02｜分清新客与首单\n新账号不一定等于每个产品线都能使用首单优惠，按照活动页说明判断。\n\n03｜看清适用产品\n机票、酒店、接送和玩乐可能分别使用不同优惠。\n\n04｜确认 App 或网页限制\n有些活动只在 App 内显示，付款前再检查一次入口。\n\n05｜最后看有效期和支付方式\n把适用日期、最低消费和指定支付方式一起读完，再决定是否使用。",
-    "destination": "东南亚", "duration": "3分钟阅读", "budget": "以活动页为准", "season": "全年", "category": "省钱指南", "contentType": "coupon",
-    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "飞机机翼与云层", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "查看 Traveloka 当前优惠", "ctaUrl": "", "couponCode": "按地区查看", "priceLabel": "活动规则可能变化", "updatedAt": "2026-07-12"
+    "slug": "traveloka-coupon-checklist",
+    "title": "Traveloka优惠券怎么用：2026年8月新加坡站券码与付款检查",
+    "excerpt": "以当前新加坡站BOOKTRAVELOKA为例，先确认市场、产品和首购资格，再比较输入券码后的最终付款额。",
+    "content": "当前能核实什么｜新加坡站显示BOOKTRAVELOKA\n2026年8月14日，Traveloka新加坡站首页显示新用户优惠券BOOKTRAVELOKA，页面标注适用于App内各产品的首次购买。展示额度包括首次机票最高减30新加坡元、首次酒店与景点最高8%、租车最高10%、机场接送最高12%。这是新加坡站、以新加坡元结算的当前示例，不代表其他国家站点、其他币种或所有账号都能获得同样结果。\n\n第一步｜先把市场和币种切到实际付款地区\n打开优惠前先看网址地区、显示币种和账号所在市场。本例来自en-SG页面；若你实际使用印尼、马来西亚、泰国或越南站，应回到对应站点的Ongoing Promotions重新取码。不要只从搜索结果复制一个代码，因为相同名称在不同市场可能对应不同产品、门槛或有效期。\n\n第二步｜把“新用户”拆成每个产品的首次购买\n当前页面分别列出机票、酒店、景点、租车和机场接送，并写明App内首次产品购买。付款前打开该产品的条款，确认账号是否从未购买过这一类产品，而不是只判断账号注册时间。同行人、支付卡、设备或账户识别规则若未在页面明确说明，就以结账页实际接受结果为准。\n\n第三步｜在付款页看最终金额，不看“最高减”\nTraveloka帮助中心说明，选好产品并进入付款流程后，先选支付方式，再在Coupon栏加入代码；总价应随之调整。记录输入前后的含税总额，并同时比较取消、改期和行李等条件。便宜几十元但失去可取消条款，未必是更低的旅行成本。\n\n券码失败时｜按五个条件逐项排查\n官方帮助页列出的重点包括：是否用于正确产品、最低交易额、促销期、预订期、出行期和券码有效性。再检查是否仅限App、指定支付方式或首次购买。若页面提示不适用，不要反复新建账号；截取条款和错误信息，通过Traveloka帮助中心查询。\n\n付款前清单｜把优惠当作最后一步\n顺序应是：先选满足行程需求且取消条款可接受的产品，再进入对应市场的优惠页，复制仍在展示的代码，最后比较优惠后的总额。BOOKTRAVELOKA和展示额度核验于2026年8月14日，活动可能随时更换；如果按钮页不再显示，就不要继续传播旧代码。",
+    "destination": "Traveloka新加坡站",
+    "duration": "5分钟阅读",
+    "budget": "当前展示：机票最高S$30；其他产品最高8%—12%，以结账页为准",
+    "season": "2026年8月14日核验；券码和资格随时可能变化",
+    "category": "优惠券实操",
+    "imageAlt": "飞机机翼与云层",
+    "ctaLabel": "打开Traveloka新加坡站并核对当前优惠",
+    "priceLabel": "当前示例码：BOOKTRAVELOKA；只认结账页实际减免",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "zh-TW": {
-    "slug": "traveloka-coupon-checklist", "title": "Traveloka 優惠券怎麼選：付款前先檢查五件事", "excerpt": "地區、首單資格、產品範圍、App 限制與有效期，往往比折扣數字更重要。",
-    "content": "01｜先確認地區\n不同國家和幣別可能有不同規則。\n\n02｜分清新客與首單\n依活動頁說明判斷資格。\n\n03｜看清適用產品\n機票、飯店和玩樂可能分開使用。\n\n04｜確認 App 或網頁限制\n付款前再檢查入口。\n\n05｜最後看有效期和支付方式\n把最低消費與指定支付方式一起讀完。",
-    "destination": "東南亞", "duration": "3分鐘閱讀", "budget": "以活動頁為準", "season": "全年", "category": "省錢指南", "contentType": "coupon",
-    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "飛機機翼與雲層", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "查看 Traveloka 目前優惠", "ctaUrl": "", "couponCode": "按地區查看", "priceLabel": "活動規則可能改變", "updatedAt": "2026-07-12"
+    "slug": "traveloka-coupon-checklist",
+    "title": "Traveloka優惠券怎麼用：2026年8月新加坡站券碼與付款檢查",
+    "excerpt": "以目前新加坡站BOOKTRAVELOKA為例，先確認市場、產品及首購資格，再比較輸入券碼後的最終付款額。",
+    "content": "目前能核實什麼｜新加坡站顯示BOOKTRAVELOKA\n2026年8月14日，Traveloka新加坡站首頁顯示新用戶優惠券BOOKTRAVELOKA，頁面標註適用於App內各產品的首次購買。展示額度包括首次機票最高減30新加坡元、首次飯店與景點最高8%、租車最高10%、機場接送最高12%。這是新加坡站、以新加坡元結算的當前範例，不代表其他國家站點、其他幣種或所有帳號都能獲得相同結果。\n\n第一步｜先把市場和幣種切到實際付款地區\n打開優惠前先看網址地區、顯示幣種和帳號所在市場。本範例來自en-SG頁面；若你實際使用印尼、馬來西亞、泰國或越南站，應回到對應網站的Ongoing Promotions重新取碼。不要只從搜尋結果複製一個代碼，因為相同名稱在不同市場可能對應不同產品、門檻或有效期限。\n\n第二步｜把「新用戶」拆成每個產品的首次購買\n目前頁面分別列出機票、飯店、景點、租車和機場接送，並寫明App內首次產品購買。付款前打開該產品的條款，確認帳號是否從未購買過這一類產品，而不是只判斷帳號註冊時間。同行人、支付卡、設備或帳戶識別規則若未在頁面明確說明，就以結帳頁實際接受結果為準。\n\n第三步｜在付款頁看最終金額，不看“最高減”\nTraveloka幫助中心說明，選好產品並進入付款流程後，先選支付方式，再在Coupon欄加入代碼；總價應隨之調整。記錄輸入前後的含稅總額，並同時比較取消、改期和行李等條件。便宜幾十元但失去可取消條款，未必是更低的旅遊成本。\n\n券碼失敗時｜按五個條件逐項排查\n官方幫助頁列出的重點包括：是否用於正確產品、最低交易額、促銷期間、預訂期間、旅行期間和券碼有效性。再檢查是否僅限App、指定付款方式或首次購買。若頁面提示不適用，不要重複新建帳號；截取條款和錯誤訊息，透過Traveloka幫助中心查詢。\n\n付款前清單｜把優惠當作最後一步\n順序應為：先選滿足行程需求且取消條款可接受的產品，再進入對應市場的優惠頁，複製仍在展示的代碼，最後比較優惠後的總額。 BOOKTRAVELOKA和展示額度核驗於2026年8月14日，活動可能隨時更換；如果按鈕頁不再顯示，就不要繼續傳播舊代碼。",
+    "destination": "Traveloka新加坡站",
+    "duration": "5分鐘閱讀",
+    "budget": "目前展示：機票最高S$30；其他產品最高8%—12%，以結帳頁為準",
+    "season": "2026年8月14日核驗；券碼和資格隨時可能變化",
+    "category": "優惠券實操",
+    "imageAlt": "飛機機翼與雲層",
+    "ctaLabel": "打開Traveloka新加坡站並核對當前優惠",
+    "priceLabel": "目前範例碼：BOOKTRAVELOKA；只認結帳頁實際減免",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "en": {
-    "slug": "traveloka-coupon-checklist", "title": "Choosing a Traveloka coupon: five checks before payment", "excerpt": "Market, first-booking eligibility, product scope, app restrictions and dates often matter more than the headline discount.",
-    "content": "01 | Confirm your market\nThe same campaign can have different rules across countries and currencies.\n\n02 | Separate new users from first bookings\nRead the campaign page to understand which product purchase qualifies.\n\n03 | Check the eligible product\nFlights, hotels, transfers and attractions may use separate promotions.\n\n04 | Confirm app or web restrictions\nSome offers only appear in the app.\n\n05 | Read the dates and payment rules\nCheck minimum spend and eligible payment methods together before using the offer.",
-    "destination": "Southeast Asia", "duration": "3 min read", "budget": "See campaign terms", "season": "Year-round", "category": "Saving guide", "contentType": "coupon",
-    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Aircraft wing above clouds", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "See current Traveloka offers", "ctaUrl": "", "couponCode": "Check by market", "priceLabel": "Campaign rules may change", "updatedAt": "2026-07-12"
+    "slug": "traveloka-coupon-checklist",
+    "title": "How to use a Traveloka coupon: the August 2026 Singapore code and checks before payment",
+    "excerpt": "Use the current Singapore-market BOOKTRAVELOKA example to verify market, product and first-purchase eligibility before comparing the final total.",
+    "content": "What is verified now｜Singapore currently shows BOOKTRAVELOKA\nOn 14 August 2026, Traveloka's Singapore homepage displayed the new-user code BOOKTRAVELOKA for first purchases by product in the app. The page showed up to S$30 for a first flight booking, up to 8% for a first hotel or attraction booking, up to 10% for car rental and up to 12% for airport transfer. This is a Singapore-market, SGD example; it does not guarantee the same result in another market, currency or account.\n\nStep 1｜Match the market and currency to the actual payment\nBefore copying a code, check the country in the URL, displayed currency and account market. This example comes from the en-SG page. If you pay through Indonesia, Malaysia, Thailand or Vietnam, return to that market's Ongoing Promotions section and obtain its current code. A search result alone cannot tell you whether a similar code has different products, thresholds or dates elsewhere.\n\nStep 2｜Treat first purchase as a product-by-product condition\nThe current page lists flights, hotels, attractions, car rental and airport transfer separately and describes first product purchases in the app. Open the terms for the product you are buying and check whether the account has previously bought that category, rather than relying only on the account creation date. Where card, device, traveller or account rules are not explicit, the checkout result is the controlling test.\n\nStep 3｜Compare the final payable total, not the headline maximum\nTraveloka's help centre says to choose the payment method at checkout, add the code in the Coupon box and confirm that the total changes. Record the tax-inclusive total before and after the code, then compare cancellation, rescheduling and baggage conditions. A small discount is not a saving if it removes a cancellation option you need.\n\nIf the code fails｜Check five conditions in order\nTraveloka's own troubleshooting page highlights the correct product, minimum transaction, promotion period, booking period, travel period and validity. Also check whether the offer is app-only, tied to a payment method or limited to the first purchase. If checkout rejects it, save the terms and error message and use the help centre instead of creating repeated accounts.\n\nFinal checklist｜Apply the coupon last\nFirst choose a product that fits the trip and has acceptable cancellation terms. Then open the correct market's live promotion page, copy a code that is still displayed, and compare the discounted final total. BOOKTRAVELOKA and the stated caps were checked on 14 August 2026 and may change at any time; if the linked page no longer shows them, do not circulate the old code.",
+    "destination": "Traveloka Singapore",
+    "duration": "5-minute read",
+    "budget": "Current display: up to S$30 on flights and 8%–12% on other products; checkout controls",
+    "season": "Checked 14 Aug 2026; codes and eligibility can change without notice",
+    "category": "Coupon walkthrough",
+    "imageAlt": "Aircraft wing above clouds",
+    "ctaLabel": "Open Traveloka Singapore and check the live promotion",
+    "priceLabel": "Current example: BOOKTRAVELOKA; trust the checkout total",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "id": {
-    "slug": "traveloka-coupon-checklist", "title": "Memilih kupon Traveloka: lima hal yang perlu dicek sebelum membayar", "excerpt": "Wilayah, kelayakan transaksi pertama, cakupan produk, batasan aplikasi, dan masa berlaku lebih penting daripada angka diskon.",
-    "content": "01 | Pastikan wilayah Anda\nAturan dapat berbeda menurut negara dan mata uang.\n\n02 | Bedakan pengguna baru dan transaksi pertama\nBaca halaman promo untuk memahami produk yang memenuhi syarat.\n\n03 | Cek produk yang berlaku\nPenerbangan, hotel, transfer, dan atraksi dapat memiliki promo terpisah.\n\n04 | Pastikan batasan aplikasi atau web\nBeberapa promo hanya tampil di aplikasi.\n\n05 | Baca tanggal dan metode pembayaran\nPeriksa minimum transaksi dan metode pembayaran sebelum menggunakan promo.",
-    "destination": "Asia Tenggara", "duration": "Baca 3 menit", "budget": "Lihat syarat promo", "season": "Sepanjang tahun", "category": "Panduan hemat", "contentType": "coupon",
-    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Sayap pesawat di atas awan", "status": "published", "featured": true,
-    "ctaPlatform": "traveloka", "ctaLabel": "Lihat promo Traveloka saat ini", "ctaUrl": "", "couponCode": "Cek menurut wilayah", "priceLabel": "Aturan promo dapat berubah", "updatedAt": "2026-07-12"
+    "slug": "traveloka-coupon-checklist",
+    "title": "Cara menggunakan kupon Traveloka: Kode Singapura Agustus 2026 dan cek sebelum pembayaran",
+    "excerpt": "Gunakan contoh BOOKTRAVELOKA pasar Singapura saat ini untuk memverifikasi kelayakan pasar, produk, dan pembelian pertama sebelum membandingkan total akhir.",
+    "content": "Apa yang diverifikasi sekarang｜Singapura saat ini menampilkan BOOKTRAVELOKA\nPada tanggal 14 Agustus 2026, beranda Traveloka Singapura menampilkan kode pengguna baru BOOKTRAVELOKA untuk pembelian pertama berdasarkan produk di aplikasi. Halaman tersebut menampilkan hingga S$30 untuk pemesanan penerbangan pertama, hingga 8% untuk pemesanan hotel atau objek wisata pertama, hingga 10% untuk penyewaan mobil, dan hingga 12% untuk transfer bandara. Ini adalah contoh pasar Singapura, SGD; itu tidak menjamin hasil yang sama di pasar, mata uang, atau akun lain.\n\nLangkah 1｜Cocokkan pasar dan mata uang dengan pembayaran sebenarnya\nSebelum menyalin kode, periksa negara di URL, mata uang yang ditampilkan, dan pasar akun. Contoh ini berasal dari halaman en-SG. Jika Anda membayar melalui Indonesia, Malaysia, Thailand, atau Vietnam, kembalilah ke bagian Promosi Berkelanjutan di pasar tersebut dan dapatkan kode terbarunya. Hasil penelusuran saja tidak dapat memberi tahu Anda apakah kode serupa memiliki produk, ambang batas, atau tanggal berbeda di tempat lain.\n\nLangkah 2｜Perlakukan pembelian pertama sebagai kondisi produk demi produk\nHalaman saat ini mencantumkan penerbangan, hotel, atraksi, persewaan mobil, dan transfer bandara secara terpisah dan menjelaskan pembelian produk pertama di aplikasi. Buka ketentuan produk yang Anda beli dan periksa apakah akun tersebut sebelumnya pernah membeli kategori tersebut, daripada hanya mengandalkan tanggal pembuatan akun. Jika aturan kartu, perangkat, wisatawan, atau akun tidak eksplisit, hasil pembayaran adalah uji pengendalian.\n\nLangkah 3｜Bandingkan total hutang akhir, bukan jumlah maksimum\nPusat bantuan Traveloka mengatakan untuk memilih metode pembayaran saat checkout, tambahkan kode di kotak Kupon dan konfirmasikan perubahan total. Catat total termasuk pajak sebelum dan sesudah kode, lalu bandingkan kondisi pembatalan, penjadwalan ulang, dan bagasi. Diskon kecil bukanlah penghematan jika menghilangkan opsi pembatalan yang Anda perlukan.\n\nJika kode gagal｜Periksa lima kondisi secara berurutan\nHalaman pemecahan masalah Traveloka sendiri menyoroti produk yang benar, minimum transaksi, periode promosi, periode pemesanan, periode perjalanan dan validitas. Periksa juga apakah penawaran tersebut hanya untuk aplikasi, terkait dengan metode pembayaran, atau terbatas pada pembelian pertama. Jika checkout menolaknya, simpan persyaratan dan pesan kesalahan dan gunakan pusat bantuan daripada membuat akun berulang.\n\nDaftar periksa terakhir｜Terapkan kupon terakhir\nPertama pilih produk yang sesuai dengan perjalanan dan memiliki ketentuan pembatalan yang dapat diterima. Kemudian buka halaman promosi langsung pasar yang benar, salin kode yang masih ditampilkan, dan bandingkan total diskon akhir. BOOKTRAVELOKA dan batasan yang disebutkan telah diperiksa pada tanggal 14 Agustus 2026 dan dapat berubah sewaktu-waktu; jika halaman tertaut tidak lagi menampilkannya, jangan sebarkan kode lama.",
+    "destination": "Traveloka Singapura",
+    "duration": "Bacaan 5 menit",
+    "budget": "Tampilan terkini: hingga S$30 untuk penerbangan dan 8%–12% untuk produk lainnya; kontrol pembayaran",
+    "season": "Diperiksa 14 Agustus 2026; kode dan kelayakan dapat berubah tanpa pemberitahuan",
+    "category": "Panduan kupon",
+    "imageAlt": "Sayap pesawat di atas awan",
+    "ctaLabel": "Buka Traveloka Singapura dan periksa promosi langsungnya",
+    "priceLabel": "Contoh saat ini: BOOKTRAVELOKA; percaya total checkout",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "th": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "วิธีใช้คูปอง Traveloka: รหัสสิงคโปร์เดือนสิงหาคม 2569 และตรวจสอบก่อนชำระเงิน",
+    "excerpt": "ใช้ตัวอย่าง BOOKTRAVELOKA ในตลาดสิงคโปร์ในปัจจุบันเพื่อตรวจสอบตลาด ผลิตภัณฑ์ และสิทธิ์ในการซื้อครั้งแรก ก่อนที่จะเปรียบเทียบผลรวมสุดท้าย",
+    "content": "สิ่งที่ได้รับการยืนยันแล้ว ｜ขณะนี้สิงคโปร์แสดง BOOKTRAVELOKA\nเมื่อวันที่ 14 สิงหาคม 2569 หน้าแรกของ Traveloka ในสิงคโปร์ได้แสดงรหัสผู้ใช้ใหม่ BOOKTRAVELOKA สำหรับการซื้อครั้งแรกตามผลิตภัณฑ์ในแอป หน้านี้แสดงราคาสูงสุดถึง S$30 สำหรับการจองเที่ยวบินแรก สูงสุดถึง 8% สำหรับการจองโรงแรมหรือสถานที่ท่องเที่ยวครั้งแรก สูงสุดถึง 10% สำหรับการเช่ารถ และสูงสุดถึง 12% สำหรับการรับส่งสนามบิน นี่คือตัวอย่างตลาดสิงคโปร์ SGD ไม่รับประกันผลลัพธ์เดียวกันในตลาด สกุลเงิน หรือบัญชีอื่น\n\nขั้นตอนที่ 1｜จับคู่ตลาดและสกุลเงินกับการชำระเงินจริง\nก่อนที่จะคัดลอกรหัส ให้ตรวจสอบประเทศใน URL สกุลเงินที่แสดง และตลาดบัญชี ตัวอย่างนี้มาจากหน้า en-SG หากคุณชำระเงินผ่านอินโดนีเซีย มาเลเซีย ไทย หรือเวียดนาม ให้กลับไปที่ส่วนโปรโมชันต่อเนื่องของตลาดนั้นและรับรหัสปัจจุบัน ผลการค้นหาเพียงอย่างเดียวไม่สามารถบอกคุณได้ว่ารหัสที่คล้ายกันมีผลิตภัณฑ์ เกณฑ์ หรือวันที่ที่แตกต่างกันในที่อื่นหรือไม่\n\nขั้นตอนที่ 2｜ถือว่าการซื้อครั้งแรกเป็นเงื่อนไขทีละผลิตภัณฑ์\nหน้าปัจจุบันแสดงรายการเที่ยวบิน โรงแรม สถานที่ท่องเที่ยว บริการรถเช่า และบริการรับส่งสนามบินแยกกัน และอธิบายการซื้อผลิตภัณฑ์ครั้งแรกในแอป เปิดข้อกำหนดสำหรับผลิตภัณฑ์ที่คุณกำลังซื้อและตรวจสอบว่าบัญชีเคยซื้อหมวดหมู่นั้นมาก่อนหรือไม่ แทนที่จะอาศัยเฉพาะวันที่สร้างบัญชี ในกรณีที่กฎของบัตร อุปกรณ์ ผู้เดินทาง หรือบัญชีไม่ชัดเจน ผลลัพธ์ในการชำระเงินจะเป็นการทดสอบการควบคุม\n\nขั้นตอนที่ 3｜เปรียบเทียบยอดรวมที่ต้องชำระขั้นสุดท้าย ไม่ใช่ค่าสูงสุดพาดหัว\nศูนย์ช่วยเหลือของ Traveloka บอกว่าให้เลือกวิธีการชำระเงินเมื่อชำระเงิน เพิ่มรหัสลงในกล่องคูปองและยืนยันว่าการเปลี่ยนแปลงทั้งหมด บันทึกยอดรวมภาษีก่อนและหลังโค้ด จากนั้นเปรียบเทียบการยกเลิก การเปลี่ยนกำหนดการ และเงื่อนไขสัมภาระ ส่วนลดเล็กน้อยจะไม่ช่วยประหยัดหากนำตัวเลือกการยกเลิกที่คุณต้องการออก\n\nหากรหัสล้มเหลว｜ตรวจสอบเงื่อนไข 5 ข้อตามลำดับ\nหน้าการแก้ไขปัญหาของ Traveloka จะเน้นย้ำผลิตภัณฑ์ที่ถูกต้อง การทำธุรกรรมขั้นต่ำ ระยะเวลาโปรโมชั่น ระยะเวลาการจอง ระยะเวลาการเดินทาง และความถูกต้อง ตรวจสอบด้วยว่าข้อเสนอนี้มีเฉพาะแอปเท่านั้น เชื่อมโยงกับวิธีการชำระเงิน หรือจำกัดเฉพาะการซื้อครั้งแรก หากการชำระเงินปฏิเสธ ให้บันทึกข้อกำหนดและข้อความแสดงข้อผิดพลาด และใช้ศูนย์ช่วยเหลือแทนการสร้างบัญชีซ้ำ\n\nรายการตรวจสอบสุดท้าย ｜ ใช้คูปองเป็นลำดับสุดท้าย\nขั้นแรกเลือกผลิตภัณฑ์ที่เหมาะกับการเดินทางและมีเงื่อนไขการยกเลิกที่ยอมรับได้ จากนั้นเปิดหน้าโปรโมชั่นสดของตลาดที่ถูกต้อง คัดลอกโค้ดที่ยังคงแสดงอยู่ และเปรียบเทียบยอดรวมสุดท้ายที่ลดราคา BOOKTRAVELOKA และตัวพิมพ์ใหญ่ที่ระบุได้รับการตรวจสอบเมื่อวันที่ 14 สิงหาคม 2026 และอาจเปลี่ยนแปลงได้ตลอดเวลา หากหน้าที่เชื่อมโยงไม่แสดงอีกต่อไป ห้ามเผยแพร่โค้ดเก่า",
+    "destination": "ทราเวลโลก้า สิงคโปร์",
+    "duration": "อ่าน 5 นาที",
+    "budget": "การแสดงผลปัจจุบัน: สูงถึง S$30 สำหรับเที่ยวบิน และ 8%–12% สำหรับผลิตภัณฑ์อื่นๆ การควบคุมการชำระเงิน",
+    "season": "ตรวจสอบเมื่อ 14 ส.ค. 2569; รหัสและการมีสิทธิ์สามารถเปลี่ยนแปลงได้โดยไม่ต้องแจ้งให้ทราบล่วงหน้า",
+    "category": "คำแนะนำแบบคูปอง",
+    "imageAlt": "ปีกเครื่องบินเหนือเมฆ",
+    "ctaLabel": "เปิด Traveloka Singapore และตรวจสอบโปรโมชั่นสด",
+    "priceLabel": "ตัวอย่างปัจจุบัน: BOOKTRAVELOKA; เชื่อถือยอดรวมการชำระเงิน",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "vi": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "Cách sử dụng phiếu giảm giá Traveloka: mã Singapore tháng 8 năm 2026 và kiểm tra trước khi thanh toán",
+    "excerpt": "Sử dụng ví dụ BOOKTRAVELOKA hiện tại tại thị trường Singapore để xác minh tính đủ điều kiện của thị trường, sản phẩm và lần mua đầu tiên trước khi so sánh tổng số cuối cùng.",
+    "content": "Điều gì đã được xác minh ngay bây giờ｜ Singapore hiện đang hiển thị BOOKTRAVELOKA\nVào ngày 14 tháng 8 năm 2026, trang chủ Traveloka tại Singapore đã hiển thị mã người dùng mới BOOKTRAVELOKA cho lần mua hàng đầu tiên theo sản phẩm trong ứng dụng. Trang này hiển thị lên tới 30 đô la Singapore cho lần đặt vé máy bay đầu tiên, lên tới 8% cho đặt phòng khách sạn hoặc điểm tham quan đầu tiên, lên tới 10% cho thuê ô tô và lên tới 12% cho đưa đón sân bay. Đây là ví dụ về thị trường Singapore, SGD; nó không đảm bảo kết quả tương tự ở thị trường, loại tiền tệ hoặc tài khoản khác.\n\nBước 1｜Kết hợp thị trường và tiền tệ với khoản thanh toán thực tế\nTrước khi sao chép mã, hãy kiểm tra quốc gia trong URL, loại tiền tệ được hiển thị và thị trường tài khoản. Ví dụ này xuất phát từ trang en-SG. Nếu bạn thanh toán qua Indonesia, Malaysia, Thái Lan hoặc Việt Nam, hãy quay lại phần Khuyến mãi đang diễn ra của thị trường đó và lấy mã hiện tại của thị trường đó. Chỉ một kết quả tìm kiếm không thể cho bạn biết liệu một mã tương tự có các sản phẩm, ngưỡng hoặc ngày khác ở nơi khác hay không.\n\nBước 2｜Hãy coi lần mua hàng đầu tiên là điều kiện của từng sản phẩm\nTrang hiện tại liệt kê riêng các chuyến bay, khách sạn, điểm tham quan, thuê ô tô và đưa đón sân bay cũng như mô tả các giao dịch mua sản phẩm đầu tiên trong ứng dụng. Mở các điều khoản cho sản phẩm bạn đang mua và kiểm tra xem tài khoản trước đó đã mua danh mục đó chưa, thay vì chỉ dựa vào ngày tạo tài khoản. Trong trường hợp các quy tắc về thẻ, thiết bị, khách du lịch hoặc tài khoản không rõ ràng thì kết quả thanh toán là bài kiểm tra kiểm soát.\n\nBước 3｜So sánh tổng số tiền phải trả cuối cùng, không phải mức tối đa\nTrung tâm trợ giúp của Traveloka yêu cầu chọn phương thức thanh toán khi thanh toán, thêm mã vào hộp Phiếu giảm giá và xác nhận rằng tổng số thay đổi. Ghi lại tổng số tiền đã bao gồm thuế trước và sau mã, sau đó so sánh các điều kiện hủy, đổi lịch và hành lý. Một khoản giảm giá nhỏ sẽ không phải là một khoản tiết kiệm nếu nó loại bỏ tùy chọn hủy mà bạn cần.\n\nNếu mã không thành công｜Kiểm tra năm điều kiện theo thứ tự\nTrang xử lý sự cố của Traveloka nêu bật đúng sản phẩm, giao dịch tối thiểu, thời gian khuyến mãi, thời gian đặt chỗ, thời gian di chuyển và hiệu lực. Đồng thời kiểm tra xem ưu đãi này chỉ dành cho ứng dụng, được gắn với phương thức thanh toán hay giới hạn ở lần mua hàng đầu tiên. Nếu thanh toán từ chối, hãy lưu các điều khoản và thông báo lỗi rồi sử dụng trung tâm trợ giúp thay vì tạo tài khoản lặp lại.\n\nDanh sách kiểm tra cuối cùng｜Áp dụng phiếu giảm giá lần cuối\nĐầu tiên hãy chọn sản phẩm phù hợp với chuyến đi và có điều khoản hủy bỏ chấp nhận được. Sau đó, mở trang khuyến mãi trực tiếp của đúng thị trường, sao chép mã vẫn được hiển thị và so sánh tổng số tiền chiết khấu cuối cùng. BOOKTRAVELOKA và giới hạn nêu trên đã được kiểm tra vào ngày 14 tháng 8 năm 2026 và có thể thay đổi bất kỳ lúc nào; nếu trang được liên kết không còn hiển thị chúng nữa, đừng lưu hành mã cũ.",
+    "destination": "Traveloka Singapore",
+    "duration": "đọc 5 phút",
+    "budget": "Màn hình hiện tại: lên tới S$30 trên các chuyến bay và 8%–12% trên các sản phẩm khác; kiểm soát thanh toán",
+    "season": "Đã kiểm tra ngày 14 tháng 8 năm 2026; mã và tính đủ điều kiện có thể thay đổi mà không cần thông báo trước",
+    "category": "Hướng dẫn về phiếu giảm giá",
+    "imageAlt": "Cánh máy bay trên mây",
+    "ctaLabel": "Mở Traveloka Singapore và kiểm tra chương trình khuyến mãi trực tiếp",
+    "priceLabel": "Ví dụ hiện tại: BOOKTRAVELOKA; tin tưởng vào tổng số tiền thanh toán",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "ms": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "Cara menggunakan kupon Traveloka: kod dan cek Singapura Ogos 2026 sebelum pembayaran",
+    "excerpt": "Gunakan contoh BOOKTRAVELOKA pasaran Singapura semasa untuk mengesahkan kelayakan pasaran, produk dan pembelian pertama sebelum membandingkan jumlah akhir.",
+    "content": "Perkara yang disahkan sekarang｜Singapura pada masa ini menunjukkan BOOKTRAVELOKA\nPada 14 Ogos 2026, halaman utama Traveloka Singapura memaparkan kod pengguna baharu BOOKTRAVELOKA untuk pembelian pertama mengikut produk dalam apl. Halaman tersebut menunjukkan sehingga S$30 untuk tempahan penerbangan pertama, sehingga 8% untuk tempahan hotel atau tarikan pertama, sehingga 10% untuk penyewaan kereta dan sehingga 12% untuk pemindahan lapangan terbang. Ini adalah contoh pasaran Singapura, SGD; ia tidak menjamin hasil yang sama dalam pasaran, mata wang atau akaun lain.\n\nLangkah 1｜Padankan pasaran dan mata wang dengan pembayaran sebenar\nSebelum menyalin kod, semak negara dalam URL, mata wang yang dipaparkan dan pasaran akaun. Contoh ini datang dari halaman en-SG. Jika anda membayar melalui Indonesia, Malaysia, Thailand atau Vietnam, kembali ke bahagian Promosi Berterusan pasaran tersebut dan dapatkan kod semasanya. Hasil carian sahaja tidak boleh memberitahu anda sama ada kod serupa mempunyai produk, ambang atau tarikh yang berbeza di tempat lain.\n\nLangkah 2｜Anggap pembelian pertama sebagai keadaan produk demi produk\nHalaman semasa menyenaraikan penerbangan, hotel, tarikan, penyewaan kereta dan pemindahan lapangan terbang secara berasingan dan menerangkan pembelian produk pertama dalam apl. Buka syarat untuk produk yang anda beli dan semak sama ada akaun itu telah membeli kategori itu sebelum ini, dan bukannya hanya bergantung pada tarikh penciptaan akaun. Jika peraturan kad, peranti, pengembara atau akaun tidak jelas, keputusan pembayaran ialah ujian kawalan.\n\nLangkah 3｜Bandingkan jumlah akhir yang perlu dibayar, bukan maksimum tajuk\nPusat bantuan Traveloka berkata untuk memilih kaedah pembayaran semasa pembayaran, tambah kod dalam kotak Kupon dan sahkan bahawa jumlah perubahan. Catatkan jumlah termasuk cukai sebelum dan selepas kod, kemudian bandingkan pembatalan, penjadualan semula dan syarat bagasi. Diskaun kecil bukanlah penjimatan jika ia mengalih keluar pilihan pembatalan yang anda perlukan.\n\nJika kod gagal｜Semak lima syarat mengikut urutan\nHalaman penyelesaian masalah Traveloka sendiri menyerlahkan produk yang betul, transaksi minimum, tempoh promosi, tempoh tempahan, tempoh perjalanan dan kesahan. Semak juga sama ada tawaran itu adalah apl sahaja, terikat pada kaedah pembayaran atau terhad pada pembelian pertama. Jika pembayaran menolaknya, simpan syarat dan mesej ralat dan gunakan pusat bantuan dan bukannya membuat akaun berulang.\n\nSenarai semak akhir｜Gunakan kupon terakhir\nMula-mula pilih produk yang sesuai dengan perjalanan dan mempunyai syarat pembatalan yang boleh diterima. Kemudian buka halaman promosi langsung pasaran yang betul, salin kod yang masih dipaparkan dan bandingkan jumlah akhir diskaun. BOOKTRAVELOKA dan penutup yang dinyatakan telah disemak pada 14 Ogos 2026 dan boleh berubah pada bila-bila masa; jika halaman yang dipautkan tidak lagi menunjukkannya, jangan edarkan kod lama.",
+    "destination": "Traveloka Singapura",
+    "duration": "Bacaan 5 minit",
+    "budget": "Paparan semasa: sehingga S$30 pada penerbangan dan 8%–12% pada produk lain; kawalan pembayaran",
+    "season": "Disemak 14 Ogos 2026; kod dan kelayakan boleh berubah tanpa notis",
+    "category": "Panduan kupon",
+    "imageAlt": "Sayap pesawat di atas awan",
+    "ctaLabel": "Buka Traveloka Singapura dan semak promosi langsung",
+    "priceLabel": "Contoh semasa: BOOKTRAVELOKA; mempercayai jumlah pembayaran",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "fil": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "Paano gumamit ng Traveloka coupon: Singapore code ngayong Agosto 2026 at mga dapat suriin bago magbayad",
+    "excerpt": "Gamitin ang kasalukuyang halimbawa ng BOOKTRAVELOKA sa Singapore-market upang i-verify ang pagiging karapat-dapat sa merkado, produkto at unang pagbili bago ihambing ang panghuling kabuuan.",
+    "content": "Ano ang na-verify ngayon｜Singapore ay kasalukuyang nagpapakita ng BOOKTRAVELOKA\nNoong Agosto 14, 2026, ipinakita ng homepage ng Traveloka sa Singapore ang code ng bagong user na BOOKTRAVELOKA para sa mga unang pagbili ayon sa produkto sa app. Nagpakita ang page ng hanggang S$30 para sa unang flight booking, hanggang 8% para sa unang hotel o attraction booking, hanggang 10% para sa pag-arkila ng kotse at hanggang 12% para sa airport transfer. Ito ay isang Singapore-market, halimbawa ng SGD; hindi nito ginagarantiya ang parehong resulta sa ibang market, currency o account.\n\nHakbang 1｜Itugma ang market at pera sa aktwal na pagbabayad\nBago kumopya ng code, tingnan ang bansa sa URL, ipinapakitang pera at account market. Ang halimbawang ito ay nagmula sa en-SG page. Kung magbabayad ka sa pamamagitan ng Indonesia, Malaysia, Thailand o Vietnam, bumalik sa Ongoing Promotions section ng market na iyon at kunin ang kasalukuyang code nito. Ang resulta ng paghahanap lamang ay hindi makapagsasabi sa iyo kung ang isang katulad na code ay may iba't ibang produkto, limitasyon o petsa sa ibang lugar.\n\nHakbang 2｜Itrato ang unang pagbili bilang kondisyon ng produkto-by-produkto\nAng kasalukuyang page ay naglilista ng mga flight, hotel, atraksyon, pagrenta ng kotse at paglilipat ng paliparan nang hiwalay at inilalarawan ang mga unang pagbili ng produkto sa app. Buksan ang mga tuntunin para sa produktong iyong binibili at tingnan kung dati nang binili ng account ang kategoryang iyon, sa halip na umasa lamang sa petsa ng paggawa ng account. Kung saan ang mga panuntunan sa card, device, manlalakbay o account ay hindi tahasan, ang resulta ng pag-checkout ay ang pagsusuri sa pagkontrol.\n\nHakbang 3｜Ihambing ang kabuuang halagang dapat bayaran, hindi ang maximum na headline\nSinasabi ng help center ng Traveloka na piliin ang paraan ng pagbabayad sa pag-checkout, idagdag ang code sa kahon ng Kupon at kumpirmahin na ang kabuuang mga pagbabago. Itala ang kabuuan ng tax-inclusive bago at pagkatapos ng code, pagkatapos ay ihambing ang mga kondisyon ng pagkansela, muling pag-iskedyul at bagahe. Ang isang maliit na diskwento ay hindi isang pagtitipid kung aalisin nito ang isang opsyon sa pagkansela na kailangan mo.\n\nKung nabigo ang code｜Suriin ang limang kundisyon sa pagkakasunud-sunod\nItinatampok ng sariling page ng pag-troubleshoot ng Traveloka ang tamang produkto, minimum na transaksyon, panahon ng promosyon, panahon ng booking, panahon ng paglalakbay at bisa. Suriin din kung ang alok ay app-only, nakatali sa isang paraan ng pagbabayad o limitado sa unang pagbili. Kung tinanggihan ito ng checkout, i-save ang mga tuntunin at mensahe ng error at gamitin ang help center sa halip na gumawa ng mga paulit-ulit na account.\n\nPanghuling checklist｜Ilapat ang kupon sa huli\nPumili muna ng produkto na akma sa biyahe at may katanggap-tanggap na mga tuntunin sa pagkansela. Pagkatapos ay buksan ang pahina ng live na promosyon ng tamang market, kumopya ng code na ipinapakita pa rin, at ihambing ang may diskwentong panghuling kabuuan. Ang BOOKTRAVELOKA at ang mga nakasaad na cap ay sinuri noong Agosto 14, 2026 at maaaring magbago anumang oras; kung ang naka-link na pahina ay hindi na nagpapakita sa kanila, huwag i-circulate ang lumang code.",
+    "destination": "Traveloka Singapore",
+    "duration": "5 minutong pagbabasa",
+    "budget": "Kasalukuyang display: hanggang S$30 sa mga flight at 8%–12% sa iba pang mga produkto; mga kontrol sa pag-checkout",
+    "season": "Sinuri noong Agosto 14, 2026; maaaring magbago ang mga code at pagiging karapat-dapat nang walang abiso",
+    "category": "Walkthrough ng kupon",
+    "imageAlt": "Pakpak ng sasakyang panghimpapawid sa itaas ng mga ulap",
+    "ctaLabel": "Buksan ang Traveloka Singapore at tingnan ang live na promosyon",
+    "priceLabel": "Kasalukuyang halimbawa: BOOKTRAVELOKA; magtiwala sa kabuuan ng pag-checkout",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "km": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "របៀបប្រើប័ណ្ណ Traveloka: លេខកូដសិង្ហបុរីខែសីហា 2026 និងពិនិត្យមុនពេលបង់ប្រាក់",
+    "excerpt": "ប្រើឧទាហរណ៍ BOOKTRAVELOKA ទីផ្សារសិង្ហបុរីបច្ចុប្បន្ន ដើម្បីផ្ទៀងផ្ទាត់ទីផ្សារ ផលិតផល និងសិទ្ធិទិញដំបូង មុនពេលប្រៀបធៀបចំនួនសរុបចុងក្រោយ។",
+    "content": "អ្វីដែលត្រូវបានផ្ទៀងផ្ទាត់ឥឡូវនេះ｜សិង្ហបុរីបង្ហាញ BOOKTRAVELOKA\nនៅថ្ងៃទី 14 ខែសីហា ឆ្នាំ 2026 គេហទំព័រ Traveloka's Singapore បានបង្ហាញលេខកូដអ្នកប្រើប្រាស់ថ្មី BOOKTRAVELOKA សម្រាប់ការទិញផលិតផលដំបូងនៅក្នុងកម្មវិធី។ ទំព័របានបង្ហាញរហូតដល់ 30 ដុល្លារសិង្ហបុរីសម្រាប់ការកក់ជើងហោះហើរលើកដំបូង រហូតដល់ 8% សម្រាប់ការកក់សណ្ឋាគារ ឬកន្លែងទាក់ទាញដំបូង រហូតដល់ 10% សម្រាប់ការជួលរថយន្ត និងរហូតដល់ 12% សម្រាប់ការផ្ទេរអាកាសយានដ្ឋាន។ នេះគឺជាទីផ្សារសិង្ហបុរី ឧទាហរណ៍ SGD; វាមិនធានានូវលទ្ធផលដូចគ្នានៅក្នុងទីផ្សារ រូបិយប័ណ្ណ ឬគណនីផ្សេងទៀតទេ។\n\nជំហានទី 1｜ផ្គូផ្គងទីផ្សារ និងរូបិយប័ណ្ណទៅនឹងការទូទាត់ជាក់ស្តែង\nមុនពេលចម្លងលេខកូដ សូមពិនិត្យមើលប្រទេសនៅក្នុង URL ដែលបានបង្ហាញរូបិយប័ណ្ណ និងទីផ្សារគណនី។ ឧទាហរណ៍នេះបានមកពីទំព័រ en-SG ។ ប្រសិនបើអ្នកបង់ប្រាក់តាមរយៈប្រទេសឥណ្ឌូនេស៊ី ម៉ាឡេស៊ី ថៃ ឬវៀតណាម ត្រឡប់ទៅផ្នែកផ្សព្វផ្សាយដែលកំពុងដំណើរការរបស់ទីផ្សារនោះ ហើយទទួលបានលេខកូដបច្ចុប្បន្នរបស់វា។ លទ្ធផលស្វែងរកតែឯងមិនអាចប្រាប់អ្នកបានថាតើលេខកូដស្រដៀងគ្នាមានផលិតផល កម្រិត ឬកាលបរិច្ឆេទនៅកន្លែងផ្សេងទេ។\n\nជំហានទី 2｜ចាត់ទុកការទិញដំបូងជាលក្ខខណ្ឌផលិតផលដោយផលិតផល\nទំព័របច្ចុប្បន្នរាយបញ្ជីជើងហោះហើរ សណ្ឋាគារ ការទាក់ទាញ ការជួលរថយន្ត និងការផ្ទេរអាកាសយានដ្ឋានដាច់ដោយឡែក ហើយពិពណ៌នាអំពីការទិញផលិតផលដំបូងនៅក្នុងកម្មវិធី។ បើកលក្ខខណ្ឌសម្រាប់ផលិតផលដែលអ្នកកំពុងទិញ ហើយពិនិត្យមើលថាតើគណនីបានទិញប្រភេទនោះពីមុនឬអត់ ជាជាងពឹងផ្អែកតែលើកាលបរិច្ឆេទបង្កើតគណនីប៉ុណ្ណោះ។ កន្លែងណាដែលមានកាត ឧបករណ៍ អ្នកធ្វើដំណើរ ឬច្បាប់គណនីមិនច្បាស់លាស់ លទ្ធផលពិនិត្យចេញគឺការធ្វើតេស្តត្រួតពិនិត្យ។\n\nជំហានទី 3｜ប្រៀបធៀបចំនួនសរុបដែលត្រូវបង់ចុងក្រោយ មិនមែនជាចំណងជើងអតិបរមាទេ។\nមជ្ឈមណ្ឌលជំនួយរបស់ Traveloka និយាយថាត្រូវជ្រើសរើសវិធីបង់ប្រាក់នៅពេលចេញលុយ បញ្ចូលលេខកូដក្នុងប្រអប់គូប៉ុង ហើយបញ្ជាក់ថាមានការផ្លាស់ប្តូរសរុប។ កត់ត្រាចំនួនសរុបដែលរួមបញ្ចូលពន្ធមុន និងក្រោយលេខកូដ បន្ទាប់មកប្រៀបធៀបការលុបចោល ការកំណត់ពេលវេលាឡើងវិញ និងលក្ខខណ្ឌឥវ៉ាន់។ ការបញ្ចុះតម្លៃតិចតួចមិនមែនជាការសន្សំទេប្រសិនបើវាដកជម្រើសលុបចោលដែលអ្នកត្រូវការ។\n\nប្រសិនបើលេខកូដបរាជ័យ｜ពិនិត្យលក្ខខណ្ឌប្រាំតាមលំដាប់\nទំព័រដោះស្រាយបញ្ហាផ្ទាល់ខ្លួនរបស់ Traveloka រំលេចផលិតផលត្រឹមត្រូវ ប្រតិបត្តិការអប្បបរមា រយៈពេលផ្សព្វផ្សាយ រយៈពេលកក់ទុក រយៈពេលធ្វើដំណើរ និងសុពលភាព។ ពិនិត្យមើលផងដែរថាតើការផ្តល់ជូននេះគឺសម្រាប់តែកម្មវិធី ភ្ជាប់ជាមួយវិធីបង់ប្រាក់ ឬកំណត់ចំពោះការទិញដំបូង។ ប្រសិនបើការទូទាត់ចេញបដិសេធវា រក្សាទុកលក្ខខណ្ឌ និងសារកំហុស ហើយប្រើមជ្ឈមណ្ឌលជំនួយជំនួសឱ្យការបង្កើតគណនីដដែលៗ។\n\nបញ្ជីត្រួតពិនិត្យចុងក្រោយ｜អនុវត្តប័ណ្ណចុងក្រោយ\nដំបូងជ្រើសរើសផលិតផលដែលសាកសមនឹងការធ្វើដំណើរ និងមានលក្ខខណ្ឌលុបចោលដែលអាចទទួលយកបាន។ បន្ទាប់មកបើកទំព័រផ្សព្វផ្សាយបន្តផ្ទាល់របស់ទីផ្សារត្រឹមត្រូវ ចម្លងលេខកូដដែលនៅតែបង្ហាញ ហើយប្រៀបធៀបចំនួនសរុបចុងក្រោយដែលបានបញ្ចុះតម្លៃ។ BOOKTRAVELOKA និងមួកដែលបានបញ្ជាក់ត្រូវបានពិនិត្យនៅថ្ងៃទី 14 ខែសីហា ឆ្នាំ 2026 ហើយអាចផ្លាស់ប្តូរបានគ្រប់ពេល។ ប្រសិន​បើ​ទំព័រ​ដែល​បាន​ភ្ជាប់​លែង​បង្ហាញ​ពួក​វា​ទៀត​ហើយ កុំ​ផ្សាយ​កូដ​ចាស់។",
+    "destination": "Traveloka សិង្ហបុរី",
+    "duration": "អាន ៥ នាទី។",
+    "budget": "ការបង្ហាញបច្ចុប្បន្ន៖ រហូតដល់ 30 ដុល្លារសិង្ហបុរីលើជើងហោះហើរ និង 8%–12% លើផលិតផលផ្សេងទៀត; ការត្រួតពិនិត្យការដកប្រាក់",
+    "season": "បានពិនិត្យ 14 សីហា 2026; លេខកូដ និងសិទ្ធិអាចផ្លាស់ប្តូរដោយគ្មានការជូនដំណឹង",
+    "category": "ការណែនាំអំពីប័ណ្ណ",
+    "imageAlt": "ស្លាបយន្តហោះពីលើពពក",
+    "ctaLabel": "បើក Traveloka Singapore ហើយពិនិត្យមើលការផ្សព្វផ្សាយបន្តផ្ទាល់",
+    "priceLabel": "ឧទាហរណ៍បច្ចុប្បន្ន៖ BOOKTRAVELOKA; ជឿជាក់លើការចេញសរុប",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "lo": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "ວິທີໃຊ້ຄູປ໋ອງ Traveloka: ລະຫັດສິງກະໂປ ສິງຫາ 2026 ແລະກວດສອບກ່ອນຈ່າຍເງິນ",
+    "excerpt": "ໃຊ້ຕົວຢ່າງ BOOKTRAVELOKA ຕະຫຼາດສິງກະໂປໃນປັດຈຸບັນເພື່ອກວດສອບຕະຫຼາດ, ຜະລິດຕະພັນ ແລະສິດໃນການຊື້ຄັ້ງທຳອິດກ່ອນທີ່ຈະສົມທຽບຈຳນວນສຸດທ້າຍ.",
+    "content": "ສິ່ງທີ່ຖືກກວດສອບໃນປັດຈຸບັນ｜ສິງກະໂປສະແດງໃຫ້ເຫັນ BOOKTRAVELOKA\nໃນວັນທີ 14 ສິງຫາ 2026, ຫນ້າທໍາອິດຂອງ Traveloka ຂອງສິງກະໂປໄດ້ສະແດງລະຫັດຜູ້ໃຊ້ໃຫມ່ BOOKTRAVELOKA ສໍາລັບການຊື້ສິນຄ້າຄັ້ງທໍາອິດໃນແອັບຯ. ຫນ້າເວັບສະແດງໃຫ້ເຫັນເຖິງ 30 ໂດລາສະຫະລັດສໍາລັບການຈອງຖ້ຽວບິນທໍາອິດ, ສູງເຖິງ 8% ສໍາລັບການຈອງໂຮງແຮມຫຼືສະຖານທີ່ທ່ອງທ່ຽວທໍາອິດ, ສູງເຖິງ 10% ສໍາລັບການເຊົ່າລົດແລະສູງເຖິງ 12% ສໍາລັບການໂອນສະຫນາມບິນ. ນີ້ແມ່ນຕະຫຼາດສິງກະໂປ, ຕົວຢ່າງ SGD; ມັນບໍ່ຮັບປະກັນຜົນໄດ້ຮັບດຽວກັນໃນຕະຫຼາດ, ສະກຸນເງິນຫຼືບັນຊີອື່ນ.\n\nຂັ້ນຕອນທີ 1｜ຈັບຄູ່ຕະຫຼາດແລະສະກຸນເງິນກັບການຈ່າຍເງິນຕົວຈິງ\nກ່ອນທີ່ຈະຄັດລອກລະຫັດ, ໃຫ້ກວດເບິ່ງປະເທດໃນ URL, ສະກຸນເງິນທີ່ສະແດງແລະຕະຫຼາດບັນຊີ. ຕົວຢ່າງນີ້ແມ່ນມາຈາກຫນ້າ en-SG. ຖ້າທ່ານຈ່າຍເງິນຜ່ານອິນໂດເນເຊຍ, ມາເລເຊຍ, ໄທ ຫຼື ຫວຽດນາມ, ກັບຄືນໄປຫາພາກສ່ວນການສົ່ງເສີມຢ່າງຕໍ່ເນື່ອງຂອງຕະຫຼາດນັ້ນ ແລະຮັບລະຫັດປັດຈຸບັນຂອງມັນ. ຜົນການຄົ້ນຫາຢ່າງດຽວບໍ່ສາມາດບອກທ່ານວ່າລະຫັດທີ່ຄ້າຍຄືກັນມີຜະລິດຕະພັນ, ຂອບເຂດຫຼືວັນທີທີ່ແຕກຕ່າງກັນຢູ່ບ່ອນອື່ນ.\n\nຂັ້ນຕອນທີ 2｜ປະຕິບັດການຊື້ຄັ້ງທໍາອິດເປັນເງື່ອນໄຂຜະລິດຕະພັນໂດຍຜະລິດຕະພັນ\nຫນ້າປັດຈຸບັນລາຍຊື່ຖ້ຽວບິນ, ໂຮງແຮມ, ສະຖານທີ່ທ່ອງທ່ຽວ, ການເຊົ່າລົດແລະການໂອນສະຫນາມບິນແຍກຕ່າງຫາກແລະອະທິບາຍການຊື້ຜະລິດຕະພັນທໍາອິດໃນ app. ເປີດເງື່ອນໄຂສໍາລັບຜະລິດຕະພັນທີ່ທ່ານກໍາລັງຊື້ແລະກວດເບິ່ງວ່າບັນຊີໄດ້ຊື້ໃນປະເພດນັ້ນກ່ອນຫນ້ານີ້, ແທນທີ່ຈະອີງໃສ່ພຽງແຕ່ວັນທີສ້າງບັນຊີ. ບ່ອນທີ່ບັດ, ອຸປະກອນ, ນັກທ່ອງທ່ຽວຫຼືກົດລະບຽບບັນຊີແມ່ນບໍ່ຊັດເຈນ, ຜົນໄດ້ຮັບຂອງການກວດສອບແມ່ນການທົດສອບການຄວບຄຸມ.\n\nຂັ້ນ​ຕອນ​ທີ 3｜​ສົມ​ທຽບ​ຈໍາ​ນວນ​ທີ່​ຕ້ອງ​ຈ່າຍ​ສຸດ​ທ້າຍ​, ບໍ່​ແມ່ນ​ສູງ​ສຸດ​ຫົວ​ຂໍ້​\nສູນຊ່ວຍເຫຼືອຂອງ Traveloka ບອກວ່າໃຫ້ເລືອກວິທີຈ່າຍເງິນໃນເວລາຈ່າຍເງິນ, ເພີ່ມລະຫັດໃສ່ໃນກ່ອງຄູປອງ ແລະຢືນຢັນວ່າມີການປ່ຽນແປງທັງໝົດ. ບັນທຶກການລວມພາສີກ່ອນ ແລະຫຼັງລະຫັດ, ຈາກນັ້ນປຽບທຽບການຍົກເລີກ, ການກຳນົດເວລາໃໝ່ ແລະເງື່ອນໄຂຂອງກະເປົາ. ສ່ວນຫຼຸດເລັກນ້ອຍບໍ່ແມ່ນການປະຫຍັດຖ້າມັນເອົາທາງເລືອກການຍົກເລີກທີ່ທ່ານຕ້ອງການ.\n\nຖ້າລະຫັດລົ້ມເຫລວ｜ກວດເບິ່ງຫ້າເງື່ອນໄຂຕາມລໍາດັບ\nຫນ້າແກ້ໄຂບັນຫາຂອງຕົນເອງຂອງ Traveloka ຊີ້ໃຫ້ເຫັນຜະລິດຕະພັນທີ່ຖືກຕ້ອງ, ການເຮັດທຸລະກໍາຂັ້ນຕ່ໍາ, ໄລຍະເວລາໂປໂມຊັ່ນ, ໄລຍະເວລາຈອງ, ໄລຍະເວລາການເດີນທາງແລະຄວາມຖືກຕ້ອງ. ນອກຈາກນັ້ນ, ໃຫ້ກວດເບິ່ງວ່າຂໍ້ສະເໜີແມ່ນສະເພາະແອັບ, ຜູກມັດກັບວິທີການຈ່າຍເງິນ ຫຼື ຈຳກັດໃນການຊື້ຄັ້ງທຳອິດ. ຖ້າ checkout ປະຕິເສດມັນ, ບັນທຶກຂໍ້ກໍານົດແລະຂໍ້ຄວາມສະແດງຂໍ້ຜິດພາດແລະນໍາໃຊ້ສູນຊ່ວຍເຫຼືອແທນທີ່ຈະສ້າງບັນຊີຊ້ໍາກັນ.\n\nລາຍການກວດສອບສຸດທ້າຍ｜ນຳໃຊ້ຄູປ໋ອງສຸດທ້າຍ\nທໍາອິດເລືອກຜະລິດຕະພັນທີ່ເຫມາະສົມກັບການເດີນທາງແລະມີເງື່ອນໄຂການຍົກເລີກທີ່ຍອມຮັບ. ຫຼັງຈາກນັ້ນ, ເປີດຫນ້າການໂຄສະນາສົດຂອງຕະຫຼາດທີ່ຖືກຕ້ອງ, ຄັດລອກລະຫັດທີ່ຍັງສະແດງຢູ່, ແລະປຽບທຽບສ່ວນຫຼຸດສຸດທ້າຍ. BOOKTRAVELOKA ແລະ caps ທີ່ລະບຸໄວ້ໄດ້ຖືກກວດສອບໃນວັນທີ 14 ສິງຫາ 2026 ແລະອາດຈະມີການປ່ຽນແປງໄດ້ທຸກເວລາ; ຖ້າຫນ້າເຊື່ອມຕໍ່ບໍ່ສະແດງພວກມັນ, ຢ່າເຜີຍແຜ່ລະຫັດເກົ່າ.",
+    "destination": "Traveloka ສິງກະໂປ",
+    "duration": "ອ່ານ 5 ນາທີ",
+    "budget": "ການສະແດງປັດຈຸບັນ: ສູງເຖິງ 30 ໂດລາໃນຖ້ຽວບິນ ແລະ 8%–12% ໃນຜະລິດຕະພັນອື່ນໆ; ການຄວບຄຸມການຈ່າຍເງິນ",
+    "season": "ກວດກາ 14 ສິງຫາ 2026; ລະຫັດ ແລະການມີສິດສາມາດປ່ຽນແປງໄດ້ໂດຍບໍ່ຕ້ອງແຈ້ງໃຫ້ຮູ້",
+    "category": "ການຍ່າງຜ່ານຄູປອງ",
+    "imageAlt": "ປີກເຮືອບິນຢູ່ເທິງເມກ",
+    "ctaLabel": "ເປີດ Traveloka Singapore ແລະກວດສອບການສົ່ງເສີມການສົດ",
+    "priceLabel": "ຕົວຢ່າງໃນປະຈຸບັນ: BOOKTRAVELOKA; ໄວ້​ວາງ​ໃຈ​ທັງ​ຫມົດ​ທີ່​ຈ່າຍ​ອອກ",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "my": {
+    "slug": "traveloka-coupon-checklist",
+    "title": "Traveloka ကူပွန်အသုံးပြုနည်း- 2026 ဩဂုတ်လ စင်ကာပူကုဒ်နှင့် ငွေမပေးမီ စစ်ဆေးရမည့်အချက်များ",
+    "excerpt": "နောက်ဆုံးစုစုပေါင်းကို နှိုင်းယှဉ်ခြင်းမပြုမီ စျေးကွက်၊ ထုတ်ကုန်နှင့် ပထမဆုံးဝယ်ယူမှုဆိုင်ရာ အရည်အချင်းများကို အတည်ပြုရန် လက်ရှိ စင်ကာပူ-စျေးကွက် BOOKTRAVELOKA နမူနာကို အသုံးပြုပါ။",
+    "content": "ယခုအတည်ပြုထားသည့်အရာကို｜Singapore BOOKTRAVELOKA တွင်ပြသထားသည်။\n2026 ခုနှစ် ဩဂုတ်လ 14 ရက်နေ့တွင်၊ Traveloka ၏ စင်္ကာပူပင်မစာမျက်နှာသည် အက်ပ်အတွင်းရှိ ထုတ်ကုန်အလိုက် ပထမဆုံးဝယ်ယူမှုအတွက် အသုံးပြုသူကုဒ်အသစ် BOOKTRAVELOKA ကို ပြသခဲ့သည်။ စာမျက်နှာတွင် ပထမဆုံးလေယာဉ်ဘွတ်ကင်အတွက် S$30 အထိ၊ ပထမဆုံးဟိုတယ် သို့မဟုတ် ဆွဲဆောင်မှုဘွတ်ကင်အတွက် 8% အထိ၊ ကားအငှားအတွက် 10% အထိနှင့် လေဆိပ်အပြောင်းအရွှေ့အတွက် 12% အထိ ပြသထားသည်။ ဒါက စင်ကာပူဈေးကွက်၊ SGD ဥပမာ၊ အခြားစျေးကွက်၊ ငွေကြေး သို့မဟုတ် အကောင့်များတွင် တူညီသောရလဒ်ကို အာမမခံနိုင်ပါ။\n\nအဆင့် 1｜စျေးကွက်နှင့်ငွေကြေးကို အမှန်တကယ်ပေးချေမှုဖြင့် ယှဉ်ပါ။\nကုဒ်တစ်ခုကူးယူခြင်းမပြုမီ၊ ပြသထားသောငွေကြေးနှင့် အကောင့်စျေးကွက် URL တွင်နိုင်ငံကိုစစ်ဆေးပါ။ ဤဥပမာသည် en-SG စာမျက်နှာမှလာသည်။ အင်ဒိုနီးရှား၊ မလေးရှား၊ ထိုင်း သို့မဟုတ် ဗီယက်နမ်မှတဆင့် ငွေပေးချေပါက ထိုစျေးကွက်၏ လက်ရှိပရိုမိုးရှင်းကဏ္ဍသို့ ပြန်သွားပြီး ၎င်း၏လက်ရှိကုဒ်ကို ရယူပါ။ ရှာဖွေမှုရလဒ်တစ်ခုတည်းတွင် အလားတူကုဒ်တစ်ခုတွင် မတူညီသောထုတ်ကုန်များ၊ သတ်မှတ်ချက်များ သို့မဟုတ် ရက်စွဲများ အခြားနေရာတွင် ရှိမရှိကို ပြောပြနိုင်မည်မဟုတ်ပေ။\n\nအဆင့် 2｜ပထမဝယ်ယူမှုကို ထုတ်ကုန်တစ်ခုချင်းအခြေအနေတစ်ခုအဖြစ် သတ်မှတ်ပါ။\nလက်ရှိစာမျက်နှာသည် လေယာဉ်ခရီးစဉ်များ၊ ဟိုတယ်များ၊ အထင်ကရနေရာများ၊ ကားအငှားနှင့် လေဆိပ်အပြောင်းအရွှေ့တို့ကို သီးခြားစီဖော်ပြထားပြီး အက်ပ်အတွင်းရှိ ပထမဆုံးထုတ်ကုန်ဝယ်ယူမှုများကို ဖော်ပြသည်။ သင်ဝယ်ယူနေသော ကုန်ပစ္စည်းအတွက် စည်းကမ်းချက်များကိုဖွင့်ပြီး အကောင့်ဖန်တီးသည့်ရက်စွဲကိုသာ အားကိုးခြင်းထက် အကောင့်သည် ယခင်က အဆိုပါအမျိုးအစားကို ဝယ်ယူခဲ့ခြင်းရှိမရှိ စစ်ဆေးပါ။ ကတ်၊ စက်၊ ခရီးသွား သို့မဟုတ် အကောင့်စည်းမျဉ်းများ မရှင်းလင်းပါက၊ ငွေရှင်းခြင်းရလဒ်သည် ထိန်းချုပ်စစ်ဆေးမှုဖြစ်သည်။\n\nအဆင့် 3｜နောက်ဆုံးပေးချေရမည့်စုစုပေါင်းကို ခေါင်းစဉ်အများဆုံးမဟုတ်ဘဲ နှိုင်းယှဉ်ပါ။\nTraveloka ၏အကူအညီစင်တာက ငွေရှင်းသည့်အချိန်တွင် ငွေပေးချေမှုနည်းလမ်းကို ရွေးချယ်ရန်၊ ကူပွန်ဘောက်စ်တွင် ကုဒ်ကိုထည့်ကာ စုစုပေါင်းပြောင်းလဲမှုများကို အတည်ပြုရန်ပြောထားသည်။ ကုဒ်မတိုင်မီနှင့် အပြီးတွင် အခွန်ပါဝင်သော စုစုပေါင်းကို မှတ်တမ်းတင်ပါ၊ ထို့နောက် ပယ်ဖျက်ခြင်း၊ အချိန်ဇယားဆွဲခြင်းနှင့် ခရီးဆောင်အိတ်အခြေအနေများကို နှိုင်းယှဉ်ပါ။ သင်လိုအပ်သော ပယ်ဖျက်ခြင်းရွေးချယ်မှုကို ဖယ်ရှားပါက အနည်းငယ်လျှော့စျေးသည် ချွေတာခြင်းမဟုတ်ပါ။\n\nကုဒ်ပျက်ပါက｜အခြေအနေငါးခုကို အစဉ်လိုက်စစ်ဆေးပါ။\nTraveloka ၏ကိုယ်ပိုင်ပြဿနာဖြေရှင်းခြင်းစာမျက်နှာသည် မှန်ကန်သောထုတ်ကုန်၊ အနိမ့်ဆုံးငွေပေးငွေယူ၊ ပရိုမိုးရှင်းကာလ၊ ဘွတ်ကင်ကာလ၊ ခရီးသွားကာလနှင့် တရားဝင်မှုကို မီးမောင်းထိုးပြထားသည်။ ကမ်းလှမ်းချက်သည် အက်ပ်သီးသန့်ဖြစ်ပြီး၊ ငွေပေးချေမှုနည်းလမ်းတစ်ခုနှင့် ချိတ်ဆက်ထားခြင်း သို့မဟုတ် ပထမဝယ်ယူမှုတွင် ကန့်သတ်ထားခြင်းရှိမရှိကိုလည်း စစ်ဆေးပါ။ ငွေရှင်းခြင်းမှ ငြင်းပယ်ပါက စည်းကမ်းချက်များ နှင့် အမှားအယွင်း မက်ဆေ့ချ်များကို သိမ်းဆည်းပြီး ထပ်ခါတလဲလဲ အကောင့်များ ဖန်တီးခြင်းအစား အကူအညီစင်တာကို အသုံးပြုပါ။\n\nနောက်ဆုံးစစ်ဆေးမှုစာရင်း｜ကူပွန်ကို နောက်ဆုံးအသုံးပြုပါ။\nပထမဆုံး ခရီးစဉ်နှင့် ကိုက်ညီသော ကုန်ပစ္စည်းကို ရွေးချယ်ပြီး လက်ခံနိုင်သော ပယ်ဖျက်ခြင်းဆိုင်ရာ စည်းကမ်းချက်များ ရှိသည်။ ထို့နောက် မှန်ကန်သောစျေးကွက်၏ တိုက်ရိုက်ပရိုမိုးရှင်းစာမျက်နှာကိုဖွင့်ပါ၊ ပြသနေဆဲကုဒ်တစ်ခုကို ကူးယူပြီး လျှော့စျေးနောက်ဆုံးစုစုပေါင်းကို နှိုင်းယှဉ်ပါ။ BOOKTRAVELOKA နှင့်ဖော်ပြထားသောထုပ်များကို 14 သြဂုတ် 2026 တွင်စစ်ဆေးခဲ့ပြီးအချိန်မရွေးပြောင်းလဲနိုင်သည်။ လင့်ခ်ချိတ်ထားသော စာမျက်နှာသည် ၎င်းတို့ကို မပြသတော့ပါက၊ ကုဒ်ဟောင်းကို ဖြန့်ဝေခြင်းမပြုပါနှင့်။",
+    "destination": "Traveloka စင်္ကာပူ",
+    "duration": "၅ မိနစ်စာဖတ်ပါ။",
+    "budget": "လက်ရှိပြသမှု- လေယာဉ်ခရီးစဉ်များအတွက် S$30 အထိနှင့် အခြားထုတ်ကုန်များအတွက် 8% မှ 12% အထိ၊ ငွေပေးချေမှု ထိန်းချုပ်မှုများ",
+    "season": "14 သြဂုတ် 2026 စစ်ဆေးခဲ့သည်; ကုဒ်များနှင့် အရည်အချင်းပြည့်မီမှုကို အသိပေးခြင်းမရှိဘဲ ပြောင်းလဲနိုင်သည်။",
+    "category": "ကူပွန်ဖော်ပြချက်",
+    "imageAlt": "တိမ်တွေထက်မှာ လေယာဉ်တောင်ပံ",
+    "ctaLabel": "Traveloka Singapore ကိုဖွင့်ပြီး တိုက်ရိုက်ပရိုမိုးရှင်းကို စစ်ဆေးပါ။",
+    "priceLabel": "လက်ရှိ ဥပမာ- BOOKTRAVELOKA; ငွေရှင်းခြင်းစုစုပေါင်းကို ယုံကြည်ပါ။",
+    "contentType": "coupon",
+    "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "traveloka",
+    "ctaUrl": "https://www.traveloka.com/en-sg?funnel_source=travelgoguide",
+    "couponCode": "BOOKTRAVELOKA",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Traveloka Singapore Ongoing Promotions",
+        "publisher": "Traveloka",
+        "url": "https://www.traveloka.com/en-sg",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "About Traveloka Coupons",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "How to Find the Latest Promos on Traveloka",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Inapplicable Promo Code",
+        "publisher": "Traveloka Help Center",
+        "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   }
 }

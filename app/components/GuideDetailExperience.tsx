@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import type { GuidePost, SiteSettings } from "@/lib/content";
 import { localizePost, resolveCta, safeExternalUrl } from "@/lib/content";
 import { contentTypeLabel, copy, withLocale } from "@/lib/i18n";
@@ -30,6 +31,13 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
   const defaultLabel = localized.ctaPlatform === "traveloka" ? t.openTraveloka : localized.ctaPlatform === "trip" ? t.openTrip : t.openCustom;
   const ctaLabel = localized.ctaLabel || defaultLabel;
   const ctaUrl = safeExternalUrl(resolveCta(localized, settings));
+
+  useEffect(() => {
+    document.documentElement.lang = localized.resolvedLocale;
+    document.title = `${localized.title}｜TravelGoGuide`;
+    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    if (description) description.content = localized.excerpt;
+  }, [localized.excerpt, localized.resolvedLocale, localized.title]);
 
   return (
     <main className="detail-page">

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "slug": "bali-slow-five-days",
+  "destination": "Bali, Indonesia",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
+  "topicDecision": {
+    "angle": "A concrete five-day, two-base route using Ubud and Sanur",
+    "reason": "The original post was a 224-character outline. Official destination and levy pages support a practical route with one hotel move.",
+    "trendSignals": [
+      {
+        "description": "Indonesia's official tourism pages continue to publish current destination guidance for both Ubud and Sanur.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s2",
+          "s3"
+        ]
+      },
+      {
+        "description": "Current booking inventory is separately available for Ubud and Sanur, supporting a two-base comparison rather than a generic Bali search.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s4",
+          "s5"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Love Bali Tourist Levy FAQ",
+      "publisher": "Bali Provincial Government",
+      "url": "https://lovebali.baliprov.go.id/faq",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s2",
+      "title": "Find Serenity in Ubud, Bali",
+      "publisher": "Ministry of Tourism, Republic of Indonesia",
+      "url": "https://www.indonesia.travel/sg/en/destination/bali-nusa-tenggara/bali/ubud",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s3",
+      "title": "Sanur Beach",
+      "publisher": "Ministry of Tourism, Republic of Indonesia",
+      "url": "https://www.indonesia.travel/us/en/destination/bali-nusa-tenggara/bali/sanur-beach",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s4",
+      "title": "Ubud Hotels",
+      "publisher": "Traveloka",
+      "url": "https://www.traveloka.com/en-sg/hotel/indonesia/area/ubud-102771",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s5",
+      "title": "Sanur Hotels",
+      "publisher": "Traveloka",
+      "url": "https://www.traveloka.com/en-sg/hotel/indonesia/city/sanur-30010498",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s6",
+      "title": "Bali rice-field image",
+      "publisher": "Unsplash",
+      "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The official Bali foreign tourist levy is IDR150,000 per person, subject to listed exemptions.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Campuhan Ridge Walk, Ubud Market and the central palace area can be grouped around an Ubud base.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Sanur is on Bali's east coast and its waterfront supports walking and cycling.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The official Sanur page gives 5:30–7:00 a.m. as a sunrise reference window.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Ubud and Sanur have separate current accommodation inventories on Traveloka.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s4",
+        "s5"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    "creator": "Unsplash contributor",
+    "usageBasis": "Unsplash License; existing site asset"
+  },
+  "editorNotes": "No fixed Ubud–Sanur driving time is promised because traffic is variable."
+}

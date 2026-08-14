@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "traveloka-coupon-checklist",
+  "destination": "Traveloka Singapore market",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
+  "topicDecision": {
+    "angle": "A dated, market-specific coupon walkthrough with one current code and a checkout verification method",
+    "reason": "The original page offered no current code or example. Traveloka's live Singapore page and help centre now support a precise, bounded guide.",
+    "trendSignals": [
+      {
+        "description": "Traveloka Singapore currently displays BOOKTRAVELOKA and product-specific first-purchase caps.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "The Android app was updated on 3 August 2026 and remains the platform required by the displayed app-only offer.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s5"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Traveloka Singapore Ongoing Promotions",
+      "publisher": "Traveloka",
+      "url": "https://www.traveloka.com/en-sg",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s2",
+      "title": "About Traveloka Coupons",
+      "publisher": "Traveloka Help Center",
+      "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/traveloka-coupon/traveloka-coupon/what-are-traveloka-coupons",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s3",
+      "title": "How to Find the Latest Promos on Traveloka",
+      "publisher": "Traveloka Help Center",
+      "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/how-to-find-the-latest-promos-on-traveloka",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s4",
+      "title": "Inapplicable Promo Code",
+      "publisher": "Traveloka Help Center",
+      "url": "https://www.traveloka.com/en-id/help/general-info/general-information-payment/promo-info/promo-info/inapplicable-promo-code",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s5",
+      "title": "Traveloka: Book Hotel & Flight",
+      "publisher": "Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.traveloka.android",
+      "sourceType": "reputable-secondary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s6",
+      "title": "Aircraft wing image",
+      "publisher": "Unsplash",
+      "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "On 14 August 2026 the Singapore page displayed BOOKTRAVELOKA for app-based first purchases by product.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The page displayed caps of S$30 for flights, 8% for hotels and attractions, 10% for car rental and 12% for airport transfer.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Traveloka instructs users to add a coupon during payment and verify that the total price adjusts.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Traveloka directs users to the homepage or Ongoing Promotions area for current deals.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Traveloka lists product match, minimum transaction, promotion, booking and travel periods, and validity as coupon failure checks.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "creator": "Unsplash contributor",
+    "usageBasis": "Unsplash License; existing site asset"
+  },
+  "editorNotes": "The article is explicitly limited to the Singapore market and tells readers to stop using the code when the live page removes it."
+}

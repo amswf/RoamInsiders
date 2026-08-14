@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
   "slug": "nha-trang-island-day-2026",
-  "destination": "Nha Trang, Khánh Hòa, Vietnam",
-  "researchedAt": "2026-08-07T01:04:31Z",
-  "audience": "Independent Asia-based travelers planning a four-day first trip to Nha Trang in August or September 2026",
+  "destination": "Nha Trang, Khanh Hoa, Vietnam",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
   "topicDecision": {
-    "angle": "Help a first-time visitor decide between a full-day VinWonders Nha Trang ticket and the lower-priced after-16:00 ticket, then fit that choice into a four-day city-and-island plan.",
-    "reason": "Nha Trang qualified through two independent, dated signals: Booking.com accommodation searches by Vietnamese travelers grew by more than 20% year on year in the first half of 2026, while Khánh Hòa's tourism department reported 11.9 million visits in the same period, up 41.6%. The ticket choice is a current, practical planning question and avoids repeating the site's recent Singapore event-weekend, Japan peak-rail and Da Nang stay-split topics.",
+    "angle": "A ticket-first four-day plan with a completed city route for days three and four",
+    "reason": "VinWonders and Cam Ranh Airport publish current prices and operational rules; the revision removes unrelated entry and airspace material.",
     "trendSignals": [
       {
-        "description": "Booking.com accommodation-search data for 1 January–30 June 2026 ranked Nha Trang third among Vietnamese domestic destinations and showed search volume up more than 20% year on year; this is a bounded search-interest signal, not proof of completed bookings.",
-        "checkedAt": "2026-08-07T01:04:31Z",
+        "description": "VinWonders currently publishes two materially different one-day ticket windows and a live promotional code.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
           "s1"
         ]
       },
       {
-        "description": "Khánh Hòa's Department of Culture, Sports and Tourism reported 11.9 million visitor trips in the first half of 2026, 41.6% more than in the same period of 2025.",
-        "checkedAt": "2026-08-07T01:04:31Z",
+        "description": "Cam Ranh Airport maintains current public transport and taxi reference prices for the city connection.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
-          "s2"
+          "s3"
         ]
       }
     ]
@@ -27,89 +27,60 @@
   "sources": [
     {
       "id": "s1",
-      "title": "Những điểm đến có cảnh sắc thiên nhiên ngày càng thu hút du khách Việt",
-      "publisher": "Ministry of Culture, Sports and Tourism of Vietnam",
-      "url": "https://bvhttdl.gov.vn/nhung-diem-den-co-canh-sac-thien-nhien-ngay-cang-thu-hut-du-khach-viet.htm",
-      "sourceType": "official",
-      "publishedAt": "2026-07-18",
-      "accessedAt": "2026-08-07T01:04:31Z"
-    },
-    {
-      "id": "s2",
-      "title": "Khánh Hòa đón 11,9 triệu lượt khách du lịch trong 6 tháng đầu năm 2026",
-      "publisher": "Khánh Hòa Department of Culture, Sports and Tourism",
-      "url": "https://svhttdl.khanhhoa.gov.vn/vi/du-lich/khanh-hoa-don-11-9-trieu-luot-khach-du-lich-trong-6-thang-dau-nam-2026",
-      "sourceType": "official",
-      "accessedAt": "2026-08-07T01:04:31Z"
-    },
-    {
-      "id": "s3",
-      "title": "Cam Ranh International Airport Ground Transport",
-      "publisher": "Cam Ranh International Terminal Joint Stock Company",
-      "url": "https://www.camranh.aero/en/airport-guide/transport/parking",
-      "sourceType": "official",
-      "accessedAt": "2026-08-07T01:04:31Z"
-    },
-    {
-      "id": "s4",
-      "title": "VinWonders Nha Trang – Price & Regulations",
+      "title": "VinWonders Nha Trang Price & Regulations",
       "publisher": "VinWonders",
       "url": "https://vinwonders.com/en/vinwonders-nha-trang-price-and-regulations/?lang=en",
       "sourceType": "primary",
-      "accessedAt": "2026-08-07T01:04:31Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
-      "id": "s5",
-      "title": "List of restaurants & cuisine at VinWonders Nha Trang",
+      "id": "s2",
+      "title": "VinWonders Nha Trang Official Page",
       "publisher": "VinWonders",
-      "url": "https://vinwonders.com/en/wonderpedia/news/list-of-restaurants-at-vinwonders-nha-trang/",
+      "url": "https://vinwonders.com/en/vinwonders-nha-trang/",
       "sourceType": "primary",
-      "publishedAt": "2026-07-29",
-      "accessedAt": "2026-08-07T01:04:31Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
-      "id": "s6",
-      "title": "Vietnam National Electronic Visa System",
-      "publisher": "Vietnam Immigration Department, Ministry of Public Security",
-      "url": "https://evisa.gov.vn/",
+      "id": "s3",
+      "title": "Cam Ranh Airport Ground Transport",
+      "publisher": "Cam Ranh International Terminal",
+      "url": "https://www.camranh.aero/en/airport-guide/transport/parking",
       "sourceType": "official",
-      "accessedAt": "2026-08-07T01:04:31Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
-      "id": "s7",
-      "title": "Vietnam travel advice",
-      "publisher": "UK Foreign, Commonwealth & Development Office",
-      "url": "https://www.gov.uk/foreign-travel-advice/vietnam",
-      "sourceType": "official",
-      "publishedAt": "2026-06-26",
-      "accessedAt": "2026-08-07T01:04:31Z"
-    },
-    {
-      "id": "s8",
-      "title": "Nha Trang (Khánh Hòa) Weather Forecast",
+      "id": "s4",
+      "title": "Nha Trang Weather Forecast",
       "publisher": "Vietnam National Center for Hydro-Meteorological Forecasting",
       "url": "https://nchmf.gov.vn/kttvsiteE/vi-VN/1/nha-trang-khanh-hoa-w9.html",
       "sourceType": "official",
-      "publishedAt": "2026-08-03",
-      "accessedAt": "2026-08-07T01:04:31Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
-      "id": "s9",
-      "title": "Nha Trang Beach, Vietnam.jpg",
-      "publisher": "Wikimedia Commons",
+      "id": "s5",
+      "title": "Nha Trang Hotels",
+      "publisher": "Trip.com",
+      "url": "https://www.trip.com/hotels/nha-trang-hotels-list-1777/",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s6",
+      "title": "Nha Trang Beach photograph",
+      "publisher": "Wikimedia Commons — Ken Eckert",
       "url": "https://commons.wikimedia.org/wiki/File:Nha_Trang_Beach,_Vietnam.jpg",
       "sourceType": "primary",
-      "publishedAt": "2005-01-30",
-      "accessedAt": "2026-08-07T01:04:31Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     }
   ],
   "claims": [
     {
       "id": "c1",
-      "text": "Booking.com accommodation searches by Vietnamese travelers ranked Nha Trang third among domestic destinations for 1 January–30 June 2026, and Nha Trang search volume grew by more than 20% year on year.",
-      "category": "other",
-      "volatility": "medium",
-      "checkedAt": "2026-08-07T01:04:31Z",
+      "text": "VinWonders lists an adult standard ticket with return cable car at VND1,050,000 and an after-4 ticket at VND700,000.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s1"
       ],
@@ -117,136 +88,66 @@
     },
     {
       "id": "c2",
-      "text": "Khánh Hòa recorded 11.9 million visitor trips in the first half of 2026, up 41.6% year on year; 4.6 million were international and 7.3 million domestic.",
-      "category": "other",
-      "volatility": "medium",
-      "checkedAt": "2026-08-07T01:04:31Z",
+      "text": "VinWonders currently displays code WOW5 for 5% off.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s2"
+        "s1"
       ],
       "usedInPost": true
     },
     {
       "id": "c3",
-      "text": "Cam Ranh airport's current transport page lists bus number 18 between Nha Trang and the airport at VND 50,000 per person with a reference travel time of 50–60 minutes.",
-      "category": "transport",
+      "text": "Each attraction area has its own operating hours.",
+      "category": "hours",
       "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s3"
+        "s1",
+        "s2"
       ],
       "usedInPost": true
     },
     {
       "id": "c4",
-      "text": "The airport page lists a 45–60 minute private-car reference time and VND 350,000–500,000, plus listed four-seat taxi references from VND 300,000 to VND 350,000 between the international terminal and Nha Trang.",
+      "text": "VinWonders states that poor weather may suspend the cable car and that speedboat transport may be arranged.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Cam Ranh Airport lists bus 18 at VND50,000 per person and roughly 50–60 minutes.",
       "category": "transport",
       "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s3"
       ],
       "usedInPost": true
     },
     {
-      "id": "c5",
-      "text": "VinWonders' official price page checked on 7 August 2026 lists a standard admission ticket with round-trip cable car at VND 1,050,000 for visitors at least 140 cm tall and VND 800,000 for visitors 100–under 140 cm or aged 60 and over.",
-      "category": "price",
-      "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s4"
-      ],
-      "usedInPost": true
-    },
-    {
       "id": "c6",
-      "text": "The same official page lists admission after 16:00 with round-trip cable car at VND 700,000 for visitors at least 140 cm tall and VND 550,000 for the child and senior categories.",
-      "category": "price",
+      "text": "Cam Ranh Airport lists four-seat taxis from VND300,000 and private cars at VND350,000–500,000.",
+      "category": "transport",
       "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s4"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c7",
-      "text": "VinWonders states that listed rates include VAT, children under 100 cm enter free, and guests using the senior rate must show identification.",
-      "category": "price",
-      "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s4"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c8",
-      "text": "The park's restaurant guide dated 29 July 2026 shows that daytime outlets start closing or taking last orders from 16:30 onward, while selected evening outlets list service through 19:30 or 20:00.",
-      "category": "hours",
-      "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s5"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c9",
-      "text": "Vietnam's Immigration Department states that an e-visa can be valid for up to 90 days for single or multiple entry and lists fees of USD 25 and USD 50; eligibility and the correct entry gate still depend on the traveler and itinerary.",
-      "category": "entry",
-      "volatility": "critical",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s6"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c10",
-      "text": "The official e-visa portal recommends completing Vietnam's pre-arrival form before entering the country.",
-      "category": "entry",
-      "volatility": "critical",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s6"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c11",
-      "text": "FCDO Vietnam advice was still current on 7 August 2026 and said wider airspace disruption could affect connecting flights; travelers should check airlines, transit-country advice and insurance.",
-      "category": "safety",
-      "volatility": "critical",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s7"
-      ],
-      "usedInPost": true
-    },
-    {
-      "id": "c12",
-      "text": "Vietnam's national forecasting center maintains a current Nha Trang page with weather, radar and marine-condition links that should be rechecked before cable-car, water-park, beach or boat plans.",
-      "category": "weather",
-      "volatility": "high",
-      "checkedAt": "2026-08-07T01:04:31Z",
-      "sourceIds": [
-        "s8"
+        "s3"
       ],
       "usedInPost": true
     }
   ],
-  "conflicts": [
-    {
-      "issue": "Older VinWonders articles and cached search results show lower standard-ticket prices or slightly different operating hours.",
-      "resolution": "The post uses the current dedicated price-and-regulations page checked on 7 August 2026 and the restaurant guide dated 29 July 2026. It tells readers to reopen the official booking page for their visit date and does not promise individual attraction or show times."
-    }
-  ],
+  "conflicts": [],
   "image": {
     "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Nha_Trang_Beach,_Vietnam.jpg",
     "creator": "Ken Eckert",
-    "usageBasis": "CC BY-SA 4.0; attribution and license link supplied through the public source list; image is presented as a dated daylight view, not current conditions"
+    "usageBasis": "CC BY-SA 4.0, per Wikimedia Commons file page"
   },
-  "editorNotes": "Ranked shortlist saved beside this bundle. Selected signal types are platform search interest and official visitor counts. The practical recommendation assumes a four-day first trip, not any nationality-specific entry entitlement. Prices were checked on 7 August 2026 and may change. Do not describe the 2005 Wikimedia photograph as current conditions. Recheck e-visa eligibility, pre-arrival requirements, FCDO advice, airport transport, park price/operations, restaurant hours and weather on any later publication date."
+  "editorNotes": "Entry, visa and broad airspace warnings were removed because they did not help the ticket decision."
 }

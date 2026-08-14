@@ -1,30 +1,607 @@
 {
   "zh-CN": {
-    "slug": "kyoto-first-morning", "title": "第一次去京都：把最想看的地方放在清晨", "excerpt": "四天只选三个片区。早起看寺院，中午休息，傍晚再回到街上。",
-    "content": "Day 1｜只认识住处附近\n抵达后不横跨城市。找到便利店、咖啡店和一条愿意再走一次的小路。\n\nDay 2｜把最想看的寺院放在开门时\n清晨出发，中午回酒店。避开人流的最好方法，是减少同一天的目的地。\n\nDay 3｜只选一个方向\n沿着一个片区慢慢走，不把收藏夹全部兑现。\n\nDay 4｜回到最喜欢的地方\n最后半天不增加新景点，用熟悉感结束旅程。",
-    "destination": "京都", "duration": "4天3夜", "budget": "实时价", "season": "四季", "category": "城市初见", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "京都传统街道和木屋", "status": "published", "featured": true,
-    "ctaPlatform": "trip", "ctaLabel": "在 Trip.com 查看京都选择", "ctaUrl": "", "couponCode": "", "priceLabel": "机票与酒店实时选择", "updatedAt": "2026-07-11"
+    "slug": "kyoto-first-morning",
+    "title": "第一次去京都四天三夜：清水寺6点开门，四天只走四个片区",
+    "excerpt": "住京都站或四条河原町附近，把清水寺、伏见、岚山和市中心分别留给不同半天。",
+    "content": "这条路线解决什么｜清晨只给真正早开的地方\n京都市官方把9点前定义为晨间观光，但不是所有寺院都适合天未亮就去。清水寺官方确认2026年每天6:00开门，是这条四天路线唯一依赖明确早开时间的重点。其余片区按交通方向分开，午后回住宿休息，不用一天横跨东山、伏见和岚山。\n\n住哪里｜京都站适合换乘，四条河原町适合晚餐\n带大件行李、会使用新干线或机场交通，可先比较京都站周边；更重视晚餐、鸭川和祇园步行，则比较四条河原町。四天都住同一处。第1天认识住处，第2天走清水寺与祇园，第3天去伏见，第4天按返程时间选岚山或市中心。\n\n第1天｜只熟悉酒店到车站和晚餐的路线\n入住后找到最近车站出口、便利店、早餐选择与行李寄存规则。住京都站附近可在车站周边散步；住四条河原町则沿鸭川走一小段。今天不去岚山或伏见，也不为了“先看一个寺”拖着行李转车。把最早能出门的时间和次日早餐方案确定下来。\n\n第2天｜6点进清水寺，再沿东山下坡\n按住宿位置倒推交通，在接近6:00时抵达清水寺。闭门时间随季节变化，特殊夜间开放也有独立日期，出发前查看2026年表格。参拜后沿清水坂、二年坂和三年坂方向下行，再在祇园或河原町吃午餐。午后回酒店；傍晚只在鸭川或祇园补一段散步。\n\n第3天｜伏见稻荷加伏见街区，不接着去岚山\n早上前往伏见稻荷大社，先走自己体力允许的鸟居路段，不把登顶当作硬任务。之后在伏见选择商店街、运河周边或一处与清酒文化有关的场馆，具体开放与预约看各自官网。京都官方也提供伏见拥挤预测入口；如果直播或现场人流过大，就缩短神社停留，把时间留给伏见中心。\n\n第4天与备选｜航班晚才去岚山，早走就留在市中心\n返程较晚且行李已寄存，可清晨去岚山，只选竹林周边和一处寺院；中午前返回取行李。返程较早则留在京都站或市中心，不增加远点。雨天把长距离步行换成一座开放中的博物馆或室内场馆。最后检查清水寺当日时间、交通卡余额、行李寄存截止时间和返程站台。",
+    "destination": "日本京都",
+    "duration": "4天3夜",
+    "budget": "住宿与门票实时价；交通按住宿位置计算",
+    "season": "四季；清水寺闭门时间与特别开放按2026年日历复查",
+    "category": "首次到访分区路线",
+    "imageAlt": "京都传统街道和木屋",
+    "ctaLabel": "比较京都站与四条河原町住宿",
+    "priceLabel": "只依赖一个早开时间；其余场馆出发前复查",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "zh-TW": {
-    "slug": "kyoto-first-morning", "title": "第一次去京都：把最想看的地方留給清晨", "excerpt": "四天只選三個區域。早起看寺院，中午休息，傍晚再回到街上。",
-    "content": "Day 1｜只認識住處附近\n抵達後不橫跨城市。\n\nDay 2｜把最想看的寺院放在開門時\n清晨出發，中午回飯店。\n\nDay 3｜只選一個方向\n沿著一個區域慢慢走。\n\nDay 4｜回到最喜歡的地方\n最後半天不增加新景點。",
-    "destination": "京都", "duration": "4天3夜", "budget": "即時價格", "season": "四季", "category": "城市初見", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "京都傳統街道和木屋", "status": "published", "featured": true,
-    "ctaPlatform": "trip", "ctaLabel": "在 Trip.com 查看京都選擇", "ctaUrl": "", "couponCode": "", "priceLabel": "機票與飯店即時選擇", "updatedAt": "2026-07-11"
+    "slug": "kyoto-first-morning",
+    "title": "第一次去京都四天三夜：清水寺6點開門，四天只走四個片區",
+    "excerpt": "住在京都站或四條河原町附近，把清水寺、伏見、嵐山和市中心分別留給不同半天。",
+    "content": "這條路線解決什麼｜清晨只給真正早開的地方\n京都市官方把9點前定義為晨間觀光，但不是所有寺院都適合天未亮就去。清水寺官方確認2026年每天6:00開門，是這條四天路線唯一依賴明確早開時間的重點。其餘片區依交通方向分開，午後回住宿休息，不用一天橫跨東山、伏見和嵐山。\n\n住哪裡｜京都站適合轉乘，四條河原町適合晚餐\n帶大行李、會使用新幹線或機場交通，可先比較京都站週邊；更重視晚餐、鴨川和祗園步行，則比較四條河原町。四天都住在同一處。第1天認識住處，第2天走清水寺與祗園，第3天去伏見，第4天依回程時間選嵐山或市中心。\n\n第1天｜只熟悉飯店到車站和晚餐的路線\n入住後找到最近車站出口、便利商店、早餐選擇與行李寄存規則。住京都站附近可在車站週邊散步；住四條河原町則沿鴨川走一小段。今天不去嵐山或伏見，也不為了「先看一個寺」拖著行李轉車。把最早能出門的時間和隔日早餐方案確定下來。\n\n第2天｜6點進清水寺，再沿東山下坡\n按住宿位置倒推交通，在接近6:00時抵達清水寺。閉門時間隨季節變化，特殊夜間開放也有獨立日期，出發前查看2026年表格。參拜後沿清水坂、二年坂和三年坂方向下行，再在祇園或河原町吃午餐。午後回飯店；傍晚只在鴨川或祗園補一段散步。\n\n第3天｜伏見稻荷加伏見街區，不接著去嵐山\n早上前往伏見稻荷大社，先走自己體力允許的鳥居路段，不把登頂當作硬任務。之後在伏見選擇商店街、運河週邊或一處與清酒文化有關的場館，具體開放與預約看各自官網。京都官方也提供伏見擁擠預測入口；如果直播或現場人流過大，就縮短神社停留，把時間留給伏見中心。\n\n第4天與備選｜班機晚才去嵐山，早走就留在市中心\n回程較晚且行李已寄存，可清晨前往嵐山，只選竹林周邊及一處寺院；中午前返回取行李。回程較早則留在京都站或市中心，不增加遠點。下雨天把長距離步行換成開放中的博物館或室內場館。最後檢查清水寺當日時間、交通卡餘額、行李寄放截止時間和回程月台。",
+    "destination": "日本京都",
+    "duration": "4天3夜",
+    "budget": "住宿與門票即時價；交通依住宿位置計算",
+    "season": "四季；清水寺閉門時間與特別開放依2026年曆複查",
+    "category": "首次造訪分區路線",
+    "imageAlt": "京都傳統街道與木屋",
+    "ctaLabel": "比較京都站與四條河原町住宿",
+    "priceLabel": "只依賴一個早開時間；其餘場館出發前複查",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "en": {
-    "slug": "kyoto-first-morning", "title": "First time in Kyoto: save the place you want most for early morning", "excerpt": "Four days, three neighbourhoods. Temples early, a midday reset, then the streets again at dusk.",
-    "content": "Day 1 | Learn the area around your stay\nDo not cross the city after arrival. Find coffee, a convenience store and one lane worth returning to.\n\nDay 2 | Visit your most wanted temple at opening\nStart early and return to the hotel at noon. The best crowd strategy is fewer destinations.\n\nDay 3 | Choose one direction\nWalk one neighbourhood slowly instead of clearing a saved list.\n\nDay 4 | Return to your favourite place\nAdd nothing new on the last half-day and leave with a little familiarity.",
-    "destination": "Kyoto", "duration": "4 days / 3 nights", "budget": "Live prices", "season": "Year-round", "category": "First city visit", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Traditional wooden street in Kyoto", "status": "published", "featured": true,
-    "ctaPlatform": "trip", "ctaLabel": "See Kyoto options on Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "Live flight and hotel options", "updatedAt": "2026-07-11"
+    "slug": "kyoto-first-morning",
+    "title": "Four days in Kyoto for a first visit: Kiyomizu-dera at 6 a.m. and one district at a time",
+    "excerpt": "Stay near Kyoto Station or Shijo-Kawaramachi, then give Kiyomizu, Fushimi, Arashiyama and central Kyoto separate half-days.",
+    "content": "What this route fixes｜Use early morning only where opening time supports it\nKyoto City's official guide defines morning sightseeing as before 9 a.m., but not every temple rewards a pre-dawn trip. Kiyomizu-dera confirms a 6:00 a.m. opening throughout 2026, so it is the only fixed early-opening anchor in this four-day route. The other districts stay separate, with a midday return to the hotel instead of crossing Higashiyama, Fushimi and Arashiyama in one day.\n\nWhere to stay｜Kyoto Station for transfers, Shijo-Kawaramachi for evenings\nCompare Kyoto Station if you have large luggage or will use the shinkansen or airport transport. Compare Shijo-Kawaramachi if dinner, the Kamo River and Gion walks matter more. Keep one hotel for all three nights. Use day one to learn the base, day two for Kiyomizu and Gion, day three for Fushimi, and day four for Arashiyama or central Kyoto according to departure time.\n\nDay 1｜Learn the hotel-to-station and dinner route\nAfter check-in, find the nearest station exit, convenience store, breakfast option and luggage-storage rule. From Kyoto Station, walk only around the station area; from Shijo-Kawaramachi, take a short Kamo River walk. Do not drag luggage to Arashiyama or Fushimi for one extra sight. Confirm how early you can leave and where breakfast will come from.\n\nDay 2｜Enter Kiyomizu-dera at 6 and walk downhill through Higashiyama\nWork back from your hotel and aim to reach Kiyomizu-dera around its 6:00 opening. Closing times change by season, and special night openings have separate dates, so use the official 2026 table. After the temple, walk down through the Kiyomizu-zaka, Ninenzaka and Sannenzaka direction, then eat in Gion or Kawaramachi. Rest at the hotel after lunch and keep the evening to one Kamo River or Gion walk.\n\nDay 3｜Pair Fushimi Inari with Fushimi, not Arashiyama\nGo to Fushimi Inari in the morning and walk only as far up the torii route as your energy allows; reaching the summit is optional. Then choose a Fushimi shopping street, canal area or one sake-related venue, checking its own opening and reservation page. Kyoto also links to congestion forecasts for Fushimi. If the live view or on-site crowd is heavy, shorten the shrine visit and spend more time in central Fushimi.\n\nDay 4 and fallbacks｜Use Arashiyama only with a late departure\nWith a late departure and stored luggage, go to Arashiyama early and choose the bamboo-grove area plus one temple, returning before lunch. With an early departure, remain near Kyoto Station or central Kyoto. In rain, replace a long walk with one confirmed-open museum or indoor venue. Final checks are the day's Kiyomizu hours, transit balance, luggage-storage cutoff and departure platform.",
+    "destination": "Kyoto, Japan",
+    "duration": "4 days / 3 nights",
+    "budget": "Live stays and admission; calculate transport from the chosen base",
+    "season": "Year-round; recheck 2026 Kiyomizu closing and special-opening dates",
+    "category": "First-visit district route",
+    "imageAlt": "Traditional Kyoto street lined with wooden houses",
+    "ctaLabel": "Compare stays near Kyoto Station and Shijo-Kawaramachi",
+    "priceLabel": "Only one fixed early opening; recheck every other venue",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   },
   "id": {
-    "slug": "kyoto-first-morning", "title": "Pertama kali ke Kyoto: simpan tempat terpenting untuk pagi hari", "excerpt": "Empat hari, tiga kawasan. Kuil saat pagi, istirahat siang, lalu kembali berjalan saat senja.",
-    "content": "Hari 1 | Kenali area penginapan\nJangan langsung melintasi kota setelah tiba.\n\nHari 2 | Datangi kuil utama saat buka\nMulai pagi dan kembali ke hotel saat siang.\n\nHari 3 | Pilih satu arah\nJelajahi satu kawasan dengan perlahan.\n\nHari 4 | Kembali ke tempat favorit\nJangan tambahkan tempat baru di setengah hari terakhir.",
-    "destination": "Kyoto", "duration": "4 hari / 3 malam", "budget": "Harga terkini", "season": "Sepanjang tahun", "category": "Kunjungan pertama", "contentType": "route",
-    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85", "imageAlt": "Jalan kayu tradisional di Kyoto", "status": "published", "featured": true,
-    "ctaPlatform": "trip", "ctaLabel": "Lihat pilihan Kyoto di Trip.com", "ctaUrl": "", "couponCode": "", "priceLabel": "Pilihan penerbangan dan hotel terkini", "updatedAt": "2026-07-11"
+    "slug": "kyoto-first-morning",
+    "title": "Empat hari di Kyoto untuk kunjungan pertama: Kiyomizu-dera pada jam 6 pagi dan satu distrik dalam satu waktu",
+    "excerpt": "Menginaplah di dekat Stasiun Kyoto atau Shijo-Kawaramachi, lalu berikan waktu setengah hari terpisah bagi Kiyomizu, Fushimi, Arashiyama, dan pusat kota Kyoto.",
+    "content": "Apa yang diperbaiki rute ini｜Gunakan pagi hari hanya jika waktu buka mendukung\nPanduan resmi Kota Kyoto menetapkan tamasya pagi adalah sebelum jam 9 pagi, namun tidak semua kuil memberi penghargaan pada perjalanan sebelum fajar. Kiyomizu-dera mengonfirmasi pembukaan pukul 6:00 pagi sepanjang tahun 2026, sehingga merupakan satu-satunya jangkar tetap yang dibuka lebih awal dalam rute empat hari ini. Distrik lainnya tetap terpisah, dengan kembali ke hotel pada tengah hari alih-alih melintasi Higashiyama, Fushimi, dan Arashiyama dalam satu hari.\n\nTempat menginap｜Stasiun Kyoto untuk transfer, Shijo-Kawaramachi untuk malam hari\nBandingkan Stasiun Kyoto jika Anda memiliki bagasi besar atau akan menggunakan shinkansen atau transportasi bandara. Bandingkan Shijo-Kawaramachi jika makan malam, Sungai Kamo, dan jalan-jalan di Gion lebih penting. Simpan satu hotel selama tiga malam. Gunakan hari pertama untuk mempelajari pangkalan, hari kedua untuk Kiyomizu dan Gion, hari ketiga untuk Fushimi, dan hari keempat untuk Arashiyama atau pusat Kyoto sesuai dengan waktu keberangkatan.\n\nHari 1｜Pelajari rute hotel-ke-stasiun dan makan malam\nSetelah check-in, temukan pintu keluar stasiun terdekat, toko serba ada, pilihan sarapan, dan aturan penyimpanan bagasi. Dari Stasiun Kyoto, berjalanlah hanya di sekitar area stasiun; dari Shijo-Kawaramachi, berjalanlah singkat di Sungai Kamo. Jangan menyeret bagasi ke Arashiyama atau Fushimi untuk satu pemandangan tambahan. Konfirmasikan seberapa awal Anda bisa berangkat dan dari mana sarapan akan didapat.\n\nHari ke-2｜Masuk ke Kiyomizu-dera pada pukul 6 dan berjalan menuruni bukit melalui Higashiyama\nBekerja kembali dari hotel Anda dan bertujuan untuk mencapai Kiyomizu-dera sekitar pukul 6:00 pembukaannya. Waktu tutup berubah berdasarkan musim, dan pembukaan malam khusus memiliki tanggal berbeda, jadi gunakan tabel resmi tahun 2026. Setelah kuil, berjalanlah melalui arah Kiyomizu-zaka, Ninenzaka dan Sannenzaka, lalu makan di Gion atau Kawaramachi. Beristirahatlah di hotel setelah makan siang dan lanjutkan malam dengan berjalan kaki di Sungai Kamo atau Gion.\n\nHari ke-3｜Pasangkan Fushimi Inari dengan Fushimi, bukan Arashiyama\nPergilah ke Fushimi Inari di pagi hari dan berjalanlah sejauh mungkin sepanjang rute torii; mencapai puncak adalah opsional. Kemudian pilih jalan perbelanjaan Fushimi, area kanal, atau salah satu tempat yang berhubungan dengan sake, dengan memeriksa halaman pembukaan dan reservasinya sendiri. Kyoto juga menghubungkan perkiraan kemacetan di Fushimi. Jika tayangan langsung atau keramaian di lokasi padat, persingkat kunjungan ke kuil dan habiskan lebih banyak waktu di pusat Fushimi.\n\nHari ke-4 dan fallback｜Gunakan Arashiyama hanya jika keberangkatan terlambat\nJika Anda berangkat terlambat dan menyimpan barang bawaan, pergilah ke Arashiyama lebih awal dan pilih area hutan bambu plus satu kuil, lalu kembali sebelum makan siang. Jika berangkat lebih awal, tetaplah berada di dekat Stasiun Kyoto atau pusat kota Kyoto. Saat hujan, gantikan jalan-jalan panjang dengan mengunjungi museum atau tempat dalam ruangan yang sudah dipastikan buka. Pemeriksaan terakhir adalah jam buka Kiyomizu pada hari itu, saldo transit, batas penyimpanan bagasi, dan platform keberangkatan.",
+    "destination": "Kyoto, Jepang",
+    "duration": "4 hari / 3 malam",
+    "budget": "Tinggal langsung dan tiket masuk; menghitung transportasi dari pangkalan yang dipilih",
+    "season": "Sepanjang tahun; periksa kembali tanggal penutupan dan pembukaan khusus Kiyomizu 2026",
+    "category": "Rute distrik kunjungan pertama",
+    "imageAlt": "Jalan tradisional Kyoto dengan deretan rumah kayu",
+    "ctaLabel": "Bandingkan penginapan di dekat Stasiun Kyoto dan Shijo-Kawaramachi",
+    "priceLabel": "Hanya satu pembukaan awal yang diperbaiki; periksa kembali setiap tempat lainnya",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "th": {
+    "slug": "kyoto-first-morning",
+    "title": "สี่วันในเกียวโตสำหรับการมาเยือนครั้งแรก: Kiyomizu-dera เวลา 6.00 น. และครั้งละหนึ่งอำเภอ",
+    "excerpt": "อยู่ใกล้สถานีเกียวโตหรือชิโจ-คาวารามาจิ จากนั้นให้คิโยมิสึ ฟูชิมิ อาราชิยามะ และเกียวโตตอนกลางแยกกันครึ่งวัน",
+    "content": "สิ่งที่แก้ไขในเส้นทางนี้ ｜ใช้ช่วงเช้าตรู่เฉพาะเมื่อถึงเวลาเปิดทำการเท่านั้น\nคู่มืออย่างเป็นทางการของเมืองเกียวโตกำหนดให้การเที่ยวชมในช่วงเช้าคือก่อน 9.00 น. แต่ไม่ใช่ทุกวัดจะให้รางวัลแก่การเดินทางก่อนรุ่งสาง คิโยมิสึเดระยืนยันการเปิดทำการในเวลา 6.00 น. ตลอดปี 2026 ดังนั้นจึงเป็นจุดยึดที่เปิดก่อนกำหนดเพียงแห่งเดียวในเส้นทางสี่วันนี้ เขตอื่นๆ แยกจากกัน โดยจะเดินทางกลับโรงแรมในเวลาเที่ยงวัน แทนที่จะข้ามฮิกาชิยามะ ฟูชิมิ และอาราชิยามะในวันเดียว\n\nที่พักแนะนำ｜สถานีเกียวโตสำหรับเปลี่ยนเครื่อง, ชิโจ-คาวารามาจิในช่วงเย็น\nเปรียบเทียบสถานีเกียวโตหากคุณมีกระเป๋าเดินทางขนาดใหญ่หรือจะใช้ชินคันเซ็นหรือบริการรับส่งสนามบิน เปรียบเทียบชิโจ-คาวารามาจิหากรับประทานอาหารเย็น แม่น้ำคาโมะและกิออนมีความสำคัญมากกว่า เก็บโรงแรมไว้หนึ่งแห่งตลอดสามคืน ใช้วันแรกเพื่อเรียนรู้พื้นฐาน วันที่สองสำหรับคิโยมิสึและกิออน วันที่สามสำหรับฟูชิมิ และวันที่สี่สำหรับอาราชิยามะหรือเกียวโตตอนกลางตามเวลาออกเดินทาง\n\nวันที่ 1｜เรียนรู้เส้นทางระหว่างโรงแรมถึงสถานีและอาหารเย็น\nหลังจากเช็คอิน ให้ค้นหาทางออกของสถานีที่ใกล้ที่สุด ร้านสะดวกซื้อ ตัวเลือกอาหารเช้า และกฎการรับฝากสัมภาระ จากสถานีเกียวโต ให้เดินไปรอบๆ บริเวณสถานีเท่านั้น จากชิโจ-คาวารามาจิ ให้เดินไปตามแม่น้ำคาโมะสั้นๆ อย่าลากกระเป๋าเดินทางไปที่อาราชิยามะหรือฟูชิมิเพื่อดูพิเศษ ยืนยันว่าคุณสามารถออกเดินทางได้เร็วแค่ไหนและอาหารเช้าจะมาจากไหน\n\nวันที่ 2｜เข้าสู่ Kiyomizu-dera เวลา 6.00 น. และเดินลงเนินผ่าน Higashiyama\nทำงานกลับจากโรงแรมของคุณและตั้งเป้าให้ไปถึงคิโยมิสึเดระประมาณ 6.00 น. เวลาปิดทำการจะเปลี่ยนไปตามฤดูกาล และการเปิดในช่วงกลางคืนพิเศษจะมีวันที่แยกกัน ดังนั้นให้ใช้ตารางอย่างเป็นทางการของปี 2026 หลังจากวัดแล้ว ให้เดินลงไปตามทิศทางคิโยมิสึ-ซากะ นิเน็นซากะ และซันเน็นซากะ จากนั้นรับประทานอาหารที่กิออนหรือคาวารามาจิ พักผ่อนที่โรงแรมหลังอาหารกลางวัน และเก็บช่วงเย็นไปเดินเล่นที่แม่น้ำคาโมะหรือกิออน\n\nวันที่ 3｜จับคู่ฟุชิมิอินาริกับฟูชิมิ ไม่ใช่อาราชิยามะ\nไปที่ฟูชิมิอินาริในตอนเช้าและเดินไปตามเส้นทางโทริอิให้ไกลที่สุดเท่าที่จะทำได้ การไปถึงยอดเขาเป็นทางเลือก จากนั้นเลือกถนนช้อปปิ้งฟูชิมิ บริเวณคลอง หรือสถานที่เกี่ยวกับสาเกหนึ่งแห่ง โดยตรวจสอบหน้าเปิดและจองของถนนนั้นเอง เกียวโตยังเชื่อมโยงกับการคาดการณ์ความแออัดของฟูชิมิด้วย หากการชมสดหรือฝูงชนในสถานที่หนาแน่น ให้ลดเวลาในการเยี่ยมชมศาลเจ้าและใช้เวลาในใจกลางฟูชิมิให้มากขึ้น\n\nวันที่ 4 และทางเลือกอื่น ｜ใช้อาราชิยามะเฉพาะในกรณีที่ออกเดินทางสายเท่านั้น\nหากออกเดินทางล่าช้าและฝากสัมภาระไว้ ให้ไปที่อาราชิยามะแต่เช้าและเลือกพื้นที่ป่าไผ่บวกวัดหนึ่งแห่ง แล้วกลับมาก่อนรับประทานอาหารกลางวัน หากออกเดินทางแต่เช้า ควรอยู่ใกล้สถานีเกียวโตหรือใจกลางเกียวโต ในช่วงฝนตก แทนที่การเดินระยะไกลด้วยพิพิธภัณฑ์หรือสถานที่ในร่มที่ได้รับการยืนยันแล้วหนึ่งแห่ง การตรวจสอบขั้นสุดท้ายคือชั่วโมงคิโยมิสึในแต่ละวัน ยอดการต่อเครื่อง จุดรับฝากสัมภาระ และชานชาลาออกเดินทาง",
+    "destination": "เกียวโต ประเทศญี่ปุ่น",
+    "duration": "4 วัน / 3 คืน",
+    "budget": "การเข้าพักสดและการรับเข้าเรียน คำนวณการขนส่งจากฐานที่เลือก",
+    "season": "ตลอดทั้งปี; ตรวจสอบวันปิดทำการและวันเปิดพิเศษของคิโยมิสึปี 2026 อีกครั้ง",
+    "category": "เส้นทางอำเภอเยือนครั้งแรก",
+    "imageAlt": "ถนนเกียวโตแบบดั้งเดิมเรียงรายไปด้วยบ้านไม้",
+    "ctaLabel": "เปรียบเทียบการเข้าพักใกล้สถานีเกียวโตและชิโจ-คาวารามาจิ",
+    "priceLabel": "การเปิดก่อนกำหนดคงที่เพียงรายการเดียวเท่านั้น ตรวจสอบสถานที่อื่น ๆ อีกครั้ง",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "vi": {
+    "slug": "kyoto-first-morning",
+    "title": "Bốn ngày ở Kyoto cho chuyến thăm đầu tiên: Kiyomizu-dera lúc 6 giờ sáng và từng quận một",
+    "excerpt": "Ở gần ga Kyoto hoặc Shijo-Kawaramachi, sau đó dành nửa ngày riêng biệt cho Kiyomizu, Fushimi, Arashiyama và trung tâm Kyoto.",
+    "content": "Tuyến đường này khắc phục điều gì｜Chỉ sử dụng vào sáng sớm khi thời gian mở cửa hỗ trợ\nHướng dẫn chính thức của Thành phố Kyoto xác định việc tham quan buổi sáng là trước 9 giờ sáng, nhưng không phải ngôi chùa nào cũng tổ chức chuyến đi trước bình minh. Kiyomizu-dera xác nhận mở cửa lúc 6 giờ sáng trong suốt năm 2026, vì vậy đây là điểm neo mở cố định sớm duy nhất trên tuyến đường kéo dài bốn ngày này. Các quận khác ở riêng biệt và có thể quay lại khách sạn vào giữa trưa thay vì băng qua Higashiyama, Fushimi và Arashiyama trong một ngày.\n\nNơi ở｜Ga Kyoto để chuyển tuyến, Shijo-Kawaramachi vào buổi tối\nHãy so sánh Ga Kyoto nếu bạn có hành lý lớn hoặc sẽ sử dụng tàu shinkansen hoặc vận chuyển sân bay. So sánh Shijo-Kawaramachi nếu bữa tối, con sông Kamo và chuyến đi bộ ở Gion quan trọng hơn. Giữ một khách sạn trong cả ba đêm. Sử dụng ngày thứ nhất để tìm hiểu căn cứ, ngày thứ hai đến Kiyomizu và Gion, ngày thứ ba đến Fushimi và ngày thứ tư đến Arashiyama hoặc trung tâm Kyoto tùy theo thời gian khởi hành.\n\nNgày 1｜Tìm hiểu lộ trình từ khách sạn đến nhà ga và ăn tối\nSau khi nhận phòng, hãy tìm lối ra ga gần nhất, cửa hàng tiện lợi, lựa chọn bữa sáng và quy định gửi hành lý. Từ Ga Kyoto, chỉ đi bộ quanh khu vực ga; từ Shijo-Kawaramachi, đi bộ một quãng ngắn trên sông Kamo. Đừng kéo hành lý đến Arashiyama hoặc Fushimi để ngắm thêm. Xác nhận xem bạn có thể rời đi sớm bao nhiêu và bữa sáng sẽ đến từ đâu.\n\nNgày 2｜Vào Kiyomizu-dera lúc 6 giờ và đi bộ xuống dốc qua Higashiyama\nTrở về khách sạn và cố gắng đến Kiyomizu-dera vào khoảng 6:00 giờ mở cửa. Thời gian đóng cửa thay đổi theo mùa và các đêm mở cửa đặc biệt có ngày riêng biệt, vì vậy hãy sử dụng bảng chính thức năm 2026. Sau chùa, đi bộ xuống hướng Kiyomizu-zaka, Ninenzaka và Sannenzaka, sau đó dùng bữa ở Gion hoặc Kawaramachi. Nghỉ ngơi tại khách sạn sau bữa trưa và tiếp tục buổi tối đi dạo trên sông Kamo hoặc Gion.\n\nNgày 3｜Ghép Fushimi Inari với Fushimi, không phải Arashiyama\nHãy đến Fushimi Inari vào buổi sáng và chỉ đi bộ lên tuyến đường torii khi sức lực của bạn cho phép; đạt tới đỉnh là tùy chọn. Sau đó chọn phố mua sắm Fushimi, khu vực kênh đào hoặc một địa điểm liên quan đến rượu sake, kiểm tra trang mở và đặt chỗ của chính địa điểm đó. Kyoto cũng liên kết với dự báo tắc nghẽn cho Fushimi. Nếu lượng người xem trực tiếp hoặc đám đông tại chỗ đông đúc, hãy rút ngắn chuyến viếng thăm đền thờ và dành nhiều thời gian hơn ở trung tâm Fushimi.\n\nNgày 4 và những dự phòng｜Chỉ sử dụng Arashiyama khi khởi hành muộn\nVới việc khởi hành muộn và cất hành lý, hãy đến Arashiyama sớm và chọn khu rừng tre cộng với một ngôi chùa, trở về trước bữa trưa. Nếu khởi hành sớm, hãy ở gần Ga Kyoto hoặc trung tâm Kyoto. Khi trời mưa, hãy thay thế một chuyến đi bộ dài bằng một bảo tàng hoặc địa điểm trong nhà đã được xác nhận mở cửa. Kiểm tra cuối cùng là giờ Kiyomizu trong ngày, số dư quá cảnh, điểm dừng cất giữ hành lý và sân ga khởi hành.",
+    "destination": "Kyoto, Nhật Bản",
+    "duration": "4 ngày 3 đêm",
+    "budget": "Ở lại và nhập học trực tiếp; tính toán vận chuyển từ cơ sở đã chọn",
+    "season": "Quanh năm; kiểm tra lại ngày đóng cửa và khai trương đặc biệt của Kiyomizu năm 2026",
+    "category": "Tuyến đường huyện lần đầu ghé thăm",
+    "imageAlt": "Con đường truyền thống ở Kyoto với những ngôi nhà gỗ",
+    "ctaLabel": "So sánh chỗ ở gần Ga Kyoto và Shijo-Kawaramachi",
+    "priceLabel": "Chỉ có một lần mở sớm cố định; kiểm tra lại mọi địa điểm khác",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "ms": {
+    "slug": "kyoto-first-morning",
+    "title": "Empat hari di Kyoto untuk lawatan pertama: Kiyomizu-dera pada pukul 6 pagi dan satu daerah pada satu masa",
+    "excerpt": "Tinggal berhampiran Stesen Kyoto atau Shijo-Kawaramachi, kemudian berikan Kiyomizu, Fushimi, Arashiyama dan pusat Kyoto separuh hari yang berasingan.",
+    "content": "Perkara yang diperbetulkan oleh laluan ini｜Gunakan awal pagi sahaja apabila masa buka menyokongnya\nPanduan rasmi Kyoto City mentakrifkan bersiar-siar pagi seperti sebelum 9 pagi, tetapi tidak setiap kuil memberi ganjaran kepada perjalanan sebelum subuh. Kiyomizu-dera mengesahkan pembukaan 6:00 pagi sepanjang 2026, jadi ia adalah satu-satunya sauh pembukaan awal tetap dalam laluan empat hari ini. Daerah lain kekal berasingan, dengan pulang ke hotel tengah hari dan bukannya menyeberangi Higashiyama, Fushimi dan Arashiyama dalam satu hari.\n\nTempat tinggal｜Stesen Kyoto untuk pemindahan, Shijo-Kawaramachi untuk waktu malam\nBandingkan Stesen Kyoto jika anda mempunyai bagasi yang besar atau akan menggunakan shinkansen atau pengangkutan lapangan terbang. Bandingkan Shijo-Kawaramachi jika makan malam, Sungai Kamo dan Gion berjalan lebih penting. Simpan satu hotel untuk ketiga-tiga malam. Gunakan hari pertama untuk mempelajari pangkalan, hari kedua untuk Kiyomizu dan Gion, hari ketiga untuk Fushimi, dan hari keempat untuk Arashiyama atau Kyoto tengah mengikut waktu berlepas.\n\nHari 1｜Ketahui laluan hotel ke stesen dan makan malam\nSelepas daftar masuk, cari pintu keluar stesen terdekat, kedai serbaneka, pilihan sarapan dan peraturan penyimpanan bagasi. Dari Stesen Kyoto, berjalan kaki sahaja di sekitar kawasan stesen; dari Shijo-Kawaramachi, berjalan kaki singkat ke Sungai Kamo. Jangan seret bagasi ke Arashiyama atau Fushimi untuk satu pemandangan tambahan. Sahkan berapa awal anda boleh pergi dan dari mana sarapan akan datang.\n\nHari 2｜Masuk Kiyomizu-dera pada pukul 6 dan berjalan menuruni bukit melalui Higashiyama\nBekerja balik dari hotel anda dan sasarkan untuk sampai ke Kiyomizu-dera sekitar jam 6:00 pagi. Waktu tutup berubah mengikut musim, dan pembukaan malam istimewa mempunyai tarikh yang berasingan, jadi gunakan jadual rasmi 2026. Selepas kuil, berjalan ke bawah melalui arah Kiyomizu-zaka, Ninenzaka dan Sannenzaka, kemudian makan di Gion atau Kawaramachi. Berehat di hotel selepas makan tengah hari dan teruskan pada waktu petang untuk berjalan kaki di Sungai Kamo atau Gion.\n\nHari 3｜Gandingkan Fushimi Inari dengan Fushimi, bukan Arashiyama\nPergi ke Fushimi Inari pada waktu pagi dan berjalan sejauh laluan torii mengikut tenaga anda; mencapai puncak adalah pilihan. Kemudian pilih jalan membeli-belah Fushimi, kawasan terusan atau satu tempat berkaitan sake, semak halaman pembukaan dan tempahannya sendiri. Kyoto juga menghubungkan kepada ramalan kesesakan untuk Fushimi. Jika tontonan langsung atau orang ramai di tapak adalah ramai, pendekkan lawatan kuil dan luangkan lebih banyak masa di pusat Fushimi.\n\nHari ke-4 dan sandaran｜Gunakan Arashiyama hanya dengan keluar lewat\nDengan keberangkatan lewat dan bagasi yang disimpan, pergi ke Arashiyama lebih awal dan pilih kawasan hutan buluh serta satu kuil, pulang sebelum makan tengah hari. Dengan perlepasan awal, kekal berhampiran Stesen Kyoto atau pusat Kyoto. Semasa hujan, gantikan berjalan kaki yang jauh dengan satu muzium atau tempat tertutup yang disahkan dibuka. Pemeriksaan akhir ialah waktu Kiyomizu hari ini, baki transit, potongan penyimpanan bagasi dan platform berlepas.",
+    "destination": "Kyoto, Jepun",
+    "duration": "4 hari / 3 malam",
+    "budget": "Penginapan dan kemasukan secara langsung; hitung pengangkutan dari pangkalan yang dipilih",
+    "season": "Sepanjang tahun; semak semula 2026 Kiyomizu tarikh tutup dan pembukaan khas",
+    "category": "Laluan daerah lawatan pertama",
+    "imageAlt": "Jalan tradisional Kyoto dipenuhi dengan rumah kayu",
+    "ctaLabel": "Bandingkan penginapan berhampiran Stesen Kyoto dan Shijo-Kawaramachi",
+    "priceLabel": "Hanya satu pembukaan awal tetap; semak semula setiap tempat lain",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "fil": {
+    "slug": "kyoto-first-morning",
+    "title": "Apat na araw sa Kyoto para sa unang pagbisita: Kiyomizu-dera sa 6 a.m. at isang distrito sa bawat pagkakataon",
+    "excerpt": "Manatili malapit sa Kyoto Station o Shijo-Kawaramachi, pagkatapos ay bigyan ang Kiyomizu, Fushimi, Arashiyama at gitnang Kyoto ng hiwalay na kalahating araw.",
+    "content": "Ano ang inaayos ng rutang ito｜Gumamit lamang ng maagang umaga kung saan sinusuportahan ito ng oras ng pagbubukas\nTinukoy ng opisyal na gabay ng Kyoto City ang pamamasyal sa umaga bago mag-9 a.m., ngunit hindi lahat ng templo ay nagbibigay ng gantimpala sa isang paglalakbay bago ang madaling araw. Kinukumpirma ng Kiyomizu-dera ang pagbubukas ng 6:00 a.m. sa buong 2026, kaya ito ang tanging nakapirming anchor ng maagang pagbubukas sa apat na araw na rutang ito. Ang iba pang mga distrito ay mananatiling hiwalay, na may isang tanghali na bumalik sa hotel sa halip na tumawid sa Higashiyama, Fushimi at Arashiyama sa isang araw.\n\nKung saan mananatili｜Kyoto Station para sa mga paglilipat, Shijo-Kawaramachi para sa gabi\nIkumpara ang Kyoto Station kung mayroon kang malaking bagahe o gagamit ng shinkansen o airport transport. Ikumpara ang Shijo-Kawaramachi kung mas mahalaga ang hapunan, ang Kamo River at ang paglalakad ng Gion. Panatilihin ang isang hotel para sa lahat ng tatlong gabi. Gamitin ang unang araw para matutunan ang base, ikalawang araw para sa Kiyomizu at Gion, ikatlong araw para sa Fushimi, at ikaapat na araw para sa Arashiyama o gitnang Kyoto ayon sa oras ng pag-alis.\n\nUnang Araw｜Alamin ang ruta ng hotel-to-station at hapunan\nPagkatapos ng check-in, hanapin ang pinakamalapit na exit ng istasyon, convenience store, opsyon sa almusal at panuntunan sa pag-iimbak ng bagahe. Mula sa Kyoto Station, maglakad lamang sa paligid ng istasyon; mula sa Shijo-Kawaramachi, maglakad ng maikling Kamo River. Huwag kaladkarin ang mga bagahe sa Arashiyama o Fushimi para sa isang karagdagang tanawin. Kumpirmahin kung gaano ka kaaga makakaalis at kung saan manggagaling ang almusal.\n\nIkalawang Araw｜Pumasok sa Kiyomizu-dera sa ika-6 at maglakad pababa sa Higashiyama\nBumalik mula sa iyong hotel at layuning maabot ang Kiyomizu-dera bandang 6:00 ng pagbubukas nito. Ang mga oras ng pagsasara ay nagbabago ayon sa season, at ang mga espesyal na pagbubukas sa gabi ay may magkakahiwalay na petsa, kaya gamitin ang opisyal na talahanayan ng 2026. Pagkatapos ng templo, maglakad pababa sa direksyon ng Kiyomizu-zaka, Ninenzaka at Sannenzaka, pagkatapos ay kumain sa Gion o Kawaramachi. Magpahinga sa hotel pagkatapos ng tanghalian at panatilihin ang gabi sa isang Kamo River o Gion walk.\n\nIkatlong Araw｜Ipares ang Fushimi Inari kay Fushimi, hindi Arashiyama\nPumunta sa Fushimi Inari sa umaga at maglakad lamang hanggang sa rutang torii hangga't pinapayagan ng iyong enerhiya; Ang pag-abot sa summit ay opsyonal. Pagkatapos ay pumili ng Fushimi shopping street, canal area o isang lugar na may kaugnayan sa sake, tingnan ang sarili nitong opening at reservation page. Nag-uugnay din ang Kyoto sa mga pagtataya ng kasikipan para sa Fushimi. Kung mabigat ang live view o on-site crowd, paikliin ang pagbisita sa shrine at gumugol ng mas maraming oras sa central Fushimi.\n\nDay 4 at fallbacks｜Gamitin lang ang Arashiyama kapag late na ang pag-alis\nSa isang late na pag-alis at nakaimbak na bagahe, pumunta sa Arashiyama nang maaga at piliin ang bamboo-grove area at isang templo, na babalik bago ang tanghalian. Sa maagang pag-alis, manatili malapit sa Kyoto Station o central Kyoto. Sa ulan, palitan ang mahabang paglalakad ng isang kumpirmadong bukas na museo o panloob na lugar. Ang mga huling pagsusuri ay ang mga oras ng Kiyomizu, balanse ng transit, cutoff sa pag-iimbak ng bagahe at platform ng pag-alis.",
+    "destination": "Kyoto, Japan",
+    "duration": "4 na araw / 3 gabi",
+    "budget": "Mga live na pananatili at pagpasok; kalkulahin ang transportasyon mula sa napiling base",
+    "season": "Buong taon; suriin muli ang 2026 Kiyomizu na mga petsa ng pagsasara at espesyal na pagbubukas",
+    "category": "Unang pagbisita na ruta ng distrito",
+    "imageAlt": "Tradisyunal na kalye ng Kyoto na may linyang mga bahay na gawa sa kahoy",
+    "ctaLabel": "Ikumpara ang mga pananatili malapit sa Kyoto Station at Shijo-Kawaramachi",
+    "priceLabel": "Isa lamang ang nakapirming maagang pagbubukas; suriin muli ang bawat iba pang lugar",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "km": {
+    "slug": "kyoto-first-morning",
+    "title": "បួនថ្ងៃនៅទីក្រុងក្យូតូសម្រាប់ការទស្សនាលើកដំបូង: Kiyomizu-dera នៅម៉ោង 6 ព្រឹក និងស្រុកមួយក្នុងពេលតែមួយ",
+    "excerpt": "ស្នាក់នៅក្បែរស្ថានីយ៍ Kyoto ឬ Shijo-Kawaramachi បន្ទាប់មកផ្តល់ឱ្យ Kiyomizu, Fushimi, Arashiyama និងកណ្តាលទីក្រុង Kyoto ដាច់ដោយឡែកពាក់កណ្តាលថ្ងៃ។",
+    "content": "អ្វីដែលផ្លូវនេះជួសជុល｜ប្រើពេលព្រឹកព្រលឹមតែកន្លែងដែលម៉ោងបើកដំណើរការប៉ុណ្ណោះ។\nមគ្គុទ្ទេសក៍ផ្លូវការរបស់ទីក្រុងក្យូតូកំណត់ការទស្សនាពេលព្រឹកដូចមុនម៉ោង 9 ព្រឹក ប៉ុន្តែមិនមែនគ្រប់ប្រាសាទទាំងអស់ផ្តល់រង្វាន់ដល់ការធ្វើដំណើរមុនថ្ងៃរះនោះទេ។ Kiyomizu-dera បញ្ជាក់ពីការបើកនៅម៉ោង 6:00 ព្រឹកពេញមួយឆ្នាំ 2026 ដូច្នេះវាគឺជាយុថ្កាដែលបើកដំណើរការដំបូងថេរតែមួយគត់នៅក្នុងផ្លូវរយៈពេល 4 ថ្ងៃនេះ។ ស្រុកផ្សេងទៀតស្នាក់នៅដាច់ដោយឡែកដោយពេលថ្ងៃត្រង់ត្រឡប់ទៅសណ្ឋាគារវិញជំនួសឱ្យការឆ្លងកាត់ Higashiyama, Fushimi និង Arashiyama ក្នុងមួយថ្ងៃ។\n\nកន្លែងដែលត្រូវស្នាក់នៅ｜ស្ថានីយ៍ក្យូតូសម្រាប់ការផ្ទេរ, Shijo-Kawaramachi សម្រាប់ពេលល្ងាច\nប្រៀបធៀបស្ថានីយ៍ Kyoto ប្រសិនបើអ្នកមានអីវ៉ាន់ធំ ឬនឹងប្រើ shinkansen ឬការដឹកជញ្ជូនព្រលានយន្តហោះ។ ប្រៀបធៀប Shijo-Kawaramachi ប្រសិនបើអាហារពេលល្ងាច ទន្លេ Kamo និង Gion ដើរសំខាន់ជាង។ ទុកសណ្ឋាគារមួយសម្រាប់ទាំងបីយប់។ ប្រើថ្ងៃទីមួយដើម្បីរៀនមូលដ្ឋាន ថ្ងៃទីពីរសម្រាប់ Kiyomizu និង Gion ថ្ងៃទីបីសម្រាប់ Fushimi និងថ្ងៃទីបួនសម្រាប់ Arashiyama ឬកណ្តាលទីក្រុង Kyoto យោងតាមម៉ោងចេញដំណើរ។\n\nថ្ងៃទី 1｜ រៀនពីសណ្ឋាគារទៅស្ថានីយ៍ និងផ្លូវអាហារពេលល្ងាច\nបន្ទាប់ពីឆែកឆេរ សូមស្វែងរកច្រកចេញនៅស្ថានីយ៍ដែលនៅជិតបំផុត ហាងងាយស្រួល ជម្រើសអាហារពេលព្រឹក និងច្បាប់នៃការទុកដាក់អីវ៉ាន់។ ពីស្ថានីយ៍ក្យូតូ ដើរតែជុំវិញតំបន់ស្ថានីយ៍។ ពី Shijo-Kawaramachi ដើរកាត់ទន្លេ Kamo ។ កុំអូសអីវ៉ាន់ទៅ Arashiyama ឬ Fushimi សម្រាប់ការមើលឃើញបន្ថែមមួយ។ បញ្ជាក់ថាតើអ្នកអាចចាកចេញលឿនប៉ុណ្ណា ហើយអាហារពេលព្រឹកនឹងមកពីណា។\n\nថ្ងៃទី 2｜ចូល Kiyomizu-dera នៅម៉ោង 6 ហើយដើរចុះភ្នំកាត់ Higashiyama\nត្រលប់ពីសណ្ឋាគាររបស់អ្នក ហើយមានបំណងទៅ Kiyomizu-dera នៅជុំវិញការបើកដំណើរការ 6:00 ។ ម៉ោងបិទផ្លាស់ប្តូរតាមរដូវកាល ហើយការបើកពេលយប់ពិសេសមានកាលបរិច្ឆេទដាច់ដោយឡែក ដូច្នេះសូមប្រើតារាងផ្លូវការឆ្នាំ 2026។ បន្ទាប់ពីប្រាសាទ ដើរចុះតាមទិស Kiyomizu-zaka, Ninenzaka និង Sannenzaka បន្ទាប់មកញ៉ាំនៅ Gion ឬ Kawaramachi ។ សម្រាកនៅសណ្ឋាគារបន្ទាប់ពីអាហារថ្ងៃត្រង់ ហើយនៅពេលល្ងាចទៅកាន់ទន្លេ Kamo ឬដើរ Gion ។\n\nថ្ងៃទី 3｜ Pair Fushimi Inari ជាមួយ Fushimi មិនមែន Arashiyama ទេ។\nទៅ Fushimi Inari នៅពេលព្រឹកហើយដើរតែឆ្ងាយរហូតដល់ផ្លូវ torii ដូចដែលថាមពលរបស់អ្នកអនុញ្ញាត។ ការឈានដល់កំពូលគឺស្រេចចិត្ត។ បន្ទាប់មកជ្រើសរើសផ្លូវដើរទិញឥវ៉ាន់ Fushimi តំបន់ប្រឡាយ ឬកន្លែងមួយដែលទាក់ទងនឹងសារប្រយោជន៍ ដោយពិនិត្យមើលទំព័របើក និងកក់ផ្ទាល់ខ្លួនរបស់វា។ ក្យូតូក៏ភ្ជាប់ទៅការព្យាករណ៍ការកកស្ទះសម្រាប់ Fushimi ផងដែរ។ ប្រសិនបើទិដ្ឋភាពផ្ទាល់ ឬហ្វូងមនុស្សនៅនឹងកន្លែងមានច្រើន សូមកាត់បន្ថយការទស្សនាទីសក្ការបូជា និងចំណាយពេលច្រើនទៀតនៅកណ្តាលហ្វូស៊ីមី។\n\nថ្ងៃទី 4 និងការចាកចេញ｜ប្រើ Arashiyama តែជាមួយនឹងការចេញដំណើរយឺត\nជាមួយនឹងការចេញដំណើរយឺតយ៉ាវ និងឥវ៉ាន់ដែលទុកដាក់ សូមទៅ Arashiyama ទាន់ពេល ហើយជ្រើសរើសតំបន់ព្រៃឬស្សី បូកនឹងប្រាសាទមួយ ដោយត្រលប់មកវិញមុនពេលអាហារថ្ងៃត្រង់។ ជាមួយនឹងការចេញដំណើរមុនគេ សូមបន្តនៅជិតស្ថានីយ៍ក្យូតូ ឬកណ្តាលទីក្រុងក្យូតូ។ នៅពេលភ្លៀង សូមជំនួសការដើរដ៏វែងមួយជាមួយនឹងសារមន្ទីរដែលបានបញ្ជាក់ ឬកន្លែងក្នុងផ្ទះ។ ការត្រួតពិនិត្យចុងក្រោយគឺម៉ោង Kiyomizu ប្រចាំថ្ងៃ សមតុល្យឆ្លងកាត់ ការកាត់ផ្តាច់កន្លែងផ្ទុកឥវ៉ាន់ និងវេទិកាចេញដំណើរ។",
+    "destination": "ក្យូតូ ប្រទេសជប៉ុន",
+    "duration": "៤ថ្ងៃ/៣យប់",
+    "budget": "ការស្នាក់នៅនិងការចូលរៀន; គណនាការដឹកជញ្ជូនពីមូលដ្ឋានដែលបានជ្រើសរើស",
+    "season": "ពេញមួយឆ្នាំ; ពិនិត្យមើលឡើងវិញ 2026 Kiyomizu បិទ និងកាលបរិច្ឆេទបើកពិសេស",
+    "category": "ផ្លូវទៅស្រុកដំបូង",
+    "imageAlt": "ផ្លូវ Kyoto ប្រពៃណី តម្រង់ជួរជាមួយផ្ទះឈើ",
+    "ctaLabel": "ប្រៀបធៀបការស្នាក់នៅក្បែរស្ថានីយ៍ Kyoto និង Shijo-Kawaramachi",
+    "priceLabel": "មានតែការបើកដំបូងថេរមួយ; ពិនិត្យកន្លែងផ្សេងៗម្តងទៀត",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "lo": {
+    "slug": "kyoto-first-morning",
+    "title": "ສີ່ມື້ໃນກຽວໂຕສໍາລັບການຢ້ຽມຢາມຄັ້ງທໍາອິດ: Kiyomizu-dera ເວລາ 6 ໂມງເຊົ້າແລະເມືອງຫນຶ່ງໃນເວລາ",
+    "excerpt": "ຢູ່ໃກ້ກັບສະຖານີກຽວໂຕຫຼື Shijo-Kawaramachi, ຫຼັງຈາກນັ້ນໃຫ້ Kiyomizu, Fushimi, Arashiyama ແລະພາກກາງຂອງ Kyoto ແຍກຕ່າງຫາກເຄິ່ງຫນຶ່ງມື້.",
+    "content": "ສິ່ງ​ທີ່​ເສັ້ນ​ທາງ​ນີ້​ແກ້​ໄຂ​｜​ການ​ນໍາ​ໃຊ້​ໃນ​ຕອນ​ເຊົ້າ​ແຕ່​ໃນ​ເວ​ລາ​ທີ່​ເປີດ​ສະ​ຫນັບ​ສະ​ຫນູນ​ມັນ​\nຄູ່ມືທາງການຂອງເມືອງກຽວໂຕ ກຳນົດການທ່ຽວຊົມຕອນເຊົ້າຄືກັບກ່ອນ 9 ໂມງເຊົ້າ, ແຕ່ບໍ່ແມ່ນວັດທຸກແຫ່ງຈະໃຫ້ລາງວັນການເດີນທາງກ່ອນອາລຸນ. Kiyomizu-dera ຢືນຢັນການເປີດ 6:00 ໂມງເຊົ້າຕະຫຼອດປີ 2026, ສະນັ້ນມັນເປັນພຽງການສະໝໍທີ່ເປີດກ່ອນກຳນົດໃນເສັ້ນທາງສີ່ມື້ນີ້. ເມືອງອື່ນໆຢູ່ແຍກຕ່າງຫາກ, ໂດຍມີເວລາທ່ຽງຄືນກັບໂຮງແຮມແທນທີ່ຈະຂ້າມ Higashiyama, Fushimi ແລະ Arashiyama ໃນມື້ດຽວ.\n\nບ່ອນທີ່ຈະຢູ່｜ສະຖານີກຽວໂຕສໍາລັບການໂອນ, Shijo-Kawaramachi ສໍາລັບຕອນແລງ\nປຽບທຽບສະຖານີກຽວໂຕຖ້າທ່ານມີກະເປົ໋າໃຫຍ່ຫຼືຈະໃຊ້ shinkansen ຫຼືການຂົນສົ່ງສະຫນາມບິນ. ປຽບທຽບ Shijo-Kawaramachi ຖ້າຄ່ໍາ, ນ້ໍາ Kamo ແລະ Gion ຍ່າງຫຼາຍ. ຮັກສາຫນຶ່ງໂຮງແຮມສໍາລັບສາມຄືນ. ໃຊ້ມື້ຫນຶ່ງເພື່ອຮຽນຮູ້ພື້ນຖານ, ວັນທີສອງສໍາລັບ Kiyomizu ແລະ Gion, ວັນທີສາມສໍາລັບ Fushimi, ແລະວັນທີສີ່ສໍາລັບ Arashiyama ຫຼືສູນກາງ Kyoto ຕາມເວລາອອກເດີນທາງ.\n\nມື້ທີ 1｜ຮຽນຮູ້ເສັ້ນທາງໂຮງແຮມໄປສະຖານີ ແລະອາຫານຄ່ຳ\nຫຼັງຈາກເຊັກອິນ, ຊອກຫາທາງອອກຂອງສະຖານີທີ່ໃກ້ທີ່ສຸດ, ຮ້ານສະດວກຊື້, ທາງເລືອກອາຫານເຊົ້າແລະກົດລະບຽບການເກັບຮັກສາກະເປົາ. ຈາກສະຖານີກຽວໂຕ, ຍ່າງພຽງແຕ່ປະມານພື້ນທີ່ສະຖານີ; ຈາກ Shijo-Kawaramachi, ຍ່າງສັ້ນໆຕາມນ້ໍາ Kamo. ຢ່າລາກກະເປົ໋າໄປ Arashiyama ຫຼື Fushimi ສໍາລັບການເບິ່ງເຫັນພິເສດ. ຢືນຢັນວ່າທ່ານສາມາດອອກໄດ້ໄວເທົ່າໃດ ແລະອາຫານເຊົ້າຈະມາຈາກໃສ.\n\nວັນທີ 2｜ເຂົ້າສູ່ Kiyomizu-dera ຢູ່ທີ່ 6 ແລະຍ່າງລົງຄ້ອຍຜ່ານ Higashiyama\nເຮັດວຽກກັບຈາກໂຮງແຮມຂອງເຈົ້າ ແລະຕັ້ງໃຈໄປຮອດ Kiyomizu-dera ປະມານເປີດ 6:00 ໂມງ. ເວລາປິດມີການປ່ຽນແປງຕາມລະດູການ, ແລະການເປີດໃນຕອນກາງຄືນພິເສດມີວັນທີແຍກຕ່າງຫາກ, ສະນັ້ນໃຊ້ຕາຕະລາງ 2026 ຢ່າງເປັນທາງການ. ຫຼັງຈາກວັດ, ຍ່າງລົງຜ່ານທິດທາງ Kiyomizu-zaka, Ninenzaka ແລະ Sannenzaka, ຫຼັງຈາກນັ້ນກິນອາຫານໃນ Gion ຫຼື Kawaramachi. ພັກຜ່ອນຢູ່ທີ່ໂຮງແຮມຫຼັງຈາກອາຫານທ່ຽງແລະຮັກສາຕອນແລງໄປຫາຫນຶ່ງ Kamo River ຫຼືຍ່າງ Gion.\n\nວັນທີ 3｜ຈັບຄູ່ Fushimi Inari ກັບ Fushimi, ບໍ່ແມ່ນ Arashiyama\nໄປ Fushimi Inari ໃນຕອນເຊົ້າແລະຍ່າງພຽງແຕ່ໄກເຖິງເສັ້ນທາງ torii ຕາມທີ່ພະລັງງານຂອງທ່ານອະນຸຍາດໃຫ້; ການໄປຮອດກອງປະຊຸມສຸດຍອດແມ່ນທາງເລືອກ. ຫຼັງຈາກນັ້ນ, ເລືອກຖະຫນົນການຄ້າ Fushimi, ບໍລິເວນຄອງຫຼືສະຖານທີ່ທີ່ກ່ຽວຂ້ອງກັບສາເກ, ກວດເບິ່ງຫນ້າການເປີດແລະຈອງຂອງຕົນເອງ. Kyoto ຍັງເຊື່ອມຕໍ່ກັບການຄາດຄະເນຄວາມແອອັດສໍາລັບ Fushimi. ຖ້າການເບິ່ງສົດຫຼືຝູງຊົນຢູ່ໃນສະຖານທີ່ແມ່ນຫນັກ, ເຮັດໃຫ້ການໄປຢ້ຽມຢາມ shrine ສັ້ນລົງແລະໃຊ້ເວລາຫຼາຍກວ່າຢູ່ໃນໃຈກາງເມືອງ Fushimi.\n\nວັນທີ 4 ແລະການກັບຄືນ｜ໃຊ້ Arashiyama ກັບການອອກເດີນທາງຊ້າເທົ່ານັ້ນ\nດ້ວຍການອອກເດີນທາງຊ້າ ແລະເກັບກະເປົ໋າ, ໄປ Arashiyama ແຕ່ເຊົ້າໆ ແລະເລືອກພື້ນທີ່ປ່າໄຜ່ ບວກກັບວັດໜຶ່ງ, ກັບຄືນກ່ອນອາຫານທ່ຽງ. ດ້ວຍການອອກເດີນທາງໄວ, ໃຫ້ຢູ່ໃກ້ກັບສະຖານີກຽວໂຕ ຫຼືສູນກາງກຽວໂຕ. ໃນຝົນ, ປ່ຽນການຍ່າງຍາວດ້ວຍຫໍພິພິທະພັນທີ່ຢືນຢັນແລ້ວເປີດຫຼືສະຖານທີ່ໃນລົ່ມ. ການກວດສອບຄັ້ງສຸດທ້າຍແມ່ນຊົ່ວໂມງ Kiyomizu ຂອງມື້, ຍອດເງິນໃນການຂົນສົ່ງ, ການປິດບ່ອນເກັບກະເປົາ ແລະ ເວທີການອອກເດີນທາງ.",
+    "destination": "ກຽວໂຕ, ຍີ່ປຸ່ນ",
+    "duration": "4 ມື້ / 3 ຄືນ",
+    "budget": "ການພັກເຊົາດໍາລົງຊີວິດແລະການເຂົ້າ; ຄິດໄລ່ການຂົນສົ່ງຈາກພື້ນຖານທີ່ເລືອກ",
+    "season": "ຕະຫຼອດປີ; ກວດເບິ່ງຄືນ 2026 Kiyomizu ປິດແລະວັນເປີດພິເສດ",
+    "category": "ເສັ້ນທາງເມືອງທໍາອິດໄປຢ້ຽມຢາມ",
+    "imageAlt": "ຖະ​ໜົນ​ກຽວ​ໂຕ​ແບບ​ດັ້ງ​ເດີມ​ແຖວ​ດ້ວຍ​ເຮືອນ​ໄມ້",
+    "ctaLabel": "ປຽບທຽບການພັກເຊົາຢູ່ໃກ້ກັບສະຖານີກຽວໂຕ ແລະ Shijo-Kawaramachi",
+    "priceLabel": "ພຽງແຕ່ຫນຶ່ງຄົງທີ່ເປີດຕົ້ນ; ກວດຄືນສະຖານທີ່ອື່ນໆ",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
+  },
+  "my": {
+    "slug": "kyoto-first-morning",
+    "title": "ကျိုတိုတွင် လေးရက်ကြာ ပထမဆုံးသွားရောက်လည်ပတ်ရန်- နံနက် ၆ နာရီတွင် Kiyomizu-dera နှင့် တစ်ကြိမ်လျှင် ခရိုင်တစ်ခု၊",
+    "excerpt": "ကျိုတိုဘူတာရုံ သို့မဟုတ် Shijo-Kawaramachi အနီးတွင်နေပါ၊ ထို့နောက် Kiyomizu၊ Fushimi၊ Arashiyama နှင့် Kyoto အလယ်ပိုင်းကို သီးခြားရက်ခွဲပေးပါ။",
+    "content": "ဤလမ်းကြောင်းကို ပြုပြင်ပေးသည့်အရာ ｜အဖွင့်အချိန်ကို ပံ့ပိုးပေးသော နံနက်စောစောတွင်သာ အသုံးပြုပါ။\nKyoto City ၏တရားဝင်လမ်းညွှန်သည် နံနက်ခင်းလည်ပတ်ခြင်းကို နံနက် ၉ နာရီမတိုင်မီအဖြစ် သတ်မှတ်သတ်မှတ်ထားသော်လည်း ဘုရားကျောင်းတိုင်းသည် အရုဏ်မတက်မီ ခရီးစဉ်ကို ဆုချမည်မဟုတ်ပါ။ Kiyomizu-dera သည် 2026 ခုနှစ်တစ်လျှောက်လုံးတွင် နံနက် 6:00 တွင်ဖွင့်လှစ်ကြောင်းအတည်ပြုသည်၊ ထို့ကြောင့်၎င်းသည်ဤလေးရက်တာလမ်းကြောင်းတွင်တစ်ခုတည်းသောပြင်ဆင်ထားသောအစောပိုင်းဖွင့်သည့်ကျောက်ဆူးဖြစ်သည်။ ကျန်ခရိုင်များသည် နေ့လယ်နေ့ခင်းတွင် Higashiyama၊ Fushimi နှင့် Arashiyama ကိုဖြတ်ကူးမည့်အစား ဟိုတယ်သို့ နေ့လယ်ပိုင်းပြန်သွားခြင်းဖြင့် သီးခြားနေထိုင်ပါသည်။\n\nအပြောင်းအရွှေ့အတွက် ကျိုတိုဘူတာတွင်နေရမည့်နေရာ၊ ညနေပိုင်းအတွက် Shijo-Kawaramachi｜အစီအစဉ်\nသင့်တွင် ခရီးဆောင်အိတ်ကြီးပါက သို့မဟုတ် ရှင်ကန်ဆန် သို့မဟုတ် လေဆိပ်သယ်ယူပို့ဆောင်ရေးကို အသုံးပြုမည်ဆိုပါက ကျိုတိုဘူတာကို နှိုင်းယှဉ်ပါ။ ညစာစားလျှင် Kamo River နှင့် Gion လမ်းလျှောက်ပါက Shijo-Kawaramachi နှိုင်းယှဉ်ပါ။ ဟိုတယ်တစ်လုံးကို သုံးညလုံးထားပါ။ ထွက်ခွာချိန်အလိုက် အခြေခံ၊ Kiyomizu နှင့် Gion အတွက် နှစ်ရက်၊ Fushimi အတွက် သုံးရက်၊ နှင့် ထွက်ခွာချိန်အလိုက် Arashiyama သို့မဟုတ် အလယ်ပိုင်းကျိုတိုအတွက် လေးရက်မြောက်နေ့ကို အသုံးပြုပါ။\n\nDay 1｜ ဟိုတယ်မှ ဘူတာရုံနှင့် ညစာ လမ်းကြောင်းကို လေ့လာပါ။\ncheck-in ပြီးနောက်၊ အနီးဆုံးဘူတာရုံထွက်ပေါက်၊ ကုန်စုံစတိုးဆိုင်၊ မနက်စာရွေးချယ်မှုနှင့် ခရီးဆောင်အိတ်သိုလှောင်မှုစည်းမျဉ်းကို ရှာပါ။ ကျိုတိုဘူတာမှ၊ ဘူတာရုံဧရိယာတစ်ဝိုက်တွင်သာ လမ်းလျှောက်ပါ။ Shijo-Kawaramachi မှ Kamo မြစ်ကို ခဏလမ်းလျှောက်ပါ။ အပိုမြင်ကွင်းတစ်ခုအတွက် ခရီးဆောင်အိတ်ကို Arashiyama သို့မဟုတ် Fushimi သို့ မဆွဲပါနှင့်။ သင် မည်မျှစောစွာ ထွက်ခွာနိုင်ပြီး နံနက်စာ ဘယ်ကလာမည်ကို အတည်ပြုပါ။\n\nDay 2｜ 6 တွင် Kiyomizu-dera သို့ဝင်ရောက်ပြီး Higashiyama ကိုဖြတ်၍ ကုန်းဆင်းလမ်းလျှောက်ပါ။\nသင့်ဟိုတယ်မှ ပြန်အလုပ်လုပ်ပြီး ၎င်း၏ဖွင့်ချိန် 6:00 ဝန်းကျင်တွင် Kiyomizu-dera သို့ရောက်ရှိရန် ရည်ရွယ်ပါ။ ဆိုင်ပိတ်ချိန်များသည် ရာသီအလိုက်ပြောင်းလဲကာ အထူးညဖွင့်ရက်များတွင် သီးခြားရက်စွဲများပါရှိသောကြောင့် တရားဝင် 2026 ဇယားကို အသုံးပြုပါ။ ဗိမာန်တော်ပြီးနောက်၊ Kiyomizu-zaka၊ Ninenzaka နှင့် Sannenzaka လမ်းကြောင်းကိုဖြတ်၍ Gion သို့မဟုတ် Kawaramachi တွင်စားပါ။ နေ့လည်စာစားပြီးနောက် ဟိုတယ်တွင် အနားယူပြီး ညနေပိုင်းတွင် Kamo River သို့မဟုတ် Gion လမ်းလျှောက်ပါ။\n\nDay 3｜ Fushimi Inari ကို Arashiyama မဟုတ်ဘဲ Fushimi နှင့်တွဲပါ။\nမနက်ခင်းမှာ Fushimi Inari ကိုသွားပြီး မင်းရဲ့စွမ်းအင်ခွင့်ပြုသလောက် တိုရီလမ်းကြောင်းအတိုင်းသာ လမ်းလျှောက်ပါ။ ထိပ်သီးအစည်းအဝေးသို့ တက်လှမ်းခြင်းသည် စိတ်ကြိုက်ဖြစ်သည်။ ထို့နောက် Fushimi စျေးဝယ်လမ်း၊ တူးမြောင်းဧရိယာ သို့မဟုတ် ဆာကေးနှင့်ပတ်သက်သည့်နေရာတစ်ခုကို ရွေးချယ်ပြီး ၎င်း၏ကိုယ်ပိုင်အဖွင့်နှင့် ကြိုတင်စာရင်းသွင်းစာမျက်နှာကို စစ်ဆေးပါ။ ကျိုတိုသည် Fushimi အတွက် လူစုလူဝေးဖြစ်မည့် ခန့်မှန်းချက်များကိုလည်း ချိတ်ဆက်ထားသည်။ တိုက်ရိုက်ကြည့်ရှုခြင်း သို့မဟုတ် ဆိုက်တွင်းရှိ လူများ များပြားပါက နတ်ကွန်းလည်ပတ်မှုကို အတိုချုံးပြီး Fushimi အလယ်ပိုင်းတွင် အချိန်ပိုပေးပါ။\n\nDay 4 နှင့် နောက်ပြန်ဆုတ်ခြင်းများ｜ Arashiyama ကို နောက်ကျမှထွက်ခွာခြင်းဖြင့်သာ အသုံးပြုပါ။\nနောက်ကျမှထွက်ခွာပြီး သိမ်းဆည်းထားသော ခရီးဆောင်အိတ်များဖြင့် Arashiyama သို့ စောစောသွားကာ ဝါးပင်ဧရိယာအပြင် ဘုရားကျောင်းတစ်ခုကို ရွေးချယ်ကာ နေ့လည်စာမစားမီ ပြန်လာပါ။ စောစီးစွာထွက်ခွာခြင်းဖြင့်၊ ကျိုတိုဘူတာရုံ သို့မဟုတ် ကျိုတိုဗဟိုအနီးတွင် ရှိနေပါ။ မိုးရာသီတွင် အတည်ပြုဖွင့်ထားသော ပြတိုက် သို့မဟုတ် အိမ်တွင်းနေရာတစ်ခုဖြင့် ခရီးရှည်လမ်းလျှောက်ခြင်းကို အစားထိုးပါ။ နောက်ဆုံးစစ်ဆေးမှုများမှာ နေ့စဥ် Kiyomizu နာရီများ၊ အကူးအပြောင်းလက်ကျန်၊ ခရီးဆောင်အိတ်-သိုလှောင်မှု ဖြတ်တောက်ခြင်း နှင့် ထွက်ခွာသည့်ပလက်ဖောင်းများဖြစ်သည်။",
+    "destination": "ကျိုတို၊ဂျပန်",
+    "duration": "4 ရက် / 3 ည",
+    "budget": "နေထိုင်ခွင့်နှင့် ဝင်ခွင့်၊ ရွေးချယ်ထားသောအခြေခံမှသယ်ယူပို့ဆောင်ရေးတွက်ချက်",
+    "season": "တစ်နှစ်ပတ်လုံး; 2026 Kiyomizu အပိတ်နှင့် အထူးဖွင့်ရက်များကို ပြန်လည်စစ်ဆေးပါ။",
+    "category": "ပထမဦးစွာ ခရိုင်လမ်းကြောင်း",
+    "imageAlt": "သစ်သားအိမ်များဖြင့် စီတန်းထားသော ကျိုတိုရိုးရာလမ်း",
+    "ctaLabel": "ကျိုတိုဘူတာရုံ နှင့် Shijo-Kawaramachi အနီးတွင် ရှိနေသည် နှိုင်းယှဉ်",
+    "priceLabel": "တစ်ခုတည်းသော fixed အစောပိုင်းဖွင့်လှစ်; အခြားနေရာတိုင်းကို ပြန်လည်စစ်ဆေးပါ။",
+    "contentType": "route",
+    "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85",
+    "status": "published",
+    "featured": false,
+    "ctaPlatform": "trip",
+    "ctaUrl": "https://www.trip.com/hotels/kyoto-hotels-list-734/?utm_source=travelgoguide&utm_medium=content&utm_campaign=kyoto-four-days",
+    "couponCode": "",
+    "updatedAt": "2026-08-14",
+    "verifiedAt": "2026-08-14T06:25:05Z",
+    "sources": [
+      {
+        "title": "Morning & Night",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/morning-and-night/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visitor Guide",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Kiyomizu-dera Visit and 2026 Events",
+        "publisher": "Kiyomizu-dera Temple",
+        "url": "https://www.kiyomizudera.or.jp/en/visit/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Fushimi Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/fushimi/",
+        "accessedAt": "2026-08-14"
+      },
+      {
+        "title": "Saga & Arashiyama Area Guide",
+        "publisher": "Kyoto City Official Travel Guide",
+        "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+        "accessedAt": "2026-08-14"
+      }
+    ]
   }
 }

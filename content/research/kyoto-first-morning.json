@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "kyoto-first-morning",
+  "destination": "Kyoto, Japan",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
+  "topicDecision": {
+    "angle": "A four-day first-visit route anchored by one verified 6 a.m. opening and four separate districts",
+    "reason": "The original post did not name a single temple. Official Kyoto and temple pages support a specific route without false opening-time assumptions.",
+    "trendSignals": [
+      {
+        "description": "Kyoto City's current morning guide actively promotes pre-9 a.m. sightseeing and publishes a morning map.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "Kiyomizu-dera publishes a complete 2026 opening calendar, allowing one defensible early-morning anchor.",
+        "checkedAt": "2026-08-14T06:25:05Z",
+        "sourceIds": [
+          "s2",
+          "s3"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Morning & Night",
+      "publisher": "Kyoto City Official Travel Guide",
+      "url": "https://kyoto.travel/en/morning-and-night/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s2",
+      "title": "Kiyomizu-dera Visitor Guide",
+      "publisher": "Kiyomizu-dera Temple",
+      "url": "https://www.kiyomizudera.or.jp/en/location/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s3",
+      "title": "Kiyomizu-dera Visit and 2026 Events",
+      "publisher": "Kiyomizu-dera Temple",
+      "url": "https://www.kiyomizudera.or.jp/en/visit/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s4",
+      "title": "Fushimi Area Guide",
+      "publisher": "Kyoto City Official Travel Guide",
+      "url": "https://kyoto.travel/en/areas/fushimi/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s5",
+      "title": "Saga & Arashiyama Area Guide",
+      "publisher": "Kyoto City Official Travel Guide",
+      "url": "https://kyoto.travel/en/areas/saga-arashiyama/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s6",
+      "title": "Kyoto Hotels",
+      "publisher": "Trip.com",
+      "url": "https://www.trip.com/hotels/kyoto-hotels-list-734/",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s7",
+      "title": "Kyoto street image",
+      "publisher": "Unsplash",
+      "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Kyoto City describes morning sightseeing as before 9 a.m.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "Kiyomizu-dera opens at 6:00 a.m. throughout its 2026 calendar.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Kiyomizu-dera closing times and special night openings vary by date in 2026.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Kyoto's Fushimi guide groups Fushimi Inari, shopping streets, canals and sake culture in the same southern district.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Arashiyama is a separate western Kyoto district and should not be paired with Fushimi in this short route.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+    "creator": "Unsplash contributor",
+    "usageBasis": "Unsplash License; existing site asset"
+  },
+  "editorNotes": "The route avoids asserting unverified hours for Fushimi or Arashiyama venues."
+}

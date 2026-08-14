@@ -2,24 +2,25 @@
   "schemaVersion": 1,
   "slug": "hanoi-national-day-2026",
   "destination": "Hanoi, Vietnam",
-  "researchedAt": "2026-08-13T01:04:40Z",
-  "audience": "Independent Asia-based travelers planning a Hanoi stay during the 29 August–2 September 2026 National Day holiday window",
+  "researchedAt": "2026-08-14T06:25:05Z",
+  "audience": "Mainland Chinese independent travellers; all published locales preserve the same operational facts",
   "topicDecision": {
-    "angle": "A five-day Hanoi booking and fallback plan that secures the high-consequence items now while keeping daily sightseeing flexible until official 2026 event, venue and traffic notices appear.",
-    "reason": "Hanoi qualified through two independent recent signals: HIS summer reservations for Hanoi were reported 36.9% higher year on year, while the Viet Nam Government Portal reported first-half Hanoi visitors up 15.7% and international arrivals up 26.8%. The government-confirmed five-day public-sector National Day holiday from 29 August through 2 September makes room choice, arrival timing and flexible booking more useful than another generic Hanoi itinerary.",
+    "angle": "A genuine five-day, one-direction-per-day itinerary for the 2026 National Day break",
+    "reason": "The holiday is officially confirmed, Hoa Lo publishes holiday hours, and the revised route avoids inventing an unannounced event programme.",
     "trendSignals": [
       {
-        "description": "HIS reservation data for Japan's 17 July–31 August 2026 summer travel period showed Hanoi bookings up 36.9% year on year; this is a completed reservation signal from one agency market, not a universal occupancy claim.",
-        "checkedAt": "2026-08-13T01:04:40Z",
+        "description": "Vietnam's government confirmed a five-day public-sector break from 29 August to 2 September 2026.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
           "s1"
         ]
       },
       {
-        "description": "The Viet Nam Government Portal reported more than 18 million Hanoi visitors in the first half of 2026, up 15.7% year on year, with international arrivals up 26.8%; this is realized arrival growth, not a forecast for every holiday date.",
-        "checkedAt": "2026-08-13T01:04:40Z",
+        "description": "Hoa Lo publishes daily holiday opening while Vietnam Tourism provides an official walking-oriented Old Quarter framework.",
+        "checkedAt": "2026-08-14T06:25:05Z",
         "sourceIds": [
-          "s2"
+          "s3",
+          "s4"
         ]
       }
     ]
@@ -27,79 +28,92 @@
   "sources": [
     {
       "id": "s1",
-      "title": "HIS Releases 2026 Summer Vacation and Silver Week Travel Trends",
-      "publisher": "TRAICY Global",
-      "url": "https://en.traicy.com/posts/2026070737546/",
-      "sourceType": "reputable-secondary",
-      "publishedAt": "2026-07-07",
-      "accessedAt": "2026-08-13T01:04:40Z"
+      "title": "2026 National Day public-sector five-day break",
+      "publisher": "Government News, Vietnam",
+      "url": "https://baochinhphu.vn/quoc-khanh-2026-cong-chuc-vien-chuc-nghi-5-ngay-lien-tiep-lam-bu-vao-thu-bay-22-8-102260728182643819.htm",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s2",
-      "title": "Ha Noi welcomes 5 millionth international visitor of 2026",
-      "publisher": "Viet Nam Government Portal",
-      "url": "https://thanglong.chinhphu.vn/english/ha-noi-welcomes-5-millionth-international-visitor-of-2026-110260714100110116.htm",
+      "title": "Hanoi 2026 holiday notice",
+      "publisher": "Hanoi People's Committee",
+      "url": "https://datafiles.hanoi.gov.vn/gov-hni/7003/VanBan/2026/2/10/TB%20NGH%E1%BB%88%20L%E1%BB%84%20%C3%82M%20L%E1%BB%8ACH-%20L%E1%BB%84%20QU%E1%BB%90C%20KH%C3%81NH%202026.pdf",
       "sourceType": "official",
-      "publishedAt": "2026-07-14",
-      "accessedAt": "2026-08-13T01:04:40Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s3",
-      "title": "National Day 2026: civil servants receive five consecutive days off",
-      "publisher": "Viet Nam Government News",
-      "url": "https://baochinhphu.vn/quoc-khanh-2026-cong-chuc-vien-chuc-nghi-5-ngay-lien-tiep-lam-bu-vao-thu-bay-22-8-102260728182643819.htm",
+      "title": "Hoa Lo Prison Relic Regulations",
+      "publisher": "Hoa Lo Prison Relic",
+      "url": "https://hoalo.vn/EN/Home/QuyDinh",
       "sourceType": "official",
-      "publishedAt": "2026-07-28",
-      "accessedAt": "2026-08-13T01:04:40Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s4",
-      "title": "Viet Nam E-Visa",
-      "publisher": "Immigration Department, Ministry of Public Security",
-      "url": "https://evisa.gov.vn/",
+      "title": "Explore the Old Quarter your way",
+      "publisher": "Vietnam National Authority of Tourism",
+      "url": "https://www.vietnam.travel/things-to-do/explore-old-quarter-your-way",
       "sourceType": "official",
-      "publishedAt": "2026-07-28",
-      "accessedAt": "2026-08-13T01:04:40Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     },
     {
       "id": "s5",
-      "title": "Ho Hoan Kiem.jpg",
-      "publisher": "Wikimedia Commons",
+      "title": "Ha Noi Destination Guide",
+      "publisher": "Vietnam National Authority of Tourism",
+      "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-noi",
+      "sourceType": "official",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s6",
+      "title": "Hanoi Hotels",
+      "publisher": "Trip.com",
+      "url": "https://www.trip.com/hotels/hanoi-hotels-list-286/",
+      "sourceType": "commercial",
+      "accessedAt": "2026-08-14T06:25:05Z"
+    },
+    {
+      "id": "s7",
+      "title": "Ho Hoan Kiem photograph",
+      "publisher": "Wikimedia Commons — Trung geo",
       "url": "https://commons.wikimedia.org/wiki/File:Ho_Hoan_Kiem.jpg",
       "sourceType": "primary",
-      "publishedAt": "2017-10-08",
-      "accessedAt": "2026-08-13T01:04:40Z"
+      "accessedAt": "2026-08-14T06:25:05Z"
     }
   ],
   "claims": [
     {
       "id": "c1",
-      "text": "HIS reservations for Hanoi during the 17 July–31 August 2026 summer period were reported 36.9% higher year on year.",
-      "category": "other",
-      "volatility": "medium",
-      "checkedAt": "2026-08-13T01:04:40Z",
+      "text": "Vietnam's public-sector National Day break runs from 29 August through 2 September 2026.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s1"
+        "s1",
+        "s2"
       ],
       "usedInPost": true
     },
     {
       "id": "c2",
-      "text": "Hanoi welcomed more than 18 million visitors in the first half of 2026, up 15.7% year on year, while international arrivals increased 26.8%.",
-      "category": "other",
-      "volatility": "medium",
-      "checkedAt": "2026-08-13T01:04:40Z",
+      "text": "The 31 August workday is exchanged for Saturday 22 August for the covered public sector.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
+        "s1",
         "s2"
       ],
       "usedInPost": true
     },
     {
       "id": "c3",
-      "text": "Vietnamese civil servants and public employees are scheduled for five consecutive National Day days off from Saturday 29 August through Wednesday 2 September 2026, with Monday 31 August exchanged for work on Saturday 22 August.",
-      "category": "event",
+      "text": "Hoa Lo states that it opens 8:00–17:00 every day, including festivals and holidays.",
+      "category": "hours",
       "volatility": "high",
-      "checkedAt": "2026-08-13T01:04:40Z",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
         "s3"
       ],
@@ -107,41 +121,33 @@
     },
     {
       "id": "c4",
-      "text": "Private-sector holiday arrangements can differ: employers choose the second National Day leave date under the rules and are encouraged, but not universally required, to mirror the five-day public-sector schedule.",
-      "category": "event",
-      "volatility": "high",
-      "checkedAt": "2026-08-13T01:04:40Z",
+      "text": "The Old Quarter and Hoan Kiem can be combined as a walking day.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s3"
+        "s4",
+        "s5"
       ],
       "usedInPost": true
     },
     {
       "id": "c5",
-      "text": "The official Viet Nam e-visa portal states that an e-visa may be valid for up to 90 days for single or multiple entries; each traveler must check passport-specific eligibility and granted dates on the official portal.",
-      "category": "entry",
-      "volatility": "critical",
-      "checkedAt": "2026-08-13T01:04:40Z",
+      "text": "West Lake is a separate Hanoi area and is assigned its own day in this route.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-14T06:25:05Z",
       "sourceIds": [
-        "s4"
+        "s5"
       ],
       "usedInPost": true
     }
   ],
-  "conflicts": [
-    {
-      "issue": "Search results for Hanoi National Day travel mix detailed 2025 anniversary parade and fireworks information with the 2026 holiday calendar.",
-      "resolution": "The post uses only the verified 2026 holiday dates. It does not claim that a parade, fireworks display, rehearsal or road closure will occur in 2026 and tells readers to wait for dated official city notices."
-    },
-    {
-      "issue": "The five-day schedule directly applies to civil servants and public employees, while private employers can use a different lawful arrangement.",
-      "resolution": "The article calls this a public-sector holiday window, warns that each venue and business can operate differently, and requires direct confirmation rather than assuming a universal closure."
-    }
-  ],
+  "conflicts": [],
   "image": {
     "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Ho_Hoan_Kiem.jpg",
     "creator": "Trung geo",
-    "usageBasis": "Public domain dedication by the copyright holder; the photograph was taken at Hoan Kiem Lake on 1 October 2017 and is not represented as a 2026 holiday scene or current condition"
+    "usageBasis": "Public domain, per Wikimedia Commons file page"
   },
-  "editorNotes": "Candidate ranking is saved in topic-shortlist.md. Selected signal types are HIS agency reservations and official realized arrivals from independent domains. The article intentionally publishes no hotel price, attraction price, venue hour, public-transport fare, road closure, parade or fireworks claim because date-specific 2026 operational notices were not yet verified. Recheck official Hanoi event and traffic notices, every booked venue's holiday hours, weather, flight status, accommodation availability, passport-specific entry rules and the image URL/license immediately before later republication."
+  "editorNotes": "No unconfirmed 2026 fireworks, parade, rehearsal or closure is included."
 }
