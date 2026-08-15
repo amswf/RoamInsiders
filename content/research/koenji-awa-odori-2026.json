@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "slug": "koenji-awa-odori-2026",
+  "destination": "Koenji, Tokyo, Japan",
+  "researchedAt": "2026-08-15T04:56:10Z",
+  "audience": "Mainland Chinese independent travelers already planning a Tokyo stay and deciding between a sponsored reserved seat and ordinary street viewing for one evening of the 29-30 August 2026 Koenji Awa Odori",
+  "topicDecision": {
+    "angle": "Help a Tokyo-based visitor choose one 2026 Koenji Awa Odori evening, decide whether a JPY 10,000-15,000 sponsored seat is worth it, and select an arrival and exit station without relying on an unverified viewing spot or train connection.",
+    "reason": "This topic qualified on 15 August because the organizer has current 2026 event, sponsorship-seat, road-control, viewing-rule and access pages, while Time Out Tokyo separately published a dated 2026 event listing on 8 July. These are a current operational-release signal and an editorial event-interest signal, not proof that demand is rising or that every area will be full. Koenji does not duplicate the site's recent destination or advice inventory, and the two-week decision window makes seat and transport trade-offs actionable.",
+    "trendSignals": [
+      {
+        "description": "The event organizer's live 2026 pages specify 29-30 August dates, 17:00-20:00 hours, sponsored-seat terms, traffic controls and weekend station access. This is a new-access and current operational-information signal, not a demand measurement.",
+        "checkedAt": "2026-08-15T04:56:10Z",
+        "sourceIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ]
+      },
+      {
+        "description": "Time Out Tokyo published a dated 2026 Koenji Awa Odori event listing on 8 July 2026. This is recent editorial promotion and event interest from an independent domain, not booking or search-demand evidence.",
+        "checkedAt": "2026-08-15T04:56:10Z",
+        "sourceIds": [
+          "s6"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "67th Tokyo Koenji Awa Odori — Event Overview",
+      "publisher": "Tokyo Koenji Awa Odori Promotion Association",
+      "url": "https://www.koenji-awaodori.com/about/about01.html",
+      "sourceType": "official",
+      "publishedAt": "2026-03-01",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s2",
+      "title": "Special Viewing Seats — Sponsorship Terms",
+      "publisher": "Tokyo Koenji Awa Odori Promotion Association",
+      "url": "https://www.koenji-awaodori.com/category2/special_seat.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s3",
+      "title": "2026 Traffic Controls and Permit Information",
+      "publisher": "Tokyo Koenji Awa Odori Promotion Association",
+      "url": "https://www.koenji-awaodori.com/map/map01.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s4",
+      "title": "67th Tokyo Koenji Awa Odori — Frequently Asked Questions",
+      "publisher": "Tokyo Koenji Awa Odori Promotion Association",
+      "url": "https://www.koenji-awaodori.com/other/faq.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s5",
+      "title": "67th Tokyo Koenji Awa Odori — Access Map",
+      "publisher": "Tokyo Koenji Awa Odori Promotion Association",
+      "url": "https://www.koenji-awaodori.com/access/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s6",
+      "title": "Koenji Awa Odori",
+      "publisher": "Time Out Tokyo",
+      "url": "https://www.timeout.com/tokyo/things-to-do/koenji-awa-odori",
+      "sourceType": "reputable-secondary",
+      "publishedAt": "2026-07-08",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s7",
+      "title": "Exemption of Visa (Short-Term Stay)",
+      "publisher": "Ministry of Foreign Affairs of Japan",
+      "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+      "sourceType": "official",
+      "publishedAt": "2025-09-01",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    },
+    {
+      "id": "s8",
+      "title": "Koenji Awa Odori dancers.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Koenji_Awa_Odori_dancers.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2026-03-31",
+      "accessedAt": "2026-08-15T04:56:10Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The 67th Tokyo Koenji Awa Odori is scheduled for Saturday 29 and Sunday 30 August 2026 from 17:00 to 20:00 around JR Koenji Station, Tokyo Metro Shin-koenji Station, nearby shopping streets and Konan-dori.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "A JPY 15,000 sponsorship contribution provides one Central performance-area special-seat ticket; JPY 10,000 provides one ticket for the Junjo, Momozono or Minami performance area, and each person may apply for at most five units.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Online sponsorship applications are scheduled to remain open until 23:59 on the day before the event, but are first-come-first-served and close when allocations are exhausted.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The sponsorship contribution is treated as a donation and is not refunded if the event is cancelled because of rain; applications cannot be cancelled or changed, and payment and ticket-issuance fees apply.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Vehicle access and passage are restricted in the designated Koenji area from 16:10 to 20:30 on both 29 and 30 August 2026, and the organizer asks visitors not to arrive by car.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "JR Chuo Line rapid trains do not stop at Koenji Station on 29-30 August; the organizer lists Chuo-Sobu local service to Koenji, Tokyo Metro Marunouchi service to Shin-koenji, and walking alternatives of 12 minutes from Higashi-koenji or 15 minutes from Nakano or Asagaya.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "The organizer prohibits reserving road or curb space with tape and prohibits tripods, monopods, stepladders, chairs, selfie sticks and drones in viewing areas.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "During traffic controls, the south-side bus and taxi stand at JR Koenji Station cannot be used; visitors are directed to the temporary north-side stand, and the organizer advises against bringing bicycles or strollers into the crowd.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The organizer says the event normally proceeds unless rainfall is very heavy, but it does not publish a guaranteed decision time or postponement promise on the checked FAQ page.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "Japan's short-stay visa exemption rules are passport-specific and include passport-type and stay-length conditions; travelers must check the Ministry of Foreign Affairs page for the passport they will actually use.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "Time Out Tokyo published a dated 2026 event listing on 8 July 2026; this is an editorial-coverage signal rather than a booking, arrival or search-demand measurement.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c12",
+      "text": "The selected image shows the Koenji Awa Odori at night on 30 August 2015, was created by KQuhen, and is licensed CC BY-SA 4.0.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-15T04:56:10Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The organizer's event overview says the 2026 event uses eight performance areas but lists nine area names on the same page.",
+      "resolution": "The post omits the number and names only the four special-seat areas whose sponsorship prices are stated unambiguously on the separate current seat-terms page. Readers are directed to the current official map for the full layout."
+    },
+    {
+      "issue": "Time Out lists ordinary event viewing as free, while the organizer's pages define paid special seats but do not state a blanket price for every ordinary viewing position.",
+      "resolution": "The post compares sponsored reserved seats with ordinary street viewing without making a universal zero-price claim. It does not promise a view, a fixed standing place or remaining inventory."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Koenji_Awa_Odori_dancers.jpg",
+    "creator": "KQuhen",
+    "usageBasis": "CC BY-SA 4.0; the image is described as the Koenji Awa Odori at night on 30 August 2015, not the 2026 event or current conditions"
+  },
+  "editorNotes": "Candidate ranking on 15 August 2026: (1) Koenji Awa Odori seat-versus-street decision — current organizer operations and independent dated media coverage, strong evidence and two-week action window; (2) Jeju without a car — official 2026 cumulative arrivals were up, but a second independent current signal and complete route timetables were not yet verified; (3) Kuala Lumpur Merdeka Day — an official holiday page exists, but specific 2026 parade and transport controls were not sufficiently accessible. The selected signals are operational release and editorial event interest, not proof of a trend. The itinerary is editorial advice, not a guarantee of seat inventory, sightline, accessibility, weather, event operation or train capacity. Recheck organizer status, seat availability and checkout total, traffic controls, exact last train, accessibility needs, weather, and passport-specific entry rules before departure."
+}
