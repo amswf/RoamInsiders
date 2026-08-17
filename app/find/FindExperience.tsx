@@ -13,6 +13,7 @@ import {
 import styles from "./find.module.css";
 
 type Mode = "stays" | "flights";
+type FindVariant = "modern" | "classic";
 
 type Place = {
   name: string;
@@ -156,7 +157,8 @@ function OutboundResourceHints() {
   return null;
 }
 
-export function FindExperience() {
+export function FindExperience({ variant = "modern" }: { variant?: FindVariant }) {
+  const isClassic = variant === "classic";
   const [mode, setMode] = useState<Mode>("stays");
   const [destination, setDestination] = useState("Tokyo, Japan");
   const [origin, setOrigin] = useState("Hong Kong (HKG)");
@@ -296,10 +298,24 @@ export function FindExperience() {
     window.location.assign(buildDestinationUrl());
   }
 
+  function choosePlace(place: Place) {
+    setMode("stays");
+    setDestination(`${place.name}, ${place.country}`);
+    setError("");
+    const panel = document.getElementById("search-panel");
+    panel?.focus({ preventScroll: true });
+    if (panel) {
+      window.scrollTo({
+        top: window.scrollY + panel.getBoundingClientRect().top - 72,
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
-    <main className={styles.page}>
+    <main className={`${styles.page} ${isClassic ? styles.classic : ""}`}>
       <OutboundResourceHints />
-      <div className={styles.notice}>Compare live options <i /> Review final details before booking</div>
+      <div className={styles.notice}>{isClassic ? "One search for live stays and flights" : "Compare live options"} <i /> {isClassic ? "Review the final terms before booking" : "Review final details before booking"}</div>
       <header className={styles.header}>
         <Link className={styles.brand} href="/" aria-label="TravelGoGuide home">
           <span>TRAVELGO</span><span>GUIDE</span>
@@ -312,22 +328,23 @@ export function FindExperience() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <span className={styles.eyebrow}>STAYS &amp; FLIGHTS</span>
+          <span className={styles.eyebrow}>{isClassic ? "SEARCH · COMPARE · GO" : "STAYS & FLIGHTS"}</span>
           <h1>
-            <span className={styles.desktopTitle}>Where do you want to go next?</span>
-            <span className={styles.mobileTitle}>Where to next?</span>
+            <span className={styles.desktopTitle}>{isClassic ? <>Find a place<br />worth staying in.</> : "Where do you want to go next?"}</span>
+            <span className={styles.mobileTitle}>{isClassic ? "Find your next stay." : "Where to next?"}</span>
           </h1>
           <p>
-            <span className={styles.desktopIntro}>Enter your destination and dates to compare current options in one simple search.</span>
-            <span className={styles.mobileIntro}>Choose a place and dates to compare current options.</span>
+            <span className={styles.desktopIntro}>{isClassic ? "Set the details once, then review current options, room rules, and the full price on the booking site." : "Enter your destination and dates to compare current options in one simple search."}</span>
+            <span className={styles.mobileIntro}>{isClassic ? "Choose a place and dates to see current options." : "Choose a place and dates to compare current options."}</span>
           </p>
+          {isClassic && <div className={styles.heroCue}><span>01</span><b>Start with where and when</b></div>}
         </div>
 
         <div className={styles.photoPanel} aria-label="Quiet hotel room overlooking green hills">
           <picture>
             <img src="/images/find/arrival-room.webp" alt="Quiet timber hotel room overlooking rooftops and green hills after rain" width="1536" height="1024" />
           </picture>
-          <span className={styles.photoLabel}>TOKYO · JAPAN</span>
+          <span className={styles.photoLabel}>{isClassic ? "ARRIVE / EXHALE / EXPLORE" : "TOKYO · JAPAN"}</span>
         </div>
 
         <form id="search-panel" className={styles.searchPanel} onSubmit={submit} tabIndex={-1}>
@@ -388,37 +405,57 @@ export function FindExperience() {
       </section>
 
       <section className={styles.popular} id="popular">
-        <div className={styles.sectionHeading}>
-          <div>
-            <span>POPULAR DESTINATIONS</span>
-            <h2>
-              <span className={styles.desktopPopularTitle}>Not sure where to start?</span>
-              <span className={styles.mobilePopularTitle}>Hot Spots</span>
-            </h2>
-          </div>
-          <p>Open a city to review current hotel options, then check the final dates and terms before booking.</p>
-        </div>
-        <div className={styles.placeGrid}>
-          {FEATURED_HOTEL_DESTINATIONS.map((place) => (
-            <Link
-              className={styles.placeCard}
-              href={buildFeaturedHotelUrl(place.cityId)}
-              prefetch={false}
-              key={place.cityId}
-              aria-label={`${place.nameEn} hotels`}
-              onClick={trackFeaturedHotelClick}
-            >
-              <Image src={place.image} alt="" width={300} height={225} />
-              <span className={styles.placeShade} />
-              <span className={styles.placeName}><strong>{place.nameEn}</strong></span>
-              <span className={styles.placeArrow} aria-hidden="true">↗</span>
-            </Link>
-          ))}
-        </div>
+        {isClassic ? (
+          <>
+            <div className={styles.sectionHeading}>
+              <div><span>02 / POPULAR PLACES</span><h2>Start with a city.</h2></div>
+              <p>Quick-fill a destination, then adjust the dates above. No invented deal prices, no unnecessary steps.</p>
+            </div>
+            <div className={styles.placeGrid}>
+              {PLACES.map((place, index) => (
+                <button key={place.code} type="button" onClick={() => choosePlace(place)}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <div><strong>{place.name}</strong><small>{place.country} · {place.note}</small></div>
+                  <b>→</b>
+                </button>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className={styles.sectionHeading}>
+              <div>
+                <span>POPULAR DESTINATIONS</span>
+                <h2>
+                  <span className={styles.desktopPopularTitle}>Not sure where to start?</span>
+                  <span className={styles.mobilePopularTitle}>Hot Spots</span>
+                </h2>
+              </div>
+              <p>Open a city to review current hotel options, then check the final dates and terms before booking.</p>
+            </div>
+            <div className={styles.placeGrid}>
+              {FEATURED_HOTEL_DESTINATIONS.map((place) => (
+                <Link
+                  className={styles.placeCard}
+                  href={buildFeaturedHotelUrl(place.cityId)}
+                  prefetch={false}
+                  key={place.cityId}
+                  aria-label={`${place.nameEn} hotels`}
+                  onClick={trackFeaturedHotelClick}
+                >
+                  <Image src={place.image} alt="" width={300} height={225} />
+                  <span className={styles.placeShade} />
+                  <span className={styles.placeName}><strong>{place.nameEn}</strong></span>
+                  <span className={styles.placeArrow} aria-hidden="true">↗</span>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       <section className={styles.checklist} id="before-booking">
-        <div className={styles.checklistIntro}><span>BEFORE YOU BOOK</span><h2>A quick final check.</h2></div>
+        <div className={styles.checklistIntro}><span>{isClassic ? "03 / BEFORE YOU BOOK" : "BEFORE YOU BOOK"}</span><h2>{isClassic ? "Three details worth checking." : "A quick final check."}</h2></div>
         <div className={styles.checkItems}>
           <article><span>01</span><h3>Total price</h3><p>Review taxes and fees in the final breakdown.</p></article>
           <article><span>02</span><h3>Change rules</h3><p>Check cancellation or fare conditions for your exact option.</p></article>

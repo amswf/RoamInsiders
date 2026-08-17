@@ -394,6 +394,192 @@
   .placeName small { font-size: 12px; }
 }
 
+/* The original editorial direction remains available on /find while /compare
+   keeps the compact modern treatment. Both variants share one search flow. */
+.classic {
+  --find-canvas: #f6f3ea;
+  --find-surface: #fffdf8;
+  --find-ink: #1d2b27;
+  --find-muted: #66736e;
+  --find-primary: #f45b35;
+  --find-primary-dark: #cf3e1d;
+  --find-primary-soft: #d7e85e;
+  --find-line: rgba(29, 43, 39, .16);
+  background: var(--find-canvas);
+  color: var(--find-ink);
+}
+
+.classic .notice {
+  min-height: 34px;
+  padding: 8px 22px;
+  gap: 14px;
+  background: var(--find-ink);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+
+.classic .notice i { width: 4px; height: 4px; background: var(--find-primary-soft); }
+
+.classic .header {
+  width: min(1240px, calc(100% - 56px));
+  height: 76px;
+  gap: 34px;
+  border-bottom: 1px solid var(--find-line);
+}
+
+.classic .brand {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.06em;
+  line-height: .78;
+}
+
+.classic .brand span:last-child { margin-left: 13px; color: var(--find-primary); }
+.classic .header nav { gap: 34px; color: var(--find-ink); font-size: 11px; font-weight: 750; }
+.classic .header nav a:hover { color: var(--find-primary-dark); }
+
+.classic .hero {
+  width: min(1240px, calc(100% - 56px));
+  min-height: 0;
+  padding: 32px 0 76px;
+  grid-template-columns: minmax(0, .9fr) minmax(360px, .62fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: none;
+  align-items: stretch;
+  gap: 22px 80px;
+  position: relative;
+}
+
+.classic .heroCopy { grid-area: auto; max-width: none; align-self: center; }
+.classic .eyebrow { display: block; min-height: 0; padding: 0; border-radius: 0; background: transparent; color: var(--find-primary-dark); font-size: 9px; letter-spacing: .2em; }
+.classic .heroCopy h1 { max-width: none; margin: 20px 0 18px; font-family: var(--serif); font-size: clamp(60px, 5.8vw, 86px); font-weight: 500; letter-spacing: -.065em; line-height: .86; }
+.classic .heroCopy > p { max-width: 530px; font-size: 15px; line-height: 1.8; }
+
+.classic .heroCue { width: min(360px, 100%); margin-top: 27px; padding-top: 12px; display: flex; justify-content: space-between; border-top: 1px solid var(--find-ink); font-size: 10px; letter-spacing: .06em; }
+.classic .heroCue span { color: var(--find-primary-dark); font-family: var(--serif); font-size: 18px; }
+
+.classic .photoPanel { grid-area: auto; width: auto; height: auto; min-height: 350px; border-radius: 0; background: #9ab6b7; box-shadow: none; }
+.classic .photoPanel::after { background: linear-gradient(180deg, transparent 56%, rgba(13, 31, 28, .58)); }
+.classic .photoLabel { left: 22px; bottom: 20px; font-size: 9px; letter-spacing: .14em; }
+
+.classic .searchPanel { grid-area: auto; grid-column: 1 / -1; padding: 0 24px 20px; align-items: end; gap: 16px 22px; border: 1px solid var(--find-ink); border-radius: 0; box-shadow: 12px 12px 0 var(--find-primary-soft); }
+.classic .modeSwitch { width: auto; min-height: 62px; padding: 0; border-radius: 0; border-bottom: 1px solid var(--find-line); background: transparent; }
+.classic .modeSwitch button { min-width: 142px; padding: 0 8px; border-radius: 0; border-bottom: 3px solid transparent; font-size: 12px; font-weight: 800; box-shadow: none; }
+.classic .modeSwitch .activeMode { border-color: var(--find-primary); background: transparent; color: var(--find-ink); box-shadow: none; }
+.classic .fields { overflow: visible; border-radius: 0; background: transparent; }
+.classic .field { min-height: 78px; padding: 12px 14px; }
+.classic .field:hover,
+.classic .field:focus-within { background: transparent; }
+.classic .field > span { margin: 0 0 7px 28px; color: var(--find-muted); font-size: 8px; letter-spacing: .12em; }
+.classic .field svg { color: var(--find-primary-dark); }
+.classic .field input,
+.classic .field select { height: 28px; font-size: 12px; }
+.classic .field input[type="date"] { font-size: 11px; }
+.classic .searchButton { min-width: 220px; min-height: 80px; padding: 0 23px; border-radius: 0; background: var(--find-primary); font-size: 12px; font-weight: 850; box-shadow: none; }
+.classic .searchButton:hover { background: var(--find-primary-dark); transform: none; }
+.classic .error { margin: 0; font-size: 11px; }
+.classic .formNote { margin: 0; gap: 7px; }
+
+.classic .popular,
+.classic .checklist,
+.classic .footer { width: min(1240px, calc(100% - 56px)); }
+
+.classic .popular { padding: 104px 0 116px; border-top: 1px solid var(--find-ink); }
+.classic .sectionHeading { grid-template-columns: 1fr minmax(280px, .42fr); gap: 80px; }
+.classic .sectionHeading span,
+.classic .checklistIntro > span { color: var(--find-primary-dark); letter-spacing: .16em; }
+.classic .sectionHeading h2,
+.classic .checklistIntro h2 { margin: 18px 0 0; font-family: var(--serif); font-size: clamp(46px, 5vw, 70px); font-weight: 500; letter-spacing: -.055em; line-height: .95; }
+.classic .sectionHeading p { padding-top: 15px; border-top: 1px solid var(--find-ink); font-size: 12px; line-height: 1.8; }
+
+.classic .placeGrid { margin-top: 60px; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--find-ink); }
+.classic .placeGrid button { min-height: 116px; padding: 20px 22px 20px 8px; display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 18px; border: 0; border-bottom: 1px solid var(--find-line); background: transparent; color: var(--find-ink); text-align: left; cursor: pointer; }
+.classic .placeGrid button:nth-child(odd) { border-right: 1px solid var(--find-line); }
+.classic .placeGrid button:hover { background: var(--find-surface); }
+.classic .placeGrid button > span { align-self: start; color: var(--find-primary-dark); font-family: var(--serif); font-size: 17px; }
+.classic .placeGrid button div { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.classic .placeGrid strong { font-family: var(--serif); font-size: 29px; font-weight: 500; letter-spacing: -.03em; }
+.classic .placeGrid small { color: var(--find-muted); font-size: 10px; }
+.classic .placeGrid b { color: var(--find-primary); font-size: 22px; }
+
+.classic .checklist { padding: 96px 0 110px; grid-template-columns: minmax(280px, .62fr) 1fr; gap: 90px; border-top: 1px solid var(--find-ink); }
+.classic .checklistIntro h2 { font-size: clamp(44px, 4.7vw, 65px); }
+.classic .checkItems { gap: 0; }
+.classic .checkItems article { min-height: 260px; padding: 18px 22px; border: 0; border-left: 1px solid var(--find-line); border-radius: 0; background: transparent; }
+.classic .checkItems span { width: auto; height: auto; display: block; border-radius: 0; background: transparent; color: var(--find-primary-dark); font-family: var(--serif); font-size: 18px; }
+.classic .checkItems h3 { margin: auto 0 13px; font-family: var(--serif); font-size: 25px; font-weight: 500; }
+.classic .checkItems p { font-size: 11px; line-height: 1.7; }
+
+.classic .footer { min-height: 190px; padding: 46px 0 34px; grid-template-columns: 1fr minmax(300px, .65fr) auto; gap: 70px; border-top: 1px solid var(--find-ink); }
+.classic .footer > div:first-child p { margin-top: 22px; font-size: 11px; }
+.classic .disclosure { font-size: 10px; line-height: 1.7; }
+.classic .legal { gap: 24px; color: var(--find-ink); font-size: 10px; font-weight: 800; }
+.classic .legal a { padding-bottom: 5px; border-bottom: 1px solid var(--find-ink); }
+
+@media (max-width: 1080px) {
+  .classic .header nav { display: none; }
+  .classic .header { grid-template-columns: 1fr auto; }
+  .classic .hero { grid-template-columns: 1fr 380px; gap: 40px; }
+  .classic .heroCopy h1 { font-size: clamp(62px, 8vw, 82px); }
+  .classic .searchPanel { grid-template-columns: 1fr; }
+  .classic .searchButton { width: 100%; min-height: 64px; }
+  .classic .fields { grid-template-columns: 1fr 1fr !important; }
+  .classic .field { border-bottom: 1px solid var(--find-line); }
+  .classic .field:nth-child(even) { border-right: 0; }
+  .classic .field:nth-last-child(-n+2) { border-bottom: 0; }
+  .classic .checklist { grid-template-columns: 1fr; gap: 55px; }
+}
+
+@media (max-width: 760px) {
+  .classic .header,
+  .classic .hero,
+  .classic .popular,
+  .classic .checklist,
+  .classic .footer { width: min(100% - 30px, 620px); }
+  .classic .header { height: 58px; }
+  .classic .brand { font-size: 16px; }
+  .classic .hero { min-height: 0; padding: 20px 0 56px; grid-template-columns: 1fr; grid-template-rows: auto auto 190px; gap: 18px; }
+  .classic .heroCopy { padding-top: 0; }
+  .classic .eyebrow { font-size: 8px; letter-spacing: .16em; }
+  .classic .heroCopy h1 { margin: 11px 0 10px; font-size: clamp(43px, 13vw, 52px); line-height: .9; }
+  .classic .heroCopy > p { max-width: 330px; font-size: 12px; line-height: 1.55; }
+  .classic .heroCue { display: none; }
+  .classic .photoPanel { display: block; width: auto; min-height: 190px; grid-row: 3; }
+  .classic .searchPanel { grid-row: 2; padding: 0 12px 12px; border-radius: 0; box-shadow: 7px 7px 0 var(--find-primary-soft); }
+  .classic .modeSwitch { width: auto; min-height: 50px; }
+  .classic .modeSwitch button { min-width: 0; flex: 1; }
+  .classic .fields { grid-template-columns: 1fr !important; border-radius: 0; }
+  .classic .field,
+  .classic .field:nth-child(even),
+  .classic .field:nth-last-child(-n+2) { min-height: 62px; padding: 8px 12px; border-right: 0; border-bottom: 1px solid var(--find-line); }
+  .classic .field:last-child { border-bottom: 0; }
+  .classic .field > span { margin: 0 0 4px 28px; font-size: 8px; }
+  .classic .field input,
+  .classic .field select { font-size: 12px; }
+  .classic .searchButton { min-width: 0; min-height: 58px; }
+  .classic .popular { padding: 75px 0 85px; }
+  .classic .sectionHeading { width: auto; margin: 0; padding: 0; grid-template-columns: 1fr; gap: 32px; border-bottom: 0; }
+  .classic .sectionHeading > div > span,
+  .classic .sectionHeading > p { display: block; }
+  .classic .sectionHeading h2,
+  .classic .checklistIntro h2 { margin-top: 18px; font-size: 49px; }
+  .classic .placeGrid { width: auto; margin: 42px 0 0; grid-template-columns: 1fr; gap: 0; }
+  .classic .placeGrid button:nth-child(odd) { border-right: 0; }
+  .classic .placeGrid button { min-height: 104px; }
+  .classic .checklist { padding: 74px 0 82px; gap: 55px; }
+  .classic .checkItems { grid-template-columns: 1fr; gap: 0; }
+  .classic .checkItems article { min-height: 168px; display: flex; border-left: 0; border-top: 1px solid var(--find-line); }
+  .classic .checkItems span { grid-row: auto; }
+  .classic .checkItems h3 { margin: auto 0 13px; }
+  .classic .checkItems p { grid-column: auto; }
+  .classic .footer { padding: 42px 0; grid-template-columns: 1fr; gap: 32px; }
+  .classic .disclosure { font-size: 10px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page *,
   .page *::before,
