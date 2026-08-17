@@ -349,7 +349,13 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
   );
 }
 
-export function TravelCompareExperience() {
+export function TravelCompareExperience({
+  showFeaturedDestinations = true,
+  showPartnerDisclosure = false,
+}: {
+  showFeaturedDestinations?: boolean;
+  showPartnerDisclosure?: boolean;
+} = {}) {
   const locale: Locale = "en";
   const t = compareEnCopy;
   const defaultStart = useMemo(() => addDays(new Date(), 14), []);
@@ -603,7 +609,7 @@ export function TravelCompareExperience() {
         </div>
       </section>
 
-      {product === "hotels" && (
+      {showFeaturedDestinations && product === "hotels" && (
         <section className={styles.destinationSection} aria-labelledby="featured-destinations-title">
           <div className={styles.destinationHeading}>
             <h2 id="featured-destinations-title">热门酒店目的地</h2>
@@ -652,6 +658,7 @@ export function TravelCompareExperience() {
 
       <footer className={styles.privacyFooter}>
         <Icon name="lock" size={18} /><span>{t.privacyNote}</span>
+        {showPartnerDisclosure && <p className={styles.partnerDisclosure}>We are an independent travel guide and Trip.com partner. If you book through our Trip.com links, we may earn a commission.</p>}
         <Link href="/privacy/?lang=en">{t.privacy}</Link>
         <Link href="/terms/?lang=en">{t.terms}</Link>
       </footer>
