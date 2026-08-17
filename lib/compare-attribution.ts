@@ -9,7 +9,7 @@ export type CompareAttribution = {
 
 export const DEFAULT_COMPARE_ATTRIBUTION: CompareAttribution = {
   allianceid: "6184613",
-  SID: "246187838",
+  SID: "207009706",
   trip_sub3: "D18651047",
   trip_sub1: "",
 };
