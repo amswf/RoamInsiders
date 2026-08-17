@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FindExperience } from "../find/FindExperience";
+import { CompareFindExperience } from "./CompareFindExperience";
 
 export const metadata: Metadata = {
   title: "Compare Stays & Flights",
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function ComparePage() {
-  return <FindExperience />;
+  return <CompareFindExperience />;
 }
