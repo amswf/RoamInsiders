@@ -394,17 +394,17 @@
   .placeName small { font-size: 12px; }
 }
 
-/* The original editorial direction remains available on /find while /compare
-   keeps the compact modern treatment. Both variants share one search flow. */
+/* The large focus-image direction remains available on /find while /compare
+   keeps the compact treatment. Both variants share one search flow. */
 .classic {
-  --find-canvas: #f6f3ea;
-  --find-surface: #fffdf8;
-  --find-ink: #1d2b27;
-  --find-muted: #66736e;
-  --find-primary: #f45b35;
-  --find-primary-dark: #cf3e1d;
-  --find-primary-soft: #d7e85e;
-  --find-line: rgba(29, 43, 39, .16);
+  --find-canvas: #f4f7fb;
+  --find-surface: #ffffff;
+  --find-ink: #101d35;
+  --find-muted: #62718c;
+  --find-primary: #1769e0;
+  --find-primary-dark: #0b4eaf;
+  --find-primary-soft: #d8e7ff;
+  --find-line: rgba(16, 29, 53, .15);
   background: var(--find-canvas);
   color: var(--find-ink);
 }

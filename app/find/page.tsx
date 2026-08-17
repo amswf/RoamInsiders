@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function FindPage() {
-  return <FindExperience variant="modern" showHotSpots={false} />;
+  return <FindExperience variant="classic" showHotSpots={false} />;
 }
