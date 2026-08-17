@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "slug": "mount-fuji-yoshida-september-2026",
+  "destination": "Mount Fuji Yoshida Trail, Yamanashi, Japan",
+  "researchedAt": "2026-08-17T06:12:09Z",
+  "audience": "Mainland Chinese independent travelers starting from Tokyo, traveling on 1-10 September 2026 for two days and one night, budgeting in JPY, and deciding whether to attempt the Yoshida Trail summit or switch to a Fifth Station visit",
+  "topicDecision": {
+    "angle": "Help a first-time Mount Fuji visitor choose between a properly equipped one-night Yoshida Trail summit plan and a Fifth Station/Ochudo fallback before the 2026 climbing season closes.",
+    "reason": "This topic qualified on 17 August 2026 because the official Mount Fuji site publishes the exact 2026 closing boundary, gate rules, fee, equipment checks and weather cautions, while Fujiyoshida City independently publishes a dated 2026 access page, official climb-time estimate and a no-summit alternative. These are two current operational-information signals from different domains, not evidence that searches, bookings or demand are rising. The decision is time-bounded, safety consequential, useful to Tokyo-origin visitors and does not duplicate the site's recent destination or advice inventory.",
+    "trendSignals": [
+      {
+        "description": "The Official Website for Mt. Fuji Climbing currently lists the 2026 Yoshida Trail season through 10 September, the JPY 4,000 fee, gate controls and late-season facility boundaries. This is a current seasonal-operations signal, not a demand measurement.",
+        "checkedAt": "2026-08-17T06:12:09Z",
+        "sourceIds": [
+          "s1",
+          "s3"
+        ]
+      },
+      {
+        "description": "Fujiyoshida City's page updated 25 May 2026 independently states the Yoshida Trail access rules, approximate 10-hour-10-minute moving time from the Fifth Station and the Ochudo alternative. This is a municipal access-and-planning signal, not proof of popularity.",
+        "checkedAt": "2026-08-17T06:12:09Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Climbing Season: Operating period for each facility (2026)",
+      "publisher": "Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/season/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s2",
+      "title": "Mt. Fuji, Yoshida Trail Access and General Information 2026",
+      "publisher": "Fujiyoshida City",
+      "url": "https://www.city.fujiyoshida.yamanashi.jp/site/english/14100.html",
+      "sourceType": "official",
+      "publishedAt": "2026-05-25",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s3",
+      "title": "Yoshida Trail: Restrictions on climbing Mt. Fuji (2026)",
+      "publisher": "Official Website for Mt. Fuji Climbing / Yamanashi Prefecture",
+      "url": "https://www.fujisan-climb.jp/en/info/28/",
+      "sourceType": "official",
+      "publishedAt": "2026-03-13",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s4",
+      "title": "Weather forecast for Mt. Fuji",
+      "publisher": "Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/weather/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s5",
+      "title": "Frequently Asked Questions about Mt. Fuji climbing",
+      "publisher": "Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/faq/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s7",
+      "title": "Health problems to be aware of in the mountains",
+      "publisher": "Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/health-and-safety/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    },
+    {
+      "id": "s6",
+      "title": "Mt. Fuji Yoshida Trail Jun 21 621am.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Mt._Fuji_Yoshida_Trail_Jun_21_621am.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2023-09-02",
+      "accessedAt": "2026-08-17T06:12:09Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The Yoshida Trail above the Fifth Station is scheduled to remain open through 10 September 2026; the descending trail is scheduled to remain open until the morning of 11 September, and all services above the Fifth Station close outside the season.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The 2026 Yoshida Trail hiking fee is JPY 4,000 per person per climb and is payable even by travelers who have a mountain-hut booking.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "The Yoshida Trail Fifth Station gate is closed from 14:00 to 03:00 the next day and when the daily count reaches 4,000, with an exception for travelers who hold mountain-hut reservations.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "An access reservation and a mountain-hut reservation are separate; an access reservation does not permit a non-hut guest to pass after 14:00.",
+      "category": "other",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Fujiyoshida City estimates 6 hours 40 minutes to ascend and 3 hours 30 minutes to descend from the Fuji Subaru Line Fifth Station, for 10 hours 10 minutes of moving time excluding rests.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "The 2026 Yoshida Trail gate may check for winter clothing, two-piece rain gear and footwear appropriate for climbing; a traveler without sufficient equipment may be refused use of the descending trail.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "The official safety guidance recommends spending about one to two hours near the Fifth Station before departure to acclimatize and advises descending rather than continuing when altitude-sickness symptoms develop.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "Before sunrise, summit temperatures can approach 0°C even in summer; rapid weather changes and thunderstorms are possible, and the official site advises not starting when weather warnings or advisories are issued.",
+      "category": "weather",
+      "volatility": "critical",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The Fuji-Subaru Line is closed to private vehicles from 4 July through 10 September 2026; shuttle buses operate from Fujisan Parking during that period.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "The Ochudo walking trail at the Fifth Station does not require the Yoshida Trail hiking fee or an access reservation because it does not pass the summit-route gate.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s2",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "There is no ATM at the Fifth Station; the official FAQ lists card and QR payment methods for the fee but recommends travelers prepare cash before arrival.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c12",
+      "text": "The selected image shows hikers descending the Yoshida Trail on 2 September 2023 and is released by Photos of Japan under the CC0 1.0 public-domain dedication.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-17T06:12:09Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The official season page lists private-vehicle restrictions from 3 July, while Fujiyoshida City's dated 2026 access page lists them from 4 July.",
+      "resolution": "The post uses the more directly relevant and specifically dated Fujiyoshida City statement, 4 July through 10 September, but tells drivers to recheck the current road notice before departure. The one-day discrepancy does not affect the article's 1-10 September travel window."
+    },
+    {
+      "issue": "The official pages sometimes call the JPY 4,000 charge a hiking fee and sometimes an entrance fee.",
+      "resolution": "The post consistently describes it as the official JPY 4,000 per-person, per-climb Yoshida Trail fee and avoids implying that it includes transport, a mountain hut or a summit guarantee."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Mt._Fuji_Yoshida_Trail_Jun_21_621am.jpg",
+    "creator": "Photos of Japan",
+    "usageBasis": "CC0 1.0 public-domain dedication"
+  },
+  "editorNotes": "Candidate ranking on 17 August 2026: (1) Mount Fuji Yoshida Trail 1-10 September summit-versus-Fifth-Station decision — strongest official evidence, immediate seasonality, high safety utility and strong Asia fit; (2) Tokyo September Grand Sumo ticket-and-day-plan — official sales and prices are current, but availability is highly volatile and the site just published another Tokyo event; (3) 34th Macao International Fireworks Display Contest — destination fit is good, but the tourism office still labels 12, 19 and 25 September plus 1 and 4 October as tentative, so it cannot yet support an executable event plan. No candidate is described as popular, trending or rising in demand. Public article assumptions: traveler is already eligible to be in Japan; no visa claim is made. Editorial recommendation: a first-time summit attempt should default to a properly equipped one-night plan with a booked hut; travelers without the preparation, hut, weather window or return transport should switch to the Fifth Station/Ochudo plan. Recheck all critical/high claims on publication day and again before travel. Self-score target after multilingual review: facts/sources 30, decision utility 24, structure/readability 15, risk/time boundaries 10, multilingual 9, SEO/image/CTA 9 = 97/100."
+}
