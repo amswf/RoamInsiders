@@ -157,7 +157,13 @@ function OutboundResourceHints() {
   return null;
 }
 
-export function FindExperience({ variant = "modern" }: { variant?: FindVariant }) {
+export function FindExperience({
+  variant = "modern",
+  showHotSpots = true,
+}: {
+  variant?: FindVariant;
+  showHotSpots?: boolean;
+}) {
   const isClassic = variant === "classic";
   const [mode, setMode] = useState<Mode>("stays");
   const [destination, setDestination] = useState("Tokyo, Japan");
@@ -321,7 +327,7 @@ export function FindExperience({ variant = "modern" }: { variant?: FindVariant }
           <span>TRAVELGO</span><span>GUIDE</span>
         </Link>
         <nav aria-label="Page navigation">
-          <a href="#popular">Popular places</a>
+          {showHotSpots && <a href="#popular">Popular places</a>}
           <a href="#before-booking">Before you book</a>
         </nav>
       </header>
@@ -404,7 +410,7 @@ export function FindExperience({ variant = "modern" }: { variant?: FindVariant }
         </form>
       </section>
 
-      <section className={styles.popular} id="popular">
+      {showHotSpots && <section className={styles.popular} id="popular">
         {isClassic ? (
           <>
             <div className={styles.sectionHeading}>
@@ -452,7 +458,7 @@ export function FindExperience({ variant = "modern" }: { variant?: FindVariant }
             </div>
           </>
         )}
-      </section>
+      </section>}
 
       <section className={styles.checklist} id="before-booking">
         <div className={styles.checklistIntro}><span>{isClassic ? "03 / BEFORE YOU BOOK" : "BEFORE YOU BOOK"}</span><h2>{isClassic ? "Three details worth checking." : "A quick final check."}</h2></div>
