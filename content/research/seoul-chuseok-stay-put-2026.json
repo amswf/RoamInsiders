@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "slug": "seoul-chuseok-stay-put-2026",
+  "destination": "Seoul, South Korea",
+  "researchedAt": "2026-08-18T01:44:00Z",
+  "audience": "Mainland Chinese independent travelers taking a four-day Seoul trip from 24 through 27 September 2026, departing from an East Asian city, budgeting in KRW, and deciding whether to remain in Seoul or add an intercity leg during Chuseok",
+  "topicDecision": {
+    "angle": "Help a first-time visitor decide whether to keep all four Chuseok days inside Seoul or add an intercity move, then provide a district-by-district city plan that remains usable when individual businesses close.",
+    "reason": "This topic qualified on 18 August 2026 because two independent, bounded demand signals point to elevated current interest in Seoul: Trip.com Group ranked Seoul first among cities in its June flight-booking analysis, while the Seoul Metropolitan Government reported first-half foreign arrivals 21.3% above the same 2025 period. A third Agoda signal found Seoul accommodation searches from Japan for the 2026 Obon window up 17% year on year. The official 24-26 September Chuseok holiday followed by Sunday 27 September creates one concrete, time-bounded decision. The article does not claim that September rooms or trains are sold out, and it avoids venue hours that have not yet received dated holiday notices.",
+    "trendSignals": [
+      {
+        "description": "Trip.com Group's 23 June 2026 analysis ranked Seoul first among cities by flight bookings. This is a platform booking ranking, not total-market demand or proof of September scarcity.",
+        "checkedAt": "2026-08-18T01:44:00Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "The Seoul Metropolitan Government reported on 29 July 2026 that first-half foreign arrivals were 21.3% higher year on year. This is realized citywide arrival growth, not a forecast for Chuseok occupancy.",
+        "checkedAt": "2026-08-18T01:44:00Z",
+        "sourceIds": [
+          "s2"
+        ]
+      },
+      {
+        "description": "Agoda reported Seoul accommodation searches from Japan for the 8-16 August 2026 Obon period up 17% year on year. This is one platform and one origin market, not a September booking forecast.",
+        "checkedAt": "2026-08-18T01:44:00Z",
+        "sourceIds": [
+          "s3"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Trip.com Group Reveals What Travellers Want This Summer: Shorter Trips and Cooler Escapes",
+      "publisher": "Trip.com Group via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/tripcom-group-reveals-what-travellers-want-this-summer-shorter-trips-and-cooler-escapes-302807365.html",
+      "sourceType": "commercial",
+      "publishedAt": "2026-06-23",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s2",
+      "title": "Foreign tourist arrivals rise 21% while spending rises 57%; first-half Seoul card spending reaches KRW 5.6 trillion",
+      "publisher": "Seoul Metropolitan Government",
+      "url": "https://www.seoul.go.kr/news/news_report.do?bbsNo=158&nttNo=462920",
+      "sourceType": "official",
+      "publishedAt": "2026-07-29",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s3",
+      "title": "Agoda Announces Rising Travel Interest Ahead of Japan's 2026 Obon Period",
+      "publisher": "Agoda",
+      "url": "https://www.agoda.com/press/agoda-announces-rising-travel-interest-ahead-of-japans-2026-obon-period/",
+      "sourceType": "commercial",
+      "publishedAt": "2026-07-13",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s4",
+      "title": "Public Holidays: Korea Public Holidays 2026",
+      "publisher": "Korea Tourism Organization — VISITKOREA",
+      "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=372&vcontsId=140038",
+      "sourceType": "official",
+      "publishedAt": "2026-03-27",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s5",
+      "title": "Major Tasks and Event Schedule for 2026",
+      "publisher": "Seoul Metropolitan Government",
+      "url": "https://english.seoul.go.kr/wp-content/uploads/2025/12/Major-Tasks-and-Event-Schedule-for-2026.pdf",
+      "sourceType": "official",
+      "publishedAt": "2025-12-01",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s6",
+      "title": "KORAIL official reservation website",
+      "publisher": "Korea Railroad Corporation",
+      "url": "https://www.korail.com/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s7",
+      "title": "Korea Visa Portal",
+      "publisher": "Ministry of Justice, Republic of Korea",
+      "url": "https://www.visa.go.kr/openPage.do?MENU_ID=10101",
+      "sourceType": "official",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s8",
+      "title": "Subway: Using the Subway in Seoul",
+      "publisher": "Seoul Tourism Organization — Visit Seoul",
+      "url": "https://english.visitseoul.net/subway",
+      "sourceType": "official",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    },
+    {
+      "id": "s9",
+      "title": "Gyeongbok Palace Lake.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Gyeongbok_Palace_Lake.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2023-10-29",
+      "accessedAt": "2026-08-18T01:44:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Trip.com Group ranked Seoul first among cities by flight bookings in its analysis released on 23 June 2026.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The Seoul Metropolitan Government reported that foreign tourist arrivals in January-June 2026 were 21.3% higher than in the same period of 2025.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Agoda accommodation searches from Japan for Seoul stays during 8-16 August 2026 were 17% higher year on year.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Korea Tourism Organization lists the 2026 Chuseok public holiday as Thursday 24 September through Saturday 26 September; Sunday 27 September immediately follows but is not an additional official Chuseok date.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Korea Tourism Organization says offices and banks close on official public holidays, while palaces, museums, department stores and amusement facilities generally remain open; some businesses may close for several consecutive days during Chuseok.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "Seoul's current 2026 planning schedule lists Seoul Autumn Festa for 21 September through 29 November and a Seoul Baekje Museum Chuseok program for 26 September; the document is a planning schedule, not a venue-level final notice.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "KORAIL's current official website is the referenced channel for checking and purchasing intercity rail tickets; the article makes no claim about Chuseok release dates, fares or remaining inventory.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "Passport-, nationality- and purpose-specific entry requirements must be checked through the Republic of Korea Ministry of Justice's Korea Visa Portal; no universal visa or K-ETA entitlement is asserted.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Visit Seoul says subway services generally operate from about 05:30 until midnight, but times vary by station; the article therefore tells readers to verify their exact first and last train rather than relying on the range.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "The selected image shows the pond inside Gyeongbokgung in autumn, was taken on 29 October 2023 by Huntsmanleader, and is released under CC0 1.0.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-18T01:44:00Z",
+      "sourceIds": [
+        "s9"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The Seoul Metropolitan Government's annual planning PDF has an internally inconsistent Chuseok entry: its September summary labels 16-18 September, while its detailed day-by-day calendar places the holiday on 24-26 September. Korea Tourism Organization's page, updated 27 March 2026, also states 24-26 September.",
+      "resolution": "The article uses 24-26 September from the more recently updated Korea Tourism Organization page and the planning PDF's detailed calendar. It does not repeat the erroneous summary date and uses the city PDF only for provisional event planning information. Readers are told to recheck venue notices close to departure."
+    },
+    {
+      "issue": "No dated 2026 Chuseok rail sales notice or complete venue-by-venue holiday schedule was accessible on 18 August 2026.",
+      "resolution": "The article makes no claim about rail inventory, sale timing, exact holiday opening hours or a guaranteed event. It recommends staying inside Seoul unless the intercity ticket is actually confirmed and treats each indoor venue as optional until its own dated notice is checked."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Gyeongbok_Palace_Lake.jpg",
+    "creator": "Huntsmanleader",
+    "usageBasis": "CC0 1.0 Universal Public Domain Dedication"
+  },
+  "editorNotes": "Candidate ranking on 18 August 2026: (1) Seoul 24-27 September Chuseok stay-put decision — three independent current-interest signals, an official holiday boundary, strong city-route utility and no recent Seoul post in inventory; (2) Putrajaya 31 August National Day stay-in-Putrajaya versus Kuala Lumpur day-trip — the government confirms Dataran Putrajaya and the civil-aviation authority confirms 25-31 August flypast activity, but 2026 special transit, closure and visitor-entry details are not yet sufficiently complete; (3) Singapore Grand Prix 9-11 October single-day-ticket wait versus three-day/hospitality decision — official event and ticket pages are current, but the destination repeats recent Singapore inventory and ticket availability is exceptionally volatile. Public article assumptions: Mainland Chinese independent traveler already considering a Seoul-only holiday; budget currency KRW; no fixed fare or room rate; no universal entry entitlement. Editorial route: one compact district cluster per day, with outdoor/public-space fallback and a 30-45 minute planning buffer between clusters rather than an asserted timetable. Recheck all critical/high facts on publication day and again within seven days of travel. Self-score target after multilingual review: facts/sources 30, decision utility 24, structure/readability 15, risk/time boundaries 10, multilingual 9, SEO/image/CTA 9 = 97/100."
+}
