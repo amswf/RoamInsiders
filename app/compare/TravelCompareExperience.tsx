@@ -12,8 +12,9 @@ import {
   tripAttributionParams,
   type CompareProduct,
 } from "@/lib/compare-attribution";
-import type { Locale } from "@/lib/content";
-import { compareEnCopy, type CompareCopy } from "@/lib/compare-i18n";
+import type { CompareCopy } from "@/lib/compare-i18n";
+import { formatGuestsRooms, getSearchPageCopy, type SearchPageLocale } from "@/lib/search-page-i18n";
+import { SearchLanguageSelect, useSearchPageLocale } from "./SearchLanguageSelect";
 import styles from "./compare.module.css";
 
 type Product = CompareProduct;
@@ -46,16 +47,11 @@ const CITIES: City[] = [
 const HERO_SLIDES = [
   {
     id: "hotels",
-    label: "HOTELS",
-    title: "BRAND HOTEL OFFERS",
-    offer: "UP TO 15% OFF",
     desktopImage: "/images/compare/hotel-desktop.webp",
     mobileImage: "/images/compare/hotel-mobile.webp",
   },
   {
     id: "flights",
-    label: "FLIGHTS",
-    title: "Don't miss out on the biggest price drops during the 30 days!",
     desktopImage: "/images/compare/flight-desktop.webp",
     mobileImage: "/images/compare/flight-mobile.webp",
   },
@@ -70,36 +66,10 @@ const FEATURED_HOTEL_DESTINATIONS = [
   { cityId: 641, nameZh: "札幌", nameEn: "Sapporo", image: "https://ak-d.tripcdn.com/images/fd/tg/g1/M08/80/ED/CghzfVWxEqeAZbShADib-WrS4YM862_R_300_225_R5.jpg" },
 ] as const;
 
-const BOOKING_FLOWS = {
-  hotels: {
-    eyebrow: "HOTEL BOOKING, SIMPLIFIED",
-    title: "From destination to check-in",
-    summary: "Carry your stay details into a complete hotel search, then review the information that matters before booking.",
-    steps: [
-      { icon: "pin", number: "01", title: "Set your stay", body: "Choose a destination, dates, guests, and rooms." },
-      { icon: "hotel", number: "02", title: "Review available rooms", body: "Compare room types, inclusions, and stay policies." },
-      { icon: "shield", number: "03", title: "Confirm with clarity", body: "Check the final price and booking terms before payment." },
-    ],
-    details: ["Room choices", "Cancellation policies", "Taxes and fees"],
-  },
-  flights: {
-    eyebrow: "FLIGHT BOOKING, SIMPLIFIED",
-    title: "From route search to take-off",
-    summary: "Carry your route and dates into a complete flight search, then review the fare details that shape your trip.",
-    steps: [
-      { icon: "plane", number: "01", title: "Set your route", body: "Choose departure, destination, and travel dates." },
-      { icon: "search", number: "02", title: "Review flight options", body: "Compare schedules, connections, and fare choices." },
-      { icon: "shield", number: "03", title: "Confirm with clarity", body: "Check baggage, fare rules, and the final price before payment." },
-    ],
-    details: ["Flight schedules", "Baggage and fare rules", "Full price breakdown"],
-  },
-} satisfies Record<Product, {
-  eyebrow: string;
-  title: string;
-  summary: string;
-  steps: Array<{ icon: string; number: string; title: string; body: string }>;
-  details: string[];
-}>;
+const BOOKING_FLOW_ICONS: Record<Product, string[]> = {
+  hotels: ["pin", "hotel", "shield"],
+  flights: ["plane", "search", "shield"],
+};
 
 let airportRequest: Promise<City[]> | null = null;
 
@@ -141,11 +111,11 @@ function isoDate(date: Date) {
   return `${year}-${month}-${day}`;
 }
 
-function shortDate(date: Date, locale: Locale) {
+function shortDate(date: Date, locale: SearchPageLocale) {
   return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(date);
 }
 
-function compactDate(date: Date, locale: Locale) {
+function compactDate(date: Date, locale: SearchPageLocale) {
   return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric" }).format(date);
 }
 
@@ -274,20 +244,20 @@ function TextField({ label, value, icon, placeholder, listId, suggestions, onCha
   );
 }
 
-function Counter({ label, hint, value, min, max, onChange }: { label: string; hint: string; value: number; min: number; max: number; onChange: (next: number) => void }) {
+function Counter({ label, hint, value, min, max, decreaseLabel, increaseLabel, onChange }: { label: string; hint: string; value: number; min: number; max: number; decreaseLabel: string; increaseLabel: string; onChange: (next: number) => void }) {
   return (
     <div className={styles.counterRow}>
       <div><strong>{label}</strong><span>{hint}</span></div>
       <div className={styles.counterControl}>
-        <button type="button" onClick={() => onChange(Math.max(min, value - 1))} disabled={value <= min} aria-label={`Decrease ${label}`}>−</button>
+        <button type="button" onClick={() => onChange(Math.max(min, value - 1))} disabled={value <= min} aria-label={`${decreaseLabel}: ${label}`}>−</button>
         <b>{value}</b>
-        <button type="button" onClick={() => onChange(Math.min(max, value + 1))} disabled={value >= max} aria-label={`Increase ${label}`}>+</button>
+        <button type="button" onClick={() => onChange(Math.min(max, value + 1))} disabled={value >= max} aria-label={`${increaseLabel}: ${label}`}>+</button>
       </div>
     </div>
   );
 }
 
-function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: { start: Date; end: Date; product: Product; locale: Locale; t: CompareCopy; onCancel: () => void; onConfirm: (start: Date, end: Date) => void }) {
+function CalendarSheet({ start, end, product, locale, t, previousMonth, nextMonth, onCancel, onConfirm }: { start: Date; end: Date; product: Product; locale: SearchPageLocale; t: CompareCopy; previousMonth: string; nextMonth: string; onCancel: () => void; onConfirm: (start: Date, end: Date) => void }) {
   const today = startOfDay(new Date());
   const [month, setMonth] = useState(new Date(start.getFullYear(), start.getMonth(), 1));
   const [draftStart, setDraftStart] = useState<Date | null>(start);
@@ -325,9 +295,9 @@ function CalendarSheet({ start, end, product, locale, t, onCancel, onConfirm }: 
         <div className={draftStart && !draftEnd ? styles.activeSummary : ""}><span>{endLabel}</span><strong>{draftEnd ? compactDate(draftEnd, locale) : t.select}</strong></div>
       </div>
       <div className={styles.calendarNav}>
-        <button type="button" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))} disabled={monthIsCurrent} aria-label="Previous month">←</button>
+        <button type="button" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))} disabled={monthIsCurrent} aria-label={previousMonth}>←</button>
         <strong>{new Intl.DateTimeFormat(locale, { month: "long", year: "numeric" }).format(month)}</strong>
-        <button type="button" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() + 1, 1))} aria-label="Next month">→</button>
+        <button type="button" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() + 1, 1))} aria-label={nextMonth}>→</button>
       </div>
       <div className={styles.calendarGrid}>
         {weekdays.map((day, index) => <span className={styles.weekday} key={`${day}-${index}`}>{day}</span>)}
@@ -356,8 +326,9 @@ export function TravelCompareExperience({
   showFeaturedDestinations?: boolean;
   showPartnerDisclosure?: boolean;
 } = {}) {
-  const locale: Locale = "en";
-  const t = compareEnCopy;
+  const { locale, changeLocale } = useSearchPageLocale();
+  const { common: t, extra } = getSearchPageCopy(locale);
+  const pageCopy = extra.travelCompare;
   const defaultStart = useMemo(() => addDays(new Date(), 14), []);
   const defaultEnd = useMemo(() => addDays(new Date(), 16), []);
   const [product, setProduct] = useState<Product>("hotels");
@@ -377,10 +348,6 @@ export function TravelCompareExperience({
   const [attribution, setAttribution] = useState(DEFAULT_COMPARE_ATTRIBUTION);
   const [heroSlide, setHeroSlide] = useState(0);
   const [carouselPaused, setCarouselPaused] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.lang = "en";
-  }, []);
 
   useEffect(() => {
     if (carouselPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -519,11 +486,11 @@ export function TravelCompareExperience({
   function submitSearch(event: FormEvent) {
     event.preventDefault();
     if (product === "hotels" && !destinationInput.trim()) {
-      setError("Enter a hotel destination.");
+      setError(extra.compareFind.destinationError);
       return;
     }
     if (product === "flights" && (!resolveAirportInput(originInput, locations) || !resolveAirportInput(flightDestinationInput, locations))) {
-      setError("Enter a valid city, airport, or 3-letter airport code for both From and To.");
+      setError(extra.compareFind.airportError);
       return;
     }
     if (endDate <= startDate) {
@@ -537,19 +504,21 @@ export function TravelCompareExperience({
   }
 
   const activeHero = HERO_SLIDES[heroSlide];
-  const bookingFlow = BOOKING_FLOWS[product];
+  const activeHeroCopy = pageCopy.slides[heroSlide];
+  const bookingFlow = pageCopy.bookingFlows[product];
 
   return (
-    <main className={styles.page} lang="en">
+    <main className={styles.page} lang={locale}>
       <OutboundResourceHints />
       <header className={styles.header}>
-        <p>Curated Global Hotel &amp; Flight Deals</p>
+        <p>{pageCopy.header}</p>
+        <SearchLanguageSelect locale={locale} onChange={changeLocale} className={styles.languageSelect} label={extra.language} />
       </header>
 
       <section className={styles.hero}>
         <div className={styles.heroTint} />
         <div className={styles.heroInner}>
-          <section className={styles.focusCarousel} aria-label="Featured hotel and flight offers" aria-roledescription="carousel">
+          <section className={styles.focusCarousel} aria-label={pageCopy.carouselLabel} aria-roledescription="carousel">
             {HERO_SLIDES.map((slide, index) => (
               <picture className={`${styles.focusBackdrop} ${index === heroSlide ? styles.activeBackdrop : ""}`} key={slide.id}>
                 <source media="(max-width: 900px)" srcSet={slide.mobileImage} />
@@ -558,42 +527,42 @@ export function TravelCompareExperience({
               </picture>
             ))}
             <div className={styles.focusShade} />
-            <Link className={styles.focusLink} href={buildTripHomepageUrl()} prefetch={false} aria-label="Visit the Trip.com homepage" onClick={() => { reportGoogleAdsConversion(); trackHeroClick(); }} />
+            <Link className={styles.focusLink} href={buildTripHomepageUrl()} prefetch={false} aria-label={pageCopy.visitPartner} onClick={() => { reportGoogleAdsConversion(); trackHeroClick(); }} />
             <div className={styles.focusCopy} key={activeHero.id}>
-              <span>{activeHero.label}</span>
-              <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHero.title}</h1>
-              {"offer" in activeHero && <strong>{activeHero.offer}</strong>}
+              <span>{activeHeroCopy.label}</span>
+              <h1 className={activeHero.id === "flights" ? styles.longFocusTitle : ""}>{activeHeroCopy.title}</h1>
+              {activeHeroCopy.offer && <strong>{activeHeroCopy.offer}</strong>}
             </div>
             <div className={styles.carouselControls}>
               <div className={styles.carouselDots}>
                 {HERO_SLIDES.map((slide, index) => (
-                  <button key={slide.id} type="button" className={index === heroSlide ? styles.activeDot : ""} onClick={() => setHeroSlide(index)} aria-label={`Show ${slide.label.toLowerCase()} offer`} aria-current={index === heroSlide ? "true" : undefined} />
+                  <button key={slide.id} type="button" className={index === heroSlide ? styles.activeDot : ""} onClick={() => setHeroSlide(index)} aria-label={`${pageCopy.showOffer}: ${pageCopy.slides[index].label}`} aria-current={index === heroSlide ? "true" : undefined} />
                 ))}
               </div>
-              <button className={styles.carouselPause} type="button" onClick={() => setCarouselPaused((paused) => !paused)} aria-label={carouselPaused ? "Resume carousel" : "Pause carousel"}>
+              <button className={styles.carouselPause} type="button" onClick={() => setCarouselPaused((paused) => !paused)} aria-label={carouselPaused ? pageCopy.resumeCarousel : pageCopy.pauseCarousel}>
                 <Icon name={carouselPaused ? "play" : "pause"} size={15} />
               </button>
             </div>
           </section>
 
           <form className={styles.searchCard} onSubmit={submitSearch}>
-            <div className={styles.tabs} role="tablist" aria-label="Compare product">
+            <div className={styles.tabs} role="tablist" aria-label={extra.compareProduct}>
               <button type="button" role="tab" aria-selected={product === "hotels"} className={product === "hotels" ? styles.activeTab : ""} onClick={() => { setProduct("hotels"); setError(""); }}><Icon name="hotel" /><span>{t.hotels}</span></button>
               <button type="button" role="tab" aria-selected={product === "flights"} className={product === "flights" ? styles.activeTab : ""} onClick={() => { setProduct("flights"); setError(""); }}><Icon name="plane" /><span>{t.flights}</span></button>
             </div>
 
             <div className={styles.formBody}>
               {product === "hotels" ? (
-                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder="City or destination" listId="hotel-destination" suggestions={destinationSuggestions} onInitialFocus={() => { ensureAirportData(); if (destinationIsDefault) { setDestinationInput(""); setDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setDestinationInput(value); setDestinationIsDefault(false); setError(""); }} />
+                <TextField wide label={t.destination} value={destinationInput} icon="pin" placeholder={pageCopy.hotelPlaceholder} listId="hotel-destination" suggestions={destinationSuggestions} onInitialFocus={() => { ensureAirportData(); if (destinationIsDefault) { setDestinationInput(""); setDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setDestinationInput(value); setDestinationIsDefault(false); setError(""); }} />
               ) : (
                 <>
-                  <TextField label={t.from} value={originInput} icon="plane" placeholder="City or airport code" listId="flight-origin" suggestions={originSuggestions} onInitialFocus={() => { ensureAirportData(); if (originIsDefault) { setOriginInput(""); setOriginIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setOriginInput(value); setOriginIsDefault(false); setError(""); }} />
-                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder="City or airport code" listId="flight-destination" suggestions={arrivalSuggestions} onInitialFocus={() => { ensureAirportData(); if (flightDestinationIsDefault) { setFlightDestinationInput(""); setFlightDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setFlightDestinationInput(value); setFlightDestinationIsDefault(false); setError(""); }} />
+                  <TextField label={t.from} value={originInput} icon="plane" placeholder={pageCopy.airportPlaceholder} listId="flight-origin" suggestions={originSuggestions} onInitialFocus={() => { ensureAirportData(); if (originIsDefault) { setOriginInput(""); setOriginIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setOriginInput(value); setOriginIsDefault(false); setError(""); }} />
+                  <TextField label={t.to} value={flightDestinationInput} icon="pin" placeholder={pageCopy.airportPlaceholder} listId="flight-destination" suggestions={arrivalSuggestions} onInitialFocus={() => { ensureAirportData(); if (flightDestinationIsDefault) { setFlightDestinationInput(""); setFlightDestinationIsDefault(false); setError(""); } }} onChange={(value) => { ensureAirportData(); setFlightDestinationInput(value); setFlightDestinationIsDefault(false); setError(""); }} />
                 </>
               )}
               <FieldButton label={product === "hotels" ? t.checkIn : t.departure} value={shortDate(startDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
               <FieldButton label={product === "hotels" ? t.checkOut : t.returnDate} value={shortDate(endDate, locale)} icon="calendar" onClick={() => setSheet("dates")} trailing="none" />
-              {product === "hotels" && <FieldButton wide label={t.guestsRooms} value={`${adults} ${adults === 1 ? t.adult : t.adults} · ${rooms} ${rooms === 1 ? t.room : t.rooms}`} icon="user" onClick={() => setSheet("guests")} />}
+              {product === "hotels" && <FieldButton wide label={t.guestsRooms} value={formatGuestsRooms(locale, adults, rooms, t)} icon="user" onClick={() => setSheet("guests")} />}
               {error && <p className={styles.formError} role="alert">{error}</p>}
               <button className={styles.compareButton} type="submit">
                 <Icon name="search" size={25} />
@@ -612,8 +581,8 @@ export function TravelCompareExperience({
       {showFeaturedDestinations && product === "hotels" && (
         <section className={styles.destinationSection} aria-labelledby="featured-destinations-title">
           <div className={styles.destinationHeading}>
-            <h2 id="featured-destinations-title">热门酒店目的地</h2>
-            <span>Popular hotel destinations</span>
+            <h2 id="featured-destinations-title">{pageCopy.featuredTitle}</h2>
+            <span>{pageCopy.featuredSubtitle}</span>
           </div>
           <div className={styles.destinationGrid}>
             {FEATURED_HOTEL_DESTINATIONS.map((destination) => (
@@ -622,7 +591,7 @@ export function TravelCompareExperience({
                 href={buildFeaturedHotelUrl(destination.cityId)}
                 prefetch={false}
                 key={destination.cityId}
-                aria-label={`${destination.nameEn} hotels`}
+                aria-label={`${destination.nameEn} · ${t.hotels}`}
                 onClick={() => { reportGoogleAdsConversion(); trackComparisonClick("hotels"); }}
               >
                 <Image src={destination.image} alt="" width={300} height={225} />
@@ -642,35 +611,35 @@ export function TravelCompareExperience({
           <p>{bookingFlow.summary}</p>
         </div>
         <div className={styles.bookingSteps}>
-          {bookingFlow.steps.map((step) => (
-            <article key={step.number}>
-              <div><span><Icon name={step.icon} /></span><small>{step.number}</small></div>
+          {bookingFlow.steps.map((step, index) => (
+            <article key={`${product}-${index}`}>
+              <div><span><Icon name={BOOKING_FLOW_ICONS[product][index]} /></span><small>{String(index + 1).padStart(2, "0")}</small></div>
               <h3>{step.title}</h3>
               <p>{step.body}</p>
             </article>
           ))}
         </div>
         <div className={styles.bookingDetails}>
-          <strong>Review before you book</strong>
+          <strong>{pageCopy.reviewBeforeBook}</strong>
           <div>{bookingFlow.details.map((detail) => <span key={detail}><Icon name="check" size={16} />{detail}</span>)}</div>
         </div>
       </section>
 
       <footer className={styles.privacyFooter}>
         <Icon name="lock" size={18} /><span>{t.privacyNote}</span>
-        {showPartnerDisclosure && <p className={styles.partnerDisclosure}>We are an independent travel guide and Trip.com partner. If you book through our Trip.com links, we may earn a commission.</p>}
-        <Link href="/privacy/?lang=en">{t.privacy}</Link>
-        <Link href="/terms/?lang=en">{t.terms}</Link>
+        {showPartnerDisclosure && <p className={styles.partnerDisclosure}>{pageCopy.disclosure}</p>}
+        <Link href={`/privacy/?lang=${locale}`}>{t.privacy}</Link>
+        <Link href={`/terms/?lang=${locale}`}>{t.terms}</Link>
       </footer>
 
       {sheet && <div className={styles.sheetLayer} role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSheet(null); }}>
         <section className={`${styles.sheet} ${sheet === "dates" ? styles.calendarSheet : ""}`} role="dialog" aria-modal="true" aria-label={sheet === "dates" ? t.selectDates : t.guestsRooms}>
           <div className={styles.sheetHandle} />
-          {sheet === "dates" && <CalendarSheet start={startDate} end={endDate} product={product} locale={locale} t={t} onCancel={() => setSheet(null)} onConfirm={(start, end) => { setStartDate(start); setEndDate(end); setSheet(null); }} />}
+          {sheet === "dates" && <CalendarSheet start={startDate} end={endDate} product={product} locale={locale} t={t} previousMonth={extra.previousMonth} nextMonth={extra.nextMonth} onCancel={() => setSheet(null)} onConfirm={(start, end) => { setStartDate(start); setEndDate(end); setSheet(null); }} />}
           {sheet === "guests" && <>
             <div className={styles.sheetTitleRow}><div><span className={styles.sheetEyebrow}>{t.guestsRooms}</span><h2>{t.whoTravels}</h2></div><button className={styles.iconButton} type="button" onClick={() => setSheet(null)} aria-label={t.cancel}><Icon name="close" /></button></div>
-            <div className={styles.counterList}><Counter label={t.adults} hint={t.adultHint} value={adults} min={1} max={8} onChange={setAdults} /><Counter label={t.rooms} hint={t.roomHint} value={rooms} min={1} max={5} onChange={setRooms} /></div>
-            <div className={styles.sheetActions}><span>{adults} {adults === 1 ? t.adult : t.adults} · {rooms} {rooms === 1 ? t.room : t.rooms}</span><button type="button" className={styles.primaryButton} onClick={() => setSheet(null)}>{t.confirm}</button></div>
+            <div className={styles.counterList}><Counter label={t.adults} hint={t.adultHint} value={adults} min={1} max={8} decreaseLabel={extra.decrease} increaseLabel={extra.increase} onChange={setAdults} /><Counter label={t.rooms} hint={t.roomHint} value={rooms} min={1} max={5} decreaseLabel={extra.decrease} increaseLabel={extra.increase} onChange={setRooms} /></div>
+            <div className={styles.sheetActions}><span>{formatGuestsRooms(locale, adults, rooms, t)}</span><button type="button" className={styles.primaryButton} onClick={() => setSheet(null)}>{t.confirm}</button></div>
           </>}
         </section>
       </div>}

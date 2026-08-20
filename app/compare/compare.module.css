@@ -13,7 +13,8 @@
 }
 
 .page button,
-.page input { font: inherit; }
+.page input,
+.page select { font: inherit; }
 
 .header {
   min-height: 58px;
@@ -27,6 +28,9 @@
   z-index: 20;
 }
 .header p { margin: 0; color: var(--compare-navy); font-size: 14px; font-weight: 800; letter-spacing: .015em; text-align: center; }
+.languageSelect { position: absolute; right: max(24px, calc((100vw - 1180px) / 2)); display: block; }
+.languageSelect select { min-height: 34px; padding: 0 28px 0 11px; border: 1px solid #d7e0eb; border-radius: 9px; background: #fff; color: var(--compare-navy); font-size: 11px; font-weight: 700; cursor: pointer; }
+.languageSelect select:focus-visible { outline: 2px solid var(--compare-blue); outline-offset: 2px; }
 .iconButton { min-width: 44px; min-height: 44px; border: 0; background: transparent; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
 .iconButton:hover { color: var(--compare-blue); }
 
@@ -68,6 +72,7 @@
 .focusCopy { position: absolute; left: 0; right: 0; bottom: 67px; z-index: 1; padding: 0 30px; color: #fff; pointer-events: none; animation: focusCopyIn .45s ease both; }
 .focusCopy > span { display: inline-flex; align-items: center; min-height: 25px; padding: 0 10px; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; background: rgba(3, 20, 47, .23); font-size: 9px; font-weight: 850; letter-spacing: .14em; }
 .focusCopy h1 { max-width: 300px; margin: 17px 0 11px; font-size: clamp(38px, 4vw, 48px); line-height: .98; letter-spacing: -.055em; }
+.page[lang="ru"] .focusCopy h1 { font-size: clamp(31px, 3.15vw, 37px); line-height: 1.02; overflow-wrap: anywhere; }
 .focusCopy .longFocusTitle { font-size: clamp(30px, 3.25vw, 38px); line-height: 1.04; }
 .focusCopy strong { display: block; color: #d7ebff; font-size: 18px; }
 .carouselControls { position: absolute; left: 30px; right: 25px; bottom: 24px; z-index: 2; display: flex; align-items: center; justify-content: space-between; }
@@ -268,13 +273,16 @@
 
 @media (max-width: 620px) {
   .header { min-height: 52px; padding: 0 16px; }
-  .header p { font-size: 12px; }
+  .header p { max-width: calc(100% - 132px); margin-right: auto; font-size: 11px; text-align: left; }
+  .languageSelect { right: 14px; }
+  .languageSelect select { max-width: 120px; min-height: 32px; padding-left: 9px; font-size: 10px; }
   .hero { min-height: 0; }
   .heroInner { width: 100%; min-height: 0; padding: 20px 14px 18px; gap: 16px; }
   .focusCarousel { width: 100%; min-height: 159px; aspect-ratio: auto; border-radius: 16px; }
   .focusCopy { bottom: 34px; padding: 0 14px; }
   .focusCopy > span { min-height: 18px; padding-inline: 7px; font-size: 7px; }
   .focusCopy h1 { max-width: 100%; margin: 6px 0 4px; font-size: clamp(18px, 5.4vw, 23px); line-height: 1; }
+  .page[lang="ru"] .focusCopy h1 { font-size: clamp(15px, 4.5vw, 18px); line-height: 1.04; }
   .focusCopy .longFocusTitle { max-width: 100%; font-size: clamp(14px, 4.2vw, 18px); line-height: 1.06; }
   .focusCopy strong { font-size: 11px; }
   .carouselControls { left: 14px; right: 12px; bottom: 8px; }

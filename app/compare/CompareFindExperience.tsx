@@ -10,6 +10,8 @@ import {
   parseCompareAttribution,
   type CompareAttribution,
 } from "@/lib/compare-attribution";
+import { getSearchPageCopy } from "@/lib/search-page-i18n";
+import { SearchLanguageSelect, useSearchPageLocale } from "./SearchLanguageSelect";
 import styles from "./compare-find.module.css";
 
 type Mode = "stays" | "flights";
@@ -157,6 +159,9 @@ function OutboundResourceHints() {
 }
 
 export function CompareFindExperience() {
+  const { locale, changeLocale } = useSearchPageLocale();
+  const { common: t, extra } = getSearchPageCopy(locale);
+  const pageCopy = extra.compareFind;
   const [mode, setMode] = useState<Mode>("stays");
   const [destination, setDestination] = useState("Tokyo, Japan");
   const [origin, setOrigin] = useState("Hong Kong (HKG)");
@@ -176,7 +181,6 @@ export function CompareFindExperience() {
   const arrivalSuggestions = useMemo(() => locationSuggestions(arrival, allPlaces), [arrival, allPlaces]);
 
   useEffect(() => {
-    document.documentElement.lang = "en";
     const initialize = window.setTimeout(() => {
       const params = new URLSearchParams(window.location.search);
       const requestedMode = params.get("type") || params.get("product");
@@ -279,15 +283,15 @@ export function CompareFindExperience() {
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (mode === "stays" && !destination.trim()) {
-      setError("Enter a destination or property name.");
+      setError(pageCopy.destinationError);
       return;
     }
     if (mode === "flights" && (!findPlace(origin, allPlaces) || !findPlace(arrival, allPlaces))) {
-      setError("Choose a listed city or enter a 3-letter airport code.");
+      setError(pageCopy.airportError);
       return;
     }
     if (!startDate || !endDate || endDate <= startDate) {
-      setError("Your end date must be after your start date.");
+      setError(pageCopy.dateError);
       return;
     }
     setError("");
@@ -297,106 +301,107 @@ export function CompareFindExperience() {
   }
 
   return (
-    <main className={styles.page}>
+    <main className={styles.page} lang={locale}>
       <OutboundResourceHints />
-      <div className={styles.notice}>Compare live options <i /> Review final details before booking</div>
+      <div className={styles.notice}>{pageCopy.noticeLead} <i /> {pageCopy.noticeTail}</div>
       <header className={styles.header}>
         <Link className={styles.brand} href="/" aria-label="TravelGoGuide home">
           <span>TRAVELGO</span><span>GUIDE</span>
         </Link>
-        <nav aria-label="Page navigation">
-          <a href="#popular">Popular places</a>
-          <a href="#before-booking">Before you book</a>
+        <nav aria-label={pageCopy.beforeBook}>
+          <a href="#popular">{pageCopy.popularPlaces}</a>
+          <a href="#before-booking">{pageCopy.beforeBook}</a>
         </nav>
+        <SearchLanguageSelect locale={locale} onChange={changeLocale} className={styles.languageSelect} label={extra.language} />
       </header>
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <span className={styles.eyebrow}>STAYS &amp; FLIGHTS</span>
+          <span className={styles.eyebrow}>{pageCopy.eyebrow}</span>
           <h1>
-            <span className={styles.desktopTitle}>Where do you want to go next?</span>
-            <span className={styles.mobileTitle}>Where to next?</span>
+            <span className={styles.desktopTitle}>{pageCopy.desktopTitle}</span>
+            <span className={styles.mobileTitle}>{pageCopy.mobileTitle}</span>
           </h1>
           <p>
-            <span className={styles.desktopIntro}>Enter your destination and dates to compare current options in one simple search.</span>
-            <span className={styles.mobileIntro}>Choose a place and dates to compare current options.</span>
+            <span className={styles.desktopIntro}>{pageCopy.desktopIntro}</span>
+            <span className={styles.mobileIntro}>{pageCopy.mobileIntro}</span>
           </p>
         </div>
 
-        <div className={styles.photoPanel} aria-label="Quiet hotel room overlooking green hills">
+        <div className={styles.photoPanel} aria-label={pageCopy.photoAria}>
           <picture>
             <img src="/images/find/arrival-room.webp" alt="Quiet timber hotel room overlooking rooftops and green hills after rain" width="1536" height="1024" />
           </picture>
-          <span className={styles.photoLabel}>TOKYO · JAPAN</span>
+          <span className={styles.photoLabel}>{pageCopy.photoLabel}</span>
         </div>
 
         <form id="search-panel" className={styles.searchPanel} onSubmit={submit} tabIndex={-1}>
-          <div className={styles.modeSwitch} role="tablist" aria-label="Search type">
-            <button type="button" role="tab" aria-selected={mode === "stays"} className={mode === "stays" ? styles.activeMode : ""} onClick={() => { setMode("stays"); setError(""); }}><Icon name="bed" />Stays</button>
-            <button type="button" role="tab" aria-selected={mode === "flights"} className={mode === "flights" ? styles.activeMode : ""} onClick={() => { setMode("flights"); ensureAirportData(); setError(""); }}><Icon name="plane" />Flights</button>
+          <div className={styles.modeSwitch} role="tablist" aria-label={pageCopy.eyebrow}>
+            <button type="button" role="tab" aria-selected={mode === "stays"} className={mode === "stays" ? styles.activeMode : ""} onClick={() => { setMode("stays"); setError(""); }}><Icon name="bed" />{pageCopy.stays}</button>
+            <button type="button" role="tab" aria-selected={mode === "flights"} className={mode === "flights" ? styles.activeMode : ""} onClick={() => { setMode("flights"); ensureAirportData(); setError(""); }}><Icon name="plane" />{t.flights}</button>
           </div>
 
           <div className={styles.fields}>
             {mode === "stays" ? (
               <label className={`${styles.field} ${styles.locationField}`}>
-                <span>WHERE</span>
-                <div><Icon name="pin" /><input value={destination} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setDestination(event.target.value); setError(""); }} list="stay-places" placeholder="City, area, or property" required /></div>
+                <span>{pageCopy.where}</span>
+                <div><Icon name="pin" /><input value={destination} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setDestination(event.target.value); setError(""); }} list="stay-places" placeholder={pageCopy.cityAreaProperty} required /></div>
                 <datalist id="stay-places">{staySuggestions.map((place) => <option key={`${place.code}-${place.name}`} value={place.country ? `${place.name}, ${place.country}` : place.name} />)}</datalist>
               </label>
             ) : (
               <>
                 <label className={styles.field}>
-                  <span>FROM</span>
-                  <div><Icon name="plane" /><input value={origin} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setOrigin(event.target.value); setError(""); }} list="origin-places" placeholder="City or airport" required /></div>
+                  <span>{t.from}</span>
+                  <div><Icon name="plane" /><input value={origin} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setOrigin(event.target.value); setError(""); }} list="origin-places" placeholder={pageCopy.cityAirport} required /></div>
                   <datalist id="origin-places">{originSuggestions.map((place) => <option key={`${place.code}-${place.name}`} value={`${place.name} (${place.code})`}>{place.note}</option>)}</datalist>
                 </label>
                 <label className={styles.field}>
-                  <span>TO</span>
-                  <div><Icon name="pin" /><input value={arrival} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setArrival(event.target.value); setError(""); }} list="arrival-places" placeholder="City or airport" required /></div>
+                  <span>{t.to}</span>
+                  <div><Icon name="pin" /><input value={arrival} onFocus={ensureAirportData} onChange={(event) => { ensureAirportData(); setArrival(event.target.value); setError(""); }} list="arrival-places" placeholder={pageCopy.cityAirport} required /></div>
                   <datalist id="arrival-places">{arrivalSuggestions.map((place) => <option key={`${place.code}-${place.name}`} value={`${place.name} (${place.code})`}>{place.note}</option>)}</datalist>
                 </label>
               </>
             )}
 
             <label className={styles.field}>
-              <span>{mode === "stays" ? "CHECK IN" : "DEPART"}</span>
+              <span>{mode === "stays" ? t.checkIn : t.departure}</span>
               <div><Icon name="calendar" /><input type="date" min={today} value={startDate} onChange={(event) => { setStartDate(event.target.value); setError(""); }} required /></div>
             </label>
             <label className={styles.field}>
-              <span>{mode === "stays" ? "CHECK OUT" : "RETURN"}</span>
+              <span>{mode === "stays" ? t.checkOut : t.returnDate}</span>
               <div><Icon name="calendar" /><input type="date" min={startDate || today} value={endDate} onChange={(event) => { setEndDate(event.target.value); setError(""); }} required /></div>
             </label>
 
             {mode === "stays" && (
               <label className={styles.field}>
-                <span>TRAVELLERS</span>
-                <div><Icon name="people" /><select value={`${adults}-${rooms}`} onChange={(event) => { const [nextAdults, nextRooms] = event.target.value.split("-"); setAdults(nextAdults); setRooms(nextRooms); }} aria-label="Travellers and rooms">
-                  <option value="1-1">1 adult · 1 room</option>
-                  <option value="2-1">2 adults · 1 room</option>
-                  <option value="2-2">2 adults · 2 rooms</option>
-                  <option value="3-1">3 adults · 1 room</option>
-                  <option value="4-2">4 adults · 2 rooms</option>
+                <span>{pageCopy.travellers}</span>
+                <div><Icon name="people" /><select value={`${adults}-${rooms}`} onChange={(event) => { const [nextAdults, nextRooms] = event.target.value.split("-"); setAdults(nextAdults); setRooms(nextRooms); }} aria-label={t.guestsRooms}>
+                  <option value="1-1">1 {t.adult} · 1 {t.room}</option>
+                  <option value="2-1">2 {t.adults} · 1 {t.room}</option>
+                  <option value="2-2">2 {t.adults} · 2 {t.rooms}</option>
+                  <option value="3-1">3 {t.adults} · 1 {t.room}</option>
+                  <option value="4-2">4 {t.adults} · 2 {t.rooms}</option>
                 </select></div>
               </label>
             )}
           </div>
 
           {error && <p className={styles.error} role="alert">{error}</p>}
-          <button className={styles.searchButton} type="submit"><span>Search current prices</span><Icon name="arrow" size={24} /></button>
-          <p className={styles.formNote}><Icon name="check" size={16} /> No account needed to start a search.</p>
+          <button className={styles.searchButton} type="submit"><span>{pageCopy.searchPrices}</span><Icon name="arrow" size={24} /></button>
+          <p className={styles.formNote}><Icon name="check" size={16} /> {pageCopy.noAccount}</p>
         </form>
       </section>
 
       <section className={styles.popular} id="popular">
         <div className={styles.sectionHeading}>
           <div>
-            <span>POPULAR DESTINATIONS</span>
+            <span>{pageCopy.popularDestinations}</span>
             <h2>
-              <span className={styles.desktopPopularTitle}>Not sure where to start?</span>
-              <span className={styles.mobilePopularTitle}>Hot Spots</span>
+              <span className={styles.desktopPopularTitle}>{pageCopy.popularTitle}</span>
+              <span className={styles.mobilePopularTitle}>{pageCopy.hotSpots}</span>
             </h2>
           </div>
-          <p>Open a city to review current hotel options, then check the final dates and terms before booking.</p>
+          <p>{pageCopy.popularSummary}</p>
         </div>
         <div className={styles.placeGrid}>
           {FEATURED_HOTEL_DESTINATIONS.map((place) => (
@@ -405,7 +410,7 @@ export function CompareFindExperience() {
               href={buildFeaturedHotelUrl(place.cityId)}
               prefetch={false}
               key={place.cityId}
-              aria-label={`${place.nameEn} hotels`}
+              aria-label={`${place.nameEn} · ${t.hotels}`}
               onClick={trackFeaturedHotelClick}
             >
               <Image src={place.image} alt="" width={300} height={225} />
@@ -418,18 +423,16 @@ export function CompareFindExperience() {
       </section>
 
       <section className={styles.checklist} id="before-booking">
-        <div className={styles.checklistIntro}><span>BEFORE YOU BOOK</span><h2>A quick final check.</h2></div>
+        <div className={styles.checklistIntro}><span>{pageCopy.checklistEyebrow}</span><h2>{pageCopy.checklistTitle}</h2></div>
         <div className={styles.checkItems}>
-          <article><span>01</span><h3>Total price</h3><p>Review taxes and fees in the final breakdown.</p></article>
-          <article><span>02</span><h3>Change rules</h3><p>Check cancellation or fare conditions for your exact option.</p></article>
-          <article><span>03</span><h3>The practical fit</h3><p>Confirm location, baggage, room type, and arrival time.</p></article>
+          {pageCopy.checks.map((check, index) => <article key={check.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{check.title}</h3><p>{check.body}</p></article>)}
         </div>
       </section>
 
       <footer className={styles.footer}>
-        <div><div className={styles.brand}><span>TRAVELGO</span><span>GUIDE</span></div><p>Useful travel decisions, before the payment screen.</p></div>
-        <p className={styles.disclosure}>We are an independent travel guide and Trip.com partner. If you book through our Trip.com links, we may earn a commission.</p>
-        <div className={styles.legal}><Link href="/privacy/?lang=en">Privacy</Link><Link href="/terms/?lang=en">Terms</Link></div>
+        <div><div className={styles.brand}><span>TRAVELGO</span><span>GUIDE</span></div><p>{pageCopy.footerTagline}</p></div>
+        <p className={styles.disclosure}>{pageCopy.disclosure}</p>
+        <div className={styles.legal}><Link href={`/privacy/?lang=${locale}`}>{t.privacy}</Link><Link href={`/terms/?lang=${locale}`}>{t.terms}</Link></div>
       </footer>
 
       <script dangerouslySetInnerHTML={{ __html: `
@@ -462,4 +465,3 @@ export function CompareFindExperience() {
     </main>
   );
 }
-

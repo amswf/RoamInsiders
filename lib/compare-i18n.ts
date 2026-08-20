@@ -1,5 +1,7 @@
 import type { Locale } from "./content";
 
+export type CompareLocale = Locale | "ru";
+
 export type CompareCopy = {
   oneSearch: string;
   titleTop: string;
@@ -61,7 +63,7 @@ export type CompareCopy = {
   afterStart: string;
 };
 
-export const compareLocaleLabels: Record<Locale, string> = {
+export const compareLocaleLabels: Record<CompareLocale, string> = {
   "zh-CN": "简中",
   "zh-TW": "繁中",
   en: "EN",
@@ -73,6 +75,7 @@ export const compareLocaleLabels: Record<Locale, string> = {
   km: "KM",
   lo: "LO",
   my: "MY",
+  ru: "RU",
 };
 
 const en: CompareCopy = {
@@ -102,7 +105,7 @@ const en: CompareCopy = {
 
 export const compareEnCopy = en;
 
-export const compareCopy: Record<Locale, CompareCopy> = {
+export const compareCopy: Record<CompareLocale, CompareCopy> = {
   en,
   "zh-CN": {
     oneSearch: "一次搜索 · 多家可信旅行平台", titleTop: "找到更合适的", titleBottom: "旅行价格", subtitle: "几秒内比较可信旅行平台的价格。",
@@ -127,6 +130,18 @@ export const compareCopy: Record<Locale, CompareCopy> = {
     searchDestinations: "搜尋目的地", whereStay: "你想住在哪裡？", whereFrom: "你從哪裡出發？", whereTo: "你要飛往哪裡？", cityAirport: "城市或機場代碼", noDestinations: "找不到目的地，請嘗試其他城市。",
     selectDates: "選擇日期", selectingCheckout: "請選擇結束日期", whenTravel: "你計畫何時出發？", select: "請選擇", chooseRange: "請選擇開始與結束日期", night: "晚", nights: "晚", cancel: "取消", confirm: "確認",
     whoTravels: "誰會一起出行？", adultHint: "18 歲或以上", roomHint: "最多 5 間房", explore: "探索", travelStories: "旅遊內容", allGuides: "全部指南", aboutUs: "關於我們", afterStart: "退房或回程日期必須晚於開始日期。",
+  },
+  ru: {
+    oneSearch: "ОДИН ПОИСК · НАДЁЖНЫЕ ПАРТНЁРЫ", titleTop: "Найдите лучшие", titleBottom: "предложения", subtitle: "Сравните цены надёжных туристических сервисов за несколько секунд.",
+    hotels: "Отели", flights: "Авиабилеты", destination: "Направление", from: "Откуда", to: "Куда", checkIn: "Заезд", checkOut: "Выезд", departure: "Вылет", returnDate: "Обратно",
+    guestsRooms: "Гости и номера", adult: "взрослый", adults: "взрослых", room: "номер", rooms: "номера", comparePrices: "Сравнить цены", findingDeals: "Ищем лучшие варианты…",
+    noBookingFees: "Без комиссии", secureBooking: "Безопасное бронирование", transparentPrices: "Прозрачные цены",
+    bestPrices: "Лучшие цены", bestPricesBody: "Сравните доступные варианты одним поиском.", trustedSecure: "Надёжно и безопасно", trustedSecureBody: "Продолжите бронирование у проверенного партнёра.",
+    noHiddenFees: "Без скрытых сборов", noHiddenFeesBody: "Проверьте итоговую цену и условия до оплаты.", instantResults: "Мгновенный результат", instantResultsBody: "Параметры поиска сохраняются при переходе.",
+    partners: "Поиск по предложениям ведущих туристических сервисов", privacyNote: "Мы уважаем вашу конфиденциальность и защищаем данные поиска.", privacy: "Конфиденциальность", terms: "Условия использования",
+    searchDestinations: "Поиск направлений", whereStay: "Где вы хотите остановиться?", whereFrom: "Откуда вы вылетаете?", whereTo: "Куда вы летите?", cityAirport: "Город или код аэропорта", noDestinations: "Ничего не найдено. Попробуйте другой город.",
+    selectDates: "Выберите даты", selectingCheckout: "Выберите дату окончания", whenTravel: "Когда вы путешествуете?", select: "Выбрать", chooseRange: "Выберите даты начала и окончания", night: "ночь", nights: "ночей", cancel: "Отмена", confirm: "Готово",
+    whoTravels: "Кто путешествует?", adultHint: "От 18 лет", roomHint: "До 5 номеров", explore: "Обзор", travelStories: "Истории", allGuides: "Все путеводители", aboutUs: "О нас", afterStart: "Дата окончания должна быть позже даты начала.",
   },
   id: {
     oneSearch: "SATU PENCARIAN · MITRA PERJALANAN TEPERCAYA", titleTop: "Temukan Penawaran", titleBottom: "Perjalanan Terbaik", subtitle: "Bandingkan harga dari mitra perjalanan tepercaya dalam hitungan detik.",
@@ -252,7 +267,7 @@ const enLocation: CompareLocationCopy = {
 
 export const compareEnLocationCopy = enLocation;
 
-export const compareLocationCopy: Record<Locale, CompareLocationCopy> = {
+export const compareLocationCopy: Record<CompareLocale, CompareLocationCopy> = {
   en: enLocation,
   "zh-CN": { useMyLocation: "使用我的精确位置", detectingLocation: "正在查找附近机场…", approximateLocation: "已根据大致位置选择附近机场", preciseLocation: "已根据设备位置选择附近机场", locationFailed: "无法识别位置，请搜索城市或机场代码。", loadingAirports: "正在加载全球机场数据…", searchTripFor: "在 Trip.com 搜索", globalDestination: "全球酒店目的地", airportCoverage: "4,170 个有定期航班的机场" },
   "zh-TW": { useMyLocation: "使用我的精確位置", detectingLocation: "正在尋找附近機場…", approximateLocation: "已根據大致位置選擇附近機場", preciseLocation: "已根據裝置位置選擇附近機場", locationFailed: "無法辨識位置，請搜尋城市或機場代碼。", loadingAirports: "正在載入全球機場資料…", searchTripFor: "在 Trip.com 搜尋", globalDestination: "全球飯店目的地", airportCoverage: "4,170 個有定期航班的機場" },
@@ -264,4 +279,5 @@ export const compareLocationCopy: Record<Locale, CompareLocationCopy> = {
   km: { ...enLocation, useMyLocation: "ប្រើទីតាំងជាក់លាក់របស់ខ្ញុំ", detectingLocation: "កំពុងស្វែងរកព្រលានយន្តហោះជិតបំផុត…", locationFailed: "មិនអាចរកទីតាំងបានទេ។ សូមស្វែងរកទីក្រុង ឬលេខកូដព្រលាន។", loadingAirports: "កំពុងផ្ទុកទិន្នន័យព្រលានទូទាំងពិភពលោក…", searchTripFor: "ស្វែងរកនៅ Trip.com", globalDestination: "គោលដៅសណ្ឋាគារទូទាំងពិភពលោក", airportCoverage: "ព្រលានមានជើងហោះហើរទៀងទាត់ 4,170" },
   lo: { ...enLocation, useMyLocation: "ໃຊ້ຕຳແໜ່ງທີ່ແນ່ນອນຂອງຂ້ອຍ", detectingLocation: "ກຳລັງຊອກຫາສະໜາມບິນໃກ້ສຸດ…", locationFailed: "ບໍ່ສາມາດລະບຸຕຳແໜ່ງ. ຄົ້ນຫາເມືອງ ຫຼືລະຫັດສະໜາມບິນ.", loadingAirports: "ກຳລັງໂຫຼດຂໍ້ມູນສະໜາມບິນທົ່ວໂລກ…", searchTripFor: "ຄົ້ນຫາໃນ Trip.com", globalDestination: "ປາຍທາງໂຮງແຮມທົ່ວໂລກ", airportCoverage: "4,170 ສະໜາມບິນທີ່ມີຖ້ຽວບິນປະຈຳ" },
   my: { ...enLocation, useMyLocation: "ကျွန်ုပ်၏ တိကျသောနေရာကို သုံးရန်", detectingLocation: "အနီးဆုံးလေဆိပ် ရှာနေသည်…", locationFailed: "တည်နေရာမသိနိုင်ပါ။ မြို့ သို့မဟုတ် လေဆိပ်ကုဒ်ဖြင့် ရှာပါ။", loadingAirports: "ကမ္ဘာတစ်ဝန်း လေဆိပ်ဒေတာ တင်နေသည်…", searchTripFor: "Trip.com တွင် ရှာရန်", globalDestination: "ကမ္ဘာတစ်ဝန်း ဟိုတယ်ခရီးဆုံး", airportCoverage: "ပုံမှန်လေကြောင်းခရီးစဉ်ရှိ လေဆိပ် 4,170" },
+  ru: { ...enLocation, useMyLocation: "Использовать моё точное местоположение", detectingLocation: "Ищем ближайший аэропорт…", approximateLocation: "Выбран ближайший аэропорт по примерному местоположению", preciseLocation: "Выбран ближайший аэропорт по местоположению устройства", locationFailed: "Не удалось определить местоположение. Найдите город или код аэропорта.", loadingAirports: "Загружаем данные аэропортов…", searchTripFor: "Искать на Trip.com", globalDestination: "Отели по всему миру", airportCoverage: "4 170 аэропортов с регулярными рейсами" },
 };
