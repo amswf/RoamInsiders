@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "slug": "putrajaya-national-day-stay-or-fly-2026",
+  "destination": "Putrajaya, Malaysia",
+  "researchedAt": "2026-08-20T02:10:03Z",
+  "audience": "Independent travelers from Singapore and other Southeast Asian cities taking a two-day, one-night trip on 30-31 August 2026, budgeting in MYR, and deciding whether to sleep in Putrajaya for the National Day celebration or keep a Kuala Lumpur/KLIA-centered plan",
+  "topicDecision": {
+    "angle": "Help an event-focused visitor choose between arriving in Putrajaya on 30 August and staying overnight, or keeping a Kuala Lumpur/KLIA plan that avoids the 31 August morning aviation disruption.",
+    "reason": "This topic qualified on 20 August 2026 because Malaysia's government has confirmed the 31 August National Day celebration at Dataran Putrajaya, and CAAM issued a same-day passenger advisory specifying a 08:45-09:45 Malaysia-time fixed-wing activity window at KLIA on 31 August. The event is only eleven days away, there is no recent Malaysia article in inventory, and the new aviation boundary creates one immediate booking decision. The article does not call Putrajaya popular or trending, does not claim scarcity, and does not invent a public-admission time or special-event transit plan that has not been published.",
+    "trendSignals": [
+      {
+        "description": "Malaysia's official government calendar currently confirms the 69th National Day celebration at Dataran Putrajaya on 31 August 2026. This is a dated event confirmation, not a demand measurement.",
+        "checkedAt": "2026-08-20T02:10:03Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "CAAM published a passenger-facing advisory on 20 August 2026 for rehearsal and actual flypast windows affecting KLIA. This is a new operational-access signal, not evidence of visitor volume.",
+        "checkedAt": "2026-08-20T02:10:03Z",
+        "sourceIds": [
+          "s2"
+        ]
+      },
+      {
+        "description": "Bernama reported on 1 August 2026 that the public attending the celebration at Dataran Putrajaya had been asked to keep the venue clean. This is independent current event coverage, not proof of hotel or transport demand.",
+        "checkedAt": "2026-08-20T02:10:03Z",
+        "sourceIds": [
+          "s4"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Calendar: Independence Day Celebration 2026",
+      "publisher": "Government of Malaysia — MyGovernment",
+      "url": "https://www.malaysia.gov.my/en/calendar",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s2",
+      "title": "Temporary Airspace Closure and Prohibition of Drone Activities in Conjunction with National Day Flypast 2026",
+      "publisher": "Civil Aviation Authority of Malaysia",
+      "url": "https://www.caam.gov.my/wp-content/uploads/2026/08/NR-Temporary-Airspace-Closure-Prohibition-of-Drone-Activties-In-Conjunction-with-National-Day-Flypast-2026.pdf",
+      "sourceType": "official",
+      "publishedAt": "2026-08-20",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s3",
+      "title": "AIP Supplement 29/26: Malaysia's National Day Flypast 2026",
+      "publisher": "Civil Aviation Authority of Malaysia",
+      "url": "https://aip.caam.gov.my/aip/eAIP/29.%202026-07-09-AIRAC/html/eSUP/WM-eSUP-26-29-en-MS.html",
+      "sourceType": "official",
+      "publishedAt": "2026-05-28",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s4",
+      "title": "Public Urged To Keep Dataran Putrajaya Clean During 2026 National Day Celebration",
+      "publisher": "Bernama",
+      "url": "https://www.bernama.com/en/region/news.php?id=2589002",
+      "sourceType": "reputable-secondary",
+      "publishedAt": "2026-08-01",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s5",
+      "title": "Sambutan Hari Kebangsaan 2026",
+      "publisher": "Department of Information Malaysia — Merdeka360",
+      "url": "https://www.merdeka360.my/web/event/sambutan-hari-kebangsaan-2026/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s6",
+      "title": "KLIA Transit timetable and ticket information",
+      "publisher": "Express Rail Link — KLIA Ekspres",
+      "url": "https://www.kliaekspres.com/products-fares/klia-transit/",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s7",
+      "title": "NadiPutra Putrajaya bus service",
+      "publisher": "Putrajaya Corporation",
+      "url": "https://www.ppj.gov.my/second-page/perkhidmatan-bas-nadiputra-putrajaya",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s8",
+      "title": "Public transport and live traffic information",
+      "publisher": "Putrajaya Corporation",
+      "url": "https://www.ppj.gov.my/second-page/live-trafik",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s9",
+      "title": "Visa Requirement by Country",
+      "publisher": "Immigration Department of Malaysia",
+      "url": "https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s10",
+      "title": "Malaysia Digital Arrival Card",
+      "publisher": "Immigration Department of Malaysia",
+      "url": "https://imigresen-online.imi.gov.my/mdac/main",
+      "sourceType": "official",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    },
+    {
+      "id": "s11",
+      "title": "Putra Square Flags Putrajaya.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Putra_Square_Flags_Putrajaya.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2016-09-10",
+      "accessedAt": "2026-08-20T02:10:03Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Malaysia's official government calendar lists the 69th National Day celebration for Monday 31 August 2026 at Dataran Putrajaya and gives the theme as Malaysia MADANI: Kesejahteraan Dinikmati.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "CAAM's passenger advisory dated 20 August 2026 lists fixed-wing rehearsals on 26-28 August from 11:00 to 12:00 Malaysia time, a full rehearsal on 29 August from 08:45 to 09:45, and the National Day flypast on 31 August from 08:45 to 09:45.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "CAAM says Kuala Lumpur International Airport fixed-wing operations will be temporarily suspended during the published flypast windows and advises passengers to check flight status with their airline before going to the airport.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The CAAM AIP supplement says its National Day flypast procedures remain in force through 31 August 2026 and that changes or cancellation will be notified by NOTAM.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Bernama's 1 August 2026 report identifies Dataran Putrajaya as the public celebration venue but does not provide a public-admission time or special transport plan.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s4",
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "KLIA Transit currently links KL Sentral, Bandar Tasik Selatan, Putrajaya & Cyberjaya, Salak Tinggi, KLIA Terminal 1 and KLIA Terminal 2; the article does not treat its ordinary timetable as a special-event guarantee.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "Putrajaya Corporation's current ordinary NadiPutra page states Sunday and public-holiday bus operating hours of 07:00-20:00, but it is not a dated National Day 2026 special-service notice.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "Putrajaya Corporation provides a live traffic page for checking current road conditions around Putrajaya; the article makes no unverified road-closure claim.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Passport-specific visa eligibility must be checked on the Immigration Department of Malaysia's country list; the article asserts no universal visa exemption.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s9"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "The Immigration Department of Malaysia operates the official Malaysia Digital Arrival Card portal; travelers must use the official portal and verify how current rules apply to their passport and arrival method.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s10"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "The selected image shows Malaysian state and national flags at Putra Square on 10 September 2016, was created by QianCheng, and is licensed CC BY-SA 4.0.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-20T02:10:03Z",
+      "sourceIds": [
+        "s11"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "The MyGovernment calendar and recent Bernama reporting identify Dataran Putrajaya as the 31 August public celebration venue, while the Merdeka360 event entry displayed Auditorium Tun Azizan Zainul Abidin on 20 August 2026.",
+      "resolution": "The article uses Dataran Putrajaya because the central government calendar is more specific about the public celebration and is independently corroborated by Bernama. It does not use the Merdeka360 auditorium listing as a visitor venue and tells readers to reopen the official event page before departure for any final location or admission update."
+    },
+    {
+      "issue": "No dated 2026 special-service notice for Rapid KL, NadiPutra buses, road closures, parking, public admission time or accessible viewing arrangements was verified by 20 August 2026.",
+      "resolution": "The article does not reuse 2025 operations or promise a first train, shuttle, parking space, road opening, entry time or accessible viewing area. It recommends an overnight stay only as editorial risk reduction and requires a final check of official event, operator and city traffic pages."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Putra_Square_Flags_Putrajaya.jpg",
+    "creator": "QianCheng",
+    "usageBasis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+  },
+  "editorNotes": "Candidate ranking on 20 August 2026: (1) Putrajaya 30-31 August National Day overnight-versus-flight decision — selected because the event is eleven days away, MyGovernment confirms Dataran Putrajaya, CAAM released a same-day aviation advisory, the decision is consequential, and inventory has no recent Malaysia post; (2) Hong Kong Tai Hang Fire Dragon Dance 24-26 September — HKTB confirms dates and venue, but daily performance times, road controls and public access details are not yet complete; (3) 34th Macao International Fireworks Display Contest — rejected because MGTO still labels the September/October dates tentative. None is described as trending. Public article assumptions: traveler from Singapore or another Southeast Asian city; one night, 30-31 August; budget currency MYR; event attendance is the priority only if final official access information is available. No fixed hotel, rail, bus or ticket price is claimed. Recheck all critical/high facts on publication day and again within 72 hours of departure. Self-score target after multilingual review: facts/sources 30, decision utility 24, structure/readability 15, risk/time boundaries 10, multilingual 9, SEO/image/CTA 9 = 97/100."
+}
