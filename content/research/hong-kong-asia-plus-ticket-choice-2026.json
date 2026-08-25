@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "slug": "hong-kong-asia-plus-ticket-choice-2026",
+  "destination": "Hong Kong",
+  "researchedAt": "2026-08-25T01:10:50Z",
+  "audience": "Independent travelers from Singapore and other Southeast Asian cities who will be in Hong Kong between 18 and 24 September 2026, budget in HKD, and want to choose one Asia+ Festival music evening without building a generic city itinerary.",
+  "topicDecision": {
+    "angle": "Choose between the HK$100 Cantonese World Music Salon on 18 September and the HK$380-720 TRI-ART!ON opening concert on 23 or 24 September, using language, sensory tolerance, seat view, schedule and budget.",
+    "reason": "This qualified on 25 August 2026 because LCSD refreshed its current eMagazine on 24 August with both ticketed options, the official festival page publishes the exact times, venues, prices, language and sensory warnings, the first option is 24 days away, and the inventory has no Hong Kong article or music-ticket decision. The article makes no popularity, demand-growth, scarcity or sell-out claim and does not treat an on-sale date as proof of current inventory.",
+    "trendSignals": [
+      {
+        "description": "LCSD's eMagazine, revised 24 August 2026, currently highlights Asia+ Festival 2026, the 23-24 September opening concert at HK$380-720 and the World Music Salon series at HK$100. This is a current official programme-interest signal, not a demand measurement.",
+        "checkedAt": "2026-08-25T01:10:50Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "The official Asia+ programme page currently gives the exact 18, 23 and 24 September options and operational constraints. This is an organizer release, not independent evidence that the event is trending or scarce.",
+        "checkedAt": "2026-08-25T01:10:50Z",
+        "sourceIds": [
+          "s2"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LCSD eMagazine — Current Programme Highlights",
+      "publisher": "Leisure and Cultural Services Department",
+      "url": "https://www.lcsd.gov.hk/en/emagazine/current.html",
+      "sourceType": "official",
+      "publishedAt": "2026-08-24",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s2",
+      "title": "Asia+ Festival 2026 Opening Programme: TRI-ART!ON Concert",
+      "publisher": "Asia+ Festival — Leisure and Cultural Services Department",
+      "url": "https://www.asiaplus.gov.hk/2026/en/tri-art%21on",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s3",
+      "title": "Hong Kong Cultural Centre — Location",
+      "publisher": "Leisure and Cultural Services Department",
+      "url": "https://www.lcsd.gov.hk/en/hkcc/aboutus/location.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s4",
+      "title": "Hong Kong Cultural Centre — Barrier Free Facilities",
+      "publisher": "Leisure and Cultural Services Department",
+      "url": "https://www.lcsd.gov.hk/en/hkcc/facilities/barrierfree.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s5",
+      "title": "URBTIX Notice to Ticket Buyers",
+      "publisher": "Leisure and Cultural Services Department",
+      "url": "https://www.lcsd.gov.hk/en/ticket/notice.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s6",
+      "title": "Visit Visa / Entry Permit Requirements for the Hong Kong Special Administrative Region",
+      "publisher": "Hong Kong Immigration Department",
+      "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html",
+      "sourceType": "official",
+      "publishedAt": "2026-08-06",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    },
+    {
+      "id": "s7",
+      "title": "Hong Kong Cultural Centre viewed from Victoria Harbour.JPG",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Cultural_Centre_viewed_from_Victoria_Harbour.JPG",
+      "sourceType": "primary",
+      "publishedAt": "2014-09-14",
+      "accessedAt": "2026-08-25T01:10:50Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "LCSD's current eMagazine was revised on 24 August 2026 and lists Asia+ Festival 2026 from September to November, the opening concert on 23-24 September at HK$380-720, and the World Music Salon series from 18 September to 17 October at HK$100.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The TRI-ART!ON opening concert is scheduled for 23 and 24 September 2026 at 19:45 in the Grand Theatre of the Hong Kong Cultural Centre, with listed prices of HK$720, HK$650, HK$580, HK$480 and HK$380; sales started 23 July, but current inventory is not guaranteed by that statement.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "The opening concert is listed at approximately two hours with no interval and includes loud sound, flashing lights and smoke effects.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "The HK$580, HK$480 and HK$380 price tiers are marked on the official programme page as including partially obstructed-view seats, so the exact seat and view must be checked before payment.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "The World Music Salon 'The Voice of Mongolia' is scheduled for 18 September 2026 from 19:30 to 21:00 at the Lecture Hall of the Hong Kong Space Museum, costs HK$100, and is conducted in Cantonese with instrument demonstrations.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "Hong Kong Cultural Centre is at 10 Salisbury Road and its official location page lists East Tsim Sha Tsui exits L6 or J3 and Tsim Sha Tsui exit E; it tells visitors to use operator notices or HKeMobility for the latest route information.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "The Hong Kong Cultural Centre currently lists designated wheelchair seats, accessible toilets and induction-loop systems in the Grand Theatre; travelers needing a specific arrangement should contact the venue before buying.",
+      "category": "other",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "URBTIX currently states that online and mobile bookings collect handling charges, lists accepted payment methods by channel, and requires proof when a concessionary ticket is used; the checkout total and eligibility must be confirmed before payment.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "Hong Kong visitor visa or entry-permit treatment depends on nationality and travel document; the official table was updated in August 2026, and the article asserts no universal visa-free entitlement.",
+      "category": "entry",
+      "volatility": "critical",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "The selected photograph was taken on 14 September 2014, shows Hong Kong Cultural Centre viewed from Victoria Harbour, was created by Ceeseven and is licensed CC BY-SA 3.0.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-25T01:10:50Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Cultural_Centre_viewed_from_Victoria_Harbour.JPG",
+    "creator": "Ceeseven",
+    "usageBasis": "Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)"
+  },
+  "editorNotes": "Candidate ranking on 25 August 2026: (1) Hong Kong Asia+ 18-24 September salon-versus-opening-concert choice — selected, score 92/100, because the current LCSD page was revised yesterday, the official programme publishes the complete decision constraints, the first date is 24 days away, the source set is strong, and inventory has no Hong Kong or music-ticket decision; (2) Singapore Botanic Gardens and Fort Canning Park Heritage Festival, 5-13 September — score 84/100, highly timely and officially updated 20 August, but recent inventory already includes two Singapore angles and the detailed programme is locked in a large PDF that is harder to audit atomically; (3) Andong Maskdance Festival, 24 September-4 October — score 82/100, strong organizer, city and tourism-board evidence, but the same travel dates and Korea market overlap the new Seoul Chuseok guide and detailed paid-programme inventory is still volatile. None is described as popular or trending; the signals are current official programme interest, not search or booking demand. Public article assumptions: Southeast Asian origin market, already planning Hong Kong, one music evening, travel window 18-24 September 2026, budget in HKD. Current ticket inventory, exact checkout total, performance overrun, final MTR departure and weather are not claimed. Recheck all critical/high claims on publication day and within 72 hours of attendance. Planned self-score after multilingual review: facts/sources 30, decision utility 25, structure/readability 15, risk/time boundaries 10, multilingual 9, SEO/image/CTA 9 = 98/100."
+}
