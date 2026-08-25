@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "slug": "singapore-rainforest-wild-adventure-2026",
+  "destination": "Rainforest Wild Adventure, Mandai, Singapore",
+  "researchedAt": "2026-08-25T09:32:35Z",
+  "audience": "Independent travelers from mainland China and Southeast Asia visiting Singapore in August–September 2026; budget in SGD; Simplified Chinese primary language",
+  "topicDecision": {
+    "angle": "Decide whether the newly completed 20-hectare Rainforest Wild Adventure is worth a full weekday, using the current ticket inclusion, activity eligibility, heat and two-zone transfer.",
+    "reason": "Selected on 25 August 2026 because the East expansion completed the full park on 29 May, the official ticket page still advertises a limited opening offer of up to nine included Adventure+ activities on weekdays, and an independent June field guide documents the new East experience. The angle has no destination or wildlife-park overlap in current inventory. It describes a new-access and current-value signal, not proof of popularity or rising demand.",
+    "trendSignals": [
+      {
+        "description": "Mandai Wildlife Group officially opened the East zone on 29 May 2026, completing a 20-hectare two-zone park. This is a new-access signal, not a demand measurement.",
+        "checkedAt": "2026-08-25T09:32:35Z",
+        "sourceIds": [
+          "s1"
+        ]
+      },
+      {
+        "description": "TheSmartLocal published a dated field guide on 3 June 2026 covering the newly opened East zone and its activities. This is independent current editorial interest, not proof of scarcity or popularity.",
+        "checkedAt": "2026-08-25T09:32:35Z",
+        "sourceIds": [
+          "s11"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A decade in the making: The Mandai Wildlife Reserve marks Grand Opening",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/about-mandai/media-centre/A-decade-in-the-making-The-Mandai-Wildlife-Reserve-marks-Grand-Opening-as-Singapores-wildlife-and-nature-destination.html",
+      "sourceType": "official",
+      "publishedAt": "2026-05-29",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s2",
+      "title": "Rainforest Wild Adventure",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/rainforest-wild-adventure.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s3",
+      "title": "Rainforest Wild Adventure Admission Tickets",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/tickets-and-passes/single-attractions/rainforest-wild-adventure.html",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s4",
+      "title": "How to Plan the Perfect Day Across Both Zones",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/discover-mandai/discover-your-wild/rainforest-wild-adventure-planning-guide.html",
+      "sourceType": "official",
+      "publishedAt": "2026-05-20",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s5",
+      "title": "Canopy Jump Advisory",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/see-and-do/adventure-plus/rainforest-wild-adventure/canopy-jump.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s6",
+      "title": "Getting to the Mandai Wildlife Reserve",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/plan-your-visit/getting-to-and-around/getting-to-mandai-wildlife-reserve.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s7",
+      "title": "Adult Public Transport Fares",
+      "publisher": "SimplyGo",
+      "url": "https://www.simplygo.com.sg/travel-fares/adult-fares/",
+      "sourceType": "official",
+      "publishedAt": "2025-12-27",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s8",
+      "title": "Weather Outlook 17–31 August 2026",
+      "publisher": "Meteorological Service Singapore",
+      "url": "https://www.weather.gov.sg/weather-fortnightly-outlook/",
+      "sourceType": "official",
+      "publishedAt": "2026-08-17",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s9",
+      "title": "Cavern Restaurant",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/dine-and-shop/dining-outlets/rainforest-wild-adventure/cavern-restaurant.html",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s10",
+      "title": "Mandai Boardwalk",
+      "publisher": "Mandai Wildlife Group",
+      "url": "https://www.mandai.com/en/mandai-boardwalk.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s11",
+      "title": "Rainforest Wild Adventure East Guide",
+      "publisher": "TheSmartLocal",
+      "url": "https://thesmartlocal.com/read/rainforest-wild-adventure/",
+      "sourceType": "reputable-secondary",
+      "publishedAt": "2026-06-03",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s12",
+      "title": "Rainforest Wild ASIA main entrance.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Rainforest_Wild_ASIA_main_entrance.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2025-06-28",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    },
+    {
+      "id": "s13",
+      "title": "Leaving Changi Airport: Transport Options",
+      "publisher": "Changi Airport Group",
+      "url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+      "sourceType": "official",
+      "accessedAt": "2026-08-25T09:32:35Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Rainforest Wild Adventure completed its second zone and Mandai grand opening on 29 May 2026; West first opened 12 March 2025.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The two zones cover 20 hectares and currently house 58 species.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Daily hours are 09:00–18:00 with last entry at 17:00.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Current non-resident admission is S$55 adult and S$39 child aged 3–12; under-threes enter free with an eligible ticketed adult.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "Current resident admission is S$50 adult, S$35 child/local student and S$25 senior.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "The current opening offer includes up to nine Adventure+ activities on regular weekdays and up to five on weekends/public holidays; completion is not guaranteed and closures do not trigger refunds or extensions.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "East and West are linked by internal transport or an 800m walk of about 20 minutes.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s4"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "M2 from Khatib costs S$2.50 each way for ages seven and above, takes about 20 minutes, and uses contactless payment.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The current adult MRT fare table caps normal card fares at S$2.57.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "For 17–31 August 2026, most daily highs are forecast at 33–34°C, a few at 35°C, with some short late-morning/afternoon thunderstorms and below-average rainfall.",
+      "category": "weather",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "Canopy Jump uses 13m or 20m platforms and requires height 1.35–2.1m, weight 20–120kg, sports attire and unassisted stair use.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s2",
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c12",
+      "text": "Cavern Restaurant opens 11:00–15:00 and 17:00–21:00, with weekday two-course lunch from S$28++.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s9"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c13",
+      "text": "Mandai Boardwalk is free, 3.3km, opens 07:00–19:00 with last entry 18:00, and takes roughly 70–85 minutes.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s10"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c14",
+      "text": "Animals may move out of view and encounters are not guaranteed.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c15",
+      "text": "Changi MRT reaches the network via Tanah Merah; foreign contactless cards may attract an administration fee.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-25T09:32:35Z",
+      "sourceIds": [
+        "s13"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "Some older pages and maps use Rainforest Wild ASIA or Rainforest Wild and cover only the former West phase.",
+      "resolution": "The article uses the current Rainforest Wild Adventure name and 20-hectare/two-zone facts from 29 May 2026 pages; older materials are used only where explicitly still current."
+    },
+    {
+      "issue": "The official opening offer says “up to” nine activities on weekdays/five on peak days and has no public end date.",
+      "resolution": "The article labels the inclusion as current on 25 August 2026, never promises completion, and tells readers to check the dated ticket before payment."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:Rainforest_Wild_ASIA_main_entrance.jpg",
+    "creator": "Justanothersgwikieditor",
+    "usageBasis": "CC BY-SA 4.0; own work dated 28 June 2025, showing the main entrance of the former Rainforest Wild ASIA, now Rainforest Wild Adventure West"
+  },
+  "editorNotes": "Candidate ranking on 25 August 2026: (1) Rainforest Wild Adventure, score 94/100, selected for its May 2026 full opening, current limited-value inclusion, complete official operational evidence and no inventory overlap; (2) Singapore Oceanarium, 86/100, timely but the CRYBABY activation ends 30 August and a viewing panel is temporarily closed; (3) teamLab Biovortex Kyoto, 84/100, strong July million-visitor signal but variable pricing and Japan logistics make the attraction decision more volatile. No candidate is called trending or popular. Article assumptions: Changi arrival, independent traveler, full weekday, SGD budget. Chinese article body before publishing extras is 1200–1600 Chinese characters after whitespace removal. Recheck dated ticket inclusion, weather, activity operations, eligibility, M2 schedule/fare, restaurant price, boardwalk hours, image and CTA on publication day and before travel."
+}
