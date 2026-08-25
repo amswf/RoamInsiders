@@ -30,7 +30,7 @@ type Copy = {
 const en: Copy = {
   discover: "Discover", routes: "Routes", deals: "Deals", about: "About", admin: "Content studio",
   feedEyebrow: "THE ASIA TRAVEL EDIT", feedTitle: "Read what is worth the trip. Then decide what to book.",
-  feedIntro: "A practical stream of routes, hotel ideas and promotion notes for travelling across Asia with less noise.",
+  feedIntro: "Attractions, flights and hotels in one place, so your trip feels easier.",
   all: "All", route: "Routes", deal: "Deals", coupon: "Coupons", guide: "Guides", read: "Read story",
   latest: "Updated weekly", bookingVia: "Book with", back: "Back to the feed", duration: "Time",
   season: "Best season", budget: "Budget", couponCode: "Code", terms: "Check current terms",
@@ -50,7 +50,7 @@ export const copy: Record<Locale, Copy> = {
   "zh-CN": {
     discover: "发现", routes: "路线", deals: "优惠", about: "关于", admin: "内容后台",
     feedEyebrow: "亚洲旅行内容流", feedTitle: "先看什么值得出发，再决定订什么。",
-    feedIntro: "路线、酒店灵感和优惠说明，持续更新。少一点信息噪音，多一个清楚的下一步。",
+    feedIntro: "景点、机票、酒店一站式服务，让你的旅游更轻松。",
     all: "全部", route: "路线", deal: "优惠", coupon: "优惠券", guide: "指南", read: "打开内容",
     latest: "每周更新", bookingVia: "预订平台", back: "返回内容流", duration: "建议时间",
     season: "适合季节", budget: "预算参考", couponCode: "优惠码", terms: "查看最新规则",
@@ -68,7 +68,7 @@ export const copy: Record<Locale, Copy> = {
   "zh-TW": {
     discover: "探索", routes: "路線", deals: "優惠", about: "關於", admin: "內容後台",
     feedEyebrow: "亞洲旅行內容流", feedTitle: "先看什麼值得出發，再決定訂什麼。",
-    feedIntro: "路線、住宿靈感與優惠說明持續更新。少一點資訊噪音，多一個清楚的下一步。",
+    feedIntro: "景點、機票、飯店一站式服務，讓你的旅行更輕鬆。",
     all: "全部", route: "路線", deal: "優惠", coupon: "優惠券", guide: "指南", read: "打開內容",
     latest: "每週更新", bookingVia: "預訂平台", back: "返回內容流", duration: "建議時間",
     season: "適合季節", budget: "預算參考", couponCode: "優惠碼", terms: "查看最新規則",
@@ -84,7 +84,7 @@ export const copy: Record<Locale, Copy> = {
   id: {
     discover: "Jelajah", routes: "Rute", deals: "Promo", about: "Tentang", admin: "Studio konten",
     feedEyebrow: "PILIHAN PERJALANAN ASIA", feedTitle: "Baca yang layak dikunjungi. Lalu putuskan apa yang dipesan.",
-    feedIntro: "Aliran praktis berisi rute, ide hotel, dan catatan promo untuk perjalanan Asia yang lebih tenang.",
+    feedIntro: "Atraksi, penerbangan, dan hotel dalam satu tempat agar perjalanan Anda lebih mudah.",
     all: "Semua", route: "Rute", deal: "Promo", coupon: "Kupon", guide: "Panduan", read: "Baca artikel",
     latest: "Diperbarui mingguan", bookingVia: "Pesan melalui", back: "Kembali ke aliran", duration: "Waktu",
     season: "Musim terbaik", budget: "Anggaran", couponCode: "Kode", terms: "Lihat syarat terbaru",

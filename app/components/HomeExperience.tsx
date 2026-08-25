@@ -2,7 +2,7 @@
 
 import { useMemo, useSyncExternalStore } from "react";
 import Link from "next/link";
-import type { ContentType, GuidePost, SiteSettings } from "@/lib/content";
+import type { ContentType, GuidePost } from "@/lib/content";
 import { localizePost } from "@/lib/content";
 import { contentTypeLabel, copy, withLocale } from "@/lib/i18n";
 import { GuideCard } from "./GuideCard";
@@ -29,7 +29,7 @@ function subscribeFilter(callback: () => void) {
   };
 }
 
-export function HomeExperience({ posts, settings }: { posts: GuidePost[]; settings: SiteSettings }) {
+export function HomeExperience({ posts }: { posts: GuidePost[] }) {
   const [locale, changeLocale] = useLocale();
   const filter = useSyncExternalStore(subscribeFilter, getFilterSnapshot, getServerFilterSnapshot);
   const t = copy[locale];
@@ -47,7 +47,6 @@ export function HomeExperience({ posts, settings }: { posts: GuidePost[]; settin
 
   return (
     <main className="home-page">
-      <div className="announcement"><span>{settings.announcements[locale] || settings.announcements.en}</span><i />{t.latest}</div>
       <SiteHeader locale={locale} onLocaleChange={changeLocale} />
       <section className="feed-intro shell">
         <div><span className="eyebrow">{t.feedEyebrow}</span><h1>{t.feedTitle}</h1></div>
