@@ -9,15 +9,10 @@ export function SiteHeader({ locale, onLocaleChange }: { locale: Locale; onLocal
   const t = copy[locale];
   return (
     <header className="site-header shell">
-      <Link className="brand" href={withLocale("/", locale)} aria-label="TravelGoGuide">
-        <span>TRAVELGO</span><span>GUIDE</span>
+      <Link className="brand brand-header" href={withLocale("/", locale)} aria-label="TravelGoGuide">
+        <span className="brand-wordmark"><span>TRAVELGO</span><span>GUIDE</span></span>
+        <span className="brand-tagline">世界这么大，带你一起转。</span>
       </Link>
-      <nav aria-label="Primary navigation">
-        <Link href={withLocale("/", locale)}>{t.discover}</Link>
-        <Link href={withLocale("/?type=route", locale)}>{t.routes}</Link>
-        <Link href={withLocale("/?type=deal", locale)}>{t.deals}</Link>
-        <Link href={withLocale("/about", locale)}>{t.about}</Link>
-      </nav>
       <div className="header-tools">
         <label className="language-picker">
           <span className="sr-only">{t.language}</span>
@@ -25,7 +20,6 @@ export function SiteHeader({ locale, onLocaleChange }: { locale: Locale; onLocal
             {localeOptions.map((option) => <option key={option.code} value={option.code}>{option.label}</option>)}
           </select>
         </label>
-        <Link className="admin-link" href="/admin/">{t.admin}</Link>
       </div>
     </header>
   );
