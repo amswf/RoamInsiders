@@ -11,7 +11,7 @@ export function SiteHeader({ locale, onLocaleChange }: { locale: Locale; onLocal
     <header className="site-header shell">
       <Link className="brand brand-header" href={withLocale("/", locale)} aria-label="TravelGoGuide">
         <span className="brand-wordmark"><span>TRAVELGO</span><span>GUIDE</span></span>
-        <span className="brand-tagline">世界这么大，带你转一转。</span>
+        <span className="brand-tagline">{t.brandTagline}</span>
       </Link>
       <div className="header-tools">
         <label className="language-picker">

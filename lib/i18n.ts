@@ -24,7 +24,7 @@ type Copy = {
   openCustom: string; footer: string; editorial: string; exploreAll: string;
   guidesTitle: string; guidesIntro: string; aboutTitle: string; aboutLead: string;
   aboutBody: string; language: string;
-  sources: string; verifiedOn: string;
+  sources: string; verifiedOn: string; brandTagline: string;
 };
 
 const en: Copy = {
@@ -43,7 +43,7 @@ const en: Copy = {
   aboutTitle: "Travel advice should reduce hesitation, not add tabs.",
   aboutLead: "TravelGoGuide connects useful editorial content with the moment you are ready to act.",
   aboutBody: "We publish practical routes and promotion notes, explain the important limits, then offer one clear link to the relevant booking platform.",
-  language: "Language", sources: "Sources", verifiedOn: "Facts checked",
+  language: "Language", sources: "Sources", verifiedOn: "Facts checked", brandTagline: "The world is big. Let's explore it together.",
 };
 
 export const copy: Record<Locale, Copy> = {
@@ -63,7 +63,7 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "好的旅行建议，应该减少犹豫，不是增加标签页。",
     aboutLead: "TravelGoGuide 把有用的旅行内容，和你准备行动的那一刻连在一起。",
     aboutBody: "我们发布实用路线和优惠说明，说清限制与注意事项，再给出一个前往对应预订平台的明确入口。",
-    language: "语言", sources: "资料来源", verifiedOn: "信息核验",
+    language: "语言", sources: "资料来源", verifiedOn: "信息核验", brandTagline: "世界这么大，带你转一转。",
   },
   "zh-TW": {
     discover: "探索", routes: "路線", deals: "優惠", about: "關於", admin: "內容後台",
@@ -78,7 +78,7 @@ export const copy: Record<Locale, Copy> = {
     footer: "有用的旅行內容，以及一個清楚的下一步。", editorial: "獨立旅行內容平台",
     exploreAll: "查看全部內容", guidesTitle: "所有內容，一條流裡看完。", guidesIntro: "亞洲路線、優惠與預訂指南。",
     aboutTitle: "好的旅行建議，應該減少猶豫，而不是增加分頁。", aboutLead: "TravelGoGuide 把有用內容和行動連在一起。",
-    aboutBody: "我們說清路線、優惠與限制，再提供一個前往預訂平台的明確入口。", language: "語言", sources: "資料來源", verifiedOn: "資訊核驗",
+    aboutBody: "我們說清路線、優惠與限制，再提供一個前往預訂平台的明確入口。", language: "語言", sources: "資料來源", verifiedOn: "資訊核驗", brandTagline: "世界這麼大，帶你轉一轉。",
   },
   en,
   id: {
@@ -93,15 +93,15 @@ export const copy: Record<Locale, Copy> = {
     openTraveloka: "Lihat pilihan di Traveloka", openCustom: "Buka halaman pemesanan", footer: "Cerita perjalanan yang berguna, dengan langkah berikutnya yang jelas.",
     editorial: "Editorial perjalanan independen", exploreAll: "Jelajahi semua artikel", guidesTitle: "Semua cerita dalam satu aliran.",
     guidesIntro: "Rute, promo, kupon, dan panduan pemesanan untuk Asia.", aboutTitle: "Saran perjalanan harus mengurangi keraguan, bukan menambah tab.",
-    aboutLead: "TravelGoGuide menghubungkan konten berguna dengan saat Anda siap bertindak.", aboutBody: "Kami menjelaskan rute, promo, dan batasannya, lalu memberi satu tautan pemesanan yang jelas.", language: "Bahasa", sources: "Sumber", verifiedOn: "Fakta diperiksa",
+    aboutLead: "TravelGoGuide menghubungkan konten berguna dengan saat Anda siap bertindak.", aboutBody: "Kami menjelaskan rute, promo, dan batasannya, lalu memberi satu tautan pemesanan yang jelas.", language: "Bahasa", sources: "Sumber", verifiedOn: "Fakta diperiksa", brandTagline: "Dunia begitu luas. Mari menjelajahinya.",
   },
-  th: { ...en, discover: "ค้นพบ", routes: "เส้นทาง", deals: "โปรโมชัน", about: "เกี่ยวกับ", admin: "จัดการเนื้อหา", all: "ทั้งหมด", route: "เส้นทาง", deal: "โปรโมชัน", coupon: "คูปอง", guide: "คู่มือ", read: "อ่านเรื่อง", language: "ภาษา", back: "กลับสู่ฟีด", openTrip: "ดูตัวเลือกบน Trip.com", openTraveloka: "ดูตัวเลือกบน Traveloka" },
-  vi: { ...en, discover: "Khám phá", routes: "Lịch trình", deals: "Ưu đãi", about: "Giới thiệu", admin: "Quản lý nội dung", all: "Tất cả", route: "Lịch trình", deal: "Ưu đãi", coupon: "Mã giảm giá", guide: "Cẩm nang", read: "Đọc bài", language: "Ngôn ngữ", back: "Quay lại dòng nội dung", openTrip: "Xem lựa chọn trên Trip.com", openTraveloka: "Xem lựa chọn trên Traveloka" },
-  ms: { ...en, discover: "Teroka", routes: "Laluan", deals: "Tawaran", about: "Tentang", admin: "Studio kandungan", all: "Semua", route: "Laluan", deal: "Tawaran", coupon: "Kupon", guide: "Panduan", read: "Baca cerita", language: "Bahasa", back: "Kembali ke aliran", openTrip: "Lihat pilihan di Trip.com", openTraveloka: "Lihat pilihan di Traveloka" },
-  fil: { ...en, discover: "Tuklasin", routes: "Ruta", deals: "Deal", about: "Tungkol", admin: "Content studio", all: "Lahat", route: "Mga ruta", deal: "Mga deal", coupon: "Mga kupon", guide: "Gabay", read: "Basahin", language: "Wika", back: "Bumalik sa feed", openTrip: "Tingnan sa Trip.com", openTraveloka: "Tingnan sa Traveloka" },
-  km: { ...en, discover: "ស្វែងរក", routes: "ផ្លូវធ្វើដំណើរ", deals: "ប្រូម៉ូសិន", about: "អំពី", admin: "គ្រប់គ្រងមាតិកា", all: "ទាំងអស់", route: "ផ្លូវធ្វើដំណើរ", deal: "ប្រូម៉ូសិន", coupon: "គូប៉ុង", guide: "មគ្គុទ្ទេសក៍", read: "អាន", language: "ភាសា", back: "ត្រឡប់ទៅមាតិកា" },
-  lo: { ...en, discover: "ຄົ້ນພົບ", routes: "ເສັ້ນທາງ", deals: "ໂປຣໂມຊັນ", about: "ກ່ຽວກັບ", admin: "ຈັດການເນື້ອຫາ", all: "ທັງໝົດ", route: "ເສັ້ນທາງ", deal: "ໂປຣໂມຊັນ", coupon: "ຄູປອງ", guide: "ຄູ່ມື", read: "ອ່ານ", language: "ພາສາ", back: "ກັບໄປຫາເນື້ອຫາ" },
-  my: { ...en, discover: "ရှာဖွေမည်", routes: "ခရီးစဉ်များ", deals: "အထူးအစီအစဉ်", about: "အကြောင်း", admin: "အကြောင်းအရာစီမံရန်", all: "အားလုံး", route: "ခရီးစဉ်", deal: "အထူးအစီအစဉ်", coupon: "ကူပွန်", guide: "လမ်းညွှန်", read: "ဖတ်ရန်", language: "ဘာသာစကား", back: "အကြောင်းအရာသို့ ပြန်သွားရန်" },
+  th: { ...en, discover: "ค้นพบ", routes: "เส้นทาง", deals: "โปรโมชัน", about: "เกี่ยวกับ", admin: "จัดการเนื้อหา", all: "ทั้งหมด", route: "เส้นทาง", deal: "โปรโมชัน", coupon: "คูปอง", guide: "คู่มือ", read: "อ่านเรื่อง", language: "ภาษา", back: "กลับสู่ฟีด", openTrip: "ดูตัวเลือกบน Trip.com", openTraveloka: "ดูตัวเลือกบน Traveloka", brandTagline: "โลกกว้างนัก ไปเที่ยวด้วยกัน" },
+  vi: { ...en, discover: "Khám phá", routes: "Lịch trình", deals: "Ưu đãi", about: "Giới thiệu", admin: "Quản lý nội dung", all: "Tất cả", route: "Lịch trình", deal: "Ưu đãi", coupon: "Mã giảm giá", guide: "Cẩm nang", read: "Đọc bài", language: "Ngôn ngữ", back: "Quay lại dòng nội dung", openTrip: "Xem lựa chọn trên Trip.com", openTraveloka: "Xem lựa chọn trên Traveloka", brandTagline: "Thế giới rộng lớn. Cùng đi khám phá nhé." },
+  ms: { ...en, discover: "Teroka", routes: "Laluan", deals: "Tawaran", about: "Tentang", admin: "Studio kandungan", all: "Semua", route: "Laluan", deal: "Tawaran", coupon: "Kupon", guide: "Panduan", read: "Baca cerita", language: "Bahasa", back: "Kembali ke aliran", openTrip: "Lihat pilihan di Trip.com", openTraveloka: "Lihat pilihan di Traveloka", brandTagline: "Dunia ini luas. Jom menerokainya." },
+  fil: { ...en, discover: "Tuklasin", routes: "Ruta", deals: "Deal", about: "Tungkol", admin: "Content studio", all: "Lahat", route: "Mga ruta", deal: "Mga deal", coupon: "Mga kupon", guide: "Gabay", read: "Basahin", language: "Wika", back: "Bumalik sa feed", openTrip: "Tingnan sa Trip.com", openTraveloka: "Tingnan sa Traveloka", brandTagline: "Malawak ang mundo. Libutin natin ito." },
+  km: { ...en, discover: "ស្វែងរក", routes: "ផ្លូវធ្វើដំណើរ", deals: "ប្រូម៉ូសិន", about: "អំពី", admin: "គ្រប់គ្រងមាតិកា", all: "ទាំងអស់", route: "ផ្លូវធ្វើដំណើរ", deal: "ប្រូម៉ូសិន", coupon: "គូប៉ុង", guide: "មគ្គុទ្ទេសក៍", read: "អាន", language: "ភាសា", back: "ត្រឡប់ទៅមាតិកា", brandTagline: "ពិភពលោកធំណាស់។ តោះទៅស្វែងយល់ជាមួយគ្នា។" },
+  lo: { ...en, discover: "ຄົ້ນພົບ", routes: "ເສັ້ນທາງ", deals: "ໂປຣໂມຊັນ", about: "ກ່ຽວກັບ", admin: "ຈັດການເນື້ອຫາ", all: "ທັງໝົດ", route: "ເສັ້ນທາງ", deal: "ໂປຣໂມຊັນ", coupon: "ຄູປອງ", guide: "ຄູ່ມື", read: "ອ່ານ", language: "ພາສາ", back: "ກັບໄປຫາເນື້ອຫາ", brandTagline: "ໂລກກວ້າງໃຫຍ່. ໄປທ່ຽວນຳກັນ." },
+  my: { ...en, discover: "ရှာဖွေမည်", routes: "ခရီးစဉ်များ", deals: "အထူးအစီအစဉ်", about: "အကြောင်း", admin: "အကြောင်းအရာစီမံရန်", all: "အားလုံး", route: "ခရီးစဉ်", deal: "အထူးအစီအစဉ်", coupon: "ကူပွန်", guide: "လမ်းညွှန်", read: "ဖတ်ရန်", language: "ဘာသာစကား", back: "အကြောင်းအရာသို့ ပြန်သွားရန်", brandTagline: "ကမ္ဘာကြီးက ကျယ်တယ်။ အတူလှည့်လည်ကြမယ်။" },
 };
 
 export function contentTypeLabel(locale: Locale, type: ContentType) {
