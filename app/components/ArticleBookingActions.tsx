@@ -105,13 +105,13 @@ export function ArticleBookingActions({ locale, post, localized }: { locale: Loc
   }
 
   return (
-    <section className="article-actions" aria-label={copy.title}>
-      <div className="article-actions-copy"><span>TRAVELGO / NEXT STEP</span><h2>{copy.title}</h2><p>{copy.note}</p></div>
-      <div className="article-actions-links">
+    <aside className="sticky-action" aria-label={copy.title}>
+      <div className="sticky-action-copy"><span>TRAVELGO / NEXT STEP</span><h2>{copy.title}</h2><p>{copy.note}</p></div>
+      <div className="sticky-action-links">
         <a href={hotelUrl(destination)} target="_blank" rel="noopener noreferrer"><small>01</small><span>{copy.hotel}</span><b>↗</b></a>
         <button type="button" onClick={openFlightSearch} disabled={locating}><small>02</small><span>{locating ? copy.locating : copy.flight}</span><b>↗</b></button>
         <a href={ticketUrl} target="_blank" rel="noopener noreferrer"><small>03</small><span>{copy.ticket}</span><b>↗</b></a>
       </div>
-    </section>
+    </aside>
   );
 }
