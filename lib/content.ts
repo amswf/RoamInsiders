@@ -29,6 +29,7 @@ export type PostLocale = {
   excerpt: string;
   content: string;
   destination: string;
+  airportCode: string;
   duration: string;
   budget: string;
   season: string;
@@ -41,6 +42,7 @@ export type PostLocale = {
   ctaPlatform: CtaPlatform;
   ctaLabel: string;
   ctaUrl: string;
+  ticketUrl: string;
   couponCode: string;
   priceLabel: string;
   updatedAt: string;

@@ -6,6 +6,7 @@ import type { GuidePost, SiteSettings } from "@/lib/content";
 import { localizePost, resolveCta, safeExternalUrl } from "@/lib/content";
 import { contentTypeLabel, copy, withLocale } from "@/lib/i18n";
 import { SiteFooter, SiteHeader } from "./SiteChrome";
+import { ArticleBookingActions } from "./ArticleBookingActions";
 import { useLocale } from "./useLocale";
 
 function paragraphs(content: string) {
@@ -28,8 +29,6 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
   const localized = localizePost(post, locale);
   const t = copy[locale];
   const platform = localized.ctaPlatform === "traveloka" ? "Traveloka" : localized.ctaPlatform === "trip" ? "Trip.com" : t.bookingVia;
-  const defaultLabel = localized.ctaPlatform === "traveloka" ? t.openTraveloka : localized.ctaPlatform === "trip" ? t.openTrip : t.openCustom;
-  const ctaLabel = localized.ctaLabel || defaultLabel;
   const ctaUrl = safeExternalUrl(resolveCta(localized, settings));
 
   useEffect(() => {
@@ -68,11 +67,8 @@ export function GuideDetailExperience({ post, settings }: { post: GuidePost; set
           <div className="story-body">{paragraphs(localized.content)}{localized.contentType === "coupon" ? <div className="coupon-box"><span>{t.couponCode}</span><strong>{localized.couponCode || t.terms}</strong><a href={ctaUrl} target="_blank" rel="noopener noreferrer">{t.terms} ↗</a></div> : null}{localized.sources.length ? <section className="story-sources"><h2>{t.sources}</h2>{localized.verifiedAt ? <p>{t.verifiedOn}: {sourceDate(localized.verifiedAt, localized.updatedAt)}</p> : null}<ol>{localized.sources.map((source) => <li key={source.url}><a href={safeExternalUrl(source.url)} target="_blank" rel="noopener noreferrer">{source.title}</a><span>{source.publisher}{source.accessedAt ? ` · ${source.accessedAt}` : ""}</span></li>)}</ol></section> : null}<p className="disclosure">{t.disclosure}</p></div>
         </div>
       </article>
+      <ArticleBookingActions locale={locale} post={post} localized={localized} />
       <SiteFooter locale={locale} />
-      <aside className="sticky-action" aria-label={ctaLabel}>
-        <div><small>{t.bookingVia}</small><strong>{platform}</strong></div>
-        <a href={ctaUrl} target="_blank" rel="noopener noreferrer"><span>{ctaLabel}</span><b>↗</b></a>
-      </aside>
       </main>
     </>
   );

@@ -115,13 +115,17 @@ p { text-wrap: pretty; }
 .story-sources li { margin: 0 0 14px; padding-left: 4px; font-size: 13px; line-height: 1.45; }
 .story-sources a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .story-sources span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
-.sticky-action { position: fixed; z-index: 80; left: 50%; bottom: 18px; transform: translateX(-50%); width: min(760px, calc(100% - 36px)); min-height: 76px; padding: 10px 10px 10px 22px; display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 18px; background: var(--surface); border: 1px solid var(--ink); box-shadow: 0 18px 60px rgba(29,43,39,.22); }
-.sticky-action > div { display: flex; flex-direction: column; gap: 4px; }
-.sticky-action small { color: var(--muted); font-size: 8px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.sticky-action strong { font-family: var(--serif); font-size: 20px; font-weight: 500; }
-.sticky-action > a { min-height: 54px; padding: 0 18px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--orange); color: #fff; font-size: 12px; font-weight: 800; }
-.sticky-action > a:hover { background: var(--orange-dark); }
-.sticky-action > a b { font-size: 22px; }
+.article-actions { width: min(1240px, calc(100% - 56px)); margin: 0 auto 110px; padding-top: 24px; display: grid; grid-template-columns: minmax(220px, .55fr) minmax(0, 1.45fr); gap: 48px; border-top: 1px solid var(--ink); }
+.article-actions-copy > span { color: var(--orange-dark); font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+.article-actions-copy h2 { margin: 13px 0 10px; font-family: var(--serif); font-size: 34px; font-weight: 500; letter-spacing: -.04em; line-height: 1; }
+.article-actions-copy p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.75; }
+.article-actions-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.article-actions-links > a, .article-actions-links > button { min-height: 144px; padding: 16px; display: flex; flex-direction: column; align-items: flex-start; border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; text-align: left; font: inherit; }
+.article-actions-links > a:hover, .article-actions-links > a:focus-visible, .article-actions-links > button:hover, .article-actions-links > button:focus-visible { background: var(--lime); outline: 0; }
+.article-actions-links > button:disabled { cursor: wait; opacity: .72; }
+.article-actions-links small { color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+.article-actions-links span { margin-top: auto; font-size: 16px; font-weight: 800; letter-spacing: -.03em; line-height: 1.15; }
+.article-actions-links b { align-self: flex-end; margin-top: 12px; color: var(--orange-dark); font-size: 20px; }
 
 .about-page { padding-block: 120px 150px; }
 .about-page h1 { max-width: 1050px; }
@@ -206,9 +210,12 @@ p { text-wrap: pretty; }
   .story-layout { grid-template-columns: 1fr; gap: 50px; padding-block: 70px 120px; }
   .story-index { position: static; }
   .story-body { font-size: 18px; }
-  .sticky-action { bottom: 0; width: 100%; min-height: 72px; border-inline: 0; border-bottom: 0; grid-template-columns: 90px 1fr; padding: 8px 9px 8px 14px; }
-  .sticky-action > a { min-height: 54px; padding-inline: 14px; }
-  .sticky-action > a span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .article-actions { width: min(100% - 30px, 620px); margin-bottom: 80px; grid-template-columns: 1fr; gap: 28px; }
+  .article-actions-copy h2 { font-size: 31px; }
+  .article-actions-links { grid-template-columns: 1fr; }
+  .article-actions-links > a, .article-actions-links > button { min-height: 78px; padding: 14px; display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 12px; }
+  .article-actions-links span { margin: 0; font-size: 16px; }
+  .article-actions-links b { margin: 0; }
   .about-page { padding-block: 80px 110px; }
   .about-grid { grid-template-columns: 1fr; gap: 38px; margin-top: 70px; }
   .about-grid .about-lead { font-size: 28px; }

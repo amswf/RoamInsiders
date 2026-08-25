@@ -48,6 +48,7 @@ collections:
       - { label: 摘要, name: excerpt, widget: text, i18n: true }
       - { label: 正文, name: content, widget: text, i18n: true, hint: '段落之间空一行；小标题可使用「Day 1｜标题」格式' }
       - { label: 目的地, name: destination, widget: string, i18n: true, required: false }
+      - { label: 目的地机场 IATA 代码, name: airportCode, widget: string, i18n: duplicate, required: false, hint: '例如 SIN、HND、KUL；用于机票按钮。留空时前台会尝试匹配。' }
       - { label: 建议时间, name: duration, widget: string, i18n: true, required: false }
       - { label: 预算参考, name: budget, widget: string, i18n: true, required: false }
       - { label: 适合季节, name: season, widget: string, i18n: true, required: false }
@@ -81,6 +82,7 @@ collections:
           - { label: 自定义, value: custom }
       - { label: 行动按钮文案, name: ctaLabel, widget: string, i18n: true, required: false, hint: '留空时前台会使用对应语言的默认文案' }
       - { label: 行动按钮链接, name: ctaUrl, widget: string, i18n: duplicate, required: false, hint: '留空时使用网站设置里的平台默认链接' }
+      - { label: 门票按钮链接, name: ticketUrl, widget: string, i18n: duplicate, required: false, hint: '可填写任意第三方门票页；留空时打开 Trip.com 景点页并带入目的地。' }
       - { label: 优惠码, name: couponCode, widget: string, i18n: true, required: false }
       - { label: 价格或优惠标签, name: priceLabel, widget: string, i18n: true, required: false }
       - { label: 更新日期, name: updatedAt, widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, i18n: duplicate }
