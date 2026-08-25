@@ -46,7 +46,7 @@ export function HomeExperience({ posts, settings }: { posts: GuidePost[]; settin
   }
 
   return (
-    <main>
+    <main className="home-page">
       <div className="announcement"><span>{settings.announcements[locale] || settings.announcements.en}</span><i />{t.latest}</div>
       <SiteHeader locale={locale} onLocaleChange={changeLocale} />
       <section className="feed-intro shell">
