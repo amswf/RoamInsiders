@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "slug": "teamlab-biovortex-kyoto-2026",
+  "destination": "teamLab Biovortex Kyoto, Kyoto, Japan",
+  "researchedAt": "2026-08-26T01:08:59Z",
+  "audience": "Independent travelers from mainland China and Southeast Asia visiting Kyoto in late August–September 2026; arriving by Shinkansen or Kansai Airport; budgeting in JPY; Simplified Chinese primary language",
+  "topicDecision": {
+    "angle": "Decide whether Japan’s largest teamLab museum is worth JPY3,800 and about three hours as a late-summer indoor block, using current maintenance, heat, ticket and access constraints.",
+    "reason": "Selected on 26 August 2026 because a July primary release reported one million cumulative visitors within nine months, an independently updated August 2026 decision guide shows active current editorial interest, the museum has complete official operational evidence, and its indoor heat/rain use case is immediate. The recent inventory has no teamLab post; the prior Kyoto article uses a different early-morning temple angle. Runner-up Hong Kong museum candidates overlapped the previous day’s Hong Kong research and had less complete current visitor constraints. The signals are bounded attendance and editorial-interest evidence, not a claim of rising demand or scarcity.",
+    "trendSignals": [
+      {
+        "description": "A 10 July 2026 primary release reported more than one million cumulative visitors by 6 July, nine months after opening. This is a bounded realized-attendance signal, not proof of future scarcity.",
+        "checkedAt": "2026-08-26T01:08:59Z",
+        "sourceIds": [
+          "s3"
+        ]
+      },
+      {
+        "description": "An independent Kyoto planning site published an August 2026 price-and-duration decision guide. This is recent editorial interest and current-usefulness evidence, not a universal popularity claim.",
+        "checkedAt": "2026-08-26T01:08:59Z",
+        "sourceIds": [
+          "s4"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "[Official] teamLab Biovortex Kyoto",
+      "publisher": "teamLab",
+      "url": "https://art.team-lab.cn/en/e/kyoto/",
+      "sourceType": "official",
+      "publishedAt": "2025-10-07",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s2",
+      "title": "teamLab Biovortex ticket and Kyoto Subway & Bus One-Day Pass set",
+      "publisher": "Kyoto City Transportation Bureau",
+      "url": "https://www.city.kyoto.lg.jp/kotsu/page/0000345237.html",
+      "sourceType": "official",
+      "publishedAt": "2025-09-11",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s3",
+      "title": "teamLab Biovortex Kyoto Welcomes Over 1 Million Visitors within 9 Months of Opening",
+      "publisher": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260709913938/en/teamLab-Biovortex-Kyoto-Welcomes-Over-1-Million-Visitors-within-9-Months-of-Opening",
+      "sourceType": "primary",
+      "publishedAt": "2026-07-10",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s4",
+      "title": "Is teamLab Biovortex Worth ¥3,800?",
+      "publisher": "Things to do Kyoto",
+      "url": "https://thingstodokyoto.com/teamlab-biovortex/",
+      "sourceType": "commercial",
+      "publishedAt": "2026-08-01",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s5",
+      "title": "Weather support information for Kyoto City",
+      "publisher": "Japan Meteorological Agency",
+      "url": "https://www.data.jma.go.jp/yoho/data/jishin/met/kishoushien_Kyoto_Kyoto-shi.html",
+      "sourceType": "official",
+      "publishedAt": "2026-08-26",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s6",
+      "title": "HARUKA One-way Ticket",
+      "publisher": "West Japan Railway Company",
+      "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/oneway/haruka/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s7",
+      "title": "Kyoto–Kansai Airport limousine bus timetable and fares",
+      "publisher": "Keihan Bus",
+      "url": "https://www.keihanbus.jp/limousine/kix/limousine_kanku_kyoto.html",
+      "sourceType": "official",
+      "publishedAt": "2026-03-29",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s8",
+      "title": "Kyoto Station Building squares and Skyway",
+      "publisher": "Kyoto Station Building",
+      "url": "https://www.kyoto-station-building.co.jp/service/square/",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s9",
+      "title": "Rengeo-in Sanjusangen-do visiting information",
+      "publisher": "Sanjusangen-do",
+      "url": "https://www.sanjusangendo.jp/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s10",
+      "title": "Shinshu Otani-ha Higashi Honganji",
+      "publisher": "Higashi Honganji",
+      "url": "https://english.higashihonganji.or.jp/english_top/",
+      "sourceType": "official",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s11",
+      "title": "Nishio-yatsuhashi Gion Tamejiro Hachijo Gate",
+      "publisher": "ASTY Kyoto",
+      "url": "https://www.asty-kyoto.co.jp/en/asty_kyoto/store/590/",
+      "sourceType": "primary",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    },
+    {
+      "id": "s12",
+      "title": "JR West Kyoto Station JR Line Hachijo East Gate.jpg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:JR_West_Ky%C5%8Dto_Station_JR_Line_Hachij%C5%8D_East_Gate.jpg",
+      "sourceType": "primary",
+      "publishedAt": "2022-12-10",
+      "accessedAt": "2026-08-26T01:08:59Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "teamLab Biovortex Kyoto opened permanently on 7 October 2025.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c2",
+      "text": "The venue has roughly 10,000 square metres of total floor area and more than 50 works, making it the largest teamLab museum in Japan.",
+      "category": "geography",
+      "volatility": "low",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c3",
+      "text": "Cumulative attendance exceeded one million by 6 July 2026.",
+      "category": "event",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s3"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c4",
+      "text": "Current museum hours are 09:00–21:00 with last entry at 19:30; Sketch Factory operates 11:00–21:00.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c5",
+      "text": "The current official page lists closures on 1 and 15 September 2026 and shows Living Crystallized Light under maintenance on 26 August.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c6",
+      "text": "Timed online admission currently starts at JPY3,800 for ages 18+, with JPY2,800 for ages 13–17, JPY1,800 for ages 4–12 and free admission for ages three and under.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c7",
+      "text": "The displayed disability rate is JPY1,900 for the certificate holder and one companion; Flexible Pass is JPY12,000; on-site purchase adds JPY200.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c8",
+      "text": "Tickets purchased directly from the official site can be moved under stated conditions up to two hours before entry, no more than three times; resale tickets are invalid.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c9",
+      "text": "The venue is seven minutes on foot from Kyoto Station Hachijo East Gate and 11 minutes from Shichijo Station, with no car or motorcycle parking.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c10",
+      "text": "Eligible foreign passport holders entering as Temporary Visitors can buy the direct Kansai Airport–Kyoto HARUKA one-way product for JPY2,200.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s6"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c11",
+      "text": "The Kyoto–Kansai Airport bus adult one-way fare is JPY2,800 and standard Kyoto Station–Terminal 1 time is about 88 minutes.",
+      "category": "transport",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s7"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c12",
+      "text": "JMA forecast Kyoto at 36°C on 26 August, 34°C on 27 August and rainier conditions on 28–29 August 2026.",
+      "category": "weather",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s5"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c13",
+      "text": "The exhibition can include dim and uneven surfaces, flashing lights, loud sounds and aromas; pregnant visitors, people with mobility limits and people sensitive to flashing light should assess suitability.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c14",
+      "text": "Heels, sandals and other unstable footwear are barred from the Athletic Area; loan sneakers are limited.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c15",
+      "text": "Items over 50cm and strollers cannot enter the exhibition; re-entry is not permitted.",
+      "category": "safety",
+      "volatility": "critical",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c16",
+      "text": "Flash, tripods and selfie sticks or other supports 30cm or longer are prohibited.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c17",
+      "text": "Massless Amorphous Sculpture uses water, air and ordinary soap and reforms after people enter it.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c18",
+      "text": "Multi Jumping Universe responds to jumping by creating and transforming projected stars; Sketch Ocean scans colored fish into a shared projected ocean.",
+      "category": "other",
+      "volatility": "low",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c19",
+      "text": "Kyoto Station Skyway is 185m long, 45m high and operates 10:00–22:00.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s8"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c20",
+      "text": "Sanjusangen-do opens 08:30–17:00 from 1 April through 15 November and displays 1,001 Kannon statues.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s9"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c21",
+      "text": "Higashi Honganji admission is free and March–October public hours are 05:50–17:30.",
+      "category": "hours",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s10"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c22",
+      "text": "Gion Tamejiro at ASTY Hachijo lists chicken ramen and matcha parfait at JPY1,200 and accepts cash, cards and transit e-money.",
+      "category": "price",
+      "volatility": "high",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s11"
+      ],
+      "usedInPost": true
+    },
+    {
+      "id": "c23",
+      "text": "Official ticket-purchase data reported in July 2026 shows an average visitor stay of more than 2.5 hours; the venue itself imposes no stay limit after admission.",
+      "category": "other",
+      "volatility": "medium",
+      "checkedAt": "2026-08-26T01:08:59Z",
+      "sourceIds": [
+        "s1",
+        "s3"
+      ],
+      "usedInPost": true
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Adult base price",
+      "resolution": "Kyoto City’s September 2025 release listed JPY3,600 from opening, while the live teamLab page checked 26 August 2026 lists JPY3,800 and uses variable pricing. The article uses the live JPY3,800-from price and states that checkout controls."
+    },
+    {
+      "topic": "Visit duration",
+      "resolution": "The July primary release reports an average stay above 2.5 hours, while the organizer sets no time limit and the independent August guide recommends two to three hours. The article labels 2.5–3.5 hours as a planning allowance, not a required or guaranteed duration."
+    }
+  ],
+  "image": {
+    "landingPageUrl": "https://commons.wikimedia.org/wiki/File:JR_West_Ky%C5%8Dto_Station_JR_Line_Hachij%C5%8D_East_Gate.jpg",
+    "creator": "MaedaAkihiko",
+    "usageBasis": "CC BY-SA 4.0; image is accurately labeled as a 10 December 2022 view of Kyoto Station Hachijo East Gate, not as the teamLab museum or current conditions"
+  },
+  "editorNotes": "Candidate ranking: (1) teamLab Biovortex Kyoto, selected for complete evidence, immediate indoor heat/rain utility, one-million attendance and an August 2026 independent decision guide; (2) the reopened Hong Kong Story permanent exhibition, useful and free but overlapping the previous day’s Hong Kong research; (3) Hong Kong Science Museum’s 2026 permanent galleries, rejected because current gallery-by-gallery visitor constraints were less complete. Do not claim same-day inventory, emptiness, fixed adult price beyond the checked from-price, a guaranteed visit duration, or universal accessibility. Recheck the maintenance banner, closure dates, timed-slot price/inventory, airport eligibility and schedules, weather, nearby hours, food prices, image endpoint and CTA before a later republish."
+}
